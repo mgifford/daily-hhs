@@ -5,6 +5,10 @@ import {
   getAxeImpactRuleMap,
   getPolicyNarrative,
   getTechnicalSummary,
+  getRuleFpcCodes,
+  getRuleWcagSc,
+  getRuleEn301549Clauses,
+  getFunctionalPerformanceSpec,
   getAxeImpactMetadata,
   isAxeImpactDataStale,
   getHeuristicsForAxeRule
@@ -159,4 +163,133 @@ test('getHeuristicsForAxeRule returns no duplicates for any rule', () => {
     const unique = [...new Set(ids)];
     assert.deepEqual(ids.sort(), unique.sort(), `Duplicate heuristics returned for rule ${rule.rule_id}`);
   }
+});
+
+// ---------------------------------------------------------------------------
+// getRuleFpcCodes
+// ---------------------------------------------------------------------------
+
+test('getRuleFpcCodes returns array for a known rule with FPC codes', () => {
+  // color-contrast maps to visual FPC criteria
+  const codes = getRuleFpcCodes('color-contrast');
+  assert.ok(codes !== null, 'should return FPC codes for color-contrast');
+  assert.ok(Array.isArray(codes), 'FPC codes should be an array');
+  assert.ok(codes.length > 0, 'FPC codes array should not be empty');
+  for (const code of codes) {
+    assert.equal(typeof code, 'string', 'each FPC code should be a string');
+    assert.ok(code.length > 0, 'FPC code should not be empty');
+  }
+});
+
+test('getRuleFpcCodes returns null for unknown rule', () => {
+  const codes = getRuleFpcCodes('non-existent-rule-xyz');
+  assert.equal(codes, null);
+});
+
+test('getRuleFpcCodes all known rules with fpc_codes return arrays', () => {
+  const { rules } = getAxeImpactRules();
+  for (const rule of rules) {
+    if (rule.fpc_codes != null) {
+      const codes = getRuleFpcCodes(rule.rule_id);
+      assert.ok(Array.isArray(codes), `fpc_codes for ${rule.rule_id} should be an array`);
+    }
+  }
+});
+
+// ---------------------------------------------------------------------------
+// getRuleWcagSc
+// ---------------------------------------------------------------------------
+
+test('getRuleWcagSc returns sc, draft, and version_note for a known rule', () => {
+  const wcag = getRuleWcagSc('color-contrast');
+  assert.ok(wcag !== null, 'should return WCAG SC for color-contrast');
+  assert.ok(Array.isArray(wcag.sc), 'sc should be an array');
+  assert.ok(wcag.sc.length > 0, 'sc should not be empty');
+  assert.equal(typeof wcag.draft, 'boolean', 'draft should be a boolean');
+  assert.ok('version_note' in wcag, 'should include version_note field');
+});
+
+test('getRuleWcagSc returns null for unknown rule', () => {
+  const wcag = getRuleWcagSc('non-existent-rule-xyz');
+  assert.equal(wcag, null);
+});
+
+test('getRuleWcagSc draft defaults to false when not set in YAML', () => {
+  const { rules } = getAxeImpactRules();
+  for (const rule of rules) {
+    if (rule.wcag_sc && !rule.wcag_sc_draft) {
+      const wcag = getRuleWcagSc(rule.rule_id);
+      assert.equal(wcag.draft, false, `draft should be false for ${rule.rule_id}`);
+      break;
+    }
+  }
+});
+
+test('getRuleWcagSc version_note is null when not set in YAML', () => {
+  const { rules } = getAxeImpactRules();
+  for (const rule of rules) {
+    if (rule.wcag_sc && !rule.wcag_version_note) {
+      const wcag = getRuleWcagSc(rule.rule_id);
+      assert.equal(wcag.version_note, null, `version_note should be null for ${rule.rule_id}`);
+      break;
+    }
+  }
+});
+
+// ---------------------------------------------------------------------------
+// getRuleEn301549Clauses
+// ---------------------------------------------------------------------------
+
+test('getRuleEn301549Clauses returns clauses and draft for a known rule', () => {
+  // Find a rule that has EN 301 549 clauses
+  const { rules } = getAxeImpactRules();
+  const ruleWithClauses = rules.find((r) => Array.isArray(r.en301549_clauses) && r.en301549_clauses.length > 0);
+
+  if (ruleWithClauses) {
+    const result = getRuleEn301549Clauses(ruleWithClauses.rule_id);
+    assert.ok(result !== null, 'should return clauses object');
+    assert.ok(Array.isArray(result.clauses), 'clauses should be an array');
+    assert.ok(result.clauses.length > 0, 'clauses should not be empty');
+    assert.equal(typeof result.draft, 'boolean', 'draft should be a boolean');
+  }
+});
+
+test('getRuleEn301549Clauses returns null for unknown rule', () => {
+  const result = getRuleEn301549Clauses('non-existent-rule-xyz');
+  assert.equal(result, null);
+});
+
+test('getRuleEn301549Clauses returns null for rule without en301549_clauses', () => {
+  // Find a rule that explicitly does not have en301549_clauses
+  const { rules } = getAxeImpactRules();
+  const ruleWithoutClauses = rules.find((r) => !r.en301549_clauses);
+
+  if (ruleWithoutClauses) {
+    const result = getRuleEn301549Clauses(ruleWithoutClauses.rule_id);
+    assert.equal(result, null, `should be null for rule without en301549_clauses: ${ruleWithoutClauses.rule_id}`);
+  }
+});
+
+// ---------------------------------------------------------------------------
+// getFunctionalPerformanceSpec
+// ---------------------------------------------------------------------------
+
+test('getFunctionalPerformanceSpec returns non-null object from YAML', () => {
+  const spec = getFunctionalPerformanceSpec();
+  assert.ok(spec !== null, 'should return functional performance spec');
+  assert.equal(typeof spec, 'object', 'should be an object');
+});
+
+test('getFunctionalPerformanceSpec includes us_fpc section', () => {
+  const spec = getFunctionalPerformanceSpec();
+  assert.ok(spec && 'us_fpc' in spec, 'should include us_fpc section');
+});
+
+test('getFunctionalPerformanceSpec us_fpc has expected structure', () => {
+  const spec = getFunctionalPerformanceSpec();
+  const fpc = spec?.us_fpc;
+  assert.ok(fpc && typeof fpc === 'object', 'us_fpc should be an object');
+  // Should have named criteria entries (e.g., WV, WO, WH, etc.)
+  const keys = Object.keys(fpc);
+  assert.ok(keys.length > 0, 'us_fpc should have at least one criterion');
 });

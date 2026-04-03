@@ -25,7 +25,7 @@ const DEFAULT_DISPLAY_DAYS = 14;
 const ARCHIVE_SUBDIR = 'archive';
 const LARGE_FILES_TO_REMOVE = ['index.html', 'axe-findings.json', 'axe-findings.csv'];
 
-function parseArgs(argv) {
+export function parseArgs(argv) {
   const args = {
     repoRoot: null,
     displayDays: DEFAULT_DISPLAY_DAYS
@@ -180,7 +180,7 @@ async function getLatestReportDate(reportsRoot, historyEntries) {
   return null;
 }
 
-function getArchiveCutoffDate(latestDate, displayDays) {
+export function getArchiveCutoffDate(latestDate, displayDays) {
   const latest = new Date(`${latestDate}T00:00:00.000Z`);
   const cutoff = new Date(latest);
   // Subtract (displayDays - 1) so exactly displayDays entries remain in the display window.
