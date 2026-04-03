@@ -143,6 +143,17 @@ export async function readDapRecordsFromFile(filePath) {
   return extractArrayPayload(payload);
 }
 
+function logIfNoRecords(result, rawCount) {
+  if (result.records.length === 0) {
+    logProgress('INGEST', 'WARNING: normalizeDapRecords produced 0 records', {
+      rawCount,
+      excludedCount: result.excluded.length,
+      excludedByReason: countByReason(result.excluded),
+      warningCodes: result.warnings.map((w) => w.code)
+    });
+  }
+}
+
 export async function getNormalizedTopPages({
   endpoint,
   endpoints,
@@ -159,16 +170,7 @@ export async function getNormalizedTopPages({
     logProgress('INGEST', 'DAP file records loaded', { rawCount: rawRecords.length });
 
     const result = normalizeDapRecords(rawRecords, { limit, sourceDate });
-
-    if (result.records.length === 0) {
-      logProgress('INGEST', 'WARNING: normalizeDapRecords produced 0 records', {
-        rawCount: rawRecords.length,
-        excludedCount: result.excluded.length,
-        excludedByReason: countByReason(result.excluded),
-        warningCodes: result.warnings.map((w) => w.code)
-      });
-    }
-
+    logIfNoRecords(result, rawRecords.length);
     return result;
   }
 
@@ -196,9 +198,9 @@ export async function getNormalizedTopPages({
     )
   ).flat();
 
-  // Normalize combined records with no effective cap so all survive to dedup
+  // Normalize combined records without capping so all records survive to the dedup step
   const { records: allNormalized, warnings, excluded } = normalizeDapRecords(allRawRecords, {
-    limit: allRawRecords.length > 0 ? allRawRecords.length : 1,
+    limit: Number.MAX_SAFE_INTEGER,
     sourceDate
   });
 
@@ -230,15 +232,6 @@ export async function getNormalizedTopPages({
     .slice(0, limit);
 
   const result = { records, warnings, excluded };
-
-  if (result.records.length === 0) {
-    logProgress('INGEST', 'WARNING: normalizeDapRecords produced 0 records', {
-      rawCount: allRawRecords.length,
-      excludedCount: result.excluded.length,
-      excludedByReason: countByReason(result.excluded),
-      warningCodes: result.warnings.map((w) => w.code)
-    });
-  }
-
+  logIfNoRecords(result, allRawRecords.length);
   return result;
 }
