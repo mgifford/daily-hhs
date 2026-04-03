@@ -88,7 +88,7 @@ export async function generateAccessibilitySummary(repoRoot, runDate) {
 
   lines.push(`## Accessibility Summary: ${reportDate}`);
   lines.push('');
-  lines.push(`**Source**: [HHS Top URLs](https://analytics.usa.gov/health-human-services) - Digital Analytics Program (HHS)`);
+  lines.push(`**Source**: [analytics.usa.gov/health-human-services](https://analytics.usa.gov/health-human-services) - Digital Analytics Program (DAP)`);
   lines.push(`**Scanned**: ${report.url_counts.succeeded} of ${report.url_counts.processed} URLs succeeded (${report.url_counts.failed} failed)`);
   lines.push('');
 
