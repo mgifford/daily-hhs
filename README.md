@@ -10,7 +10,7 @@ performance, or usability issues, impact is broad and immediate.
 
 This project provides a daily, repeatable quality signal by:
 
-- pulling top HHS pages from DAP traffic data at [analytics.usa.gov/health-human-services](https://analytics.usa.gov/health-human-services),
+- pulling top HHS pages from [analytics.usa.gov/health-human-services](https://analytics.usa.gov/health-human-services) (the public HHS traffic dashboard, powered by the Digital Analytics Program),
 - scanning those pages with Lighthouse and ScanGov,
 - aggregating quality and impact metrics,
 - publishing dated static reports and trend history.
@@ -33,7 +33,7 @@ This project provides a daily, repeatable quality signal by:
 
 The intended operator action is:
 
-1. Pull top HHS URLs and page-load counts from the HHS DAP data feed.
+1. Pull top HHS URLs and page-load counts from the [HHS analytics dashboard at analytics.usa.gov](https://analytics.usa.gov/health-human-services).
 2. Run Lighthouse + ScanGov scans for each selected URL.
 3. Aggregate scores and accessibility impact estimates.
 4. Generate and publish dated report snapshots under `docs/reports/`.
@@ -131,6 +131,7 @@ This project is transparent about how AI tools have been used throughout its dev
 | Claude (Anthropic) | claude-sonnet-4.6 | Improved test coverage: added 119 tests across 5 new test files for previously untested modules (slow-risk, logging, axe-fpc-mapping, build-daily-report, archive-writer); exported 3 helper functions from archive-writer.js for testability |
 | Claude (Anthropic) | claude-sonnet-4.6 | Added axe-core WCAG 2.2 AA accessibility tests for generated HTML: new tests/unit/axe-html-accessibility.test.js checks every render function using a minimal fixture report; fixed aria-prohibited-attr violations (aria-label on role-less spans) in render-pages.js |
 | Claude (Anthropic) | claude-sonnet-4.6 | Rebranded Daily DAP as Daily HHS: updated data source endpoint to HHS-specific analytics, updated all branding, titles, violation ID prefix (HHS-), GitHub URLs, and documentation throughout the codebase |
+| Claude (Anthropic) | claude-sonnet-4.6 | Made analytics.usa.gov more prominent: updated README, render-pages.js (dashboard and daily report sections), docs/reports/index.html, and CLI tools to lead with analytics.usa.gov as the public data source, with DAP explained as the underlying program |
 
 ### Runtime operation
 
