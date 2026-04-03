@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Daily DAP - U.S. Government Website Quality Dashboard</title>
-  <meta name="description" content="Daily automated accessibility and performance benchmarks for the top 100 most-visited U.S. government websites, powered by Lighthouse and axe-core." />
+  <title>Daily HHS - HHS Website Quality Dashboard</title>
+  <meta name="description" content="Daily automated accessibility and performance benchmarks for the top 100 most-visited HHS government websites, powered by Lighthouse and axe-core." />
   
   <meta name="color-scheme" content="light dark" />
   <script>
@@ -489,6 +489,17 @@
       padding: 0.5rem;
       overflow-x: auto;
       font-size: 0.85em;
+    }
+    .violation-id {
+      font-size: 0.75em;
+      font-family: monospace;
+      color: var(--color-muted, #6b7280);
+      background: var(--color-code-bg, #f3f4f6);
+      border: 1px solid var(--color-border, #d1d5db);
+      border-radius: 3px;
+      padding: 0.1em 0.35em;
+      vertical-align: middle;
+      user-select: all;
     }
     .finding-detail {
       padding: 0.5rem 1rem;
@@ -1088,9 +1099,9 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header" role="banner">
   <div class="site-header-inner">
-    <span class="site-title">Daily DAP</span>
+    <span class="site-title">Daily HHS</span>
     <nav aria-label="Site navigation">
-      <a class="github-link" href="https://github.com/mgifford/daily-dap" target="_blank" rel="noreferrer">GitHub</a>
+      <a class="github-link" href="https://github.com/mgifford/daily-hhs" target="_blank" rel="noreferrer">GitHub</a>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Enable dark mode">
         <span aria-hidden="true">&#127769;</span> Dark mode
       </button>
@@ -1099,79 +1110,44 @@
 </header>
   <main id="main-content" class="site-main">
     <div class="page-intro">
-      <h1 id="page-title">U.S. Government Website Quality Dashboard<a href="#page-title" class="heading-anchor" aria-label="Link to U.S. Government Website Quality Dashboard"><span aria-hidden="true">#</span></a></h1>
-      <p>Daily automated accessibility and performance scans of the top 100 most-visited U.S. government URLs, powered by <a href="https://developer.chrome.com/docs/lighthouse/" target="_blank" rel="noreferrer">Google Lighthouse</a> and <a href="https://www.deque.com/axe/" target="_blank" rel="noreferrer">axe-core</a>.</p>
+      <h1 id="page-title">HHS Website Quality Dashboard<a href="#page-title" class="heading-anchor" aria-label="Link to HHS Website Quality Dashboard"><span aria-hidden="true">#</span></a></h1>
+      <p>Daily automated accessibility and performance scans of the top 100 most-visited HHS government URLs, powered by <a href="https://developer.chrome.com/docs/lighthouse/" target="_blank" rel="noreferrer">Google Lighthouse</a> and <a href="https://www.deque.com/axe/" target="_blank" rel="noreferrer">axe-core</a>.</p>
     </div>
 
     <section aria-labelledby="about-heading">
-      <h2 id="about-heading">What is DAP?<a href="#about-heading" class="heading-anchor" aria-label="Link to What is DAP?"><span aria-hidden="true">#</span></a></h2>
-      <p>The <a href="https://digital.gov/guides/dap" target="_blank" rel="noreferrer"><strong>Digital Analytics Program (DAP)</strong></a> is a U.S. government analytics service that tracks website traffic across hundreds of participating federal agencies. It measures page views, visitor counts, and usage patterns for government websites, providing transparency into how the public engages with federal digital services.</p>
-      <p>This dashboard uses DAP traffic data to identify the <strong>most-visited government URLs</strong> and measures their quality daily. Each scan covers:</p>
+      <h2 id="about-heading">What is HHS Analytics?<a href="#about-heading" class="heading-anchor" aria-label="Link to What is HHS Analytics?"><span aria-hidden="true">#</span></a></h2>
+      <p>The <a href="https://digital.gov/guides/dap" target="_blank" rel="noreferrer"><strong>Digital Analytics Program (DAP)</strong></a> is a U.S. government analytics service that tracks website traffic across hundreds of participating federal agencies. This dashboard focuses on the <strong>U.S. Department of Health and Human Services (HHS)</strong>, using HHS-specific traffic data from <a href="https://analytics.usa.gov/health-human-services" target="_blank" rel="noreferrer">analytics.usa.gov/health-human-services</a>.</p>
+      <p>This dashboard uses HHS DAP traffic data to identify the <strong>most-visited HHS URLs</strong> and measures their quality daily. Each scan covers:</p>
       <ul>
         <li><strong>Accessibility</strong> &mdash; WCAG compliance measured by Lighthouse and axe-core (0&ndash;100, higher is better)</li>
         <li><strong>Performance</strong> &mdash; Page load speed including Core Web Vitals (0&ndash;100, higher is better)</li>
         <li><strong>Best Practices</strong> &mdash; Modern web development standards (0&ndash;100, higher is better)</li>
         <li><strong>SEO</strong> &mdash; Search engine optimisation fundamentals (0&ndash;100, higher is better)</li>
       </ul>
-      <p>Scans run daily. Click any report date below to see detailed per-URL findings, accessibility patterns, and trend analysis. <a href="https://github.com/mgifford/daily-dap" target="_blank" rel="noreferrer">View the source code on GitHub</a>.</p>
+      <p>Scans run daily. Click any report date below to see detailed per-URL findings, accessibility patterns, and trend analysis. <a href="https://github.com/mgifford/daily-hhs" target="_blank" rel="noreferrer">View the source code on GitHub</a>.</p>
     </section>
 
     
-  <section aria-labelledby="latest-scores-heading">
-    <h2 id="latest-scores-heading">Latest Scores (2026-04-03)<a href="#latest-scores-heading" class="heading-anchor" aria-label="Link to Latest Scores (2026-04-03)"><span aria-hidden="true">#</span></a></h2>
-    <div class="score-grid">
-      <div class="score-card">
-        <div class="score-label">Performance</div>
-        <div class="score-value">55.38</div>
-      </div>
-      <div class="score-card">
-        <div class="score-label">Accessibility</div>
-        <div class="score-value">91.91</div>
-      </div>
-      <div class="score-card">
-        <div class="score-label">Best Practices</div>
-        <div class="score-value">84.66</div>
-      </div>
-      <div class="score-card">
-        <div class="score-label">SEO</div>
-        <div class="score-value">88.96</div>
-      </div>
-    </div>
-    <p><a href="./daily/2026-04-03/index.html">Open latest report &rarr;</a></p>
-  </section>
 
     <section aria-labelledby="recent-reports-heading">
       <h2 id="recent-reports-heading">Recent Reports<a href="#recent-reports-heading" class="heading-anchor" aria-label="Link to Recent Reports"><span aria-hidden="true">#</span></a></h2>
       <ul>
-        <li><a href="./daily/2026-04-03/index.html">2026-04-03</a> (run-2026-04-03-dd7e38e815)</li>
-<li><a href="./daily/2026-04-02/index.html">2026-04-02</a> (run-2026-04-02-fc16787951)</li>
-<li><a href="./daily/2026-04-01/index.html">2026-04-01</a> (run-2026-04-01-35c293c882)</li>
-<li><a href="./daily/2026-03-31/index.html">2026-03-31</a> (run-2026-03-31-b6543bebcb)</li>
-<li><a href="./daily/2026-03-30/index.html">2026-03-30</a> (run-2026-03-30-ae7acc2990)</li>
-<li><a href="./daily/2026-03-29/index.html">2026-03-29</a> (run-2026-03-29-af17c404f9)</li>
-<li><a href="./daily/2026-03-28/index.html">2026-03-28</a> (run-2026-03-28-bce4391e0f)</li>
-<li><a href="./daily/2026-03-27/index.html">2026-03-27</a> (run-2026-03-27-47104e9c11)</li>
-<li><a href="./daily/2026-03-26/index.html">2026-03-26</a> (run-2026-03-26-8492f8df28)</li>
-<li><a href="./daily/2026-03-25/index.html">2026-03-25</a> (run-2026-03-25-483cfab9f7)</li>
-<li><a href="./daily/2026-03-24/index.html">2026-03-24</a> (run-2026-03-24-648b963111)</li>
-<li><a href="./daily/2026-03-23/index.html">2026-03-23</a> (run-2026-03-23-2c59ebe19f)</li>
-<li><a href="./daily/2026-03-22/index.html">2026-03-22</a> (run-2026-03-22-016dd50f76)</li>
-<li><a href="./daily/2026-03-21/index.html">2026-03-21</a> (run-2026-03-21-33c61a2336)</li>
+        
       </ul>
     </section>
     
     <section aria-labelledby="archive-heading">
       <h2 id="archive-heading">Report Archive<a href="#archive-heading" class="heading-anchor" aria-label="Link to Report Archive"><span aria-hidden="true">#</span></a></h2>
       <p>Reports older than 14 days are available as downloadable zip archives containing the full HTML report, JSON data, and CSV findings.</p>
-      <p><a href="./archive/index.html">Browse report archives &rarr;</a></p>
+      <p><a href="./archive/">Browse report archives &rarr;</a></p>
     </section>
   </main>
 
   
 <footer class="site-footer" role="contentinfo">
   <div class="site-footer-inner">
-    <p>Daily DAP &mdash; U.S. government website quality benchmarks powered by <a href="https://developer.chrome.com/docs/lighthouse/" target="_blank" rel="noreferrer">Lighthouse</a> and <a href="https://www.deque.com/axe/" target="_blank" rel="noreferrer">axe-core</a>. A <a href="https://civicactions.com/" target="_blank" rel="noreferrer">CivicActions</a> project.</p>
-    <p><a href="https://github.com/mgifford/daily-dap" target="_blank" rel="noreferrer">View source on GitHub</a> &middot; <a href="https://github.com/mgifford/daily-dap/issues" target="_blank" rel="noreferrer">Report an issue</a></p>
+    <p>Daily HHS &mdash; U.S. government website quality benchmarks powered by <a href="https://developer.chrome.com/docs/lighthouse/" target="_blank" rel="noreferrer">Lighthouse</a> and <a href="https://www.deque.com/axe/" target="_blank" rel="noreferrer">axe-core</a>. A <a href="https://civicactions.com/" target="_blank" rel="noreferrer">CivicActions</a> project.</p>
+    <p><a href="https://github.com/mgifford/daily-hhs" target="_blank" rel="noreferrer">View source on GitHub</a> &middot; <a href="https://github.com/mgifford/daily-hhs/issues" target="_blank" rel="noreferrer">Report an issue</a></p>
   </div>
 </footer>
   
