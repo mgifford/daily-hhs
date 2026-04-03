@@ -91,7 +91,7 @@ export function validatePrevalenceConfig(config) {
 
   if (config.sources) {
     if (typeof config.sources !== 'object' || Array.isArray(config.sources)) {
-      errors.push('sources must be an object when provided');
+      errors.push('sources must be a plain object when provided (arrays are not allowed)');
     } else {
       const { dap_top_pages_endpoints, dap_top_pages_endpoint } = config.sources;
 

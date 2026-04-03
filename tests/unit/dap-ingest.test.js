@@ -149,11 +149,15 @@ test('getNormalizedTopPages omits date param when sourceDate is not provided', a
   assert.equal(parsed.searchParams.has('date'), false, 'date should not be added when sourceDate is absent');
 });
 
+function agencySlugFromUrl(url) {
+  return new URL(url).pathname.split('/').find((seg, i, arr) => arr[i - 1] === 'agencies');
+}
+
 test('getNormalizedTopPages merges records from multiple endpoints', async () => {
   const capturedUrls = [];
   const mockFetch = async (url) => {
     capturedUrls.push(url);
-    const agencySlug = new URL(url).pathname.split('/').find((seg, i, arr) => arr[i - 1] === 'agencies');
+    const agencySlug = agencySlugFromUrl(url);
     return {
       ok: true,
       json: async () => [
@@ -181,7 +185,7 @@ test('getNormalizedTopPages merges records from multiple endpoints', async () =>
 
 test('getNormalizedTopPages deduplicates URLs across endpoints by summing page_load_count', async () => {
   const mockFetch = async (url) => {
-    const agencySlug = new URL(url).pathname.split('/').find((seg, i, arr) => arr[i - 1] === 'agencies');
+    const agencySlug = agencySlugFromUrl(url);
     return {
       ok: true,
       json: async () => [
@@ -210,7 +214,7 @@ test('getNormalizedTopPages deduplicates URLs across endpoints by summing page_l
 
 test('getNormalizedTopPages respects limit after merging multiple endpoints', async () => {
   const mockFetch = async (url) => {
-    const agencySlug = new URL(url).pathname.split('/').find((seg, i, arr) => arr[i - 1] === 'agencies');
+    const agencySlug = agencySlugFromUrl(url);
     return {
       ok: true,
       json: async () => [
