@@ -7,7 +7,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { loadPrevalenceConfig, applyRuntimeOverrides } from '../config/prevalence-loader.js';
 import { getNormalizedTopPages } from '../ingest/dap-source.js';
 import { createRunMetadata } from '../lib/run-metadata.js';
-import { createWarningEvent, logProgress, logStageStart, logStageComplete } from '../lib/logging.js';
+import { createWarningEvent, logProgress, logStageStart, logStageComplete, countByReason } from '../lib/logging.js';
 import { executeUrlScans } from '../scanners/execution-manager.js';
 import { aggregateCategoryScores } from '../aggregation/score-aggregation.js';
 import { buildSlowRiskRollup } from '../aggregation/slow-risk.js';
@@ -512,13 +512,25 @@ export async function runDailyScan(inputArgs = parseArgs(process.argv)) {
     );
 
     if (normalized.records.length === 0 && !args.sourceFile) {
+      const byReason = countByReason(normalized.excluded);
+      const warningCodes = normalized.warnings.map((w) => w.code);
       const emptyIngestWarning = createWarningEvent(
         'empty_ingest',
         'DAP API returned 0 records. The report will be empty. Verify the DAP_API_KEY secret is set and that the requested date has data published (data for the current day is often unavailable until the following day).',
-        {}
+        {
+          excludedCount: normalized.excluded.length,
+          excludedByReason: byReason,
+          warningCount: normalized.warnings.length,
+          warningCodes
+        }
       );
       warningEvents.push(emptyIngestWarning);
-      logProgress('INGEST', 'WARNING: 0 records returned from DAP API. Report will be empty.');
+      logProgress('INGEST', 'WARNING: 0 records returned from DAP API. Report will be empty.', {
+        excludedCount: normalized.excluded.length,
+        excludedByReason: byReason,
+        warningCount: normalized.warnings.length,
+        warningCodes
+      });
     }
 
     if (args.dryRun) {

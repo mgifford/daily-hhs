@@ -29,3 +29,10 @@ export function logStageStart(stage, details = {}) {
 export function logStageComplete(stage, details = {}) {
   logProgress(stage, 'Complete', details);
 }
+
+export function countByReason(items) {
+  return items.reduce((acc, item) => {
+    acc[item.reason] = (acc[item.reason] ?? 0) + 1;
+    return acc;
+  }, {});
+}

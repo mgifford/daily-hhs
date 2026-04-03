@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { logProgress, countByReason } from '../lib/logging.js';
 
 function toRecord(raw, sourceDate) {
   const rawUrl = raw.url ?? raw.page ?? raw.page_url ?? raw.hostname ?? raw.domain;
@@ -96,13 +97,20 @@ function extractArrayPayload(payload) {
 }
 
 export async function fetchDapRecords({ endpoint, fetchImpl = fetch }) {
+  const safeEndpoint = endpoint.replace(/([?&])api_key=[^&]*/g, '$1api_key=REDACTED');
+  logProgress('INGEST', 'Fetching DAP records from API', { endpoint: safeEndpoint });
+
   const response = await fetchImpl(endpoint);
+  logProgress('INGEST', 'DAP API response received', { status: response.status, ok: response.ok, endpoint: safeEndpoint });
+
   if (!response.ok) {
     throw new Error(`Failed to fetch DAP records (${response.status}) from ${endpoint}`);
   }
 
   const payload = await response.json();
-  return extractArrayPayload(payload);
+  const records = extractArrayPayload(payload);
+  logProgress('INGEST', 'DAP API raw records received', { rawCount: records.length });
+  return records;
 }
 
 function buildDapEndpoint(endpoint, apiKey, { limit, date } = {}) {
@@ -145,12 +153,30 @@ export async function getNormalizedTopPages({
 }) {
   let rawRecords;
   if (sourceFile) {
+    logProgress('INGEST', 'Reading DAP records from file', { sourceFile });
     rawRecords = await readDapRecordsFromFile(sourceFile);
+    logProgress('INGEST', 'DAP file records loaded', { rawCount: rawRecords.length });
   } else {
     const queryDate = sourceDate ? getPreviousDate(sourceDate) : undefined;
     const resolvedEndpoint = buildDapEndpoint(endpoint, dapApiKey, { limit, date: queryDate });
+    logProgress('INGEST', 'Resolved DAP query parameters', {
+      queryDate: queryDate ?? '(none - date param omitted)',
+      limit,
+      hasApiKey: !!dapApiKey
+    });
     rawRecords = await fetchDapRecords({ endpoint: resolvedEndpoint, fetchImpl });
   }
 
-  return normalizeDapRecords(rawRecords, { limit, sourceDate });
+  const result = normalizeDapRecords(rawRecords, { limit, sourceDate });
+
+  if (result.records.length === 0) {
+    logProgress('INGEST', 'WARNING: normalizeDapRecords produced 0 records', {
+      rawCount: rawRecords.length,
+      excludedCount: result.excluded.length,
+      excludedByReason: countByReason(result.excluded),
+      warningCodes: result.warnings.map((w) => w.code)
+    });
+  }
+
+  return result;
 }
