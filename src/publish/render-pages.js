@@ -6,8 +6,8 @@ import { NNG_HEURISTICS } from '../data/nng-heuristics.js';
 import { getThirdPartyServiceMeta, OVERLAY_SIGNATURES } from '../scanners/tech-detector.js';
 import { REQUIRED_LINK_META } from '../scanners/required-links-checker.js';
 
-const GITHUB_URL = 'https://github.com/mgifford/daily-dap';
-const DASHBOARD_URL = 'https://mgifford.github.io/daily-dap/docs/reports/index.html';
+const GITHUB_URL = 'https://github.com/mgifford/daily-hhs';
+const DASHBOARD_URL = 'https://mgifford.github.io/daily-hhs/docs/reports/index.html';
 
 function escapeHtml(value) {
   return String(value)
@@ -33,7 +33,7 @@ function formatCompact(n) {
  * @param {string} pageUrl - The URL of the scanned page
  * @param {string} ruleId  - The axe rule ID (e.g. "color-contrast")
  * @param {string} [selector] - The CSS selector of the affected element (empty string for finding-level ID)
- * @returns {string} A short stable identifier, e.g. "DAP-a1b2c3d4"
+ * @returns {string} A short stable identifier, e.g. "HHS-a1b2c3d4"
  */
 export function generateViolationId(pageUrl, ruleId, selector = '') {
   const safeUrl = typeof pageUrl === 'string' ? pageUrl : '';
@@ -45,7 +45,7 @@ export function generateViolationId(pageUrl, ruleId, selector = '') {
     .toLowerCase();
   const seed = `${normalizedUrl}|${safeRuleId}|${safeSelector}`;
   const hash = createHash('sha256').update(seed).digest('hex').slice(0, 8);
-  return `DAP-${hash}`;
+  return `HHS-${hash}`;
 }
 
 /**
@@ -1241,7 +1241,7 @@ function renderSiteHeader() {
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header" role="banner">
   <div class="site-header-inner">
-    <a class="site-title" href="../../index.html">Daily DAP</a>
+    <a class="site-title" href="../../index.html">Daily HHS</a>
     <nav aria-label="Site navigation">
       <a href="../../index.html">Dashboard</a>
       <a class="github-link" href="${GITHUB_URL}" target="_blank" rel="noreferrer">GitHub</a>
@@ -1261,7 +1261,7 @@ function renderDashboardHeader() {
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header" role="banner">
   <div class="site-header-inner">
-    <span class="site-title">Daily DAP</span>
+    <span class="site-title">Daily HHS</span>
     <nav aria-label="Site navigation">
       <a class="github-link" href="${GITHUB_URL}" target="_blank" rel="noreferrer">GitHub</a>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Enable dark mode">
@@ -1276,7 +1276,7 @@ function renderSiteFooter() {
   return `
 <footer class="site-footer" role="contentinfo">
   <div class="site-footer-inner">
-    <p>Daily DAP &mdash; U.S. government website quality benchmarks powered by <a href="https://developer.chrome.com/docs/lighthouse/" target="_blank" rel="noreferrer">Lighthouse</a> and <a href="https://www.deque.com/axe/" target="_blank" rel="noreferrer">axe-core</a>. A <a href="https://civicactions.com/" target="_blank" rel="noreferrer">CivicActions</a> project.</p>
+    <p>Daily HHS &mdash; U.S. government website quality benchmarks powered by <a href="https://developer.chrome.com/docs/lighthouse/" target="_blank" rel="noreferrer">Lighthouse</a> and <a href="https://www.deque.com/axe/" target="_blank" rel="noreferrer">axe-core</a>. A <a href="https://civicactions.com/" target="_blank" rel="noreferrer">CivicActions</a> project.</p>
     <p><a href="${GITHUB_URL}" target="_blank" rel="noreferrer">View source on GitHub</a> &middot; <a href="${GITHUB_URL}/issues" target="_blank" rel="noreferrer">Report an issue</a></p>
   </div>
 </footer>`;
@@ -2397,8 +2397,8 @@ function renderDapContextSection() {
   return `
   <section aria-labelledby="dap-context-heading">
     <h2 id="dap-context-heading">About These Reports${renderAnchorLink('dap-context-heading', 'About These Reports')}</h2>
-    <p>The <a href="https://digital.gov/guides/dap" target="_blank" rel="noreferrer"><strong>Digital Analytics Program (DAP)</strong></a> is a U.S. government analytics service that collects website traffic data across participating federal agencies. DAP tracks page views, visitor counts, and usage patterns for hundreds of government websites, providing transparency into how the public engages with federal digital services.</p>
-    <p>This report measures the <strong>quality and accessibility</strong> of the top 100 most-visited U.S. government URLs as reported by DAP. Each day, Lighthouse scans are run against these URLs to measure:</p>
+    <p>The <a href="https://digital.gov/guides/dap" target="_blank" rel="noreferrer"><strong>Digital Analytics Program (DAP)</strong></a> is a U.S. government analytics service that collects website traffic data across participating federal agencies. This report focuses on the <strong>U.S. Department of Health and Human Services (HHS)</strong> and its sub-agencies, using HHS-specific traffic data from <a href="https://analytics.usa.gov/health-human-services" target="_blank" rel="noreferrer">analytics.usa.gov/health-human-services</a>.</p>
+    <p>This report measures the <strong>quality and accessibility</strong> of the top 100 most-visited HHS URLs as reported by DAP. Each day, Lighthouse scans are run against these URLs to measure:</p>
     <ul>
       <li><strong>Performance</strong> - How fast pages load for users (scores 0-100, higher is better)</li>
       <li><strong>Accessibility</strong> - How well pages work for users with disabilities, following WCAG guidelines (scores 0-100, higher is better)</li>
@@ -2406,7 +2406,7 @@ function renderDapContextSection() {
       <li><strong>SEO</strong> - How well pages are optimized for search engines (scores 0-100, higher is better)</li>
     </ul>
     <p>Accessibility findings come from <a href="https://www.deque.com/axe/" target="_blank" rel="noreferrer">axe-core</a>, the industry-standard accessibility testing engine embedded in Lighthouse. The <strong>axe findings</strong> surface specific WCAG violations such as missing alternative text, insufficient color contrast, and missing form labels that make government websites harder to use for people with disabilities.</p>
-    <p>Traffic data reflects daily visitor counts from DAP. URLs are ranked by page load count, ensuring the most-used government pages are prioritized for quality measurement.</p>
+    <p>Traffic data reflects daily visitor counts from DAP for HHS properties. URLs are ranked by page load count, ensuring the most-used HHS pages are prioritized for quality measurement.</p>
   </section>`;
 }
 
@@ -2920,19 +2920,19 @@ export function renderDailyReportPage(report) {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Daily DAP Report - ${escapeHtml(report.run_date)}</title>
-  <meta name="description" content="Daily accessibility and performance scan results for the top U.S. government URLs on ${escapeHtml(report.run_date)}, powered by Lighthouse and axe-core." />
+  <title>Daily HHS Report - ${escapeHtml(report.run_date)}</title>
+  <meta name="description" content="Daily accessibility and performance scan results for the top HHS government URLs on ${escapeHtml(report.run_date)}, powered by Lighthouse and axe-core." />
   ${renderColorSchemeSetup()}
   ${renderSharedStyles()}
 </head>
 <body>
   ${renderSiteHeader()}
   <div class="print-only print-dashboard-notice">
-    <p>This report was generated by Daily DAP. For the latest report and interactive dashboard, visit: <a href="${DASHBOARD_URL}">Daily DAP Dashboard</a></p>
+    <p>This report was generated by Daily HHS. For the latest report and interactive dashboard, visit: <a href="${DASHBOARD_URL}">Daily HHS Dashboard</a></p>
   </div>
   <main id="main-content" class="site-main">
     <div class="page-intro">
-      <h1 id="page-title">Daily DAP Accessibility Report &mdash; ${escapeHtml(report.run_date)}${renderAnchorLink('page-title', `Daily DAP Accessibility Report \u2014 ${report.run_date}`)}</h1>
+      <h1 id="page-title">Daily HHS Accessibility Report &mdash; ${escapeHtml(report.run_date)}${renderAnchorLink('page-title', `Daily HHS Accessibility Report \u2014 ${report.run_date}`)}</h1>
       <p>Run ID: ${escapeHtml(report.run_id)} &middot; Status: ${escapeHtml(report.report_status)}<span class="print-hide"> &middot; Source data: ${escapeHtml(report.source_data_date ?? report.run_date)} &middot; Generated: ${formatTimestamp(report.generated_at)}</span></p>
       <p><a href="code-quality.html">View HTML/CSS/JS Code Quality report for this date &rarr;</a></p>
     </div>
@@ -2997,7 +2997,7 @@ export function renderDailyReportPage(report) {
 
     <section aria-labelledby="top-urls-heading">
       <h2 id="top-urls-heading">Top URLs by Traffic (Scanned)${renderAnchorLink('top-urls-heading', 'Top URLs by Traffic (Scanned)')}</h2>
-      <p>Showing up to ${Math.min((report.top_urls ?? []).length, 100)} highest-traffic URLs from the latest available DAP day in this run.</p>
+      <p>Showing up to ${Math.min((report.top_urls ?? []).length, 100)} highest-traffic HHS URLs from the latest available DAP day in this run.</p>
       <p><strong>Note:</strong> CWV = Core Web Vitals (measures page loading performance including Largest Contentful Paint, Cumulative Layout Shift, and Interaction to Next Paint). Lighthouse scores are 0&ndash;100 (higher is better). The <strong>Accessibility / Important</strong> column shows the Lighthouse accessibility score; if Critical or Serious axe findings exist the count appears after the slash (e.g.&nbsp;94&thinsp;/&thinsp;2). Click <strong>Details&nbsp;(N)</strong> to view WCAG accessibility findings for each URL.</p>
       <p><a href="axe-findings.json">Download axe findings JSON for this day</a> | <a href="axe-findings.csv">Download axe findings CSV for this day</a></p>
       ${wrapTable(`<table id="top-urls-table">
@@ -3192,8 +3192,8 @@ export function renderDashboardPage({ latestReport, historyIndex = [], archiveUr
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Daily DAP - U.S. Government Website Quality Dashboard</title>
-  <meta name="description" content="Daily automated accessibility and performance benchmarks for the top 100 most-visited U.S. government websites, powered by Lighthouse and axe-core." />
+  <title>Daily HHS - HHS Website Quality Dashboard</title>
+  <meta name="description" content="Daily automated accessibility and performance benchmarks for the top 100 most-visited HHS government websites, powered by Lighthouse and axe-core." />
   ${renderColorSchemeSetup()}
   ${renderSharedStyles()}
 </head>
@@ -3201,14 +3201,14 @@ export function renderDashboardPage({ latestReport, historyIndex = [], archiveUr
   ${renderDashboardHeader()}
   <main id="main-content" class="site-main">
     <div class="page-intro">
-      <h1 id="page-title">U.S. Government Website Quality Dashboard${renderAnchorLink('page-title', 'U.S. Government Website Quality Dashboard')}</h1>
-      <p>Daily automated accessibility and performance scans of the top 100 most-visited U.S. government URLs, powered by <a href="https://developer.chrome.com/docs/lighthouse/" target="_blank" rel="noreferrer">Google Lighthouse</a> and <a href="https://www.deque.com/axe/" target="_blank" rel="noreferrer">axe-core</a>.</p>
+      <h1 id="page-title">HHS Website Quality Dashboard${renderAnchorLink('page-title', 'HHS Website Quality Dashboard')}</h1>
+      <p>Daily automated accessibility and performance scans of the top 100 most-visited HHS government URLs, powered by <a href="https://developer.chrome.com/docs/lighthouse/" target="_blank" rel="noreferrer">Google Lighthouse</a> and <a href="https://www.deque.com/axe/" target="_blank" rel="noreferrer">axe-core</a>.</p>
     </div>
 
     <section aria-labelledby="about-heading">
-      <h2 id="about-heading">What is DAP?${renderAnchorLink('about-heading', 'What is DAP?')}</h2>
-      <p>The <a href="https://digital.gov/guides/dap" target="_blank" rel="noreferrer"><strong>Digital Analytics Program (DAP)</strong></a> is a U.S. government analytics service that tracks website traffic across hundreds of participating federal agencies. It measures page views, visitor counts, and usage patterns for government websites, providing transparency into how the public engages with federal digital services.</p>
-      <p>This dashboard uses DAP traffic data to identify the <strong>most-visited government URLs</strong> and measures their quality daily. Each scan covers:</p>
+      <h2 id="about-heading">What is HHS Analytics?${renderAnchorLink('about-heading', 'What is HHS Analytics?')}</h2>
+      <p>The <a href="https://digital.gov/guides/dap" target="_blank" rel="noreferrer"><strong>Digital Analytics Program (DAP)</strong></a> is a U.S. government analytics service that tracks website traffic across hundreds of participating federal agencies. This dashboard focuses on the <strong>U.S. Department of Health and Human Services (HHS)</strong>, using HHS-specific traffic data from <a href="https://analytics.usa.gov/health-human-services" target="_blank" rel="noreferrer">analytics.usa.gov/health-human-services</a>.</p>
+      <p>This dashboard uses HHS DAP traffic data to identify the <strong>most-visited HHS URLs</strong> and measures their quality daily. Each scan covers:</p>
       <ul>
         <li><strong>Accessibility</strong> &mdash; WCAG compliance measured by Lighthouse and axe-core (0&ndash;100, higher is better)</li>
         <li><strong>Performance</strong> &mdash; Page load speed including Core Web Vitals (0&ndash;100, higher is better)</li>
@@ -3384,8 +3384,8 @@ export function renderCodeQualityPage(report) {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HTML/CSS/JS Code Quality - Daily DAP - ${escapeHtml(runDate)}</title>
-  <meta name="description" content="HTML, CSS, and JavaScript code quality audit results for the top U.S. government URLs on ${escapeHtml(runDate)}, including deprecated APIs, console errors, and vulnerable library detection." />
+  <title>HTML/CSS/JS Code Quality - Daily HHS - ${escapeHtml(runDate)}</title>
+  <meta name="description" content="HTML, CSS, and JavaScript code quality audit results for the top HHS government URLs on ${escapeHtml(runDate)}, including deprecated APIs, console errors, and vulnerable library detection." />
   ${renderColorSchemeSetup()}
   <style>
     .audit-pass { color: var(--color-score-good, #2e7d32); font-weight: 700; }
@@ -3496,8 +3496,8 @@ export function renderArchiveIndexPage({ entries = [], generatedAt = null, displ
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Daily DAP - Report Archives</title>
-  <meta name="description" content="Downloadable zip archives of Daily DAP reports older than ${displayDays} days." />
+  <title>Daily HHS - Report Archives</title>
+  <meta name="description" content="Downloadable zip archives of Daily HHS reports older than ${displayDays} days." />
   ${renderColorSchemeSetup()}
   ${renderSharedStyles()}
 </head>
@@ -3506,7 +3506,7 @@ export function renderArchiveIndexPage({ entries = [], generatedAt = null, displ
   <main id="main-content" class="site-main">
     <div class="page-intro">
       <h1 id="page-title">Report Archives${renderAnchorLink('page-title', 'Report Archives')}</h1>
-      <p>Daily DAP reports older than ${displayDays} days are stored here as downloadable zip archives. Each archive contains the full HTML report, JSON data files, and CSV accessibility findings for that day's scan.</p>
+      <p>Daily HHS reports older than ${displayDays} days are stored here as downloadable zip archives. Each archive contains the full HTML report, JSON data files, and CSV accessibility findings for that day's scan.</p>
       <p><a href="../index.html">&larr; Back to dashboard</a></p>
     </div>
 
@@ -3529,8 +3529,8 @@ export function render404Page() {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Page Not Found - Daily DAP</title>
-  <meta name="description" content="The requested page could not be found. Return to the Daily DAP dashboard." />
+  <title>Page Not Found - Daily HHS</title>
+  <meta name="description" content="The requested page could not be found. Return to the Daily HHS dashboard." />
   ${renderColorSchemeSetup()}
   ${renderSharedStyles()}
 </head>
@@ -3558,7 +3558,7 @@ export function renderArchiveRedirectStub(runDate) {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="refresh" content="0; url=../../archive/index.html" />
   <title>Report Archived - ${escapeHtml(runDate)}</title>
-  <meta name="description" content="The Daily DAP report for ${escapeHtml(runDate)} has been archived." />
+  <meta name="description" content="The Daily HHS report for ${escapeHtml(runDate)} has been archived." />
   ${renderColorSchemeSetup()}
   ${renderSharedStyles()}
 </head>
@@ -3567,7 +3567,7 @@ export function renderArchiveRedirectStub(runDate) {
   <main id="main-content" class="site-main" data-archived="true">
     <div class="page-intro">
       <h1 id="page-title">Report Archived</h1>
-      <p>The Daily DAP report for <strong>${escapeHtml(runDate)}</strong> has been archived and is available as a downloadable zip file.</p>
+      <p>The Daily HHS report for <strong>${escapeHtml(runDate)}</strong> has been archived and is available as a downloadable zip file.</p>
       <p><a href="../../archive/index.html">View report archives &rarr;</a></p>
       <p><a href="../../index.html">&larr; Back to dashboard</a></p>
     </div>

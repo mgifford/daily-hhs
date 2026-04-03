@@ -1,22 +1,23 @@
-# Daily DAP Quality Benchmarking
+# Daily HHS Accessibility Report
 
-Daily DAP benchmarks the quality and accessibility of the most visited U.S. government pages.
-It prioritizes high-traffic pages because regressions on those pages affect the most people seeking public services.
+Daily HHS benchmarks the quality and accessibility of the most visited U.S. Department of Health and Human Services (HHS) pages.
+It prioritizes high-traffic pages because regressions on those pages affect the most people seeking public health services.
 
 ## Why this project exists
 
-Public-facing government websites are critical infrastructure. When heavily used pages have accessibility,
+HHS websites are critical infrastructure for public health information. When heavily used pages have accessibility,
 performance, or usability issues, impact is broad and immediate.
 
 This project provides a daily, repeatable quality signal by:
 
-- pulling top pages from DAP traffic data,
+- pulling top HHS pages from DAP traffic data at [analytics.usa.gov/health-human-services](https://analytics.usa.gov/health-human-services),
 - scanning those pages with Lighthouse and ScanGov,
 - aggregating quality and impact metrics,
 - publishing dated static reports and trend history.
 
-## DAP and related resources
+## HHS Analytics and related resources
 
+- HHS Analytics Dashboard: https://analytics.usa.gov/health-human-services
 - Digital Analytics Program (DAP): https://digital.gov/guides/dap/
 - Analytics.USA.gov overview: https://analytics.usa.gov/
 - DAP data endpoint configured in this repo: `src/config/prevalence.yaml`
@@ -32,7 +33,7 @@ This project provides a daily, repeatable quality signal by:
 
 The intended operator action is:
 
-1. Pull top DAP URLs and page-load counts.
+1. Pull top HHS URLs and page-load counts from the HHS DAP data feed.
 2. Run Lighthouse + ScanGov scans for each selected URL.
 3. Aggregate scores and accessibility impact estimates.
 4. Generate and publish dated report snapshots under `docs/reports/`.
@@ -94,7 +95,7 @@ node src/cli/run-daily-scan.js --dry-run --limit 10
 ## Project structure
 
 - `src/config/` configuration schema + prevalence inputs
-- `src/ingest/` DAP source ingestion + normalization
+- `src/ingest/` HHS DAP source ingestion + normalization
 - `src/scanners/` Lighthouse/ScanGov execution + normalization
 - `src/aggregation/` metrics, impact, and trends
 - `src/publish/` report building, static rendering, archive + manifest
@@ -129,6 +130,7 @@ This project is transparent about how AI tools have been used throughout its dev
 | Claude (Anthropic) | claude-sonnet-4.6 | Added content density (Words-per-Megabyte) feature: integrated @mozilla/readability and jsdom to extract main-content word counts, compute WpM efficiency ratio, flag low-density pages (<200 WpM), and render a Content Density section in daily reports |
 | Claude (Anthropic) | claude-sonnet-4.6 | Improved test coverage: added 119 tests across 5 new test files for previously untested modules (slow-risk, logging, axe-fpc-mapping, build-daily-report, archive-writer); exported 3 helper functions from archive-writer.js for testability |
 | Claude (Anthropic) | claude-sonnet-4.6 | Added axe-core WCAG 2.2 AA accessibility tests for generated HTML: new tests/unit/axe-html-accessibility.test.js checks every render function using a minimal fixture report; fixed aria-prohibited-attr violations (aria-label on role-less spans) in render-pages.js |
+| Claude (Anthropic) | claude-sonnet-4.6 | Rebranded Daily DAP as Daily HHS: updated data source endpoint to HHS-specific analytics, updated all branding, titles, violation ID prefix (HHS-), GitHub URLs, and documentation throughout the codebase |
 
 ### Runtime operation
 
