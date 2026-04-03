@@ -10,7 +10,7 @@ function fixturePath(name) {
 }
 
 async function createTempWorkspace() {
-  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'daily-dap-smoke-'));
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'daily-hhs-smoke-'));
   await fs.mkdir(path.join(root, 'docs', 'reports', 'daily'), { recursive: true });
   await fs.writeFile(
     path.join(root, 'docs', 'reports', 'history.json'),
