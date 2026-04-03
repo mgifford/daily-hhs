@@ -549,7 +549,7 @@
       }
     }
   ],
-  "generated_at": "2026-04-03T17:59:46.005Z",
+  "generated_at": "2026-04-03T19:10:20.999Z",
   "report_status": "success",
   "slow_risk_summary": {
     "successful_url_count": 0,
@@ -558,7 +558,15 @@
     "slow_risk_page_load_count": 0,
     "slow_risk_traffic_share_percent": 0
   },
-  "warning_events": [],
+  "warning_events": [
+    {
+      "level": "warning",
+      "code": "empty_ingest",
+      "message": "DAP API returned 0 records. The report will be empty. Verify the DAP_API_KEY secret is set and that the requested date has data published (data for the current day is often unavailable until the following day).",
+      "context": {},
+      "timestamp": "2026-04-03T19:10:21.465Z"
+    }
+  ],
   "scan_diagnostics": {
     "total_urls": 0,
     "success_count": 0,
