@@ -59,3 +59,48 @@ test('normalizeDapRecords filters out DAP placeholder entries like (other)', () 
   assert.equal(normalized.records[0].url, 'https://example.gov');
   assert.equal(normalized.excluded.filter((e) => e.reason === 'placeholder_url').length, 2, 'Should exclude both placeholder entries');
 });
+
+test('getNormalizedTopPages passes limit as a query param to the DAP API endpoint', async () => {
+  let capturedUrl;
+  const mockFetch = async (url) => {
+    capturedUrl = url;
+    return {
+      ok: true,
+      json: async () => [{ url: 'https://example.gov', page_load_count: 100 }]
+    };
+  };
+
+  await getNormalizedTopPages({
+    endpoint: 'https://api.gsa.gov/analytics/dap/v2.0.0/agencies/hhs/reports/site/data',
+    limit: 50,
+    sourceDate: '2026-04-03',
+    dapApiKey: 'test-key',
+    fetchImpl: mockFetch
+  });
+
+  const parsed = new URL(capturedUrl);
+  assert.equal(parsed.searchParams.get('limit'), '50', 'limit should be sent as a query param');
+  assert.equal(parsed.searchParams.get('api_key'), 'test-key', 'api_key should still be sent');
+});
+
+test('getNormalizedTopPages does not override limit if already in endpoint URL', async () => {
+  let capturedUrl;
+  const mockFetch = async (url) => {
+    capturedUrl = url;
+    return {
+      ok: true,
+      json: async () => [{ url: 'https://example.gov', page_load_count: 100 }]
+    };
+  };
+
+  await getNormalizedTopPages({
+    endpoint: 'https://api.gsa.gov/analytics/dap/v2.0.0/agencies/hhs/reports/site/data?limit=200',
+    limit: 50,
+    sourceDate: '2026-04-03',
+    dapApiKey: 'test-key',
+    fetchImpl: mockFetch
+  });
+
+  const parsed = new URL(capturedUrl);
+  assert.equal(parsed.searchParams.get('limit'), '200', 'pre-set limit in URL should not be overridden');
+});
