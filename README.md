@@ -133,6 +133,7 @@ This project is transparent about how AI tools have been used throughout its dev
 | Claude (Anthropic) | claude-sonnet-4.6 | Rebranded Daily DAP as Daily HHS: updated data source endpoint to HHS-specific analytics, updated all branding, titles, violation ID prefix (HHS-), GitHub URLs, and documentation throughout the codebase |
 | Claude (Anthropic) | claude-sonnet-4.6 | Made analytics.usa.gov more prominent: updated README, render-pages.js (dashboard and daily report sections), docs/reports/index.html, and CLI tools to lead with analytics.usa.gov as the public data source, with DAP explained as the underlying program |
 | Claude (Anthropic) | claude-sonnet-4-5 | Updated all documentation to replace "Daily DAP" references with "Daily HHS A11y Scan" in AGENTS.md, .github/copilot-instructions.md, ACCESSIBILITY.md, FEATURES.md, STYLES.md, and README.md |
+| Claude (Anthropic) | claude-sonnet-4.6 | Updated footer description from "U.S. government website quality benchmarks" to "HHS website quality benchmarks" in render-pages.js and committed HTML files (docs/reports/index.html, docs/reports/archive/index.html, docs/404.html) |
 
 ### Runtime operation
 
