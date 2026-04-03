@@ -1122,7 +1122,7 @@
   <main id="main-content" class="site-main">
     <div class="page-intro">
       <h1 id="page-title">HTML/CSS/JS Code Quality &mdash; 2026-04-03<a href="#page-title" class="heading-anchor" aria-label="Link to HTML/CSS/JS Code Quality — 2026-04-03"><span aria-hidden="true">#</span></a></h1>
-      <p>Run ID: run-2026-04-03-106a15f111 &middot; Status: success &middot; <a href="index.html">&larr; Back to full report</a></p>
+      <p>Run ID: run-2026-04-03-106a15f111 &middot; Status: partial &middot; <a href="index.html">&larr; Back to full report</a></p>
     </div>
 
     <section aria-labelledby="cq-about-heading">
@@ -1135,7 +1135,7 @@
         <li><strong>Vulnerable Libraries</strong> &mdash; Front-end JavaScript libraries (e.g. jQuery, Bootstrap) with known <a href="https://nvd.nist.gov/" target="_blank" rel="noreferrer">CVE security vulnerabilities</a>. Outdated libraries are a common vector for web security issues.</li>
         <li><strong>JS Library Inventory</strong> &mdash; All client-side JavaScript libraries detected. Useful for understanding browser compatibility requirements: libraries with wide browser support indicate polyfills may be in use; newer APIs without polyfills may exclude users on older browsers.</li>
       </ul>
-      <p>All audits come from Lighthouse scanning 0 successfully scanned URLs on 2026-04-03.</p>
+      <p>All audits come from Lighthouse scanning 39 successfully scanned URLs on 2026-04-03.</p>
     </section>
 
     <section aria-labelledby="cq-summary-heading">
@@ -1143,22 +1143,22 @@
       <div class="score-grid">
         <div class="score-card">
           <div class="score-label">Best Practices Score</div>
-          <div class="score-value">0</div>
+          <div class="score-value">89</div>
           <div class="score-note">Lighthouse aggregate (0&ndash;100)</div>
         </div>
 <div class="score-card">
           <div class="score-label">Deprecated APIs</div>
-          <div class="score-value"><span aria-label="Not available">&mdash;</span></div>
+          <div class="score-value">0 / 39</div>
           <div class="score-note">0% of scanned URLs</div>
         </div>
 <div class="score-card">
           <div class="score-label">Console Errors</div>
-          <div class="score-value"><span aria-label="Not available">&mdash;</span></div>
-          <div class="score-note">0% of scanned URLs</div>
+          <div class="score-value">15 / 39</div>
+          <div class="score-note">38% of scanned URLs</div>
         </div>
 <div class="score-card">
           <div class="score-label">Vulnerable Libraries</div>
-          <div class="score-value"><span aria-label="Not available">&mdash;</span></div>
+          <div class="score-value">0 / 39</div>
           <div class="score-note">0% of scanned URLs</div>
         </div>
       </div>
@@ -1167,7 +1167,28 @@
     <section aria-labelledby="cq-libs-heading">
       <h2 id="cq-libs-heading">Detected JavaScript Libraries<a href="#cq-libs-heading" class="heading-anchor" aria-label="Link to Detected JavaScript Libraries"><span aria-hidden="true">#</span></a></h2>
       <p>JavaScript libraries detected from network requests during Lighthouse scans. Library version data helps identify whether sites depend on libraries that require polyfills for older browsers, or conversely, rely on browser features that are not yet widely supported.</p>
-      <p>No JavaScript libraries detected in this scan.</p>
+      <div class="table-scroll"><table>
+        <caption>JavaScript libraries detected across 39 successfully scanned URLs</caption>
+        <thead><tr><th scope="col">Library</th><th scope="col">URLs</th><th scope="col">Share</th></tr></thead>
+        <tbody><tr><td data-label="Library">jQuery</td><td data-label="URLs">17</td><td data-label="Share">44%</td></tr>
+<tr><td data-label="Library">Bootstrap</td><td data-label="URLs">11</td><td data-label="Share">28%</td></tr>
+<tr><td data-label="Library">jQuery UI</td><td data-label="URLs">4</td><td data-label="Share">10%</td></tr>
+<tr><td data-label="Library">Underscore</td><td data-label="URLs">3</td><td data-label="Share">8%</td></tr>
+<tr><td data-label="Library">Drupal</td><td data-label="URLs">3</td><td data-label="Share">8%</td></tr>
+<tr><td data-label="Library">Modernizr</td><td data-label="URLs">3</td><td data-label="Share">8%</td></tr>
+<tr><td data-label="Library">yepnope</td><td data-label="URLs">3</td><td data-label="Share">8%</td></tr>
+<tr><td data-label="Library">Create React App</td><td data-label="URLs">3</td><td data-label="Share">8%</td></tr>
+<tr><td data-label="Library">core-js</td><td data-label="URLs">2</td><td data-label="Share">5%</td></tr>
+<tr><td data-label="Library">jQuery Mobile</td><td data-label="URLs">2</td><td data-label="Share">5%</td></tr>
+<tr><td data-label="Library">Moment.js</td><td data-label="URLs">2</td><td data-label="Share">5%</td></tr>
+<tr><td data-label="Library">Angular</td><td data-label="URLs">2</td><td data-label="Share">5%</td></tr>
+<tr><td data-label="Library">React</td><td data-label="URLs">2</td><td data-label="Share">5%</td></tr>
+<tr><td data-label="Library">Hammer.js</td><td data-label="URLs">1</td><td data-label="Share">3%</td></tr>
+<tr><td data-label="Library">Dojo</td><td data-label="URLs">1</td><td data-label="Share">3%</td></tr>
+<tr><td data-label="Library">WordPress</td><td data-label="URLs">1</td><td data-label="Share">3%</td></tr>
+<tr><td data-label="Library">boomerang.js</td><td data-label="URLs">1</td><td data-label="Share">3%</td></tr>
+<tr><td data-label="Library">Next.js</td><td data-label="URLs">1</td><td data-label="Share">3%</td></tr></tbody>
+      </table></div>
     </section>
 
     <section aria-labelledby="cq-vuln-heading">
@@ -1180,7 +1201,7 @@
       <h2 id="cq-urls-heading">Per-URL Code Quality Results<a href="#cq-urls-heading" class="heading-anchor" aria-label="Link to Per-URL Code Quality Results"><span aria-hidden="true">#</span></a></h2>
       <p>Code quality audit results for each scanned URL. Columns show the Lighthouse Best Practices score and pass &#10003; / fail &#10007; for each audit. Click any URL to open the live page.</p>
       <div class="table-scroll"><table id="cq-urls-table">
-        <caption>Code quality audit results for the top 0 government URLs by traffic</caption>
+        <caption>Code quality audit results for the top 69 government URLs by traffic</caption>
         <thead>
           <tr>
             <th scope="col">URL</th>
@@ -1193,7 +1214,627 @@
           </tr>
         </thead>
         <tbody>
-          
+          <tr>
+          <td data-label="URL"><a href="https://cdc.gov" target="_blank" rel="noreferrer">https://cdc.gov</a></td>
+          <td data-label="Best Practices">100</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">jQuery</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://fda.gov" target="_blank" rel="noreferrer">https://fda.gov</a></td>
+          <td data-label="Best Practices">100</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">jQuery</span> <span class="tech-badge">jQuery UI</span> <span class="tech-badge">Underscore</span> <span class="tech-badge">Drupal</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://accessdata.fda.gov" target="_blank" rel="noreferrer">https://accessdata.fda.gov</a></td>
+          <td data-label="Best Practices">0</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://acf.gov" target="_blank" rel="noreferrer">https://acf.gov</a></td>
+          <td data-label="Best Practices">92</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">jQuery</span> <span class="tech-badge">jQuery UI</span> <span class="tech-badge">Drupal</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://wwwnc.cdc.gov" target="_blank" rel="noreferrer">https://wwwnc.cdc.gov</a></td>
+          <td data-label="Best Practices">100</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">jQuery</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://purplebooksearch.fda.gov" target="_blank" rel="noreferrer">https://purplebooksearch.fda.gov</a></td>
+          <td data-label="Best Practices">92</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (1)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://search.cdc.gov" target="_blank" rel="noreferrer">https://search.cdc.gov</a></td>
+          <td data-label="Best Practices">96</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (1)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">jQuery</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://wwwn.cdc.gov" target="_blank" rel="noreferrer">https://wwwn.cdc.gov</a></td>
+          <td data-label="Best Practices">0</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://access.fda.gov" target="_blank" rel="noreferrer">https://access.fda.gov</a></td>
+          <td data-label="Best Practices">0</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://direct.fda.gov" target="_blank" rel="noreferrer">https://direct.fda.gov</a></td>
+          <td data-label="Best Practices">77</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">jQuery</span> <span class="tech-badge">jQuery UI</span> <span class="tech-badge">Hammer.js</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://hfpappexternal.fda.gov" target="_blank" rel="noreferrer">https://hfpappexternal.fda.gov</a></td>
+          <td data-label="Best Practices">0</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://wonder.cdc.gov" target="_blank" rel="noreferrer">https://wonder.cdc.gov</a></td>
+          <td data-label="Best Practices">96</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (1)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">jQuery</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://icd10cmtool.cdc.gov" target="_blank" rel="noreferrer">https://icd10cmtool.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://gis.cdc.gov" target="_blank" rel="noreferrer">https://gis.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://datadashboard.fda.gov" target="_blank" rel="noreferrer">https://datadashboard.fda.gov</a></td>
+          <td data-label="Best Practices">100</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">jQuery</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://atsdr.cdc.gov" target="_blank" rel="noreferrer">https://atsdr.cdc.gov</a></td>
+          <td data-label="Best Practices">100</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">jQuery</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://archive.cdc.gov" target="_blank" rel="noreferrer">https://archive.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://npin.cdc.gov" target="_blank" rel="noreferrer">https://npin.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://tools.cdc.gov" target="_blank" rel="noreferrer">https://tools.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://www.cdc.gov" target="_blank" rel="noreferrer">https://www.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://precision.fda.gov" target="_blank" rel="noreferrer">https://precision.fda.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://blogs.cdc.gov" target="_blank" rel="noreferrer">https://blogs.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://ndc.services.cdc.gov" target="_blank" rel="noreferrer">https://ndc.services.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://reach.cdc.gov" target="_blank" rel="noreferrer">https://reach.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://www2a.cdc.gov" target="_blank" rel="noreferrer">https://www2a.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://gettested.cdc.gov" target="_blank" rel="noreferrer">https://gettested.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://jobs.cdc.gov" target="_blank" rel="noreferrer">https://jobs.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://wisqars.cdc.gov" target="_blank" rel="noreferrer">https://wisqars.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://vaccines.gov" target="_blank" rel="noreferrer">https://vaccines.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://ephtracking.cdc.gov" target="_blank" rel="noreferrer">https://ephtracking.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://thecommunityguide.org" target="_blank" rel="noreferrer">https://thecommunityguide.org</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://selectagents.gov" target="_blank" rel="noreferrer">https://selectagents.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://vetoviolence.cdc.gov" target="_blank" rel="noreferrer">https://vetoviolence.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://phgkb.cdc.gov" target="_blank" rel="noreferrer">https://phgkb.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://phinvads.cdc.gov" target="_blank" rel="noreferrer">https://phinvads.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://millionhearts.hhs.gov" target="_blank" rel="noreferrer">https://millionhearts.hhs.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://animaldrugsatfda.fda.gov" target="_blank" rel="noreferrer">https://animaldrugsatfda.fda.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://nationaldppcsc.cdc.gov" target="_blank" rel="noreferrer">https://nationaldppcsc.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://ncsacw.acf.gov" target="_blank" rel="noreferrer">https://ncsacw.acf.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://labels.fda.gov" target="_blank" rel="noreferrer">https://labels.fda.gov</a></td>
+          <td data-label="Best Practices">65</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (2)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">jQuery</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://www2.cdc.gov" target="_blank" rel="noreferrer">https://www2.cdc.gov</a></td>
+          <td data-label="Best Practices">0</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://nfr.cdc.gov" target="_blank" rel="noreferrer">https://nfr.cdc.gov</a></td>
+          <td data-label="Best Practices">92</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Dojo</span> <span class="tech-badge">core-js</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://shi.cdc.gov" target="_blank" rel="noreferrer">https://shi.cdc.gov</a></td>
+          <td data-label="Best Practices">77</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (2)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">jQuery</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://gudid.fda.gov" target="_blank" rel="noreferrer">https://gudid.fda.gov</a></td>
+          <td data-label="Best Practices">92</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (1)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">jQuery</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://nccd.cdc.gov" target="_blank" rel="noreferrer">https://nccd.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://yrbs-explorer.services.cdc.gov" target="_blank" rel="noreferrer">https://yrbs-explorer.services.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://youthonline.cdc.gov" target="_blank" rel="noreferrer">https://youthonline.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://pids.cdc.gov" target="_blank" rel="noreferrer">https://pids.cdc.gov</a></td>
+          <td data-label="Best Practices">42</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (6)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">jQuery</span> <span class="tech-badge">Modernizr</span> <span class="tech-badge">Underscore</span> <span class="tech-badge">yepnope</span> <span class="tech-badge">jQuery Mobile</span> <span class="tech-badge">Moment.js</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://cwpm.acf.gov" target="_blank" rel="noreferrer">https://cwpm.acf.gov</a></td>
+          <td data-label="Best Practices">0</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://www.access.fda.gov" target="_blank" rel="noreferrer">https://www.access.fda.gov</a></td>
+          <td data-label="Best Practices">77</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (4)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">jQuery</span> <span class="tech-badge">Modernizr</span> <span class="tech-badge">yepnope</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://hivrisk.cdc.gov" target="_blank" rel="noreferrer">https://hivrisk.cdc.gov</a></td>
+          <td data-label="Best Practices">69</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (7)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">jQuery</span> <span class="tech-badge">jQuery UI</span> <span class="tech-badge">WordPress</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://timp-ccid.fda.gov" target="_blank" rel="noreferrer">https://timp-ccid.fda.gov</a></td>
+          <td data-label="Best Practices">100</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Angular</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://mpris.fda.gov" target="_blank" rel="noreferrer">https://mpris.fda.gov</a></td>
+          <td data-label="Best Practices">0</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://dnpao-dtm.cdc.gov" target="_blank" rel="noreferrer">https://dnpao-dtm.cdc.gov</a></td>
+          <td data-label="Best Practices">100</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Create React App</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://art.cdc.gov" target="_blank" rel="noreferrer">https://art.cdc.gov</a></td>
+          <td data-label="Best Practices">96</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (6)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">React</span> <span class="tech-badge">Create React App</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://poca-public.fda.gov" target="_blank" rel="noreferrer">https://poca-public.fda.gov</a></td>
+          <td data-label="Best Practices">96</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Angular</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://cdrh-rst.fda.gov" target="_blank" rel="noreferrer">https://cdrh-rst.fda.gov</a></td>
+          <td data-label="Best Practices">96</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">jQuery</span> <span class="tech-badge">boomerang.js</span> <span class="tech-badge">Drupal</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://contact.preprod.fda.gov" target="_blank" rel="noreferrer">https://contact.preprod.fda.gov</a></td>
+          <td data-label="Best Practices">0</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://nchsdata.cdc.gov" target="_blank" rel="noreferrer">https://nchsdata.cdc.gov</a></td>
+          <td data-label="Best Practices">0</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://dprpdataportal.cdc.gov" target="_blank" rel="noreferrer">https://dprpdataportal.cdc.gov</a></td>
+          <td data-label="Best Practices">96</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (1)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Create React App</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://oasis.cdc.gov" target="_blank" rel="noreferrer">https://oasis.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://data.cdc.gov" target="_blank" rel="noreferrer">https://data.cdc.gov</a></td>
+          <td data-label="Best Practices"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://hfp-onlinesubmissions.fda.gov" target="_blank" rel="noreferrer">https://hfp-onlinesubmissions.fda.gov</a></td>
+          <td data-label="Best Practices">85</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (1)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://finddoxypep.cdc.gov" target="_blank" rel="noreferrer">https://finddoxypep.cdc.gov</a></td>
+          <td data-label="Best Practices">100</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Next.js</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://www.accessdata.fda.gov" target="_blank" rel="noreferrer">https://www.accessdata.fda.gov</a></td>
+          <td data-label="Best Practices">88</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (1)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://fissweb.fda.gov" target="_blank" rel="noreferrer">https://fissweb.fda.gov</a></td>
+          <td data-label="Best Practices">0</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://heart-stroke-atlas.cdc.gov" target="_blank" rel="noreferrer">https://heart-stroke-atlas.cdc.gov</a></td>
+          <td data-label="Best Practices">92</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (23)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://places.cdc.gov" target="_blank" rel="noreferrer">https://places.cdc.gov</a></td>
+          <td data-label="Best Practices">100</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">React</span> <span class="tech-badge">core-js</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://mvps.cdc.gov" target="_blank" rel="noreferrer">https://mvps.cdc.gov</a></td>
+          <td data-label="Best Practices">65</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (6)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">jQuery</span> <span class="tech-badge">Modernizr</span> <span class="tech-badge">Underscore</span> <span class="tech-badge">yepnope</span> <span class="tech-badge">jQuery Mobile</span> <span class="tech-badge">Moment.js</span></td>
+        </tr>
         </tbody>
       </table></div>
     </section>
