@@ -741,10 +741,10 @@ test('plainTextDescription converts markdown links to plain text', () => {
   assert.ok(!result.includes('[Learn more]'), 'Should not contain raw markdown link syntax');
 });
 
-test('generateViolationId returns a stable DAP- prefixed identifier', () => {
+test('generateViolationId returns a stable HHS- prefixed identifier', () => {
   const id = generateViolationId('https://fdic.gov', 'tabindex', 'body.acquia-cms-toolbar > a.skipheader');
-  assert.ok(id.startsWith('DAP-'), 'Should have DAP- prefix');
-  assert.match(id, /^DAP-[0-9a-f]{8}$/, 'Should be DAP- followed by 8 hex characters');
+  assert.ok(id.startsWith('HHS-'), 'Should have HHS- prefix');
+  assert.match(id, /^HHS-[0-9a-f]{8}$/, 'Should be HHS- followed by 8 hex characters');
 });
 
 test('generateViolationId produces the same ID for the same inputs', () => {
@@ -773,14 +773,14 @@ test('generateViolationId normalizes URL protocol and trailing slash', () => {
 
 test('generateViolationId produces finding-level ID when selector is empty', () => {
   const id = generateViolationId('https://fdic.gov', 'tabindex', '');
-  assert.ok(id.startsWith('DAP-'), 'Finding-level ID should have DAP- prefix');
-  assert.match(id, /^DAP-[0-9a-f]{8}$/, 'Should be DAP- followed by 8 hex characters');
+  assert.ok(id.startsWith('HHS-'), 'Finding-level ID should have HHS- prefix');
+  assert.match(id, /^HHS-[0-9a-f]{8}$/, 'Should be HHS- followed by 8 hex characters');
 });
 
 test('generateViolationId handles non-string inputs gracefully', () => {
   const id = generateViolationId(null, undefined, 42);
-  assert.ok(id.startsWith('DAP-'), 'Should still return a DAP-prefixed ID with non-string inputs');
-  assert.match(id, /^DAP-[0-9a-f]{8}$/, 'Should be DAP- followed by 8 hex characters');
+  assert.ok(id.startsWith('HHS-'), 'Should still return a HHS-prefixed ID with non-string inputs');
+  assert.match(id, /^HHS-[0-9a-f]{8}$/, 'Should be HHS- followed by 8 hex characters');
 });
 
 test('buildFindingCopyText includes page URL and finding details', () => {
@@ -811,8 +811,8 @@ test('buildFindingCopyText includes page URL and finding details', () => {
   assert.ok(text.includes('<h4>'), 'Should include element snippet');
   assert.ok(text.includes('What is Informed Delivery?'), 'Should include node label');
   assert.ok(text.includes('Heading order invalid'), 'Should include how-to-fix text');
-  assert.ok(text.includes('**Violation ID:** DAP-'), 'Should include a finding-level violation ID');
-  assert.ok(text.includes('(ID: DAP-'), 'Should include an element-level violation ID');
+  assert.ok(text.includes('**Violation ID:** HHS-'), 'Should include a finding-level violation ID');
+  assert.ok(text.includes('(ID: HHS-'), 'Should include an element-level violation ID');
 });
 
 test('buildFindingCopyText handles finding with no items', () => {
@@ -1098,7 +1098,7 @@ test('renderDashboardPage includes anchor links on all section headings', () => 
   const html = renderDashboardPage({ latestReport: minimalReport, historyIndex: [] });
 
   assert.ok(html.includes('href="#page-title"') && html.includes('id="page-title"'), 'h1 page title should have anchor link');
-  assert.ok(html.includes('href="#about-heading"'), 'What is DAP heading should have anchor link');
+  assert.ok(html.includes('href="#about-heading"'), 'What is HHS Analytics heading should have anchor link');
   assert.ok(html.includes('href="#latest-scores-heading"'), 'Latest Scores heading should have anchor link');
   assert.ok(html.includes('href="#recent-reports-heading"'), 'Recent Reports heading should have anchor link');
 });
@@ -1106,7 +1106,7 @@ test('renderDashboardPage includes anchor links on all section headings', () => 
 test('renderDashboardPage anchor links have accessible aria-labels', () => {
   const html = renderDashboardPage({ latestReport: minimalReport, historyIndex: [] });
 
-  assert.ok(html.includes('aria-label="Link to What is DAP?"'), 'About heading anchor should have descriptive aria-label');
+  assert.ok(html.includes('aria-label="Link to What is HHS Analytics?"'), 'About heading anchor should have descriptive aria-label');
   assert.ok(html.includes('aria-label="Link to Recent Reports"'), 'Recent Reports anchor should have descriptive aria-label');
   assert.ok(html.includes('aria-label="Link to Latest Scores (2026-03-09)"'), 'Latest Scores anchor should have descriptive aria-label');
 });
@@ -1162,7 +1162,7 @@ test('renderArchiveIndexPage renders archive entries with download links', () =>
   ];
   const html = renderArchiveIndexPage({ entries, generatedAt: '2026-02-01T12:00:00.000Z' });
 
-  assert.ok(html.includes('<title>Daily DAP - Report Archives</title>'), 'Page title should be set');
+  assert.ok(html.includes('<title>Daily HHS - Report Archives</title>'), 'Page title should be set');
   assert.ok(html.includes('id="archives-heading"'), 'Archives section heading should be present');
   assert.ok(html.includes('href="2026-01-15.zip"'), 'Link to first zip should be present');
   assert.ok(html.includes('href="2026-01-16.zip"'), 'Link to second zip should be present');
@@ -2840,7 +2840,7 @@ test('renderDailyReportPage includes print-only dashboard URL notice', () => {
 
   const html = renderDailyReportPage(report);
   assert.ok(html.includes('class="print-only print-dashboard-notice"'), 'Should include print-only dashboard notice element');
-  assert.ok(html.includes('mgifford.github.io/daily-dap'), 'Dashboard URL should appear in print-only notice');
+  assert.ok(html.includes('mgifford.github.io/daily-hhs'), 'Dashboard URL should appear in print-only notice');
 });
 
 test('renderSharedStyles includes @media print CSS', () => {

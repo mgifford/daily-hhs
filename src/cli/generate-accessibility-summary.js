@@ -88,7 +88,7 @@ export async function generateAccessibilitySummary(repoRoot, runDate) {
 
   lines.push(`## Accessibility Summary: ${reportDate}`);
   lines.push('');
-  lines.push(`**Source**: [DAP Top URLs](https://analytics.usa.gov) - Digital Analytics Program`);
+  lines.push(`**Source**: [HHS Top URLs](https://analytics.usa.gov/health-human-services) - Digital Analytics Program (HHS)`);
   lines.push(`**Scanned**: ${report.url_counts.succeeded} of ${report.url_counts.processed} URLs succeeded (${report.url_counts.failed} failed)`);
   lines.push('');
 
@@ -120,7 +120,7 @@ export async function generateAccessibilitySummary(repoRoot, runDate) {
     lines.push('');
   }
 
-  lines.push(`[View full report](https://mgifford.github.io/daily-dap/docs/reports/daily/${reportDate}/index.html)`);
+  lines.push(`[View full report](https://mgifford.github.io/daily-hhs/docs/reports/daily/${reportDate}/index.html)`);
 
   return lines.join('\n');
 }

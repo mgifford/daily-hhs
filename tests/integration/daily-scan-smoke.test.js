@@ -142,7 +142,7 @@ test('runDailyScan mock mode without outputRoot writes to temp directory', async
   assert.equal(summary.status, 'success');
 
   // Files should be written to the temp directory, not the repo docs directory
-  const expectedTempDir = path.join(os.default.tmpdir(), 'daily-dap-mock');
+  const expectedTempDir = path.join(os.default.tmpdir(), 'daily-hhs-mock');
   assert.ok(
     summary.paths.report_json_path.startsWith(expectedTempDir),
     `report.json should be written to temp dir (${expectedTempDir}), got: ${summary.paths.report_json_path}`
