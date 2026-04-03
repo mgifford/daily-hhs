@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { runLighthouseScan } from '../../src/scanners/lighthouse-runner.js';
 import { runScanGovScan } from '../../src/scanners/scangov-runner.js';
 import { normalizeUrlScanResult } from '../../src/scanners/result-normalizer.js';
-import { executeUrlScans } from '../../src/scanners/execution-manager.js';
+import { executeUrlScans, withTimeout, TimeoutError, toFailureReason } from '../../src/scanners/execution-manager.js';
 import { FAILURE_REASON_CATALOG } from '../../src/scanners/status-classifier.js';
 
 test('runLighthouseScan extracts scores and cwv status', async () => {
@@ -168,4 +168,173 @@ test('executeUrlScans marks unrecoverable scanner failures', async () => {
   assert.equal(results[0].failure_reason, FAILURE_REASON_CATALOG.EXECUTION_ERROR);
   assert.equal(diagnostics.failed_count, 1);
   assert.equal(diagnostics.failure_reasons.execution_error, 1);
+});
+
+// ---------------------------------------------------------------------------
+// TimeoutError
+// ---------------------------------------------------------------------------
+
+test('TimeoutError is an instance of Error', () => {
+  const err = new TimeoutError('took too long');
+  assert.ok(err instanceof Error);
+  assert.ok(err instanceof TimeoutError);
+  assert.equal(err.name, 'TimeoutError');
+  assert.equal(err.message, 'took too long');
+});
+
+// ---------------------------------------------------------------------------
+// toFailureReason
+// ---------------------------------------------------------------------------
+
+test('toFailureReason returns TIMEOUT for TimeoutError instances', () => {
+  const reason = toFailureReason(new TimeoutError('timed out'));
+  assert.equal(reason, FAILURE_REASON_CATALOG.TIMEOUT);
+});
+
+test('toFailureReason returns MALFORMED_OUTPUT for errors with code MALFORMED_OUTPUT', () => {
+  const err = new Error('bad output');
+  err.code = 'MALFORMED_OUTPUT';
+  const reason = toFailureReason(err);
+  assert.equal(reason, FAILURE_REASON_CATALOG.MALFORMED_OUTPUT);
+});
+
+test('toFailureReason returns EXECUTION_ERROR for generic errors', () => {
+  const reason = toFailureReason(new Error('something broke'));
+  assert.equal(reason, FAILURE_REASON_CATALOG.EXECUTION_ERROR);
+});
+
+test('toFailureReason returns EXECUTION_ERROR for null/undefined', () => {
+  assert.equal(toFailureReason(null), FAILURE_REASON_CATALOG.EXECUTION_ERROR);
+  assert.equal(toFailureReason(undefined), FAILURE_REASON_CATALOG.EXECUTION_ERROR);
+});
+
+// ---------------------------------------------------------------------------
+// withTimeout
+// ---------------------------------------------------------------------------
+
+test('withTimeout resolves when promise completes before timeout', async () => {
+  const result = await withTimeout(Promise.resolve('done'), 1000);
+  assert.equal(result, 'done');
+});
+
+test('withTimeout rejects with TimeoutError when promise exceeds timeout', async () => {
+  const never = new Promise(() => {});
+  await assert.rejects(
+    () => withTimeout(never, 10),
+    (err) => {
+      assert.ok(err instanceof TimeoutError, 'should be a TimeoutError');
+      assert.match(err.message, /Timed out after 10ms/);
+      return true;
+    }
+  );
+});
+
+test('withTimeout propagates rejection from the inner promise', async () => {
+  const failing = Promise.reject(new Error('inner failure'));
+  await assert.rejects(() => withTimeout(failing, 1000), /inner failure/);
+});
+
+// ---------------------------------------------------------------------------
+// executeUrlScans - edge cases and validation
+// ---------------------------------------------------------------------------
+
+test('executeUrlScans throws when runId is missing', async () => {
+  await assert.rejects(
+    () => executeUrlScans([{ url: 'https://example.gov/', page_load_count: 100 }], {}),
+    /requires runId/
+  );
+});
+
+test('executeUrlScans throws when concurrency is 0', async () => {
+  await assert.rejects(
+    () => executeUrlScans(
+      [{ url: 'https://example.gov/', page_load_count: 100 }],
+      { runId: 'run-abc', concurrency: 0 }
+    ),
+    /concurrency must be an integer greater than 0/
+  );
+});
+
+test('executeUrlScans throws when concurrency is negative', async () => {
+  await assert.rejects(
+    () => executeUrlScans(
+      [{ url: 'https://example.gov/', page_load_count: 100 }],
+      { runId: 'run-abc', concurrency: -1 }
+    ),
+    /concurrency must be an integer greater than 0/
+  );
+});
+
+test('executeUrlScans throws when maxRetries is negative', async () => {
+  await assert.rejects(
+    () => executeUrlScans(
+      [{ url: 'https://example.gov/', page_load_count: 100 }],
+      { runId: 'run-abc', maxRetries: -1 }
+    ),
+    /maxRetries must be an integer greater than or equal to 0/
+  );
+});
+
+test('executeUrlScans returns empty results for empty input', async () => {
+  const { results, diagnostics } = await executeUrlScans([], { runId: 'run-abc' });
+  assert.deepEqual(results, []);
+  assert.equal(diagnostics.success_count, 0);
+});
+
+test('executeUrlScans uses toFailureReason for MALFORMED_OUTPUT errors', async () => {
+  const { results } = await executeUrlScans(
+    [{ url: 'https://example.gov/', page_load_count: 10 }],
+    {
+      runId: 'run-2026-04-01-abc',
+      timeoutMs: 1000,
+      maxRetries: 0,
+      lighthouseRunner: {
+        runImpl: async () => {
+          const err = new Error('unexpected output format');
+          err.code = 'MALFORMED_OUTPUT';
+          throw err;
+        }
+      },
+      scanGovRunner: { runImpl: async () => ({ issues: [] }) }
+    }
+  );
+
+  assert.equal(results[0].scan_status, 'failed');
+  assert.equal(results[0].failure_reason, FAILURE_REASON_CATALOG.MALFORMED_OUTPUT);
+});
+
+test('executeUrlScans preserves result order with concurrency > 1', async () => {
+  const urls = [
+    { url: 'https://a.gov/', page_load_count: 100 },
+    { url: 'https://b.gov/', page_load_count: 200 },
+    { url: 'https://c.gov/', page_load_count: 300 }
+  ];
+
+  const { results } = await executeUrlScans(urls, {
+    runId: 'run-order-test',
+    concurrency: 3,
+    timeoutMs: 5000,
+    maxRetries: 0,
+    lighthouseRunner: {
+      runImpl: async (url) => ({
+        categories: {
+          performance: { score: 0.9 },
+          accessibility: { score: 0.9 },
+          'best-practices': { score: 0.9 },
+          seo: { score: 0.9 },
+          pwa: { score: 0.9 }
+        },
+        audits: {
+          'largest-contentful-paint': { score: 0.9 },
+          'cumulative-layout-shift': { score: 0.9 },
+          'interaction-to-next-paint': { score: 0.9 }
+        }
+      })
+    },
+    scanGovRunner: { runImpl: async () => ({ issues: [] }) }
+  });
+
+  assert.equal(results[0].url, 'https://a.gov/');
+  assert.equal(results[1].url, 'https://b.gov/');
+  assert.equal(results[2].url, 'https://c.gov/');
 });

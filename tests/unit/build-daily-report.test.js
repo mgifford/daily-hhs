@@ -365,3 +365,154 @@ test('buildDailyReport passes fpc_exclusion through unchanged when provided', ()
   const report = buildMinReport();
   assert.deepEqual(report.fpc_exclusion, MIN_FPC_EXCLUSION);
 });
+
+// ---------------------------------------------------------------------------
+// normalizeTopUrls (tested via buildDailyReport top_urls)
+// ---------------------------------------------------------------------------
+
+test('buildDailyReport top_urls entry has all required fields', () => {
+  const urlResults = [makeUrlResult()];
+  const report = buildMinReport({ urlResults });
+  const entry = report.top_urls[0];
+
+  assert.ok('url' in entry);
+  assert.ok('organization_name' in entry);
+  assert.ok('domain_type' in entry);
+  assert.ok('page_load_count' in entry);
+  assert.ok('scan_status' in entry);
+  assert.ok('failure_reason' in entry);
+  assert.ok('findings_count' in entry);
+  assert.ok('severe_findings_count' in entry);
+  assert.ok('core_web_vitals_status' in entry);
+  assert.ok('lcp_value_ms' in entry);
+  assert.ok('detected_technologies' in entry);
+  assert.ok('code_quality_summary' in entry);
+  assert.ok('lighthouse_scores' in entry);
+  assert.ok('axe_findings' in entry);
+  assert.ok('readability_metrics' in entry);
+});
+
+test('buildDailyReport top_urls failure_reason is null for successful scans', () => {
+  const urlResults = [makeUrlResult({ scan_status: 'success', failure_reason: undefined })];
+  const report = buildMinReport({ urlResults });
+  assert.equal(report.top_urls[0].failure_reason, null);
+});
+
+test('buildDailyReport top_urls failure_reason is preserved for failed scans', () => {
+  const urlResults = [makeUrlResult({ scan_status: 'failed', failure_reason: 'timeout' })];
+  const report = buildMinReport({ urlResults });
+  assert.equal(report.top_urls[0].failure_reason, 'timeout');
+});
+
+test('buildDailyReport top_urls core_web_vitals_status defaults to unknown', () => {
+  const urlResults = [makeUrlResult({ core_web_vitals_status: undefined })];
+  const report = buildMinReport({ urlResults });
+  assert.equal(report.top_urls[0].core_web_vitals_status, 'unknown');
+});
+
+test('buildDailyReport top_urls lcp_value_ms is null for non-numeric value', () => {
+  const urlResults = [makeUrlResult({ lcp_value_ms: 'bad' })];
+  const report = buildMinReport({ urlResults });
+  assert.equal(report.top_urls[0].lcp_value_ms, null);
+});
+
+test('buildDailyReport top_urls lcp_value_ms is preserved when numeric', () => {
+  const urlResults = [makeUrlResult({ lcp_value_ms: 3500 })];
+  const report = buildMinReport({ urlResults });
+  assert.equal(report.top_urls[0].lcp_value_ms, 3500);
+});
+
+test('buildDailyReport top_urls axe_findings defaults to empty array when not an array', () => {
+  const urlResults = [makeUrlResult({ axe_findings: null })];
+  const report = buildMinReport({ urlResults });
+  assert.deepEqual(report.top_urls[0].axe_findings, []);
+});
+
+test('buildDailyReport top_urls detected_technologies is null when not provided', () => {
+  const urlResults = [makeUrlResult({ detected_technologies: undefined })];
+  const report = buildMinReport({ urlResults });
+  assert.equal(report.top_urls[0].detected_technologies, null);
+});
+
+test('buildDailyReport top_urls readability_metrics is null when not provided', () => {
+  const urlResults = [makeUrlResult({ readability_metrics: undefined })];
+  const report = buildMinReport({ urlResults });
+  assert.equal(report.top_urls[0].readability_metrics, null);
+});
+
+test('buildDailyReport top_urls page_load_count defaults to 0 when undefined', () => {
+  const urlResults = [makeUrlResult({ page_load_count: undefined })];
+  const report = buildMinReport({ urlResults });
+  assert.equal(report.top_urls[0].page_load_count, 0);
+});
+
+// ---------------------------------------------------------------------------
+// summarizeCodeQualityAudits (tested via buildDailyReport top_urls)
+// ---------------------------------------------------------------------------
+
+test('buildDailyReport top_urls code_quality_summary is null when no audits', () => {
+  const urlResults = [makeUrlResult({ code_quality_audits: null })];
+  const report = buildMinReport({ urlResults });
+  assert.equal(report.top_urls[0].code_quality_summary, null);
+});
+
+test('buildDailyReport top_urls code_quality_summary has correct shape', () => {
+  const urlResults = [
+    makeUrlResult({
+      code_quality_audits: {
+        deprecated_apis: { passing: false, items: [{ api: 'x' }, { api: 'y' }] },
+        errors_in_console: { passing: false, count: 5 },
+        no_document_write: { passing: true },
+        vulnerable_libraries: {
+          passing: false,
+          items: [{ library: 'jquery' }, { library: 'lodash' }]
+        },
+        js_libraries: { items: [{ name: 'React' }, { name: 'Vue' }] }
+      }
+    })
+  ];
+  const report = buildMinReport({ urlResults });
+  const summary = report.top_urls[0].code_quality_summary;
+
+  assert.equal(summary.deprecated_apis_passing, false);
+  assert.equal(summary.deprecated_apis_count, 2);
+  assert.equal(summary.errors_in_console_passing, false);
+  assert.equal(summary.errors_in_console_count, 5);
+  assert.equal(summary.no_document_write_passing, true);
+  assert.equal(summary.vulnerable_libraries_passing, false);
+  assert.equal(summary.vulnerable_libraries_count, 2);
+  assert.deepEqual(summary.vulnerable_library_names, ['jquery', 'lodash']);
+  assert.deepEqual(summary.js_libraries, ['React', 'Vue']);
+});
+
+test('buildDailyReport top_urls code_quality_summary defaults nulls for missing fields', () => {
+  const urlResults = [makeUrlResult({ code_quality_audits: {} })];
+  const report = buildMinReport({ urlResults });
+  const summary = report.top_urls[0].code_quality_summary;
+
+  assert.equal(summary.deprecated_apis_passing, null);
+  assert.equal(summary.deprecated_apis_count, 0);
+  assert.equal(summary.errors_in_console_count, 0);
+  assert.equal(summary.vulnerable_libraries_count, 0);
+  assert.deepEqual(summary.vulnerable_library_names, []);
+  assert.deepEqual(summary.js_libraries, []);
+});
+
+test('buildDailyReport top_urls code_quality_summary filters items without library name', () => {
+  const urlResults = [
+    makeUrlResult({
+      code_quality_audits: {
+        vulnerable_libraries: {
+          passing: false,
+          items: [{ library: 'jquery' }, { severity: 'high' }]
+        },
+        js_libraries: { items: [{ name: 'React' }, { version: '1.0' }] }
+      }
+    })
+  ];
+  const report = buildMinReport({ urlResults });
+  const summary = report.top_urls[0].code_quality_summary;
+
+  assert.deepEqual(summary.vulnerable_library_names, ['jquery']);
+  assert.deepEqual(summary.js_libraries, ['React']);
+});
