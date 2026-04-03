@@ -60,6 +60,14 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Validate secrets
+        shell: bash
+        run: |
+          if [[ "$SCAN_MODE" == "live" && -z "$DAP_API_KEY" ]]; then
+            echo "::error::DAP_API_KEY secret is not set. Live scans require this key to fetch top pages from api.gsa.gov. Add it under Settings > Secrets and variables > Actions, or trigger the workflow with scan_mode=mock."
+            exit 1
+          fi
+
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
