@@ -145,6 +145,7 @@ export async function readDapRecordsFromFile(filePath) {
 
 export async function getNormalizedTopPages({
   endpoint,
+  endpoints,
   sourceFile,
   limit,
   sourceDate,
@@ -156,22 +157,83 @@ export async function getNormalizedTopPages({
     logProgress('INGEST', 'Reading DAP records from file', { sourceFile });
     rawRecords = await readDapRecordsFromFile(sourceFile);
     logProgress('INGEST', 'DAP file records loaded', { rawCount: rawRecords.length });
-  } else {
-    const queryDate = sourceDate ? getPreviousDate(sourceDate) : undefined;
-    const resolvedEndpoint = buildDapEndpoint(endpoint, dapApiKey, { limit, date: queryDate });
-    logProgress('INGEST', 'Resolved DAP query parameters', {
-      queryDate: queryDate ?? '(none - date param omitted)',
-      limit,
-      hasApiKey: !!dapApiKey
-    });
-    rawRecords = await fetchDapRecords({ endpoint: resolvedEndpoint, fetchImpl });
+
+    const result = normalizeDapRecords(rawRecords, { limit, sourceDate });
+
+    if (result.records.length === 0) {
+      logProgress('INGEST', 'WARNING: normalizeDapRecords produced 0 records', {
+        rawCount: rawRecords.length,
+        excludedCount: result.excluded.length,
+        excludedByReason: countByReason(result.excluded),
+        warningCodes: result.warnings.map((w) => w.code)
+      });
+    }
+
+    return result;
   }
 
-  const result = normalizeDapRecords(rawRecords, { limit, sourceDate });
+  // Resolve endpoints: support both singular and plural config keys
+  const resolvedEndpoints = endpoints ?? (endpoint ? [endpoint] : []);
+  if (resolvedEndpoints.length === 0) {
+    throw new Error('No DAP endpoint(s) configured. Provide endpoint or endpoints.');
+  }
+
+  const queryDate = sourceDate ? getPreviousDate(sourceDate) : undefined;
+  logProgress('INGEST', 'Resolved DAP query parameters', {
+    queryDate: queryDate ?? '(none - date param omitted)',
+    limit,
+    hasApiKey: !!dapApiKey,
+    endpointCount: resolvedEndpoints.length
+  });
+
+  // Fetch raw records from all endpoints concurrently
+  const allRawRecords = (
+    await Promise.all(
+      resolvedEndpoints.map(async (ep) => {
+        const resolvedEndpoint = buildDapEndpoint(ep, dapApiKey, { limit, date: queryDate });
+        return fetchDapRecords({ endpoint: resolvedEndpoint, fetchImpl });
+      })
+    )
+  ).flat();
+
+  // Normalize combined records with no effective cap so all survive to dedup
+  const { records: allNormalized, warnings, excluded } = normalizeDapRecords(allRawRecords, {
+    limit: allRawRecords.length > 0 ? allRawRecords.length : 1,
+    sourceDate
+  });
+
+  // Deduplicate by URL, summing page_load_counts across agencies
+  const byUrl = new Map();
+  for (const record of allNormalized) {
+    if (!byUrl.has(record.url)) {
+      byUrl.set(record.url, { ...record });
+    } else {
+      const existing = byUrl.get(record.url);
+      if (existing.page_load_count !== null && record.page_load_count !== null) {
+        existing.page_load_count += record.page_load_count;
+      } else if (record.page_load_count !== null) {
+        existing.page_load_count = record.page_load_count;
+      }
+    }
+  }
+
+  // Re-sort after summing and apply the real limit
+  const records = [...byUrl.values()]
+    .sort((a, b) => {
+      const left = a.page_load_count ?? -1;
+      const right = b.page_load_count ?? -1;
+      if (right !== left) {
+        return right - left;
+      }
+      return a.url.localeCompare(b.url);
+    })
+    .slice(0, limit);
+
+  const result = { records, warnings, excluded };
 
   if (result.records.length === 0) {
     logProgress('INGEST', 'WARNING: normalizeDapRecords produced 0 records', {
-      rawCount: rawRecords.length,
+      rawCount: allRawRecords.length,
       excludedCount: result.excluded.length,
       excludedByReason: countByReason(result.excluded),
       warningCodes: result.warnings.map((w) => w.code)

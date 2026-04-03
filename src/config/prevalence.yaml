@@ -26,4 +26,8 @@ impact:
   fallback_severity_weight: 0.2
 
 sources:
-  dap_top_pages_endpoint: "https://api.gsa.gov/analytics/dap/v2.0.0/agencies/health-and-human-services/reports/site/data"
+  dap_top_pages_endpoints:
+    - "https://api.gsa.gov/analytics/dap/v2.0.0/agencies/administration-children-families/reports/site/data"
+    - "https://api.gsa.gov/analytics/dap/v2.0.0/agencies/national-library-medicine/reports/site/data"
+    - "https://api.gsa.gov/analytics/dap/v2.0.0/agencies/center-disease-control/reports/site/data"
+    - "https://api.gsa.gov/analytics/dap/v2.0.0/agencies/food-and-drug-administration/reports/site/data"
