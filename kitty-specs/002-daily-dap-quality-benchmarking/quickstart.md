@@ -1,4 +1,4 @@
-# Quickstart: Daily DAP Quality Benchmarking
+# Quickstart: Daily HHS A11y Scan Quality Benchmarking
 
 ## 1. Configure run settings
 

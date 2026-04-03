@@ -1,10 +1,10 @@
 # ACCESSIBILITY.md
 
-> **Daily DAP's commitment to accessibility transparency and inclusive quality benchmarking.**
+> **Daily HHS A11y Scan's commitment to accessibility transparency and inclusive quality benchmarking.**
 
 ## Our Accessibility Mission
 
-Daily DAP exists to benchmark the quality and accessibility of the most visited U.S. government websites. As a project focused on measuring and reporting accessibility, we are committed to ensuring our own tools, reports, and outputs are accessible and follow the same standards we measure.
+Daily HHS A11y Scan exists to benchmark the quality and accessibility of the most visited U.S. Department of Health and Human Services (HHS) websites. As a project focused on measuring and reporting accessibility, we are committed to ensuring our own tools, reports, and outputs are accessible and follow the same standards we measure.
 
 **Core Principles:**
 - Generate accessible HTML reports that meet WCAG 2.2 AA standards
@@ -97,8 +97,8 @@ The `.github/workflows/scan-github-pages.yml` workflow runs the [GitHub accessib
 **Trigger:** Monthly (1st of every month) and on every push to `main` that modifies `docs/`.
 
 **Pages scanned:**
-- `https://mgifford.github.io/daily-dap/` -- main dashboard
-- `https://mgifford.github.io/daily-dap/reports/` -- reports index
+- `https://mgifford.github.io/daily-hhs/` -- main dashboard
+- `https://mgifford.github.io/daily-hhs/reports/` -- reports index
 
 **Requirements:** A `GH_TOKEN` repository secret with `contents: write`, `issues: write`, and `pull-requests: write` permissions must be configured for the workflow to file issues.
 
@@ -223,7 +223,7 @@ This project generates reports on government website accessibility. If you notic
 ## Project Structure and Accessibility
 
 ```
-daily-dap/
+daily-hhs/
 ├── src/
 │   ├── scanners/           # Accessibility scanning integration
 │   ├── aggregation/        # Impact estimation and metrics

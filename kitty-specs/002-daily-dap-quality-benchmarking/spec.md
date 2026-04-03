@@ -1,4 +1,4 @@
-# Feature Specification: Daily DAP Quality Benchmarking
+# Feature Specification: Daily HHS A11y Scan Quality Benchmarking
 
 **Feature Branch**: `002-daily-dap-quality-benchmarking`  
 **Created**: 2026-02-21  

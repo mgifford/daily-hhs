@@ -1,4 +1,4 @@
-# Data Model: Daily DAP Quality Benchmarking
+# Data Model: Daily HHS A11y Scan Quality Benchmarking
 
 ## Entity: DailyScanRun
 

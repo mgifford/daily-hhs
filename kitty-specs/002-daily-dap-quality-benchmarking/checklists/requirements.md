@@ -1,4 +1,4 @@
-# Specification Quality Checklist: Daily DAP Quality Benchmarking
+# Specification Quality Checklist: Daily HHS A11y Scan Quality Benchmarking
 
 **Purpose**: Validate specification completeness and quality before proceeding to planning  
 **Created**: 2026-02-21  
