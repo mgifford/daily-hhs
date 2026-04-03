@@ -148,3 +148,93 @@ test('getNormalizedTopPages omits date param when sourceDate is not provided', a
   const parsed = new URL(capturedUrl);
   assert.equal(parsed.searchParams.has('date'), false, 'date should not be added when sourceDate is absent');
 });
+
+function agencySlugFromUrl(url) {
+  return new URL(url).pathname.split('/').find((seg, i, arr) => arr[i - 1] === 'agencies');
+}
+
+test('getNormalizedTopPages merges records from multiple endpoints', async () => {
+  const capturedUrls = [];
+  const mockFetch = async (url) => {
+    capturedUrls.push(url);
+    const agencySlug = agencySlugFromUrl(url);
+    return {
+      ok: true,
+      json: async () => [
+        { url: `https://${agencySlug}.gov/page1`, page_load_count: agencySlug === 'acf' ? 300 : 100 },
+        { url: `https://${agencySlug}.gov/page2`, page_load_count: 50 }
+      ]
+    };
+  };
+
+  const result = await getNormalizedTopPages({
+    endpoints: [
+      'https://api.gsa.gov/analytics/dap/v2.0.0/agencies/acf/reports/site/data',
+      'https://api.gsa.gov/analytics/dap/v2.0.0/agencies/nlm/reports/site/data'
+    ],
+    limit: 10,
+    sourceDate: '2026-04-03',
+    dapApiKey: 'test-key',
+    fetchImpl: mockFetch
+  });
+
+  assert.equal(capturedUrls.length, 2, 'should have fetched from both endpoints');
+  assert.equal(result.records.length, 4, 'should have merged records from both endpoints');
+  assert.equal(result.records[0].url, 'https://acf.gov/page1', 'highest page_load_count should be first');
+});
+
+test('getNormalizedTopPages deduplicates URLs across endpoints by summing page_load_count', async () => {
+  const mockFetch = async (url) => {
+    const agencySlug = agencySlugFromUrl(url);
+    return {
+      ok: true,
+      json: async () => [
+        { url: 'https://shared.gov/common-page', page_load_count: agencySlug === 'ep1' ? 1000 : 500 },
+        { url: `https://${agencySlug}.gov/unique-page`, page_load_count: 200 }
+      ]
+    };
+  };
+
+  const result = await getNormalizedTopPages({
+    endpoints: [
+      'https://api.gsa.gov/analytics/dap/v2.0.0/agencies/ep1/reports/site/data',
+      'https://api.gsa.gov/analytics/dap/v2.0.0/agencies/ep2/reports/site/data'
+    ],
+    limit: 10,
+    sourceDate: '2026-04-03',
+    dapApiKey: 'test-key',
+    fetchImpl: mockFetch
+  });
+
+  const sharedRecord = result.records.find((r) => r.url === 'https://shared.gov/common-page');
+  assert.ok(sharedRecord, 'shared URL should appear exactly once');
+  assert.equal(sharedRecord.page_load_count, 1500, 'page_load_count should be summed across endpoints');
+  assert.equal(result.records.length, 3, 'should have 3 unique URLs total');
+});
+
+test('getNormalizedTopPages respects limit after merging multiple endpoints', async () => {
+  const mockFetch = async (url) => {
+    const agencySlug = agencySlugFromUrl(url);
+    return {
+      ok: true,
+      json: async () => [
+        { url: `https://${agencySlug}.gov/page1`, page_load_count: 1000 },
+        { url: `https://${agencySlug}.gov/page2`, page_load_count: 800 },
+        { url: `https://${agencySlug}.gov/page3`, page_load_count: 600 }
+      ]
+    };
+  };
+
+  const result = await getNormalizedTopPages({
+    endpoints: [
+      'https://api.gsa.gov/analytics/dap/v2.0.0/agencies/ep1/reports/site/data',
+      'https://api.gsa.gov/analytics/dap/v2.0.0/agencies/ep2/reports/site/data'
+    ],
+    limit: 4,
+    sourceDate: '2026-04-03',
+    dapApiKey: 'test-key',
+    fetchImpl: mockFetch
+  });
+
+  assert.equal(result.records.length, 4, 'should return at most limit records after merging');
+});

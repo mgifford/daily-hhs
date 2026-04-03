@@ -483,18 +483,28 @@ export async function runDailyScan(inputArgs = parseArgs(process.argv)) {
       trafficWindow: runtimeConfig.scan.traffic_window_mode
     });
 
-    const dapEndpoint = runtimeConfig.sources?.dap_top_pages_endpoint;
-    if (!args.sourceFile && dapEndpoint?.includes('api.gsa.gov') && !dapApiKey) {
+    const dapEndpoints =
+      runtimeConfig.sources?.dap_top_pages_endpoints ??
+      (runtimeConfig.sources?.dap_top_pages_endpoint ? [runtimeConfig.sources.dap_top_pages_endpoint] : undefined);
+
+    const needsGsaApiKey = (ep) => {
+      try {
+        return new URL(ep).hostname === 'api.gsa.gov';
+      } catch {
+        return false;
+      }
+    };
+    if (!args.sourceFile && dapEndpoints?.some(needsGsaApiKey) && !dapApiKey) {
       throw new Error('DAP_API_KEY is required to fetch top pages from api.gsa.gov. Set repo secret DAP_API_KEY or pass --dap-api-key.');
     }
 
     logStageStart('INGEST', { 
       source: args.sourceFile ? 'file' : 'api',
-      endpoint: args.sourceFile || dapEndpoint 
+      endpoints: args.sourceFile ? [args.sourceFile] : dapEndpoints
     });
 
     const normalized = await getNormalizedTopPages({
-      endpoint: dapEndpoint,
+      endpoints: dapEndpoints,
       sourceFile: args.sourceFile,
       limit: runtimeConfig.scan.url_limit,
       sourceDate: runMetadata.run_date,

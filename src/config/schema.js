@@ -89,8 +89,24 @@ export function validatePrevalenceConfig(config) {
 
   assertNumberInRange(impact.fallback_severity_weight, 'impact.fallback_severity_weight', 0, 1, errors);
 
-  if (config.sources && typeof config.sources !== 'object') {
-    errors.push('sources must be an object when provided');
+  if (config.sources) {
+    if (typeof config.sources !== 'object' || Array.isArray(config.sources)) {
+      errors.push('sources must be a plain object when provided (arrays are not allowed)');
+    } else {
+      const { dap_top_pages_endpoints, dap_top_pages_endpoint } = config.sources;
+
+      if (dap_top_pages_endpoints !== undefined) {
+        if (!Array.isArray(dap_top_pages_endpoints) || dap_top_pages_endpoints.length === 0) {
+          errors.push('sources.dap_top_pages_endpoints must be a non-empty array when provided');
+        } else if (dap_top_pages_endpoints.some((ep) => typeof ep !== 'string' || ep.trim() === '')) {
+          errors.push('sources.dap_top_pages_endpoints must contain only non-empty strings');
+        }
+      }
+
+      if (dap_top_pages_endpoint !== undefined && typeof dap_top_pages_endpoint !== 'string') {
+        errors.push('sources.dap_top_pages_endpoint must be a string when provided');
+      }
+    }
   }
 
   return {
