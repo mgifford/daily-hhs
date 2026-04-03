@@ -41,6 +41,12 @@ export function validatePrevalenceConfig(config) {
     errors.push('scan.url_limit must be an integer greater than 0');
   }
 
+  if (scan.dap_page_size !== undefined) {
+    if (typeof scan.dap_page_size !== 'number' || !Number.isInteger(scan.dap_page_size) || scan.dap_page_size < 1) {
+      errors.push('scan.dap_page_size must be an integer greater than 0 when provided');
+    }
+  }
+
   if (
     typeof scan.history_lookback_days !== 'number' ||
     !Number.isInteger(scan.history_lookback_days) ||

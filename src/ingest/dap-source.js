@@ -113,7 +113,7 @@ export async function fetchDapRecords({ endpoint, fetchImpl = fetch }) {
   return records;
 }
 
-function buildDapEndpoint(endpoint, apiKey, { limit, date } = {}) {
+function buildDapEndpoint(endpoint, apiKey, { limit, date, page } = {}) {
   const url = new URL(endpoint);
 
   if (apiKey && !url.searchParams.has('api_key')) {
@@ -128,6 +128,10 @@ function buildDapEndpoint(endpoint, apiKey, { limit, date } = {}) {
     url.searchParams.set('date', date);
   }
 
+  if (page != null && !url.searchParams.has('page')) {
+    url.searchParams.set('page', String(page));
+  }
+
   return url.toString();
 }
 
@@ -135,6 +139,32 @@ function getPreviousDate(dateStr) {
   const [year, month, day] = dateStr.split('-').map(Number);
   const d = new Date(Date.UTC(year, month - 1, day - 1));
   return d.toISOString().slice(0, 10);
+}
+
+async function fetchAllPagesFromEndpoint({ endpoint, apiKey, pageSize, date, fetchImpl }) {
+  // If the endpoint already has a ?limit= preset, respect it as the effective page size
+  const presetLimit = new URL(endpoint).searchParams.get('limit');
+  const effectivePageSize = presetLimit ? parseInt(presetLimit, 10) : pageSize;
+
+  const allRecords = [];
+  let page = 1;
+
+  while (true) {
+    const pagedEndpoint = buildDapEndpoint(endpoint, apiKey, {
+      limit: presetLimit ? undefined : pageSize,
+      date,
+      page: page > 1 ? page : undefined
+    });
+    const records = await fetchDapRecords({ endpoint: pagedEndpoint, fetchImpl });
+    allRecords.push(...records);
+
+    if (records.length < effectivePageSize) {
+      break;
+    }
+    page++;
+  }
+
+  return allRecords;
 }
 
 export async function readDapRecordsFromFile(filePath) {
@@ -161,6 +191,7 @@ export async function getNormalizedTopPages({
   limit,
   sourceDate,
   dapApiKey,
+  dapPageSize,
   fetchImpl = fetch
 }) {
   let rawRecords;
@@ -180,20 +211,22 @@ export async function getNormalizedTopPages({
     throw new Error('No DAP endpoint(s) configured. Provide endpoint or endpoints.');
   }
 
+  // Per-page fetch limit: use dapPageSize when provided, fall back to url limit for single-page behavior
+  const pageSize = dapPageSize ?? limit;
+
   const queryDate = sourceDate ? getPreviousDate(sourceDate) : undefined;
   logProgress('INGEST', 'Resolved DAP query parameters', {
     queryDate: queryDate ?? '(none - date param omitted)',
-    limit,
+    pageSize,
     hasApiKey: !!dapApiKey,
     endpointCount: resolvedEndpoints.length
   });
 
-  // Fetch raw records from all endpoints concurrently
+  // Fetch all pages from all endpoints concurrently
   const allRawRecords = (
     await Promise.all(
       resolvedEndpoints.map(async (ep) => {
-        const resolvedEndpoint = buildDapEndpoint(ep, dapApiKey, { limit, date: queryDate });
-        return fetchDapRecords({ endpoint: resolvedEndpoint, fetchImpl });
+        return fetchAllPagesFromEndpoint({ endpoint: ep, apiKey: dapApiKey, pageSize, date: queryDate, fetchImpl });
       })
     )
   ).flat();

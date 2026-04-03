@@ -238,3 +238,52 @@ test('getNormalizedTopPages respects limit after merging multiple endpoints', as
 
   assert.equal(result.records.length, 4, 'should return at most limit records after merging');
 });
+
+test('getNormalizedTopPages paginates until a page returns fewer records than dapPageSize', async () => {
+  const capturedUrls = [];
+  const pageSize = 3;
+  let callCount = 0;
+
+  const mockFetch = async (url) => {
+    capturedUrls.push(url);
+    callCount++;
+    if (callCount === 1) {
+      return {
+        ok: true,
+        json: async () => [
+          { url: 'https://example.gov/p1r1', page_load_count: 90 },
+          { url: 'https://example.gov/p1r2', page_load_count: 80 },
+          { url: 'https://example.gov/p1r3', page_load_count: 70 }
+        ]
+      };
+    }
+    if (callCount === 2) {
+      return {
+        ok: true,
+        json: async () => [
+          { url: 'https://example.gov/p2r1', page_load_count: 60 },
+          { url: 'https://example.gov/p2r2', page_load_count: 50 },
+          { url: 'https://example.gov/p2r3', page_load_count: 40 }
+        ]
+      };
+    }
+    return {
+      ok: true,
+      json: async () => [{ url: 'https://example.gov/p3r1', page_load_count: 30 }]
+    };
+  };
+
+  const result = await getNormalizedTopPages({
+    endpoint: 'https://api.gsa.gov/analytics/dap/v2.0.0/agencies/hhs/reports/site/data',
+    limit: 100,
+    dapPageSize: pageSize,
+    sourceDate: '2026-04-03',
+    dapApiKey: 'test-key',
+    fetchImpl: mockFetch
+  });
+
+  assert.equal(capturedUrls.length, 3, 'should have fetched 3 pages');
+  const page2 = new URL(capturedUrls[1]);
+  assert.equal(page2.searchParams.get('page'), '2', 'second request should include page=2');
+  assert.equal(result.records.length, pageSize * 2 + 1, 'should have records from all 3 pages');
+});

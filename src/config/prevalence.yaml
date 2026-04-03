@@ -1,5 +1,6 @@
 scan:
   url_limit: 250
+  dap_page_size: 1000
   history_lookback_days: 31
   dashboard_display_days: 14
   traffic_window_mode: daily
@@ -31,3 +32,6 @@ sources:
     - "https://api.gsa.gov/analytics/dap/v2.0.0/agencies/national-library-medicine/reports/site/data"
     - "https://api.gsa.gov/analytics/dap/v2.0.0/agencies/center-disease-control/reports/site/data"
     - "https://api.gsa.gov/analytics/dap/v2.0.0/agencies/food-and-drug-administration/reports/site/data"
+    - "https://api.gsa.gov/analytics/dap/v2.0.0/domain/cms.gov/reports/site/data"
+    - "https://api.gsa.gov/analytics/dap/v2.0.0/domain/nih.gov/reports/site/data"
+    - "https://api.gsa.gov/analytics/dap/v2.0.0/domain/hhs.gov/reports/site/data"
