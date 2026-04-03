@@ -549,7 +549,7 @@
       }
     }
   ],
-  "generated_at": "2026-04-03T19:10:20.999Z",
+  "generated_at": "2026-04-03T19:36:05.660Z",
   "report_status": "success",
   "slow_risk_summary": {
     "successful_url_count": 0,
@@ -564,7 +564,7 @@
       "code": "empty_ingest",
       "message": "DAP API returned 0 records. The report will be empty. Verify the DAP_API_KEY secret is set and that the requested date has data published (data for the current day is often unavailable until the following day).",
       "context": {},
-      "timestamp": "2026-04-03T19:10:21.465Z"
+      "timestamp": "2026-04-03T19:36:06.128Z"
     }
   ],
   "scan_diagnostics": {
