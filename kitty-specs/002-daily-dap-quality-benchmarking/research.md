@@ -1,4 +1,4 @@
-# Research Notes: Daily DAP Quality Benchmarking
+# Research Notes: Daily HHS A11y Scan Quality Benchmarking
 
 ## Decision 1: URL and traffic ingest source
 

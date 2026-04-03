@@ -1,8 +1,8 @@
 ---
-description: "Work packages for Daily DAP Quality Benchmarking"
+description: "Work packages for Daily HHS A11y Scan Quality Benchmarking"
 ---
 
-# Work Packages: Daily DAP Quality Benchmarking
+# Work Packages: Daily HHS A11y Scan Quality Benchmarking
 
 **Inputs**: Design documents from `/kitty-specs/002-daily-dap-quality-benchmarking/`  
 **Prerequisites**: plan.md (required), spec.md, research.md, data-model.md, contracts/daily-report.schema.json, quickstart.md

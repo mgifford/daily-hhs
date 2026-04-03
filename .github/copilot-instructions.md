@@ -1,4 +1,4 @@
-# Copilot Instructions for Daily DAP
+# Copilot Instructions for Daily HHS A11y Scan
 
 ## Primary Agent Instructions
 
@@ -15,7 +15,7 @@ This project benchmarks U.S. government website accessibility. All generated HTM
 
 ## Project Overview
 
-**Daily DAP** runs daily Lighthouse and ScanGov scans against the most-visited U.S. government websites and publishes HTML reports benchmarking performance, accessibility, and quality.
+**Daily HHS A11y Scan** runs daily Lighthouse and ScanGov scans against the most-visited U.S. Department of Health and Human Services (HHS) websites and publishes HTML reports benchmarking performance, accessibility, and quality.
 
 **Key facts for efficient work:**
 
