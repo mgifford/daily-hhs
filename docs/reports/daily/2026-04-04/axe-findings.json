@@ -1,9 +1,9 @@
 {
   "run_date": "2026-04-04",
   "run_id": "run-2026-04-04-38379c06e4",
-  "generated_at": "2026-04-04T02:07:30.271Z",
+  "generated_at": "2026-04-04T09:28:16.887Z",
   "total_urls": 160,
-  "total_findings": 260,
+  "total_findings": 265,
   "urls": [
     {
       "url": "https://pmc.ncbi.nlm.nih.gov",
@@ -909,8 +909,181 @@
     {
       "url": "https://openi.nlm.nih.gov",
       "scan_status": "success",
-      "axe_findings_count": 0,
-      "axe_findings": []
+      "axe_findings_count": 7,
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div#content > app-home > div.openi-related-sites > div",
+              "snippet": "<div _ngcontent-ng-c2263394713=\"\">",
+              "node_label": "Related Sites:",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.35 (foreground color: #a9a9a9, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "document-title",
+          "title": "Document doesn't have a `<title>` element",
+          "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more about document titles](https://dequeuniversity.com/rules/axe/4.11/document-title).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html",
+              "snippet": "<html lang=\"en\">",
+              "node_label": "html",
+              "explanation": "Fix any of the following:\n  Document does not have a non-empty <title> element"
+            }
+          ]
+        },
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.11/image-alt).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.top-bar > div.logo > div.logo-image > img",
+              "snippet": "<img _ngcontent-ng-c479126218=\"\" src=\"/assets/images/open-i-r-flat-01.svg\">",
+              "node_label": "div.top-bar > div.logo > div.logo-image > img",
+              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.result > div.image > a > img",
+              "snippet": "<img _ngcontent-ng-c2263394713=\"\" src=\"/imgs/150/119/4007713/PMC4007713_DEV098061F2.png\">",
+              "node_label": "div.result > div.image > a > img",
+              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.result > div.image > a > img",
+              "snippet": "<img _ngcontent-ng-c2263394713=\"\" src=\"/imgs/150/112/2883703/PMC2883703_6605702f1.png\">",
+              "node_label": "div.result > div.image > a > img",
+              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.result > div.image > a > img",
+              "snippet": "<img _ngcontent-ng-c2263394713=\"\" src=\"/imgs/150/317/3660244/PMC3660244_1479-5876-11-110-2.png\">",
+              "node_label": "div.result > div.image > a > img",
+              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.results > div.result > div.image > a",
+              "snippet": "<a _ngcontent-ng-c2263394713=\"\" href=\"/gridquery?q=ear&amp;it=xg&amp;m=1&amp;n=100\">",
+              "node_label": "div.results > div.result > div.image > a",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            },
+            {
+              "selector": "div.results > div.result > div.image > a",
+              "snippet": "<a _ngcontent-ng-c2263394713=\"\" href=\"/gridquery?q=MYOGLOBIN&amp;it=xg&amp;m=1&amp;n=100\">",
+              "node_label": "div.results > div.result > div.image > a",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            },
+            {
+              "selector": "div.results > div.result > div.image > a",
+              "snippet": "<a _ngcontent-ng-c2263394713=\"\" href=\"/gridquery?q=tumor&amp;it=xg&amp;m=1&amp;n=100\">",
+              "node_label": "div.results > div.result > div.image > a",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.container > div.row > div.col-md-3 > ul.list-inline",
+              "snippet": "<ul _ngcontent-ng-c2943100758=\"\" class=\"list-inline social_media\">",
+              "node_label": "Twitter",
+              "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: a"
+            }
+          ]
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.row > div.col-md-3 > p > a#anch_70",
+              "snippet": "<a _ngcontent-ng-c2943100758=\"\" href=\"https://www.nlm.nih.gov/web_policies.html\" id=\"anch_70\" class=\"text-white\">",
+              "node_label": "Web Policies",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (85.5px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 6px instead of at least 24px."
+            },
+            {
+              "selector": "div.row > div.col-md-3 > p > a#anch_71",
+              "snippet": "<a _ngcontent-ng-c2943100758=\"\" href=\"https://www.nih.gov/institutes-nih/nih-office-director/office-communicatio…\" id=\"anch_71\" class=\"text-white\">",
+              "node_label": "FOIA",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (32.2px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 6px instead of at least 24px."
+            },
+            {
+              "selector": "div.row > div.col-md-3 > p > a#anch_73",
+              "snippet": "<a _ngcontent-ng-c2943100758=\"\" href=\"https://support.nlm.nih.gov/support/create-case/?from=https://lhncbc.nlm.n…\" id=\"anch_73\" class=\"supportLink text-white\">",
+              "node_label": "NLM Support Center",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (137.5px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 6px instead of at least 24px."
+            },
+            {
+              "selector": "div.row > div.col-md-3 > p > a#anch_74",
+              "snippet": "<a _ngcontent-ng-c2943100758=\"\" href=\"https://www.nlm.nih.gov/accessibility.html\" id=\"anch_74\" class=\"text-white\">",
+              "node_label": "Accessibility",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (84.5px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 6px instead of at least 24px."
+            },
+            {
+              "selector": "div.row > div.col-md-3 > p > a#anch_75",
+              "snippet": "<a _ngcontent-ng-c2943100758=\"\" href=\"https://www.nlm.nih.gov/careers/careers.html\" id=\"anch_75\" class=\"text-white\">",
+              "node_label": "Careers",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (52.2px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 6px instead of at least 24px."
+            },
+            {
+              "selector": "div.row > div.col-md-3 > p > a#anch_75",
+              "snippet": "<a _ngcontent-ng-c2943100758=\"\" href=\"/contactus\" id=\"anch_75\" class=\"text-white\">",
+              "node_label": "Contact Us",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (73.3px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 6px instead of at least 24px."
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html",
+              "snippet": "<html lang=\"en\">",
+              "node_label": "html",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ]
     },
     {
       "url": "https://nlm.nih.gov",
@@ -1310,7 +1483,7 @@
     {
       "url": "https://magazine.medlineplus.gov",
       "scan_status": "success",
-      "axe_findings_count": 5,
+      "axe_findings_count": 4,
       "axe_findings": [
         {
           "id": "frame-title",
@@ -1322,7 +1495,7 @@
           "items": [
             {
               "selector": "section.usa-grid > div.usa-width-two-thirds > div.video-responsive > iframe",
-              "snippet": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/1YrKVobZnNg\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"0\">",
+              "snippet": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/watch?v=QawExnFORVM\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"0\">",
               "node_label": "section.usa-grid > div.usa-width-two-thirds > div.video-responsive > iframe",
               "explanation": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             }
@@ -1339,24 +1512,8 @@
             {
               "selector": "div.usa-width-one-third > article > a > h4",
               "snippet": "<h4>",
-              "node_label": "Breathing like everyone else",
+              "node_label": "The power of music",
               "explanation": "Fix any of the following:\n  Heading order invalid"
-            }
-          ]
-        },
-        {
-          "id": "image-alt",
-          "title": "Image elements do not have `[alt]` attributes",
-          "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.11/image-alt).",
-          "score": 0,
-          "impact": "critical",
-          "tags": [],
-          "items": [
-            {
-              "selector": "article > a > div.feature_img > img.feature_img",
-              "snippet": "<img src=\"/images/uploads/main_images/_spotlight_article/DaraTorres_CaniBrands_Final…\" class=\"feature_img\" alt=\" \">",
-              "node_label": " ",
-              "explanation": "Fix all of the following:\n  Element has an alt attribute containing only a space character, which is not ignored by all screen readers"
             }
           ]
         },
@@ -2022,62 +2179,9 @@
     },
     {
       "url": "https://archive.cdc.gov",
-      "scan_status": "success",
-      "axe_findings_count": 1,
-      "axe_findings": [
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.sm:flex > div.grow > div.flex > button.w-[20px]",
-              "snippet": "<button class=\"w-[20px] h-[20px] \" tabindex=\"0\">",
-              "node_label": "Select to search",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (20px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            },
-            {
-              "selector": "nav > ul.text-sm > li.md:w-1/2 > a.text-white",
-              "snippet": "<a class=\"text-white no-underline hover:underline\" href=\"https://www.cdc.gov/about/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">",
-              "node_label": "About CDC",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (76.8px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
-            },
-            {
-              "selector": "nav > ul.text-sm > li.md:w-1/2 > a.text-white",
-              "snippet": "<a class=\"text-white no-underline hover:underline\" href=\"https://www.cdc.gov/other/accessibility.html\" target=\"_blank\" rel=\"noopener noreferrer\">",
-              "node_label": "Accessibility",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (82.7px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
-            },
-            {
-              "selector": "nav > ul.text-sm > li.md:w-1/2 > a.text-white",
-              "snippet": "<a class=\"text-white no-underline hover:underline\" href=\"https://www.cdc.gov/other/privacy.html\" target=\"_blank\" rel=\"noopener noreferrer\">",
-              "node_label": "Privacy",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (49.8px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 21px instead of at least 24px."
-            },
-            {
-              "selector": "nav > ul.text-sm > li.md:w-1/2 > a.text-white",
-              "snippet": "<a class=\"text-white no-underline hover:underline\" href=\"https://www.cdc.gov/od/foia/\" target=\"_blank\" rel=\"noopener noreferrer\">",
-              "node_label": "FOIA",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (35.5px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 21px instead of at least 24px."
-            },
-            {
-              "selector": "nav > ul.text-sm > li.md:w-1/2 > a.text-white",
-              "snippet": "<a class=\"text-white no-underline hover:underline\" href=\"https://www.cdc.gov/Other/policies.html\" target=\"_blank\" rel=\"noopener noreferrer\">",
-              "node_label": "Policies",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (52.3px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19.2px instead of at least 24px."
-            },
-            {
-              "selector": "nav > ul.text-sm > li.md:w-1/2 > a.text-white",
-              "snippet": "<a class=\"text-white no-underline hover:underline\" href=\"https://www.usa.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">",
-              "node_label": "USA.gov",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (59.9px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19.2px instead of at least 24px."
-            }
-          ]
-        }
-      ]
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
     },
     {
       "url": "https://npin.cdc.gov",
@@ -2116,9 +2220,42 @@
     },
     {
       "url": "https://tools.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
+      "scan_status": "success",
+      "axe_findings_count": 2,
+      "axe_findings": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "nav#share-nav > div > div.module-typeH > h4",
+              "snippet": "<h4>",
+              "node_label": "Top Syndicated Media",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.card > div.card-body > p > a",
+              "snippet": "<a href=\"https://www.cdc.gov/cdc-info/forms/contact-us.html\">",
+              "node_label": "Send us a message",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.61:1 with the surrounding text. (Minimum contrast is 3:1, link text: #075290, surrounding text: #000000)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        }
+      ]
     },
     {
       "url": "https://trace.ncbi.nlm.nih.gov",
@@ -3374,7 +3511,7 @@
     {
       "url": "https://preview.ncbi.nlm.nih.gov",
       "scan_status": "success",
-      "axe_findings_count": 3,
+      "axe_findings_count": 2,
       "axe_findings": [
         {
           "id": "color-contrast",
@@ -3441,22 +3578,6 @@
               "snippet": "<a href=\"https://www.nlm.nih.gov/careers/careers.html\" class=\"text-white\">",
               "node_label": "Careers",
               "explanation": "Fix any of the following:\n  Target has insufficient size (49.8px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 23.8px instead of at least 24px."
-            }
-          ]
-        },
-        {
-          "id": "landmark-one-main",
-          "title": "Document does not have a main landmark.",
-          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
-          "score": 0,
-          "impact": "moderate",
-          "tags": [],
-          "items": [
-            {
-              "selector": "html",
-              "snippet": "<html lang=\"en\">",
-              "node_label": "html",
-              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
             }
           ]
         }
@@ -3902,25 +4023,8 @@
     {
       "url": "https://nia.nih.gov",
       "scan_status": "success",
-      "axe_findings_count": 1,
-      "axe_findings": [
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
-          "score": 0,
-          "impact": "moderate",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.usa-card > div.usa-card__container > div.usa-card__header > h3.usa-card__heading",
-              "snippet": "<h3 class=\"usa-card__heading\">",
-              "node_label": "Funding Opportunities",
-              "explanation": "Fix any of the following:\n  Heading order invalid"
-            }
-          ]
-        }
-      ]
+      "axe_findings_count": 0,
+      "axe_findings": []
     },
     {
       "url": "https://nida.nih.gov",
@@ -4164,7 +4268,7 @@
     {
       "url": "https://labels.fda.gov",
       "scan_status": "success",
-      "axe_findings_count": 6,
+      "axe_findings_count": 9,
       "axe_findings": [
         {
           "id": "html-has-lang",
@@ -4176,7 +4280,7 @@
           "items": [
             {
               "selector": "html",
-              "snippet": "<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:addthis=\"http://www.addthis.com/help/api-spec\">",
+              "snippet": "<html xmlns=\"http://www.w3.org/1999/xhtml\">",
               "node_label": "html",
               "explanation": "Fix any of the following:\n  The <html> element does not have a lang attribute"
             }
@@ -4191,10 +4295,62 @@
           "tags": [],
           "items": [
             {
-              "selector": "div#fda-rightmast > div#search-form > form#search_form > input#query",
-              "snippet": "<input accesskey=\"4\" type=\"text\" name=\"s\" id=\"query\" autocomplete=\"off\" class=\"usagov-search-autocomplete\">",
-              "node_label": "div#fda-rightmast > div#search-form > form#search_form > input#query",
-              "explanation": "Fix all of the following:\n  Form element has explicit <label> that is hidden"
+              "selector": "div#fda-rightmast > div#search-form > form#searchbox > input#search",
+              "snippet": "<input id=\"search\" name=\"q\" tabindex=\"2\" type=\"text\">",
+              "node_label": "div#fda-rightmast > div#search-form > form#searchbox > input#search",
+              "explanation": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div#content > div.box_body > p > a",
+              "snippet": "<a href=\"http://dailymed.nlm.nih.gov/dailymed/about.cfm\">",
+              "node_label": "DailyMed",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.2:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0f2a8c, surrounding text: #484138)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div#wrapper > div#content > div.box_body > a",
+              "snippet": "<a href=\"http://dailymed.nlm.nih.gov/dailymed/downloadLabels.cfm\">",
+              "node_label": "National Library of Medicine’s Download Labels site",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.2:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0f2a8c, surrounding text: #484138)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.box_body > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/AnimalVeterinary/Products/default.htm\">",
+              "node_label": "Animal and Veterinary Products",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.2:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0f2a8c, surrounding text: #484138)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.box_body > ul > li > a",
+              "snippet": "<a href=\"http://www.accessdata.fda.gov/scripts/cder/drugsatfda/index.cfm\">",
+              "node_label": "Drugs @ FDA",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.2:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0f2a8c, surrounding text: #484138)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.box_body > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/BiologicsBloodVaccines/ucm121134.htm\">",
+              "node_label": "Biologics Products and Establishments",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.2:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0f2a8c, surrounding text: #484138)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.box_body > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/AboutFDA/CentersOffices/CDER/ucm093452.htm\">",
+              "node_label": "Office of Nonprescription Products",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.2:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0f2a8c, surrounding text: #484138)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div#content > div.box_body > p > a",
+              "snippet": "<a href=\"mailto:spl@fda.hhs.gov\">",
+              "node_label": "spl@fda.hhs.gov",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.2:1 with the surrounding text. (Minimum contrast is 3:1, link text: #0f2a8c, surrounding text: #484138)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
             }
           ]
         },
@@ -4207,10 +4363,42 @@
           "tags": [],
           "items": [
             {
-              "selector": "div#content > span#user_provided > p > a",
+              "selector": "div#content > div.box_body > p > a",
               "snippet": "<a href=\"http://www.fda.gov/Drugs/InformationOnDrugs/ucm142438.htm\">",
-              "node_label": "div#content > span#user_provided > p > a",
+              "node_label": "div#content > div.box_body > p > a",
               "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div#wrapper > div#footer > div.hmenu > ul",
+              "snippet": "<ul>",
+              "node_label": "Combination Products Advisory Committees Science & Research Regulatory Informat…",
+              "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: br"
+            }
+          ]
+        },
+        {
+          "id": "skip-link",
+          "title": "Skip links are not focusable.",
+          "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.11/skip-link).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body > div.quicklinks > a.quicklinks",
+              "snippet": "<a href=\"#section-menu\" class=\"quicklinks\" tabindex=\"1\">",
+              "node_label": "Skip to Section Content Menu",
+              "explanation": "Fix any of the following:\n  No skip link target"
             }
           ]
         },
@@ -4230,20 +4418,38 @@
             },
             {
               "selector": "body > div.quicklinks > a.quicklinks",
-              "snippet": "<a href=\"#search_form\" class=\"quicklinks\" tabindex=\"1\">",
+              "snippet": "<a href=\"#search\" class=\"quicklinks\" tabindex=\"1\">",
               "node_label": "Skip to Search",
               "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
             },
             {
               "selector": "body > div.quicklinks > a.quicklinks",
-              "snippet": "<a href=\"#fda-topmenu-home\" class=\"quicklinks\" tabindex=\"1\">",
+              "snippet": "<a href=\"#fda-topmenu\" class=\"quicklinks\" tabindex=\"1\">",
               "node_label": "Skip to Topics Menu",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "body > div.quicklinks > a.quicklinks",
+              "snippet": "<a href=\"#section-menu\" class=\"quicklinks\" tabindex=\"1\">",
+              "node_label": "Skip to Section Content Menu",
               "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
             },
             {
               "selector": "body > div.quicklinks > a.quicklinks",
               "snippet": "<a href=\"#footer\" class=\"quicklinks\" tabindex=\"1\">",
               "node_label": "Skip to Common Links",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#fda-rightmast > div#search-form > form#searchbox > input#search",
+              "snippet": "<input id=\"search\" name=\"q\" tabindex=\"2\" type=\"text\">",
+              "node_label": "div#fda-rightmast > div#search-form > form#searchbox > input#search",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#fda-rightmast > div#search-form > form#searchbox > input#go_button",
+              "snippet": "<input id=\"go_button\" src=\"/scripts/includes/images/img_fdagov_Go_button.gif\" alt=\"Search button\" tabindex=\"3\" type=\"image\" align=\"middle\">",
+              "node_label": "Search button",
               "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
             }
           ]
@@ -4257,94 +4463,94 @@
           "tags": [],
           "items": [
             {
-              "selector": "div#page-tools > ul.list-horizontal > li > a#font-size-decrease",
-              "snippet": "<a id=\"font-size-decrease\" href=\"#\">",
-              "node_label": "Decrease font size",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (5px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0.4px instead of at least 24px."
+              "selector": "div.hmenu > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/MedicalDevices/default.htm\">",
+              "node_label": "Medical Devices",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (90.3px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.8px instead of at least 24px."
             },
             {
-              "selector": "div#page-tools > ul.list-horizontal > li > a#font-size-standard",
-              "snippet": "<a id=\"font-size-standard\" href=\"#\">",
-              "node_label": "Return font size to normal",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (8px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0.4px instead of at least 24px."
-            },
-            {
-              "selector": "div#page-tools > ul.list-horizontal > li > a#font-size-increase",
-              "snippet": "<a id=\"font-size-increase\" href=\"#\">",
-              "node_label": "Increase font size",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (11px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 6.4px instead of at least 24px."
-            },
-            {
-              "selector": "div#masthead-links > ul.list-horizontal > li > a",
-              "snippet": "<a href=\"https://www.fda.gov/news-events/interactive-media\">",
-              "node_label": "Follow FDA",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (52.2px by 11px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
-            },
-            {
-              "selector": "div#masthead-links > ul.list-horizontal > li.last > a",
-              "snippet": "<a href=\"https://www.fda.gov/about-fda/fda-en-espanol\">",
-              "node_label": "En Español",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (51.7px by 11px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
-            },
-            {
-              "selector": "div > ul.list-no-bullets > li > a",
-              "snippet": "<a href=\"https://www.fda.gov/combination-products\">",
+              "selector": "div.hmenu > ul > li#first > a",
+              "snippet": "<a href=\"http://www.fda.gov/CombinationProducts/default.htm\">",
               "node_label": "Combination Products",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (106.7px by 11px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.2px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (122.1px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14px instead of at least 24px."
             },
             {
-              "selector": "div > ul.list-no-bullets > li > a",
-              "snippet": "<a href=\"https://www.fda.gov/advisory-committees\">",
+              "selector": "div.hmenu > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/AdvisoryCommittees/default.htm\">",
               "node_label": "Advisory Committees",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (102.3px by 11px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.2px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (117.2px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 4.2px instead of at least 24px."
             },
             {
-              "selector": "div > ul.list-no-bullets > li > a",
-              "snippet": "<a href=\"https://www.fda.gov/Science-Research\">",
+              "selector": "div.hmenu > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/ScienceResearch/default.htm\">",
               "node_label": "Science & Research",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (95.2px by 11px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.6px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (112.4px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14px instead of at least 24px."
             },
             {
-              "selector": "div > ul.list-no-bullets > li > a",
-              "snippet": "<a href=\"https://www.fda.gov/Regulatory-Information\">",
+              "selector": "div.hmenu > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/RegulatoryInformation/default.htm\">",
               "node_label": "Regulatory Information",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (109.5px by 11px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.4px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (125.5px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14px instead of at least 24px."
             },
             {
-              "selector": "div > ul.list-no-bullets > li > a",
-              "snippet": "<a href=\"https://www.fda.gov/emergency-preparedness-and-response\">",
+              "selector": "div.hmenu > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/Safety/default.htm\">",
+              "node_label": "Safety",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (35.2px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14px instead of at least 24px."
+            },
+            {
+              "selector": "div.hmenu > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/EmergencyPreparedness/default.htm\">",
               "node_label": "Emergency Preparedness",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (122.3px by 11px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (143.4px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.8px instead of at least 24px."
             },
             {
-              "selector": "div > ul.list-no-bullets > li > a",
-              "snippet": "<a href=\"https://www.fda.gov/international-programs\">",
+              "selector": "div.hmenu > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/InternationalPrograms/default.htm\">",
               "node_label": "International Programs",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (109px by 11px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (125.5px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14px instead of at least 24px."
             },
             {
-              "selector": "div > ul.list-no-bullets > li > a",
-              "snippet": "<a href=\"https://www.fda.gov/inspections-compliance-enforcement-and-criminal-invest…\">",
+              "selector": "div.hmenu > ul > li#first > a",
+              "snippet": "<a href=\"http://www.fda.gov/NewsEvents/default.htm\">",
+              "node_label": "News & Events",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (84.1px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14px instead of at least 24px."
+            },
+            {
+              "selector": "div.hmenu > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/Training/default.htm\">",
+              "node_label": "Training and Continuing Education",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (189.9px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 4.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.hmenu > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/ICECI/default.htm\">",
               "node_label": "Inspections/Compliance",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (114.5px by 11px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (131.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14px instead of at least 24px."
             },
             {
-              "selector": "div > ul.list-no-bullets > li > a",
-              "snippet": "<a href=\"https://www.fda.gov/federal-state-local-tribal-and-territorial-officials\">",
+              "selector": "div.hmenu > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/ForFederalStateandLocalOfficials/default.htm\">",
               "node_label": "State & Local Officials",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (105.1px by 11px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (121.1px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14px instead of at least 24px."
             },
             {
-              "selector": "div > ul.list-no-bullets > li > a",
-              "snippet": "<a href=\"https://www.fda.gov/consumers\">",
+              "selector": "div.hmenu > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/ForConsumers/default.htm\">",
               "node_label": "Consumers",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (54.8px by 11px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.8px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (63.4px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14px instead of at least 24px."
             },
             {
-              "selector": "div > ul.list-no-bullets > li > a",
-              "snippet": "<a href=\"https://www.fda.gov/industry\">",
+              "selector": "div.hmenu > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/ForIndustry/default.htm\">",
               "node_label": "Industry",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (39.3px by 11px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.8px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (44.1px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14px instead of at least 24px."
+            },
+            {
+              "selector": "div.hmenu > ul > li > a",
+              "snippet": "<a href=\"http://www.fda.gov/ForHealthProfessionals/default.htm\">",
+              "node_label": "Health Professionals",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (113.8px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14px instead of at least 24px."
             }
           ]
         },
@@ -4358,7 +4564,7 @@
           "items": [
             {
               "selector": "html",
-              "snippet": "<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:addthis=\"http://www.addthis.com/help/api-spec\">",
+              "snippet": "<html xmlns=\"http://www.w3.org/1999/xhtml\">",
               "node_label": "html",
               "explanation": "Fix all of the following:\n  Document does not have a main landmark"
             }
@@ -5341,67 +5547,8 @@
     {
       "url": "https://cwpm.acf.gov",
       "scan_status": "success",
-      "axe_findings_count": 1,
-      "axe_findings": [
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div._sideNavMenu-module--search--b308e > form > div.display-flex > a",
-              "snippet": "<a href=\"/search?keyword=&amp;policyArea=undefined\">",
-              "node_label": "Search",
-              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 131.1px by 8px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8px instead of at least 24px."
-            },
-            {
-              "selector": "li > ul > li > a.external",
-              "snippet": "<a href=\"https://www.hhs.gov\" class=\"external\" target=\"_blank\">",
-              "node_label": "HHS.gov",
-              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 57px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 15.8px instead of at least 24px."
-            },
-            {
-              "selector": "li > ul > li > a.external",
-              "snippet": "<a href=\"https://www.grants.gov\" class=\"external\" target=\"_blank\">",
-              "node_label": "Grants.gov",
-              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 67.8px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 15.8px instead of at least 24px."
-            },
-            {
-              "selector": "li > ul > li > a.external",
-              "snippet": "<a href=\"https://www.usajobs.gov/\" class=\"external\" target=\"_blank\">",
-              "node_label": "USAJobs.gov",
-              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 79.4px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "selector": "li > ul > li > a.external",
-              "snippet": "<a href=\"https://oig.hhs.gov/fraud/report-fraud/\" class=\"external\" target=\"_blank\">",
-              "node_label": "Report Fraud",
-              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 79.3px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19.2px instead of at least 24px."
-            },
-            {
-              "selector": "li > ul > li > a",
-              "snippet": "<a href=\"https://acf.gov/accessibility\">",
-              "node_label": "Accessibility",
-              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 61.2px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 13.4px instead of at least 24px."
-            },
-            {
-              "selector": "li > ul > li > a",
-              "snippet": "<a href=\"https://acf.gov/about/acf-policies/no-fear-act\">",
-              "node_label": "No FEAR Act",
-              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 60.6px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8.6px instead of at least 24px."
-            },
-            {
-              "selector": "li > ul > li > a",
-              "snippet": "<a href=\"https://acf.gov/foia\">",
-              "node_label": "FOIA",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (23.5px by 25px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19.2px instead of at least 24px."
-            }
-          ]
-        }
-      ]
+      "axe_findings_count": 0,
+      "axe_findings": []
     },
     {
       "url": "https://www.access.fda.gov",
@@ -7719,37 +7866,21 @@
     {
       "url": "https://hfp-onlinesubmissions.fda.gov",
       "scan_status": "success",
-      "axe_findings_count": 4,
+      "axe_findings_count": 3,
       "axe_findings": [
         {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "id": "html-has-lang",
+          "title": "`<html>` element does not have a `[lang]` attribute",
+          "description": "If a page doesn't specify a `lang` attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more about the `lang` attribute](https://dequeuniversity.com/rules/axe/4.11/html-has-lang).",
           "score": 0,
           "impact": "serious",
           "tags": [],
           "items": [
             {
-              "selector": "app-navbar > mat-toolbar.mat-toolbar > mat-toolbar-row.mat-toolbar-row > span.text-primary",
-              "snippet": "<span _ngcontent-ng-c462615152=\"\" class=\"text-primary\">",
-              "node_label": "Centralized Online Submission Module",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.19 (foreground color: #007cba, background color: #f5f5f5, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
-            }
-          ]
-        },
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
-          "score": 0,
-          "impact": "moderate",
-          "tags": [],
-          "items": [
-            {
-              "selector": "span.ng-star-inserted > div.alert > form.ng-untouched > h5.text-fdablack",
-              "snippet": "<h5 class=\"text-fdablack\">",
-              "node_label": "FURLS User Registration",
-              "explanation": "Fix any of the following:\n  Heading order invalid"
+              "selector": "html",
+              "snippet": "<html>",
+              "node_label": "html",
+              "explanation": "Fix any of the following:\n  The <html> element does not have a lang attribute"
             }
           ]
         },
@@ -7762,15 +7893,27 @@
           "tags": [],
           "items": [
             {
-              "selector": "div.row > div.col-lg-6 > div.d-flex > img.img-thumbnail",
-              "snippet": "<img width=\"190\" src=\"./assets/images/COSM_SubmissionHelpGuide.png\" class=\"img-thumbnail\" style=\"cursor: pointer;\">",
-              "node_label": "div.row > div.col-lg-6 > div.d-flex > img.img-thumbnail",
+              "selector": "tbody > tr > td > img",
+              "snippet": "<img src=\"./OracleHTTPServer12c_files/gradation_header_L.gif\" align=\"left\">",
+              "node_label": "tbody > tr > td > img",
               "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             },
             {
-              "selector": "div.row > div.col-lg-6 > div.d-flex > img.img-thumbnail",
-              "snippet": "<img width=\"190\" src=\"./assets/images/COSM_SubmissionHelpVideo.png\" class=\"img-thumbnail\" style=\"cursor: pointer;\">",
-              "node_label": "div.row > div.col-lg-6 > div.d-flex > img.img-thumbnail",
+              "selector": "tbody > tr > td > img",
+              "snippet": "<img src=\"./OracleHTTPServer12c_files/gradation_header_R.gif\" align=\"right\">",
+              "node_label": "tbody > tr > td > img",
+              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "tbody > tr > td > img",
+              "snippet": "<img src=\"./OracleHTTPServer12c_files/footer_L.gif\" height=\"25\">",
+              "node_label": "tbody > tr > td > img",
+              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "tbody > tr > td > img",
+              "snippet": "<img src=\"./OracleHTTPServer12c_files/footer_R.gif\" align=\"right\" height=\"25\">",
+              "node_label": "tbody > tr > td > img",
               "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             }
           ]
@@ -7785,7 +7928,7 @@
           "items": [
             {
               "selector": "html",
-              "snippet": "<html lang=\"en\" data-critters-container=\"\">",
+              "snippet": "<html>",
               "node_label": "html",
               "explanation": "Fix all of the following:\n  Document does not have a main landmark"
             }
@@ -7808,25 +7951,8 @@
     {
       "url": "https://hivinfo.nih.gov",
       "scan_status": "success",
-      "axe_findings_count": 1,
-      "axe_findings": [
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.o-widget-container > div.o-body > div.c-search > button#search__icon",
-              "snippet": "<button id=\"search__icon\" class=\"c-search__icon\" style=\"\">",
-              "node_label": "Search",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (20px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
-            }
-          ]
-        }
-      ]
+      "axe_findings_count": 0,
+      "axe_findings": []
     },
     {
       "url": "https://www.accessdata.fda.gov",

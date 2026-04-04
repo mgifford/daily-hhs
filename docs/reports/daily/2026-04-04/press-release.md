@@ -2,7 +2,7 @@ FOR IMMEDIATE RELEASE
 
 # HHS Website Accessibility Report: April 4, 2026
 
-*Washington, D.C. -- April 4, 2026* -- A daily scan of 147 of the most-visited HHS government websites found 260 accessibility barriers across 160 URLs today. The most common issues include Digital Motor Access, Primary Content Identification, and Document Structure Navigation.
+*Washington, D.C. -- April 4, 2026* -- A daily scan of 147 of the most-visited HHS government websites found 265 accessibility barriers across 160 URLs today. The most common issues include Digital Motor Access, Primary Content Identification, and Document Structure Navigation.
 
 These barriers prevent Americans with disabilities from independently accessing essential HHS government services. This is a single daily snapshot of the most popular ~160 pages in HHS web properties, as ranked by traffic data from [analytics.usa.gov](https://analytics.usa.gov/health-human-services) (powered by the Digital Analytics Program, DAP).
 
@@ -12,15 +12,15 @@ Based on page traffic data and U.S. Census disability prevalence estimates (ACS 
 
 | Disability Group | Affected Page Loads | Estimated People Affected |
 |-----------------|---------------------|--------------------------|
-| Limited Reach and Strength | 4,931,037 | ~286,000 |
-| Without Perception of Color | 4,731,492 | ~203,454 |
-| Limited Manipulation | 6,743,501 | ~148,357 |
-| Limited Vision | 4,755,743 | ~114,138 |
-| Without Vision | 6,705,341 | ~67,053 |
-| Without Hearing | 6,705,341 | ~20,116 |
-| Limited Language, Cognitive, and Learning Abilities | 8,094 | ~380 |
+| Limited Reach and Strength | 4,949,205 | ~287,054 |
+| Without Perception of Color | 4,756,683 | ~204,537 |
+| Limited Manipulation | 6,764,251 | ~148,814 |
+| Limited Vision | 4,780,555 | ~114,733 |
+| Without Vision | 6,729,188 | ~67,292 |
+| Without Hearing | 6,729,188 | ~20,188 |
+| Limited Language, Cognitive, and Learning Abilities | 8,169 | ~384 |
 
-*Total page loads across all scanned URLs today: 16,548,738*
+*Total page loads across all scanned URLs today: 16,548,376*
 
 *Estimates use disability prevalence rates from the U.S. Census Bureau American Community Survey (ACS) 2022, supplemented by CDC, NIDCD, AFB, and NIH/NEI data. These are rough estimates intended to illustrate the scale of accessibility barriers, not precise measurements.*
 
@@ -30,7 +30,7 @@ The following accessibility issues were most frequently found across today's sca
 
 ### 1. `target-size`: Digital Motor Access
 
-*Found on 41 government websites today*
+*Found on 39 government websites today*
 
 Small touch targets act as a digital gatekeeper, excluding individuals with tremors, arthritis, or limited dexterity from accessing essential services independently. These technical failures transform a routine interaction into a source of failure, stripping away the autonomy of citizens who require a frictionless, accessible interface to participate in digital life. The approximately 58 million Americans with ambulatory or self-care disabilities are disproportionately impacted by inadequate touch target sizing on government mobile websites.
 
@@ -55,7 +55,7 @@ Without a main landmark, screen reader users lose their most efficient way to sk
 
 ### 3. `heading-order`: Document Structure Navigation
 
-*Found on 29 government websites today*
+*Found on 28 government websites today*
 
 Screen reader users navigate complex government websites primarily through heading structure, using headings as a table of contents to jump between sections. Skipped heading levels break the logical document outline, causing confusion about the hierarchy of information and forcing users to re-read sections to understand the relationship between topics, adding significant time and effort to information-gathering tasks.
 
@@ -78,7 +78,7 @@ Low contrast text is one of the most pervasive barriers on government websites, 
 
 ### 5. `link-name`: Link Purpose Clarity
 
-*Found on 19 government websites today*
+*Found on 20 government websites today*
 
 Links without accessible names are completely useless to screen reader users who navigate government pages by jumping between links. An unnamed link could lead anywhere, and activating it unknowingly could trigger downloads, open unexpected pages, or initiate unintended processes. On government websites, unnamed links undermine the informed consent principle by preventing citizens from knowing where a link will take them.
 
@@ -94,10 +94,10 @@ Aggregate Lighthouse scores across 147 scanned HHS government websites today:
 
 | Metric | Score |
 |--------|-------|
-| Accessibility | 92.27 |
-| Performance | 56.13 |
-| Best Practices | 91.2 |
-| SEO | 88.71 |
+| Accessibility | 91.74 |
+| Performance | 55.82 |
+| Best Practices | 91.19 |
+| SEO | 88.43 |
 
 ## About This Report
 
