@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { setTimeout as sleep } from 'node:timers/promises';
 import { logProgress, countByReason } from '../lib/logging.js';
 
 function toRecord(raw, sourceDate) {
@@ -96,21 +97,33 @@ function extractArrayPayload(payload) {
   throw new Error('DAP payload did not contain an array of records.');
 }
 
-export async function fetchDapRecords({ endpoint, fetchImpl = fetch }) {
+export async function fetchDapRecords({ endpoint, fetchImpl = fetch, maxRetries = 3, retryDelayMs = 2000 }) {
   const safeEndpoint = endpoint.replace(/([?&])api_key=[^&]*/g, '$1api_key=REDACTED');
-  logProgress('INGEST', 'Fetching DAP records from API', { endpoint: safeEndpoint });
 
-  const response = await fetchImpl(endpoint);
-  logProgress('INGEST', 'DAP API response received', { status: response.status, ok: response.ok, endpoint: safeEndpoint });
+  for (let retry = 0; retry <= maxRetries; retry++) {
+    const attempt = retry + 1;
+    logProgress('INGEST', 'Fetching DAP records from API', { endpoint: safeEndpoint, attempt });
 
-  if (!response.ok) {
-    throw new Error(`Failed to fetch DAP records (${response.status}) from ${endpoint}`);
+    const response = await fetchImpl(endpoint);
+    logProgress('INGEST', 'DAP API response received', { status: response.status, ok: response.ok, endpoint: safeEndpoint });
+
+    if (response.ok) {
+      const payload = await response.json();
+      const records = extractArrayPayload(payload);
+      logProgress('INGEST', 'DAP API raw records received', { rawCount: records.length });
+      return records;
+    }
+
+    const isTransient = response.status >= 500 && response.status < 600;
+    if (!isTransient || retry >= maxRetries) {
+      throw new Error(`Failed to fetch DAP records (${response.status}) from ${endpoint}`);
+    }
+
+    // Exponential backoff: 1x, 2x, 4x, ... the base delay
+    const backoffMs = retryDelayMs * 2 ** retry;
+    logProgress('INGEST', 'DAP API transient error, retrying', { status: response.status, attempt, backoffMs, endpoint: safeEndpoint });
+    await sleep(backoffMs);
   }
-
-  const payload = await response.json();
-  const records = extractArrayPayload(payload);
-  logProgress('INGEST', 'DAP API raw records received', { rawCount: records.length });
-  return records;
 }
 
 function buildDapEndpoint(endpoint, apiKey, { limit, date, page } = {}) {

@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { readDapRecordsFromFile, normalizeDapRecords, getNormalizedTopPages } from '../../src/ingest/dap-source.js';
+import { readDapRecordsFromFile, normalizeDapRecords, getNormalizedTopPages, fetchDapRecords } from '../../src/ingest/dap-source.js';
 
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 const fixturePath = path.resolve(currentDir, '../fixtures/dap-sample.json');
@@ -286,4 +286,47 @@ test('getNormalizedTopPages paginates until a page returns fewer records than da
   const page2 = new URL(capturedUrls[1]);
   assert.equal(page2.searchParams.get('page'), '2', 'second request should include page=2');
   assert.equal(result.records.length, pageSize * 2 + 1, 'should have records from all 3 pages');
+});
+
+test('fetchDapRecords retries on 504 and succeeds on subsequent attempt', async () => {
+  let callCount = 0;
+  const mockFetch = async () => {
+    callCount++;
+    if (callCount < 2) {
+      return { ok: false, status: 504 };
+    }
+    return { ok: true, status: 200, json: async () => [{ url: 'https://example.gov', page_load_count: 10 }] };
+  };
+
+  const records = await fetchDapRecords({ endpoint: 'https://api.gsa.gov/test', fetchImpl: mockFetch, retryDelayMs: 0 });
+  assert.equal(callCount, 2, 'should have made 2 attempts');
+  assert.equal(records.length, 1);
+});
+
+test('fetchDapRecords throws after exhausting retries on persistent 504', async () => {
+  let callCount = 0;
+  const mockFetch = async () => {
+    callCount++;
+    return { ok: false, status: 504 };
+  };
+
+  await assert.rejects(
+    () => fetchDapRecords({ endpoint: 'https://api.gsa.gov/test', fetchImpl: mockFetch, maxRetries: 2, retryDelayMs: 0 }),
+    /Failed to fetch DAP records \(504\)/
+  );
+  assert.equal(callCount, 3, 'should have made 3 total attempts (1 + 2 retries)');
+});
+
+test('fetchDapRecords does not retry on 404 (non-transient)', async () => {
+  let callCount = 0;
+  const mockFetch = async () => {
+    callCount++;
+    return { ok: false, status: 404 };
+  };
+
+  await assert.rejects(
+    () => fetchDapRecords({ endpoint: 'https://api.gsa.gov/test', fetchImpl: mockFetch, retryDelayMs: 0 }),
+    /Failed to fetch DAP records \(404\)/
+  );
+  assert.equal(callCount, 1, 'should not retry on 404');
 });
