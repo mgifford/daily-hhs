@@ -47,6 +47,12 @@ export function validatePrevalenceConfig(config) {
     }
   }
 
+  if (scan.dap_fetch_timeout_ms !== undefined) {
+    if (typeof scan.dap_fetch_timeout_ms !== 'number' || !Number.isInteger(scan.dap_fetch_timeout_ms) || scan.dap_fetch_timeout_ms < 1) {
+      errors.push('scan.dap_fetch_timeout_ms must be an integer greater than 0 when provided');
+    }
+  }
+
   if (
     typeof scan.history_lookback_days !== 'number' ||
     !Number.isInteger(scan.history_lookback_days) ||
