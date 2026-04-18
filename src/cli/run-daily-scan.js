@@ -336,10 +336,15 @@ function createMockScannerRunners(failNeedles = []) {
   };
 }
 
-function createLiveScannerRunners() {
+function createLiveScannerRunners(config = {}) {
+  const pauseAfterLoadMs = config?.scan?.pause_after_load_ms ?? 2000;
   return {
     lighthouseRunner: {
-      executionOptions: {}
+      executionOptions: {
+        settings: {
+          pauseAfterLoadMs
+        }
+      }
     },
     scanGovRunner: {
       runImpl: async () => ({ issues: [] })
@@ -574,7 +579,7 @@ export async function runDailyScan(inputArgs = parseArgs(process.argv)) {
     });
 
     const { lighthouseRunner, scanGovRunner, readabilityRunner } =
-      args.scanMode === 'mock' ? createMockScannerRunners(args.mockFailUrl) : createLiveScannerRunners();
+      args.scanMode === 'mock' ? createMockScannerRunners(args.mockFailUrl) : createLiveScannerRunners(runtimeConfig);
     const scanExecution = await executeUrlScans(normalized.records, {
       runId: runMetadata.run_id,
       concurrency: args.concurrency,
