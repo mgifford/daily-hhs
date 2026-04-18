@@ -97,14 +97,28 @@ function extractArrayPayload(payload) {
   throw new Error('DAP payload did not contain an array of records.');
 }
 
-export async function fetchDapRecords({ endpoint, fetchImpl = fetch, maxRetries = 3, retryDelayMs = 2000 }) {
+export async function fetchDapRecords({ endpoint, fetchImpl = fetch, maxRetries = 3, retryDelayMs = 2000, fetchTimeoutMs = 120_000 }) {
   const safeEndpoint = endpoint.replace(/([?&])api_key=[^&]*/g, '$1api_key=REDACTED');
 
   for (let retry = 0; retry <= maxRetries; retry++) {
     const attempt = retry + 1;
     logProgress('INGEST', 'Fetching DAP records from API', { endpoint: safeEndpoint, attempt });
 
-    const response = await fetchImpl(endpoint);
+    let response;
+    try {
+      const signal = AbortSignal.timeout(fetchTimeoutMs);
+      response = await fetchImpl(endpoint, { signal });
+    } catch (networkErr) {
+      const isLastAttempt = retry >= maxRetries;
+      if (isLastAttempt) {
+        throw new Error(`Failed to fetch DAP records (network error) from ${safeEndpoint}: ${networkErr.message}`);
+      }
+      const backoffMs = retryDelayMs * 2 ** retry;
+      logProgress('INGEST', 'DAP API network error, retrying', { attempt, backoffMs, endpoint: safeEndpoint, error: networkErr.message });
+      await sleep(backoffMs);
+      continue;
+    }
+
     logProgress('INGEST', 'DAP API response received', { status: response.status, ok: response.ok, endpoint: safeEndpoint });
 
     if (response.ok) {
@@ -154,7 +168,7 @@ function getPreviousDate(dateStr) {
   return d.toISOString().slice(0, 10);
 }
 
-async function fetchAllPagesFromEndpoint({ endpoint, apiKey, pageSize, date, fetchImpl }) {
+async function fetchAllPagesFromEndpoint({ endpoint, apiKey, pageSize, date, fetchImpl, fetchTimeoutMs, maxRecordsPerEndpoint = Infinity }) {
   // If the endpoint already has a ?limit= preset, respect it as the effective page size
   const presetLimit = new URL(endpoint).searchParams.get('limit');
   const effectivePageSize = presetLimit ? parseInt(presetLimit, 10) : pageSize;
@@ -168,10 +182,10 @@ async function fetchAllPagesFromEndpoint({ endpoint, apiKey, pageSize, date, fet
       date,
       page: page > 1 ? page : undefined
     });
-    const records = await fetchDapRecords({ endpoint: pagedEndpoint, fetchImpl });
+    const records = await fetchDapRecords({ endpoint: pagedEndpoint, fetchImpl, fetchTimeoutMs });
     allRecords.push(...records);
 
-    if (records.length < effectivePageSize) {
+    if (records.length < effectivePageSize || allRecords.length >= maxRecordsPerEndpoint) {
       break;
     }
     page++;
@@ -205,6 +219,7 @@ export async function getNormalizedTopPages({
   sourceDate,
   dapApiKey,
   dapPageSize,
+  dapFetchTimeoutMs,
   fetchImpl = fetch
 }) {
   let rawRecords;
@@ -239,7 +254,7 @@ export async function getNormalizedTopPages({
   const allRawRecords = (
     await Promise.all(
       resolvedEndpoints.map(async (ep) => {
-        return fetchAllPagesFromEndpoint({ endpoint: ep, apiKey: dapApiKey, pageSize, date: queryDate, fetchImpl });
+        return fetchAllPagesFromEndpoint({ endpoint: ep, apiKey: dapApiKey, pageSize, date: queryDate, fetchImpl, fetchTimeoutMs: dapFetchTimeoutMs, maxRecordsPerEndpoint: limit });
       })
     )
   ).flat();

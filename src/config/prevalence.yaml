@@ -1,6 +1,7 @@
 scan:
   url_limit: 250
   dap_page_size: 1000
+  dap_fetch_timeout_ms: 120000
   history_lookback_days: 31
   dashboard_display_days: 14
   traffic_window_mode: daily

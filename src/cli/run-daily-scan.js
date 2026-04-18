@@ -513,6 +513,7 @@ export async function runDailyScan(inputArgs = parseArgs(process.argv)) {
       sourceFile: args.sourceFile,
       limit: runtimeConfig.scan.url_limit,
       dapPageSize: runtimeConfig.scan.dap_page_size,
+      dapFetchTimeoutMs: runtimeConfig.scan.dap_fetch_timeout_ms,
       sourceDate: runMetadata.run_date,
       dapApiKey
     });

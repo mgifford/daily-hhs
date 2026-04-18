@@ -330,3 +330,62 @@ test('fetchDapRecords does not retry on 404 (non-transient)', async () => {
   );
   assert.equal(callCount, 1, 'should not retry on 404');
 });
+
+test('fetchDapRecords retries on network error and succeeds on subsequent attempt', async () => {
+  let callCount = 0;
+  const mockFetch = async () => {
+    callCount++;
+    if (callCount < 2) {
+      throw new Error('fetch failed');
+    }
+    return { ok: true, status: 200, json: async () => [{ url: 'https://example.gov', page_load_count: 10 }] };
+  };
+
+  const records = await fetchDapRecords({ endpoint: 'https://api.gsa.gov/test', fetchImpl: mockFetch, retryDelayMs: 0 });
+  assert.equal(callCount, 2, 'should have made 2 attempts');
+  assert.equal(records.length, 1);
+});
+
+test('fetchDapRecords throws after exhausting retries on persistent network error', async () => {
+  let callCount = 0;
+  const mockFetch = async () => {
+    callCount++;
+    throw new Error('fetch failed');
+  };
+
+  await assert.rejects(
+    () => fetchDapRecords({ endpoint: 'https://api.gsa.gov/test', fetchImpl: mockFetch, maxRetries: 2, retryDelayMs: 0 }),
+    /Failed to fetch DAP records \(network error\)/
+  );
+  assert.equal(callCount, 3, 'should have made 3 total attempts (1 + 2 retries)');
+});
+
+test('getNormalizedTopPages stops paginating once maxRecordsPerEndpoint (limit) is reached', async () => {
+  const capturedUrls = [];
+  const pageSize = 3;
+
+  const mockFetch = async (url) => {
+    capturedUrls.push(url);
+    return {
+      ok: true,
+      json: async () => [
+        { url: `https://example.gov/r${capturedUrls.length}a`, page_load_count: 90 },
+        { url: `https://example.gov/r${capturedUrls.length}b`, page_load_count: 80 },
+        { url: `https://example.gov/r${capturedUrls.length}c`, page_load_count: 70 }
+      ]
+    };
+  };
+
+  // limit=2 is less than pageSize=3, so one full page already exceeds limit and pagination stops
+  const result = await getNormalizedTopPages({
+    endpoint: 'https://api.gsa.gov/analytics/dap/v2.0.0/agencies/hhs/reports/site/data',
+    limit: 2,
+    dapPageSize: pageSize,
+    sourceDate: '2026-04-03',
+    dapApiKey: 'test-key',
+    fetchImpl: mockFetch
+  });
+
+  assert.equal(capturedUrls.length, 1, 'should stop after first page since limit is already reached');
+  assert.equal(result.records.length, 2, 'should return at most limit records');
+});
