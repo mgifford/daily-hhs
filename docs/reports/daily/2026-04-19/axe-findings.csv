@@ -1,0 +1,226 @@
+url,scan_status,finding_id,finding_title,finding_description,finding_score,tags,item_selector,item_snippet,item_node_label,item_explanation
+https://fda.gov,success,heading-order,Heading elements are not in a sequentially-descending order,"Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",0,,div.fda-ft-container > div.fda-ft-heading > div.fda-ft-heading-text > h3.fda-ft-heading-title,"<h3 class=""fda-ft-heading-title"">",Featured Topics,"Fix any of the following:
+  Heading order invalid"
+https://fda.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,div#quicklinks > ul.list-inline > li > a.btn,"<a href=""#main-content"" class=""btn btn-default margin-top-3"" tabindex=""1"" data-once=""download-role-button lang-fix-multilingual"">",Skip to main content,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://fda.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,div#quicklinks > ul.list-inline > li > a.btn,"<a href=""#search-form"" class=""btn btn-default margin-top-3"" tabindex=""1"" data-once=""download-role-button lang-fix-multilingual"">",Skip to FDA Search,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://fda.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,div#quicklinks > ul.list-inline > li > a.btn,"<a href=""#footer"" class=""btn btn-default margin-top-3"" tabindex=""1"" data-once=""download-role-button lang-fix-multilingual"">",Skip to footer links,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://accessdata.fda.gov,success,,,,,,,,,
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-733986051,"<button type=""button"" id=""trigger-tabs-733986051"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-733986051"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-733986051,"Fix any of the following:
+  Required ARIA parent role not present: tablist"
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-621879498,"<button type=""button"" id=""trigger-tabs-621879498"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-621879498"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-621879498,"Fix any of the following:
+  Required ARIA parent role not present: tablist"
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1225386991,"<button type=""button"" id=""trigger-tabs-1225386991"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1225386991"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1225386991,"Fix any of the following:
+  Required ARIA parent role not present: tablist"
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-478654398,"<button type=""button"" id=""trigger-tabs-478654398"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-478654398"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-478654398,"Fix any of the following:
+  Required ARIA parent role not present: tablist"
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1144513692,"<button type=""button"" id=""trigger-tabs-1144513692"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1144513692"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1144513692,"Fix any of the following:
+  Required ARIA parent role not present: tablist"
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-733986051,"<button type=""button"" id=""trigger-tabs-733986051"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-733986051"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-733986051,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-621879498,"<button type=""button"" id=""trigger-tabs-621879498"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-621879498"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-621879498,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1225386991,"<button type=""button"" id=""trigger-tabs-1225386991"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1225386991"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1225386991,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-478654398,"<button type=""button"" id=""trigger-tabs-478654398"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-478654398"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-478654398,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1144513692,"<button type=""button"" id=""trigger-tabs-1144513692"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1144513692"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1144513692,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://nih.gov,success,link-in-text-block,Links rely on color to be distinguishable.,Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).,0,,div.usa-identifier__container > div.usa-identifier__identity > p.usa-identifier__identity-disclaimer > a.ext,"<a href=""http://www.hhs.gov/"" class=""ext"" data-extlink="""" target=""_blank"" rel=""noopener nofollow noreferrer"">",Department of Health and Human Services,"Fix any of the following:
+  The link has insufficient color contrast of 1.31:1 with the surrounding text. (Minimum contrast is 3:1, link text: #dfe1e2, surrounding text: #ffffff)
+  The link has no styling (such as underline) to distinguish it from the surrounding text"
+https://hhs.gov,success,,,,,,,,,
+https://precision.fda.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,footer.grid > div.flex > div.ThemeToggle__StyledThemeToggle-iEYfvb > button,"<button data-active=""true"">",footer.grid > div.flex > div.ThemeToggle__StyledThemeToggle-iEYfvb > button,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://precision.fda.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,footer.grid > div.flex > div.ThemeToggle__StyledThemeToggle-iEYfvb > button,"<button data-active=""false"">",footer.grid > div.flex > div.ThemeToggle__StyledThemeToggle-iEYfvb > button,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://precision.fda.gov,success,link-name,Links do not have a discernible name,"Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",0,,div > ul.mt-0 > li.mb-2 > a,"<a href=""mailto:precisionfda@fda.hhs.gov"">",div > ul.mt-0 > li.mb-2 > a,"Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute"
+https://direct.fda.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).,0,,tbody > tr > td > input#P101_LOGIN,"<input type=""button"" onclick=""SubmitClick();"" value=""Login"" class=""btn-red disable-on-submit"" style=""width: 215px; min-width: 85%; margin-top: 28px; border-radius: 10px;"" id=""P101_LOGIN"" autocomplete=""off"">",tbody > tr > td > input#P101_LOGIN,"Fix any of the following:
+  Element has insufficient color contrast of 4.04 (foreground color: #ffffff, background color: #da4f49, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+https://direct.fda.gov,success,label,Form elements do not have associated labels,"Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.11/label).",0,,td.disclaimer > div#P101_AGREE > div.apex-item-option > input#P101_AGREE_0,"<input type=""checkbox"" id=""P101_AGREE_0"" name=""P101_AGREE"" data-display="""" value=""Y"" autocomplete=""off"">",td.disclaimer > div#P101_AGREE > div.apex-item-option > input#P101_AGREE_0,"Fix all of the following:
+  Form element has explicit <label> that is hidden
+
+Fix any of the following:
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element has no placeholder attribute
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://direct.fda.gov,success,label,Form elements do not have associated labels,"Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.11/label).",0,,tbody > tr > td > input#P_HP_NAME,"<input type=""text"" id=""P_HP_NAME"" name=""P_HP_NAME"" class=""text_field apex-item-text apex-hp"" style=""position: absolute !important; left: -99999px !important;"" value="""" size=""30"" autocomplete=""off"">",tbody > tr > td > input#P_HP_NAME,"Fix any of the following:
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element has no placeholder attribute
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://direct.fda.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,tbody > tr > td > label#P101_USERNAME_LABEL,"<label style=""font-weight:bold;"" class=""even_width"" for=""P101_USERNAME"" id=""P101_USERNAME_LABEL"" tabindex=""999"">",Username:,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://direct.fda.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,tbody > tr > td > label#P101_PASSWORD_LABEL,"<label style=""font-weight:bold;"" class=""even_width"" for=""P101_PASSWORD"" id=""P101_PASSWORD_LABEL"" tabindex=""999"">",Password:,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://direct.fda.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,tbody > tr > td.disclaimer > label#P101_AGREE_LABEL,"<label style=""font-weight:bold;"" class=""even_width"" for=""P101_AGREE"" id=""P101_AGREE_LABEL"" tabindex=""999"">",tbody > tr > td.disclaimer > label#P101_AGREE_LABEL,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://direct.fda.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,tbody > tr > td > label#P101_SEPARATOR_LABEL,"<label style=""font-weight:bold;"" class=""even_width"" for=""P101_SEPARATOR"" id=""P101_SEPARATOR_LABEL"" tabindex=""999"">",OR,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://direct.fda.gov,success,landmark-one-main,Document does not have a main landmark.,One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).,0,,html,"<html lang=""en"" xmlns=""http://www.w3.org/1999/xhtml"" xmlns:htmldb=""http://htmldb.oracle.com"" xmlns:apex=""http://apex.oracle.com"" data-useragent=""Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (K…"">",html,"Fix all of the following:
+  Document does not have a main landmark"
+https://hfpappexternal.fda.gov,success,,,,,,,,,
+https://access.fda.gov,success,,,,,,,,,
+https://purplebooksearch.fda.gov,success,link-name,Links do not have a discernible name,"Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",0,,header > div.header > div.container > a.header-link,"<a href=""https://www.fda.gov/"" class=""header-link"">",FDA Logo,"Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute"
+https://datadashboard.fda.gov,success,heading-order,Heading elements are not in a sequentially-descending order,"Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",0,,div#fdaFooter > div.row > div.col-xs-12 > h6.icon-email,"<h6 class=""icon-email"">",Contact,"Fix any of the following:
+  Heading order invalid"
+https://datadashboard.fda.gov,success,meta-viewport,"`[user-scalable=""no""]` is used in the `<meta name=""viewport"">` element or the `[maximum-scale]` attribute is less than 5.",Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more about the viewport meta tag](https://dequeuniversity.com/rules/axe/4.11/meta-viewport).,0,,head > meta,"<meta name=""viewport"" content=""width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-sc…"">",head > meta,"Fix any of the following:
+  user-scalable=no on <meta> tag disables zooming on mobile devices"
+https://datadashboard.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div.col-sm-12 > div.col-xs-5 > div.col-xs-12 > a#fb1,"<a id=""fb1"" href=""https://www.fda.gov/about-fda/about-website/internet-accessibility"" target=""_blank"">","Accessibility
+(Opens in new window)","Fix any of the following:
+  Target has insufficient size (83.6px by 20px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+https://datadashboard.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div.col-sm-12 > div.col-xs-5 > div.col-xs-12 > a#fb3,"<a id=""fb3"" href=""https://www.fda.gov/about-fda"" target=""_blank"">","About FDA
+(Opens in new window)","Fix any of the following:
+  Target has insufficient size (75px by 20px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+https://datadashboard.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div.col-sm-12 > div.col-xs-5 > div.col-xs-12 > a#fb4,"<a id=""fb4"" href=""https://www.fda.gov/regulatory-information/freedom-information"" target=""_blank"">","FOIA
+(Opens in new window)","Fix any of the following:
+  Target has insufficient size (33.8px by 20px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+https://datadashboard.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div.col-sm-12 > div.col-xs-7 > div.col-xs-12 > a#fb5,"<a id=""fb5"" href=""https://www.fda.gov/about-fda/jobs-and-training-fda/no-fear-act"" target=""_blank"">","No FEAR Act
+(Opens in new window)","Fix any of the following:
+  Target has insufficient size (87.4px by 20px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+https://datadashboard.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div.col-sm-12 > div.col-xs-7 > div.col-xs-12 > a#fb7,"<a id=""fb7"" href=""https://www.fda.gov/about-fda/about-website/website-policies"" target=""_blank"">","Website Policies
+(Opens in new window)","Fix any of the following:
+  Target has insufficient size (110.4px by 20px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+https://animaldrugsatfda.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div.row > div.col-sm-5 > span.control-label > a,"<a href="""" ng-show=""!showAdvanced"" ng-click=""showAdvanced=!showAdvanced"">",>> ,"Fix any of the following:
+  Target has insufficient size (16.7px by 14px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.6px instead of at least 24px."
+https://animaldrugsatfda.fda.gov,success,landmark-one-main,Document does not have a main landmark.,One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).,0,,html#ng-app,"<html lang=""en"" ng-app=""myApp"" class=""ng-scope"" id=""ng-app"" style=""position: relative; background: transparent;"">",html#ng-app,"Fix all of the following:
+  Document does not have a main landmark"
+https://labels.fda.gov,success,html-has-lang,`<html>` element does not have a `[lang]` attribute,"If a page doesn't specify a `lang` attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more about the `lang` attribute](https://dequeuniversity.com/rules/axe/4.11/html-has-lang).",0,,html,"<html xmlns=""http://www.w3.org/1999/xhtml"" xmlns:addthis=""http://www.addthis.com/help/api-spec"">",html,"Fix any of the following:
+  The <html> element does not have a lang attribute"
+https://labels.fda.gov,success,label,Form elements do not have associated labels,"Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.11/label).",0,,div#fda-rightmast > div#search-form > form#search_form > input#query,"<input accesskey=""4"" type=""text"" name=""s"" id=""query"" autocomplete=""off"" class=""usagov-search-autocomplete"">",div#fda-rightmast > div#search-form > form#search_form > input#query,"Fix all of the following:
+  Form element has explicit <label> that is hidden"
+https://labels.fda.gov,success,link-name,Links do not have a discernible name,"Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",0,,div#content > span#user_provided > p > a,"<a href=""http://www.fda.gov/Drugs/InformationOnDrugs/ucm142438.htm"">",div#content > span#user_provided > p > a,"Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute"
+https://labels.fda.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,body > div.quicklinks > a.quicklinks,"<a href=""#main"" accesskey=""2"" class=""quicklinks"" tabindex=""1"">",Quick Links: Skip to main page content,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://labels.fda.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,body > div.quicklinks > a.quicklinks,"<a href=""#search_form"" class=""quicklinks"" tabindex=""1"">",Skip to Search,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://labels.fda.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,body > div.quicklinks > a.quicklinks,"<a href=""#fda-topmenu-home"" class=""quicklinks"" tabindex=""1"">",Skip to Topics Menu,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://labels.fda.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,body > div.quicklinks > a.quicklinks,"<a href=""#footer"" class=""quicklinks"" tabindex=""1"">",Skip to Common Links,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://labels.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div#page-tools > ul.list-horizontal > li > a#font-size-decrease,"<a id=""font-size-decrease"" href=""#"">",Decrease font size,"Fix any of the following:
+  Target has insufficient size (5px by 15px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0.4px instead of at least 24px."
+https://labels.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div#page-tools > ul.list-horizontal > li > a#font-size-standard,"<a id=""font-size-standard"" href=""#"">",Return font size to normal,"Fix any of the following:
+  Target has insufficient size (8px by 15px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0.4px instead of at least 24px."
+https://labels.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div#page-tools > ul.list-horizontal > li > a#font-size-increase,"<a id=""font-size-increase"" href=""#"">",Increase font size,"Fix any of the following:
+  Target has insufficient size (11px by 15px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 6.4px instead of at least 24px."
+https://labels.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div#masthead-links > ul.list-horizontal > li > a,"<a href=""https://www.fda.gov/news-events/interactive-media"">",Follow FDA,"Fix any of the following:
+  Target has insufficient size (52.2px by 11px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+https://labels.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div#masthead-links > ul.list-horizontal > li.last > a,"<a href=""https://www.fda.gov/about-fda/fda-en-espanol"">",En Español,"Fix any of the following:
+  Target has insufficient size (51.7px by 11px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 11px instead of at least 24px."
+https://labels.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div > ul.list-no-bullets > li > a,"<a href=""https://www.fda.gov/combination-products"">",Combination Products,"Fix any of the following:
+  Target has insufficient size (106.7px by 11px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.2px instead of at least 24px."
+https://labels.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div > ul.list-no-bullets > li > a,"<a href=""https://www.fda.gov/advisory-committees"">",Advisory Committees,"Fix any of the following:
+  Target has insufficient size (102.3px by 11px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.2px instead of at least 24px."
+https://labels.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div > ul.list-no-bullets > li > a,"<a href=""https://www.fda.gov/Science-Research"">",Science & Research,"Fix any of the following:
+  Target has insufficient size (95.2px by 11px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.6px instead of at least 24px."
+https://labels.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div > ul.list-no-bullets > li > a,"<a href=""https://www.fda.gov/Regulatory-Information"">",Regulatory Information,"Fix any of the following:
+  Target has insufficient size (109.5px by 11px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.4px instead of at least 24px."
+https://labels.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div > ul.list-no-bullets > li > a,"<a href=""https://www.fda.gov/emergency-preparedness-and-response"">",Emergency Preparedness,"Fix any of the following:
+  Target has insufficient size (122.3px by 11px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
+https://labels.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div > ul.list-no-bullets > li > a,"<a href=""https://www.fda.gov/international-programs"">",International Programs,"Fix any of the following:
+  Target has insufficient size (109px by 11px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
+https://labels.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div > ul.list-no-bullets > li > a,"<a href=""https://www.fda.gov/inspections-compliance-enforcement-and-criminal-invest…"">",Inspections/Compliance,"Fix any of the following:
+  Target has insufficient size (114.5px by 11px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17px instead of at least 24px."
+https://labels.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div > ul.list-no-bullets > li > a,"<a href=""https://www.fda.gov/federal-state-local-tribal-and-territorial-officials"">",State & Local Officials,"Fix any of the following:
+  Target has insufficient size (105.1px by 11px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17px instead of at least 24px."
+https://labels.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div > ul.list-no-bullets > li > a,"<a href=""https://www.fda.gov/consumers"">",Consumers,"Fix any of the following:
+  Target has insufficient size (54.8px by 11px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.8px instead of at least 24px."
+https://labels.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div > ul.list-no-bullets > li > a,"<a href=""https://www.fda.gov/industry"">",Industry,"Fix any of the following:
+  Target has insufficient size (39.3px by 11px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.8px instead of at least 24px."
+https://labels.fda.gov,success,landmark-one-main,Document does not have a main landmark.,One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).,0,,html,"<html xmlns=""http://www.w3.org/1999/xhtml"" xmlns:addthis=""http://www.addthis.com/help/api-spec"">",html,"Fix all of the following:
+  Document does not have a main landmark"
+https://timp-ccid.fda.gov,success,,,,,,,,,
