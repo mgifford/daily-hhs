@@ -1,0 +1,170 @@
+url,scan_status,finding_id,finding_title,finding_description,finding_score,tags,item_selector,item_snippet,item_node_label,item_explanation
+https://cdc.gov,success,link-name,Links do not have a discernible name,"Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",0,,nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle,"<a id=""cdc-mobile-search-toggle"" class=""nav-link"" href=""#"" aria-controls=""cdc-mobile-search-form"">",nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle,"Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute"
+https://cdc.gov,success,skip-link,Skip links are not focusable.,Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.11/skip-link).,0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#headerSearch"" tabindex=""2"">",Skip to search,"Fix any of the following:
+  No skip link target"
+https://cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#content"" tabindex=""1"">",Skip to site content,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#headerSearch"" tabindex=""2"">",Skip to search,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle,"<button id=""animation-toggle"" aria-pressed=""true"" tabindex=""3"">",Pause carousel,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2065515238,"<button type=""button"" id=""trigger-tabs-2065515238"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-2065515238"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2065515238,"Fix any of the following:
+  Required ARIA parent role not present: tablist"
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1231486061,"<button type=""button"" id=""trigger-tabs-1231486061"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1231486061"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1231486061,"Fix any of the following:
+  Required ARIA parent role not present: tablist"
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2038969877,"<button type=""button"" id=""trigger-tabs-2038969877"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-2038969877"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2038969877,"Fix any of the following:
+  Required ARIA parent role not present: tablist"
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1365278106,"<button type=""button"" id=""trigger-tabs-1365278106"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1365278106"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1365278106,"Fix any of the following:
+  Required ARIA parent role not present: tablist"
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-271424389,"<button type=""button"" id=""trigger-tabs-271424389"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-271424389"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-271424389,"Fix any of the following:
+  Required ARIA parent role not present: tablist"
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2065515238,"<button type=""button"" id=""trigger-tabs-2065515238"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-2065515238"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2065515238,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1231486061,"<button type=""button"" id=""trigger-tabs-1231486061"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1231486061"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1231486061,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2038969877,"<button type=""button"" id=""trigger-tabs-2038969877"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-2038969877"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2038969877,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1365278106,"<button type=""button"" id=""trigger-tabs-1365278106"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1365278106"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1365278106,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-271424389,"<button type=""button"" id=""trigger-tabs-271424389"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-271424389"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-271424389,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://acf.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,li > ul > li > a.external,"<a href=""https://www.hhs.gov"" class=""external"" target=""_blank"">",HHS.gov ,"Fix any of the following:
+  Target has insufficient size because it is partially obscured (smallest space is 59.4px by 19.2px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 15.8px instead of at least 24px."
+https://acf.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,li > ul > li > a.external,"<a href=""https://www.grants.gov"" class=""external"" target=""_blank"">",Grants.gov ,"Fix any of the following:
+  Target has insufficient size because it is partially obscured (smallest space is 70.2px by 19.2px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 15.8px instead of at least 24px."
+https://acf.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,li > ul > li > a.external,"<a href=""https://www.usajobs.gov/"" class=""external"" target=""_blank"">",USAJobs.gov ,"Fix any of the following:
+  Target has insufficient size because it is partially obscured (smallest space is 81.8px by 19.2px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+https://acf.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,li > ul > li > a.external,"<a href=""https://oig.hhs.gov/fraud/report-fraud/"" class=""external"" target=""_blank"">",Report Fraud ,"Fix any of the following:
+  Target has insufficient size because it is partially obscured (smallest space is 81.7px by 19.2px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19.2px instead of at least 24px."
+https://acf.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,li > ul > li > a,"<a href=""/accessibility"">",Accessibility,"Fix any of the following:
+  Target has insufficient size because it is partially obscured (smallest space is 61.2px by 19.2px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 13.4px instead of at least 24px."
+https://acf.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,li > ul > li > a,"<a href=""/about/acf-policies/no-fear-act"">",No FEAR Act,"Fix any of the following:
+  Target has insufficient size because it is partially obscured (smallest space is 60.6px by 19.2px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8.6px instead of at least 24px."
+https://acf.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,li > ul > li > a,"<a href=""/foia"">",FOIA,"Fix any of the following:
+  Target has insufficient size (23.5px by 25px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19.2px instead of at least 24px."
+https://hhs.gov,success,,,,,,,,,
+https://nih.gov,success,link-in-text-block,Links rely on color to be distinguishable.,Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).,0,,div.usa-identifier__container > div.usa-identifier__identity > p.usa-identifier__identity-disclaimer > a.ext,"<a href=""http://www.hhs.gov/"" class=""ext"" data-extlink="""" target=""_blank"" rel=""noopener nofollow noreferrer"">",Department of Health and Human Services,"Fix any of the following:
+  The link has insufficient color contrast of 1.31:1 with the surrounding text. (Minimum contrast is 3:1, link text: #dfe1e2, surrounding text: #ffffff)
+  The link has no styling (such as underline) to distinguish it from the surrounding text"
+https://wwwnc.cdc.gov,success,link-name,Links do not have a discernible name,"Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",0,,nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle,"<a id=""cdc-mobile-search-toggle"" class=""nav-link"" href=""#"" aria-controls=""cdc-mobile-search-form"">",nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle,"Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute"
+https://wwwnc.cdc.gov,success,skip-link,Skip links are not focusable.,Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.11/skip-link).,0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#headerSearch"" tabindex=""2"">",Skip to search,"Fix any of the following:
+  No skip link target"
+https://wwwnc.cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#content"" tabindex=""1"">",Skip to site content,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://wwwnc.cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#headerSearch"" tabindex=""2"">",Skip to search,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://wwwnc.cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle,"<button id=""animation-toggle"" aria-pressed=""true"" tabindex=""3"">",Pause carousel,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://wwwn.cdc.gov,success,,,,,,,,,
+https://search.cdc.gov,success,link-name,Links do not have a discernible name,"Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",0,,nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle,"<a id=""cdc-mobile-search-toggle"" class=""nav-link"" href=""#"" aria-controls=""cdc-mobile-search-form"">",nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle,"Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute"
+https://search.cdc.gov,success,skip-link,Skip links are not focusable.,Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.11/skip-link).,0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#headerSearch"" tabindex=""2"">",Skip to search,"Fix any of the following:
+  No skip link target"
+https://search.cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#content"" tabindex=""1"">",Skip to site content,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://search.cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#headerSearch"" tabindex=""2"">",Skip to search,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://search.cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle,"<button id=""animation-toggle"" aria-pressed=""true"" tabindex=""3"">",Pause carousel,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://archive.cdc.gov,failed,,,,,,,,,
+https://atsdr.cdc.gov,failed,,,,,,,,,
+https://npin.cdc.gov,failed,,,,,,,,,
+https://gis.cdc.gov,failed,,,,,,,,,
+https://icd10cmtool.cdc.gov,failed,,,,,,,,,
+https://wonder.cdc.gov,failed,,,,,,,,,
+https://ncsacw.acf.gov,failed,,,,,,,,,
+https://ndc.services.cdc.gov,failed,,,,,,,,,
+https://www.cdc.gov,failed,,,,,,,,,
+https://gettested.cdc.gov,failed,,,,,,,,,
+https://blogs.cdc.gov,failed,,,,,,,,,
+https://reach.cdc.gov,failed,,,,,,,,,
+https://www2a.cdc.gov,failed,,,,,,,,,
+https://vaccines.gov,failed,,,,,,,,,
+https://jobs.cdc.gov,failed,,,,,,,,,
+https://phgkb.cdc.gov,failed,,,,,,,,,
+https://tools.cdc.gov,failed,,,,,,,,,
+https://thecommunityguide.org,failed,,,,,,,,,
+https://wisqars.cdc.gov,failed,,,,,,,,,
+https://selectagents.gov,failed,,,,,,,,,
+https://millionhearts.hhs.gov,failed,,,,,,,,,
+https://shi.cdc.gov,failed,,,,,,,,,
+https://vetoviolence.cdc.gov,failed,,,,,,,,,
+https://places.cdc.gov,failed,,,,,,,,,
+https://phinvads.cdc.gov,failed,,,,,,,,,
+https://nationaldppcsc.cdc.gov,failed,,,,,,,,,
+https://nccd.cdc.gov,failed,,,,,,,,,
+https://youthonline.cdc.gov,failed,,,,,,,,,
+https://www2.cdc.gov,failed,,,,,,,,,
+https://nfr.cdc.gov,failed,,,,,,,,,
+https://cwpm.acf.gov,failed,,,,,,,,,
+https://yrbs-explorer.services.cdc.gov,failed,,,,,,,,,
+https://ephtracking.cdc.gov,failed,,,,,,,,,
+https://pids.cdc.gov,failed,,,,,,,,,
+https://hivrisk.cdc.gov,failed,,,,,,,,,
+https://phgkb.glb.cdc.gov,failed,,,,,,,,,
+https://art.cdc.gov,failed,,,,,,,,,
+https://mvps.cdc.gov,failed,,,,,,,,,
+https://oasis.cdc.gov,failed,,,,,,,,,
+https://nchsdata.cdc.gov,failed,,,,,,,,,
+https://www2c.cdc.gov,failed,,,,,,,,,
+https://dprpdataportal.cdc.gov,failed,,,,,,,,,
+https://finddoxypep.cdc.gov,failed,,,,,,,,,
+https://heart-stroke-atlas.cdc.gov,failed,,,,,,,,,
+https://dprp.cdc.gov,failed,,,,,,,,,
