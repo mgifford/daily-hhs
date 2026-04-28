@@ -1,0 +1,3989 @@
+{
+  "run_date": "2026-04-28",
+  "run_id": "run-2026-04-28-d4553a4fc5",
+  "url_limit": 250,
+  "url_counts": {
+    "processed": 64,
+    "succeeded": 27,
+    "failed": 37,
+    "excluded": 0
+  },
+  "aggregate_scores": {
+    "performance": 60.8,
+    "accessibility": 89.55,
+    "best_practices": 92.2,
+    "seo": 88.25,
+    "pwa": 0
+  },
+  "estimated_impact": {
+    "traffic_window_mode": "daily",
+    "affected_share_percent": 42.69,
+    "categories": [
+      {
+        "name": "WV",
+        "prevalence_rate": 0.01,
+        "estimated_impacted_users": 5860.63
+      },
+      {
+        "name": "LV",
+        "prevalence_rate": 0.023,
+        "estimated_impacted_users": 13479.45
+      },
+      {
+        "name": "WPC",
+        "prevalence_rate": 0.043,
+        "estimated_impacted_users": 25200.72
+      },
+      {
+        "name": "WH",
+        "prevalence_rate": 0.003,
+        "estimated_impacted_users": 1758.19
+      },
+      {
+        "name": "LH",
+        "prevalence_rate": 0.034,
+        "estimated_impacted_users": 19926.15
+      },
+      {
+        "name": "WS",
+        "prevalence_rate": 0.005,
+        "estimated_impacted_users": 2930.32
+      },
+      {
+        "name": "LM",
+        "prevalence_rate": 0.023,
+        "estimated_impacted_users": 13479.45
+      },
+      {
+        "name": "LRS",
+        "prevalence_rate": 0.058,
+        "estimated_impacted_users": 33991.67
+      },
+      {
+        "name": "LLCLA",
+        "prevalence_rate": 0.049,
+        "estimated_impacted_users": 28717.1
+      }
+    ]
+  },
+  "fpc_exclusion": {
+    "total_page_loads": 1372768,
+    "scanned_url_count": 27,
+    "categories": {
+      "WV": {
+        "label": "Without Vision",
+        "prevalence_rate": 0.01,
+        "estimated_population": 3400000,
+        "affected_page_loads": 1198027,
+        "affected_share_percent": 87.27,
+        "estimated_excluded_users": 11980.27,
+        "source_note": "AFB: ~3.4 million Americans with severe visual impairment or blindness"
+      },
+      "LV": {
+        "label": "Limited Vision",
+        "prevalence_rate": 0.024,
+        "estimated_population": 8100000,
+        "affected_page_loads": 23506,
+        "affected_share_percent": 1.71,
+        "estimated_excluded_users": 564.14,
+        "source_note": "ACS 2023 + supplemental estimates: vision difficulty (all severity levels); ~2.4% of U.S. population"
+      },
+      "WPC": {
+        "label": "Without Perception of Color",
+        "prevalence_rate": 0.043,
+        "estimated_population": 14500000,
+        "affected_page_loads": 13655,
+        "affected_share_percent": 0.99,
+        "estimated_excluded_users": 587.17,
+        "source_note": "NIH/NEI: ~8% of males and ~0.5% of females have color vision deficiency"
+      },
+      "WH": {
+        "label": "Without Hearing",
+        "prevalence_rate": 0.003,
+        "estimated_population": 1100000,
+        "affected_page_loads": 1198027,
+        "affected_share_percent": 87.27,
+        "estimated_excluded_users": 3594.08,
+        "source_note": "NIDCD: ~1.1 million Americans with functional deafness"
+      },
+      "LH": {
+        "label": "Limited Hearing",
+        "prevalence_rate": 0.035,
+        "estimated_population": 11900000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "NIDCD/ACS combined hearing difficulty estimates: ~3.5% of U.S. population"
+      },
+      "WS": {
+        "label": "Without Speech",
+        "prevalence_rate": 0.005,
+        "estimated_population": 1700000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "NIDCD estimate: severe non-verbal or speech-absent population"
+      },
+      "LM": {
+        "label": "Limited Manipulation",
+        "prevalence_rate": 0.022,
+        "estimated_population": 7600000,
+        "affected_page_loads": 1198084,
+        "affected_share_percent": 87.28,
+        "estimated_excluded_users": 26357.85,
+        "source_note": "ACS 2023 self-care difficulty + dexterity estimates: ~2.2% of U.S. population"
+      },
+      "LRS": {
+        "label": "Limited Reach and Strength",
+        "prevalence_rate": 0.058,
+        "estimated_population": 19600000,
+        "affected_page_loads": 4230,
+        "affected_share_percent": 0.31,
+        "estimated_excluded_users": 245.34,
+        "source_note": "ACS 2023: ambulatory difficulty; ~5.8% of U.S. population"
+      },
+      "LLCLA": {
+        "label": "Limited Language, Cognitive, and Learning Abilities",
+        "prevalence_rate": 0.047,
+        "estimated_population": 15900000,
+        "affected_page_loads": 51,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 2.4,
+        "source_note": "ACS 2023/CDC combined cognitive and learning disability estimates: ~4.7% of U.S. population"
+      }
+    },
+    "census_vintage_year": 2023,
+    "census_source": "U.S. Census Bureau, American Community Survey (ACS) 2023 1-Year Estimates, Table B18101",
+    "census_source_url": "https://www.census.gov/topics/health/disability.html"
+  },
+  "performance_impact": {
+    "benchmark_lcp_ms": 2500,
+    "benchmark_page_weight_bytes": 1600000,
+    "url_count_with_timing": 20,
+    "url_count_with_weight": 20,
+    "total_extra_load_time_seconds": 27207629,
+    "total_extra_load_time_hours": 7557.67,
+    "total_extra_bytes": 5942151999478,
+    "total_extra_gigabytes": 5942.15
+  },
+  "source_data_date": "2026-04-27",
+  "top_urls": [
+    {
+      "url": "https://cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 790328,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 3,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 14802.5065,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 4618,
+          "Google Analytics": 150142
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 39,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "snippet": "<a id=\"cdc-mobile-search-toggle\" class=\"nav-link\" href=\"#\" aria-controls=\"cdc-mobile-search-form\">",
+              "node_label": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "skip-link",
+          "title": "Skip links are not focusable.",
+          "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.11/skip-link).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  No skip link target"
+            }
+          ]
+        },
+        {
+          "id": "tabindex",
+          "title": "Some elements have a `[tabindex]` value greater than 0",
+          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#content\" tabindex=\"1\">",
+              "node_label": "Skip to site content",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle",
+              "snippet": "<button id=\"animation-toggle\" aria-pressed=\"true\" tabindex=\"3\">",
+              "node_label": "Pause carousel",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 243,
+        "char_count": 2301,
+        "words_per_mb": 77
+      }
+    },
+    {
+      "url": "https://fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 339875,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 2,
+      "severe_findings_count": 1,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 51656.72750000001,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Google Tag Manager",
+          "Digital Analytics Program",
+          "Google Ads"
+        ],
+        "third_party_service_sizes": {
+          "Google Analytics": 473844,
+          "Digital Analytics Program": 14848,
+          "Google Tag Manager": 133211,
+          "Google Ads": 556
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "jQuery UI",
+          "Underscore",
+          "Drupal"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 46,
+        "accessibility": 95,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.fda-ft-container > div.fda-ft-heading > div.fda-ft-heading-text > h3.fda-ft-heading-title",
+              "snippet": "<h3 class=\"fda-ft-heading-title\">",
+              "node_label": "Featured Topics",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "tabindex",
+          "title": "Some elements have a `[tabindex]` value greater than 0",
+          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div#quicklinks > ul.list-inline > li > a.btn",
+              "snippet": "<a href=\"#main-content\" class=\"btn btn-default margin-top-3\" tabindex=\"1\" data-once=\"download-role-button lang-fix-multilingual\">",
+              "node_label": "Skip to main content",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#quicklinks > ul.list-inline > li > a.btn",
+              "snippet": "<a href=\"#search-form\" class=\"btn btn-default margin-top-3\" tabindex=\"1\" data-once=\"download-role-button lang-fix-multilingual\">",
+              "node_label": "Skip to FDA Search",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#quicklinks > ul.list-inline > li > a.btn",
+              "snippet": "<a href=\"#footer\" class=\"btn btn-default margin-top-3\" tabindex=\"1\" data-once=\"download-role-button lang-fix-multilingual\">",
+              "node_label": "Skip to footer links",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://accessdata.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 143259,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [],
+        "third_party_service_sizes": {},
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": null,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": []
+      },
+      "lighthouse_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://wwwnc.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 30976,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 3,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 14009.315619999998,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 4619,
+          "Google Analytics": 150142
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 66,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "snippet": "<a id=\"cdc-mobile-search-toggle\" class=\"nav-link\" href=\"#\" aria-controls=\"cdc-mobile-search-form\">",
+              "node_label": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "skip-link",
+          "title": "Skip links are not focusable.",
+          "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.11/skip-link).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  No skip link target"
+            }
+          ]
+        },
+        {
+          "id": "tabindex",
+          "title": "Some elements have a `[tabindex]` value greater than 0",
+          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#content\" tabindex=\"1\">",
+              "node_label": "Skip to site content",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle",
+              "snippet": "<button id=\"animation-toggle\" aria-pressed=\"true\" tabindex=\"3\">",
+              "node_label": "Pause carousel",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 243,
+        "char_count": 2301,
+        "words_per_mb": 77
+      }
+    },
+    {
+      "url": "https://search.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 15886,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 3,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 13857.797000000002,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 4619,
+          "Google Analytics": 150140
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 1,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 66,
+        "accessibility": 91,
+        "best_practices": 96,
+        "seo": 85,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "snippet": "<a id=\"cdc-mobile-search-toggle\" class=\"nav-link\" href=\"#\" aria-controls=\"cdc-mobile-search-form\">",
+              "node_label": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "skip-link",
+          "title": "Skip links are not focusable.",
+          "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.11/skip-link).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  No skip link target"
+            }
+          ]
+        },
+        {
+          "id": "tabindex",
+          "title": "Some elements have a `[tabindex]` value greater than 0",
+          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#content\" tabindex=\"1\">",
+              "node_label": "Skip to site content",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle",
+              "snippet": "<button id=\"animation-toggle\" aria-pressed=\"true\" tabindex=\"3\">",
+              "node_label": "Pause carousel",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://wwwn.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 10879,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [],
+        "third_party_service_sizes": {},
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": null,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": []
+      },
+      "lighthouse_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://access.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 10061,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [],
+        "third_party_service_sizes": {},
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": null,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": []
+      },
+      "lighthouse_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://direct.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 9023,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 4,
+      "severe_findings_count": 3,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 11889.092,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 10230,
+          "Google Analytics": 150554
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "jQuery UI",
+          "Hammer.js"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 55,
+        "accessibility": 84,
+        "best_practices": 77,
+        "seo": 82,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "tbody > tr > td > input#P101_LOGIN",
+              "snippet": "<input type=\"button\" onclick=\"SubmitClick();\" value=\"Login\" class=\"btn-red disable-on-submit\" style=\"width: 215px; min-width: 85%; margin-top: 28px; border-radius: 10px;\" id=\"P101_LOGIN\" autocomplete=\"off\">",
+              "node_label": "tbody > tr > td > input#P101_LOGIN",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.04 (foreground color: #ffffff, background color: #da4f49, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "label",
+          "title": "Form elements do not have associated labels",
+          "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.11/label).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "td.disclaimer > div#P101_AGREE > div.apex-item-option > input#P101_AGREE_0",
+              "snippet": "<input type=\"checkbox\" id=\"P101_AGREE_0\" name=\"P101_AGREE\" data-display=\"\" value=\"Y\" autocomplete=\"off\">",
+              "node_label": "td.disclaimer > div#P101_AGREE > div.apex-item-option > input#P101_AGREE_0",
+              "explanation": "Fix all of the following:\n  Form element has explicit <label> that is hidden\n\nFix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "tbody > tr > td > input#P_HP_NAME",
+              "snippet": "<input type=\"text\" id=\"P_HP_NAME\" name=\"P_HP_NAME\" class=\"text_field apex-item-text apex-hp\" style=\"position: absolute !important; left: -99999px !important;\" value=\"\" size=\"30\" autocomplete=\"off\">",
+              "node_label": "tbody > tr > td > input#P_HP_NAME",
+              "explanation": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        },
+        {
+          "id": "tabindex",
+          "title": "Some elements have a `[tabindex]` value greater than 0",
+          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "tbody > tr > td > label#P101_USERNAME_LABEL",
+              "snippet": "<label style=\"font-weight:bold;\" class=\"even_width\" for=\"P101_USERNAME\" id=\"P101_USERNAME_LABEL\" tabindex=\"999\">",
+              "node_label": "Username:",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "tbody > tr > td > label#P101_PASSWORD_LABEL",
+              "snippet": "<label style=\"font-weight:bold;\" class=\"even_width\" for=\"P101_PASSWORD\" id=\"P101_PASSWORD_LABEL\" tabindex=\"999\">",
+              "node_label": "Password:",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "tbody > tr > td.disclaimer > label#P101_AGREE_LABEL",
+              "snippet": "<label style=\"font-weight:bold;\" class=\"even_width\" for=\"P101_AGREE\" id=\"P101_AGREE_LABEL\" tabindex=\"999\">",
+              "node_label": "tbody > tr > td.disclaimer > label#P101_AGREE_LABEL",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "tbody > tr > td > label#P101_SEPARATOR_LABEL",
+              "snippet": "<label style=\"font-weight:bold;\" class=\"even_width\" for=\"P101_SEPARATOR\" id=\"P101_SEPARATOR_LABEL\" tabindex=\"999\">",
+              "node_label": "OR",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html",
+              "snippet": "<html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:htmldb=\"http://htmldb.oracle.com\" xmlns:apex=\"http://apex.oracle.com\" data-useragent=\"Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (K…\">",
+              "node_label": "html",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 419,
+        "char_count": 2902,
+        "words_per_mb": 202
+      }
+    },
+    {
+      "url": "https://atsdr.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 5724,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 1,
+      "severe_findings_count": 1,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 23274.721000000034,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 4619,
+          "Google Analytics": 150142
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 69,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.11/label-content-name-mismatch).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.row > div.col-lg-3 > h2 > a.cdc-footer__super-title",
+              "snippet": "<a href=\"/index.html\" class=\"cdc-footer__super-title\" aria-label=\"Agency for Toxic Substances and Disease Registry\">",
+              "node_label": "ATSDR ",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 183,
+        "char_count": 1272,
+        "words_per_mb": 14
+      }
+    },
+    {
+      "url": "https://hfpappexternal.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 5615,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [],
+        "third_party_service_sizes": {},
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": null,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": []
+      },
+      "lighthouse_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://icd10cmtool.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 4178,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 1,
+      "severe_findings_count": 1,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 5544.06,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Google Analytics": 150142
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 1,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "React",
+          "Lo-Dash"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 65,
+        "accessibility": 96,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.row > div.text-right > div.build-info > span",
+              "snippet": "<span>",
+              "node_label": "API Version: 1.1.0",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #777777, background color: #f5f5f5, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.row > div.text-right > div.build-info > span",
+              "snippet": "<span>",
+              "node_label": "Client Version: 2.1.0",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #777777, background color: #f5f5f5, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://npin.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 4132,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://datadashboard.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 4052,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 3,
+      "severe_findings_count": 1,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 6719.2405,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program",
+          "Google Ads"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 10237,
+          "Google Analytics": 458619,
+          "Google Ads": 562
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 43,
+        "accessibility": 81,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div#fdaFooter > div.row > div.col-xs-12 > h6.icon-email",
+              "snippet": "<h6 class=\"icon-email\">",
+              "node_label": "Contact",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "meta-viewport",
+          "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
+          "description": "Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more about the viewport meta tag](https://dequeuniversity.com/rules/axe/4.11/meta-viewport).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "head > meta",
+              "snippet": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-sc…\">",
+              "node_label": "head > meta",
+              "explanation": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+            }
+          ]
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.col-sm-12 > div.col-xs-5 > div.col-xs-12 > a#fb1",
+              "snippet": "<a id=\"fb1\" href=\"https://www.fda.gov/about-fda/about-website/internet-accessibility\" target=\"_blank\">",
+              "node_label": "Accessibility\n(Opens in new window)",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (83.6px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-12 > div.col-xs-5 > div.col-xs-12 > a#fb3",
+              "snippet": "<a id=\"fb3\" href=\"https://www.fda.gov/about-fda\" target=\"_blank\">",
+              "node_label": "About FDA\n(Opens in new window)",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (75px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-12 > div.col-xs-5 > div.col-xs-12 > a#fb4",
+              "snippet": "<a id=\"fb4\" href=\"https://www.fda.gov/regulatory-information/freedom-information\" target=\"_blank\">",
+              "node_label": "FOIA\n(Opens in new window)",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (33.8px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-12 > div.col-xs-7 > div.col-xs-12 > a#fb5",
+              "snippet": "<a id=\"fb5\" href=\"https://www.fda.gov/about-fda/jobs-and-training-fda/no-fear-act\" target=\"_blank\">",
+              "node_label": "No FEAR Act\n(Opens in new window)",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (87.4px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-12 > div.col-xs-7 > div.col-xs-12 > a#fb7",
+              "snippet": "<a id=\"fb7\" href=\"https://www.fda.gov/about-fda/about-website/website-policies\" target=\"_blank\">",
+              "node_label": "Website Policies\n(Opens in new window)",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (110.4px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 329,
+        "char_count": 2546,
+        "words_per_mb": 361
+      }
+    },
+    {
+      "url": "https://archive.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 3896,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://gis.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 3666,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://wonder.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 3505,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://precision.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 2760,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://ndc.services.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1635,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://purplebooksearch.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1508,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 1,
+      "severe_findings_count": 1,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 2352.9575,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 14858,
+          "Google Analytics": 475014
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 1,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": []
+      },
+      "lighthouse_scores": {
+        "performance": 75,
+        "accessibility": 96,
+        "best_practices": 96,
+        "seo": 91,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "header > div.header > div.container > a.header-link",
+              "snippet": "<a href=\"https://www.fda.gov/\" class=\"header-link\">",
+              "node_label": "FDA Logo",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 18612,
+        "char_count": 318861,
+        "words_per_mb": 16570
+      }
+    },
+    {
+      "url": "https://reach.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1457,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://www.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1373,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://www2a.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1335,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://blogs.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1332,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://gettested.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1295,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://tools.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1111,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://jobs.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 856,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://thecommunityguide.org",
+      "organization_name": null,
+      "domain_type": null,
+      "page_load_count": 747,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://vaccines.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 729,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://phgkb.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 686,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://vetoviolence.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 664,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://wisqars.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 634,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://phgkb.glb.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 610,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://selectagents.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 599,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://shi.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 581,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://phinvads.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 471,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://nationaldppcsc.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 423,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://gudid.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 411,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://millionhearts.hhs.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 392,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://youthonline.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 377,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://labels.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 357,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://animaldrugsatfda.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 350,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://nccd.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 334,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://yrbs-explorer.services.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 301,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://nfr.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 297,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://www2.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 258,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://pids.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 235,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://hivrisk.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 190,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://art.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 153,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 2,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 7242.493,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 4618,
+          "Google Analytics": 150142
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 6,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "React",
+          "Create React App"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 49,
+        "accessibility": 97,
+        "best_practices": 96,
+        "seo": 100,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "skip-link",
+          "title": "Skip links are not focusable.",
+          "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.11/skip-link).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div#root > div > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy sr-only-focusable\" href=\"#tabContent\">",
+              "node_label": "Skip directly to site content",
+              "explanation": "Fix any of the following:\n  No skip link target"
+            },
+            {
+              "selector": "div#root > div > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy sr-only-focusable\" href=\"#tabs-nav\">",
+              "node_label": "Skip directly to page options",
+              "explanation": "Fix any of the following:\n  No skip link target"
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html.theme-purple",
+              "snippet": "<html lang=\"en\" class=\"theme-purple\">",
+              "node_label": "html.theme-purple",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://mpris.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 131,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [],
+        "third_party_service_sizes": {},
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": null,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": []
+      },
+      "lighthouse_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://poca-public.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 131,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 1,
+      "severe_findings_count": 1,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 15171.606000000002,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program",
+          "Google Fonts"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 14854,
+          "Google Fonts": 171564,
+          "Google Analytics": 150142
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Angular"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 51,
+        "accessibility": 96,
+        "best_practices": 96,
+        "seo": 82,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "app-header > mat-toolbar.mat-toolbar > div.productHeader > div.productVersion",
+              "snippet": "<div _ngcontent-ng-c2018026978=\"\" class=\"productVersion\">",
+              "node_label": "(Public  Version 2.19.5 - Release Date: 2026-04-01)",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.37 (foreground color: #dcdcdc, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "mat-toolbar.mat-toolbar > div.productHeader > div.productVersion > span.mat-mdc-tooltip-trigger",
+              "snippet": "<span _ngcontent-ng-c2018026978=\"\" class=\"mat-mdc-tooltip-trigger\" aria-describedby=\"cdk-describedby-message-ng-1-3\" cdk-describedby-host=\"ng-1\" style=\"user-select: none; -webkit-user-drag: none; touch-action: none;\">",
+              "node_label": "Release Date: 2026-04-01)",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.37 (foreground color: #dcdcdc, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.mat-mdc-dialog-content > div.licenseBox > ul > li",
+              "snippet": "<li _ngcontent-ng-c1137960919=\"\">",
+              "node_label": "This warning banner provides privacy and security notices consistent with appli…",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #717171, background color: #f5f5f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.mat-mdc-dialog-content > div.licenseBox > ul > li",
+              "snippet": "<li _ngcontent-ng-c1137960919=\"\">",
+              "node_label": "This system is provided for Government-authorized use only.",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #717171, background color: #f5f5f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.mat-mdc-dialog-content > div.licenseBox > ul > li",
+              "snippet": "<li _ngcontent-ng-c1137960919=\"\">",
+              "node_label": "Unauthorized or improper use of this system is prohibited and may result in dis…",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #717171, background color: #f5f5f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.mat-mdc-dialog-content > div.licenseBox > ul > li",
+              "snippet": "<li _ngcontent-ng-c1137960919=\"\">",
+              "node_label": "Personal use of social media and networking sites on this system is limited as …",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #717171, background color: #f5f5f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.mat-mdc-dialog-content > div.licenseBox > ul > li",
+              "snippet": "<li _ngcontent-ng-c1137960919=\"\">",
+              "node_label": "By using this system, you understand and consent to the following:\nThe Governme…",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #717171, background color: #f5f5f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "ul > li > ul > li",
+              "snippet": "<li _ngcontent-ng-c1137960919=\"\">",
+              "node_label": "The Government may monitor, record, and audit your system usage, including usag…",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #717171, background color: #f5f5f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "ul > li > ul > li",
+              "snippet": "<li _ngcontent-ng-c1137960919=\"\">",
+              "node_label": "Any communication or data transiting or stored on this system may be disclosed …",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #717171, background color: #f5f5f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "app-welcome-screen.mat-mdc-dialog-component-host > div.mat-mdc-dialog-content > div.licenseBox > p",
+              "snippet": "<p _ngcontent-ng-c1137960919=\"\">",
+              "node_label": "In an effort to minimize the risk of medication errors due to proprietary name …",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #717171, background color: #f5f5f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.mat-mdc-dialog-content > div.licenseBox > p > span",
+              "snippet": "<span _ngcontent-ng-c1137960919=\"\">",
+              "node_label": "This software application uses Drugs@FDA and RxNorm as the two data sources wit…",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #717171, background color: #f5f5f5, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.mat-mdc-dialog-content > div.licenseBox > p > b",
+              "snippet": "<b _ngcontent-ng-c1137960919=\"\">",
+              "node_label": "Use of this system and/or attainment of a certain POCA score does not guarantee…",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #717171, background color: #f5f5f5, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://nchsdata.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 127,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [],
+        "third_party_service_sizes": {},
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": null,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": []
+      },
+      "lighthouse_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://timp-ccid.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 125,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 5746.048000000001,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program",
+          "Google Fonts"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 14849,
+          "Google Analytics": 150142,
+          "Google Fonts": 51446
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Angular"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 64,
+        "accessibility": 100,
+        "best_practices": 100,
+        "seo": 83,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://cdrh-rst.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 121,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 3,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 4524.1965,
+      "detected_technologies": {
+        "cms": "Drupal",
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Google Analytics": 460025,
+          "Digital Analytics Program": 14322
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "boomerang.js",
+          "Drupal"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 76,
+        "accessibility": 92,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.views-view-responsive-grid__item-inner > div.views-field > span.field-content > h3",
+              "snippet": "<h3>",
+              "node_label": "Method to Maintain Oxidative Capacity of Test Solutions for Oxidative Degradati…",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.view > div.view-header > p > a",
+              "snippet": "<a href=\"https://www.fda.gov/medical-devices/medical-device-development-tools-mddt\">",
+              "node_label": "Medical Device Development Tools",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.77:1 with the surrounding text. (Minimum contrast is 3:1, link text: #337ab7, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.view > div.view-header > p > a",
+              "snippet": "<a href=\"https://www.fda.gov/regulatory-information/search-fda-guidance-documents/r…\">",
+              "node_label": "feedback or meetings for medical device submissions",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.77:1 with the surrounding text. (Minimum contrast is 3:1, link text: #337ab7, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "span.field-content > ul > li > a",
+              "snippet": "<a href=\"/node?f%5B0%5D=categories%3A121\">",
+              "node_label": "Lab Method",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (59.8px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.6px instead of at least 24px."
+            },
+            {
+              "selector": "span.field-content > ul > li > a",
+              "snippet": "<a href=\"/node?f%5B0%5D=categories%3A121\">",
+              "node_label": "Lab Method",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (59.8px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.6px instead of at least 24px."
+            },
+            {
+              "selector": "span.field-content > ul > li > a",
+              "snippet": "<a href=\"/node?f%5B0%5D=categories%3A121\">",
+              "node_label": "Lab Method",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (59.8px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.6px instead of at least 24px."
+            },
+            {
+              "selector": "span.field-content > ul > li > a",
+              "snippet": "<a href=\"/node?f%5B0%5D=categories%3A121\">",
+              "node_label": "Lab Method",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (59.8px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.6px instead of at least 24px."
+            },
+            {
+              "selector": "span.field-content > ul > li > a",
+              "snippet": "<a href=\"/node?f%5B0%5D=categories%3A126\">",
+              "node_label": "Computer Model",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (83.8px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.6px instead of at least 24px."
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 759,
+        "char_count": 5772,
+        "words_per_mb": 547
+      }
+    },
+    {
+      "url": "https://ephtracking.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 121,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 13657.283150000001,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Google Analytics": 150554
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 5,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "Angular"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 20,
+        "accessibility": 100,
+        "best_practices": 92,
+        "seo": 82,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": {
+        "word_count": 46,
+        "char_count": 410,
+        "words_per_mb": 16
+      }
+    },
+    {
+      "url": "https://oasis.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 108,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 5,
+      "severe_findings_count": 4,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 6453.17,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 4619,
+          "Google Analytics": 150142
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 1,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery",
+          "Modernizr"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 61,
+        "accessibility": 76,
+        "best_practices": 77,
+        "seo": 82,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div > fieldset > p.alert > a",
+              "snippet": "<a target=\"_blank\" href=\"https://www.cdc.gov/wtc/pdfs/applicationForms/WTCHP-OnlineSignatureForm-Pr…\">",
+              "node_label": "Download signature form",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.59 (foreground color: #007bff, background color: #fff3cd, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.wrapper > div.footer > div.container > a",
+              "snippet": "<a href=\"https://www.cdc.gov/wtc/pdfs/policies/wtchp_privacy_20161207-508.pdf\" target=\"_blank\">",
+              "node_label": "Full Privacy Policy Text",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #007bff, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.wrapper > div.footer > div.container > a",
+              "snippet": "<a href=\"https://www.cdc.gov/wtc/privacy.html\" target=\"_blank\">",
+              "node_label": "All Privacy Policies",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #007bff, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.wrapper > div.footer > div.container > a",
+              "snippet": "<a href=\"https://www.hhs.gov/vulnerability-disclosure-policy/index.html\" target=\"_blank\">",
+              "node_label": "Vulnerability Disclosure Policy",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #007bff, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.11/image-alt).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.col-lg-6 > div.col-lg-12 > a#cphBody_hlFDNYResponder > img#cphBody_imgFDNYRespoderLogo",
+              "snippet": "<img id=\"cphBody_imgFDNYRespoderLogo\" src=\"App_Themes/Oasis_Bootstrap/Images/FDNY_Logo2.svg\">",
+              "node_label": "div.col-lg-6 > div.col-lg-12 > a#cphBody_hlFDNYResponder > img#cphBody_imgFDNYRespoderLogo",
+              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.col-lg-6 > div.col-lg-12 > a#cphBody_hlGeneralResponder > img#cphBody_imgGeneralResponderLogo",
+              "snippet": "<img id=\"cphBody_imgGeneralResponderLogo\" src=\"App_Themes/Oasis_Bootstrap/Images/GeneralResponder_Logo2.svg\">",
+              "node_label": "div.col-lg-6 > div.col-lg-12 > a#cphBody_hlGeneralResponder > img#cphBody_imgGeneralResponderLogo",
+              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.col-lg-6 > div.col-lg-12 > a#cphBody_hlNYCSurvivor > img#cphBody_imgNYCSurvivorLogo",
+              "snippet": "<img id=\"cphBody_imgNYCSurvivorLogo\" src=\"App_Themes/Oasis_Bootstrap/Images/Survivor_Logo2.svg\">",
+              "node_label": "div.col-lg-6 > div.col-lg-12 > a#cphBody_hlNYCSurvivor > img#cphBody_imgNYCSurvivorLogo",
+              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.col-lg-6 > div.col-lg-12 > a#cphBody_hlShanksvillePentagon > img#cphBody_imgShanksvillePentagonLogo",
+              "snippet": "<img id=\"cphBody_imgShanksvillePentagonLogo\" src=\"App_Themes/Oasis_Bootstrap/Images/Pentagon_Logo_v2.svg\">",
+              "node_label": "div.col-lg-6 > div.col-lg-12 > a#cphBody_hlShanksvillePentagon > img#cphBody_imgShanksvillePentagonLogo",
+              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.row > div.col-lg-6 > div.col-lg-12 > a#cphBody_hlGeneralResponderDetails",
+              "snippet": "<a id=\"cphBody_hlGeneralResponderDetails\" class=\"aspHyperLink\" href=\"GeneralResponder\" target=\"_self\">",
+              "node_label": "General Responder",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.21:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1875bd, surrounding text: #646464)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.row > div.col-lg-6 > div.col-lg-12 > a#cphBody_hlGeneralResponderDescription",
+              "snippet": "<a id=\"cphBody_hlGeneralResponderDescription\" class=\"aspHyperLink\" href=\"https://www.cdc.gov/wtc/eligiblegroups.html#general\" target=\"_new\">",
+              "node_label": "View detailed description",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.21:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1875bd, surrounding text: #646464)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.row > div.col-lg-6 > div.col-lg-12 > a#cphBody_hlNYCSurvivorDescription",
+              "snippet": "<a id=\"cphBody_hlNYCSurvivorDescription\" class=\"aspHyperLink\" href=\"https://www.cdc.gov/wtc/eligiblegroups.html#survivor\" target=\"_new\">",
+              "node_label": "View detailed description",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.21:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1875bd, surrounding text: #646464)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.row > div.col-lg-6 > div.col-lg-12 > a#cphBody_hlShanksvillePentagonApplication",
+              "snippet": "<a id=\"cphBody_hlShanksvillePentagonApplication\" class=\"aspHyperLink\" href=\"ShanksvillePentagon\" target=\"_self\">",
+              "node_label": "Pentagon/Shanksville Responder",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.21:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1875bd, surrounding text: #646464)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.row > div.col-lg-6 > div.col-lg-12 > a#cphBody_hlShanksvillePentagonDescription",
+              "snippet": "<a id=\"cphBody_hlShanksvillePentagonDescription\" class=\"aspHyperLink\" href=\"https://www.cdc.gov/wtc/eligiblegroups.html#pa\" target=\"_new\">",
+              "node_label": "View detailed description",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.21:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1875bd, surrounding text: #646464)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "form#siteForm > div.wrapper > div#headerImage > a",
+              "snippet": "<a href=\"https://www.cdc.gov/wtc/index.html\">",
+              "node_label": "form#siteForm > div.wrapper > div#headerImage > a",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html.js",
+              "snippet": "<html lang=\"en\" style=\"\" class=\" js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postme…\">",
+              "node_label": "html.js",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 274,
+        "char_count": 2450,
+        "words_per_mb": 252
+      }
+    },
+    {
+      "url": "https://fsdx.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 94,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 3,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 21866.760000000002,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 10230,
+          "Google Analytics": 150142
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 2,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 58,
+        "accessibility": 91,
+        "best_practices": 77,
+        "seo": 75,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.oramission > div.missionContent > p > a",
+              "snippet": "<a target=\"_blank\" href=\"https://www.pfp-ifss.org/\">",
+              "node_label": "Partnership for Food Protection (PFP)",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.oramission > div.missionContent > p > a",
+              "snippet": "<a target=\"_blank\" href=\"https://www.fda.gov/food/federal-state-local-tribal-and-territorial-cooper…\">",
+              "node_label": "Integrated Food Safety System (IFSS)",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.oramission > div.missionContent > p > a",
+              "snippet": "<a target=\"_blank\" href=\"https://www.fda.gov/food/integrated-food-safety-system-ifss/domestic-mutua…\">",
+              "node_label": "Domestic Mutual Reliance (DMR)",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.oramission > div.missionContent > p > a",
+              "snippet": "<a href=\"/webcenter/portal/FSDX/pages_dataexchangeoverview\">",
+              "node_label": "Learn more about FSDX capabilities",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.oramission > div.missionContent > p > a",
+              "snippet": "<a target=\"_blank\" href=\"https://www.pfp-ifss.org/wp-content/uploads/2023/11/Final-PFP-Strategic-Pl…\">",
+              "node_label": "5-year PFP Strategic Plan",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.oramission > div.missionContent > p > a",
+              "snippet": "<a href=\"/webcenter/portal/FSDX/pages_contactus\">",
+              "node_label": "Contact Us",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.eventContent > ul > li > a",
+              "snippet": "<a href=\"/webcenter/portal/FSDX/pages_dataexchangeoverview\">",
+              "node_label": "What's New in the Food Safety Data Exchange",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.eventContent > ul > li > a",
+              "snippet": "<a target=\"_blank\" href=\"https://www.pfp-ifss.org/workgroups/information-technology/ora-dx-one-page…\">",
+              "node_label": "FSDX One Pager",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.eventContent > ul > li > a",
+              "snippet": "<a target=\"_blank\" href=\"/cs/groups/public/documents/document/mhbm/cg1h/~edisp/pfpmarch.pdf\">",
+              "node_label": "PFP IT WG Newsletter (March 2025)",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.eventContent > ul > li > a",
+              "snippet": "<a target=\"_blank\" href=\"https://www.pfp-ifss.org/pfp-it-workgroup-newsletter-december-2024/\">",
+              "node_label": "PFP IT WG Newsletter (December 2024)",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.eventContent > ul > li > a",
+              "snippet": "<a target=\"_blank\" href=\"https://www.pfp-ifss.org/pfp-it-workgroup-newsletter-september-2024/\">",
+              "node_label": "PFP IT WG Newsletter (September 2024)",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.eventContent > ul > li > a",
+              "snippet": "<a target=\"_blank\" href=\"https://www.pfp-ifss.org/pfp-it-workgroup-newsletter-june-2024/\">",
+              "node_label": "PFP IT WG Newsletter (June 2024)",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.eventContent > ul > li > a",
+              "snippet": "<a href=\"/webcenter/portal/FSDX/pages_contactus\">",
+              "node_label": "Login Credentials Support for Existing Users",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.eventContent > ul > li > a",
+              "snippet": "<a href=\"/webcenter/portal/FSDX/pages_contactus\">",
+              "node_label": "General Information, Demo Request, or Request an Account",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.eventContent > ul > li > a",
+              "snippet": "<a target=\"_blank\" href=\"https://www.pfp-ifss.org/workgroups/information-technology/ora-dx-faq/\">",
+              "node_label": "Frequently Asked Questions (FAQ) about the Food Safety Data Exchange",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.oramission > div.missionContent > p > a",
+              "snippet": "<a target=\"_blank\" href=\"https://www.pfp-ifss.org/\">",
+              "node_label": "Partnership for Food Protection (PFP)",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.11:1 with the surrounding text. (Minimum contrast is 3:1, link text: #428bca, surrounding text: #455372)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.oramission > div.missionContent > p > a",
+              "snippet": "<a target=\"_blank\" href=\"https://www.fda.gov/food/federal-state-local-tribal-and-territorial-cooper…\">",
+              "node_label": "Integrated Food Safety System (IFSS)",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.11:1 with the surrounding text. (Minimum contrast is 3:1, link text: #428bca, surrounding text: #455372)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.oramission > div.missionContent > p > a",
+              "snippet": "<a target=\"_blank\" href=\"https://www.fda.gov/food/integrated-food-safety-system-ifss/domestic-mutua…\">",
+              "node_label": "Domestic Mutual Reliance (DMR)",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.11:1 with the surrounding text. (Minimum contrast is 3:1, link text: #428bca, surrounding text: #455372)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.oramission > div.missionContent > p > a",
+              "snippet": "<a href=\"/webcenter/portal/FSDX/pages_contactus\">",
+              "node_label": "Contact Us",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.11:1 with the surrounding text. (Minimum contrast is 3:1, link text: #428bca, surrounding text: #455372)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html.p_AFMaximized",
+              "snippet": "<html class=\"p_AFMaximized\" dir=\"ltr\" lang=\"en-US\">",
+              "node_label": "html.p_AFMaximized",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://dprpdataportal.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 92,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://finddoxypep.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 81,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://heart-stroke-atlas.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 80,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://mvps.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 75,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 6,
+      "severe_findings_count": 3,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 4033.873,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Adobe Analytics"
+        ],
+        "third_party_service_sizes": {
+          "Google Analytics": 21409,
+          "Adobe Analytics": 2021
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 6,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery",
+          "Modernizr",
+          "Underscore",
+          "yepnope",
+          "jQuery Mobile",
+          "Moment.js"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 81,
+        "accessibility": 70,
+        "best_practices": 65,
+        "seo": 77,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "ul > li > nav > h6.hidden-four",
+              "snippet": "<h6 class=\"hidden-four hidden-three\">",
+              "node_label": "ABOUT",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.11/image-alt).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div#header-container > div.titlebar > a > img.samsheader",
+              "snippet": "<img src=\"images/SAMSHalfLogo.png\" class=\"samsheader\">",
+              "node_label": "div#header-container > div.titlebar > a > img.samsheader",
+              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        },
+        {
+          "id": "label",
+          "title": "Form elements do not have associated labels",
+          "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.11/label).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "form#sams-creds-form-visible-one > fieldset#samscreds-fieldset-visible-one > div.ptext > input#USER",
+              "snippet": "<input class=\"input-medium\" name=\"USER\" id=\"USER\" type=\"text\" placeholder=\"\">",
+              "node_label": "form#sams-creds-form-visible-one > fieldset#samscreds-fieldset-visible-one > div.ptext > input#USER",
+              "explanation": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has an empty placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "form#sams-creds-form-visible-one > fieldset#samscreds-fieldset-visible-one > div.ptext > input#PASSWORD",
+              "snippet": "<input class=\"input-medium\" name=\"PASSWORD\" id=\"PASSWORD\" type=\"password\" placeholder=\"\">",
+              "node_label": "form#sams-creds-form-visible-one > fieldset#samscreds-fieldset-visible-one > div.ptext > input#PASSWORD",
+              "explanation": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has an empty placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        },
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "header#header > div#header-container > div.titlebar > a",
+              "snippet": "<a href=\"https://sams.cdc.gov\">",
+              "node_label": "header#header > div#header-container > div.titlebar > a",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "skip-link",
+          "title": "Skip links are not focusable.",
+          "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.11/skip-link).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body > div#skipmenu > a.skippy",
+              "snippet": "<a href=\"#share-bar\" class=\"skippy\">",
+              "node_label": "Skip directly to page options",
+              "explanation": "Fix any of the following:\n  No skip link target"
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html.no-nav",
+              "snippet": "<html class=\"no-nav theme-blue  js touch video generatedcontent audio placeholder portr…\" lang=\"en-us\" style=\"\">",
+              "node_label": "html.no-nav",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 123,
+        "char_count": 837,
+        "words_per_mb": 126
+      }
+    },
+    {
+      "url": "https://fissweb.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 57,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [],
+        "third_party_service_sizes": {},
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": null,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": []
+      },
+      "lighthouse_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://places.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 57,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 1,
+      "severe_findings_count": 1,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 2982.8235,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 4621,
+          "Google Analytics": 150142
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "React",
+          "core-js"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 71,
+        "accessibility": 97,
+        "best_practices": 100,
+        "seo": 100,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.mt-1 > div.topic-collapse > div > span#HLTHOUT",
+              "snippet": "<span id=\"HLTHOUT\" role=\"button\" tabindex=\"0\" class=\"fi cdc-icon-minus topic-collapse__plusminus\" aria-label=\"collapse\">",
+              "node_label": "collapse",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (10.5px by 27px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
+            },
+            {
+              "selector": "div.mt-1 > div.topic-collapse > div > span#PREVENT",
+              "snippet": "<span id=\"PREVENT\" role=\"button\" tabindex=\"0\" class=\"fi cdc-icon-minus topic-collapse__plusminus\" aria-label=\"collapse\">",
+              "node_label": "collapse",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (10.5px by 27px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
+            },
+            {
+              "selector": "div.mt-1 > div.topic-collapse > div > span#RISKBEH",
+              "snippet": "<span id=\"RISKBEH\" role=\"button\" tabindex=\"0\" class=\"fi cdc-icon-minus topic-collapse__plusminus\" aria-label=\"collapse\">",
+              "node_label": "collapse",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (10.5px by 27px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
+            },
+            {
+              "selector": "div.mt-1 > div.topic-collapse > div > span#HLTHSTAT",
+              "snippet": "<span id=\"HLTHSTAT\" role=\"button\" tabindex=\"0\" class=\"fi cdc-icon-minus topic-collapse__plusminus\" aria-label=\"collapse\">",
+              "node_label": "collapse",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (10.5px by 27px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
+            },
+            {
+              "selector": "div.mt-1 > div.topic-collapse > div > span#DISABLT",
+              "snippet": "<span id=\"DISABLT\" role=\"button\" tabindex=\"0\" class=\"fi cdc-icon-minus topic-collapse__plusminus\" aria-label=\"collapse\">",
+              "node_label": "collapse",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (10.5px by 27px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
+            },
+            {
+              "selector": "div.mt-1 > div.topic-collapse > div > span#SOCLNEED",
+              "snippet": "<span id=\"SOCLNEED\" role=\"button\" tabindex=\"0\" class=\"fi cdc-icon-minus topic-collapse__plusminus\" aria-label=\"collapse\">",
+              "node_label": "collapse",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (10.5px by 27px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
+            }
+          ]
+        }
+      ],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://artreporting.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 53,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 2,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 8263.054,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics"
+        ],
+        "third_party_service_sizes": {
+          "Google Analytics": 150142
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 21,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery",
+          "jQuery UI",
+          "FlexSlider"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 61,
+        "accessibility": 97,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div#SAMS > div.module-typeA > div > h5.text-center",
+              "snippet": "<h5 class=\"text-center\">",
+              "node_label": "Log in with your account information to begin reporting session*",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html.theme-purple",
+              "snippet": "<html xmlns=\"http://www.w3.org/1999/xhtml\" class=\"theme-purple\" lang=\"en\">",
+              "node_label": "html.theme-purple",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 123,
+        "char_count": 837,
+        "words_per_mb": 23
+      }
+    },
+    {
+      "url": "https://www.accessdata.fda.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 51,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 3,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "good",
+      "lcp_value_ms": 924.7895,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [],
+        "third_party_service_sizes": {},
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 1,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": []
+      },
+      "lighthouse_scores": {
+        "performance": 100,
+        "accessibility": 50,
+        "best_practices": 88,
+        "seo": 80,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "document-title",
+          "title": "Document doesn't have a `<title>` element",
+          "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more about document titles](https://dequeuniversity.com/rules/axe/4.11/document-title).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html",
+              "snippet": "<html>",
+              "node_label": "html",
+              "explanation": "Fix any of the following:\n  Document does not have a non-empty <title> element"
+            }
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "title": "`<html>` element does not have a `[lang]` attribute",
+          "description": "If a page doesn't specify a `lang` attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more about the `lang` attribute](https://dequeuniversity.com/rules/axe/4.11/html-has-lang).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html",
+              "snippet": "<html>",
+              "node_label": "html",
+              "explanation": "Fix any of the following:\n  The <html> element does not have a lang attribute"
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html",
+              "snippet": "<html>",
+              "node_label": "html",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 1,
+        "char_count": 4,
+        "words_per_mb": 50
+      }
+    }
+  ],
+  "tech_summary": {
+    "cms_counts": {
+      "Drupal": 1
+    },
+    "cms_urls": {
+      "Drupal": [
+        "https://cdrh-rst.fda.gov"
+      ]
+    },
+    "uswds_count": 5,
+    "uswds_versions": [],
+    "uswds_version_urls": {
+      "": [
+        "https://cdc.gov",
+        "https://wwwnc.cdc.gov",
+        "https://search.cdc.gov",
+        "https://atsdr.cdc.gov",
+        "https://ephtracking.cdc.gov"
+      ]
+    },
+    "total_scanned": 27,
+    "third_party_service_counts": {
+      "Google Analytics": 19,
+      "Digital Analytics Program": 17,
+      "Google Tag Manager": 1,
+      "Google Ads": 2,
+      "Google Fonts": 2,
+      "Adobe Analytics": 1
+    },
+    "third_party_service_urls": {
+      "Google Analytics": [
+        "https://cdc.gov",
+        "https://fda.gov",
+        "https://wwwnc.cdc.gov",
+        "https://search.cdc.gov",
+        "https://direct.fda.gov",
+        "https://atsdr.cdc.gov",
+        "https://icd10cmtool.cdc.gov",
+        "https://datadashboard.fda.gov",
+        "https://purplebooksearch.fda.gov",
+        "https://art.cdc.gov",
+        "https://poca-public.fda.gov",
+        "https://timp-ccid.fda.gov",
+        "https://cdrh-rst.fda.gov",
+        "https://ephtracking.cdc.gov",
+        "https://oasis.cdc.gov",
+        "https://fsdx.fda.gov",
+        "https://mvps.cdc.gov",
+        "https://places.cdc.gov",
+        "https://artreporting.cdc.gov"
+      ],
+      "Digital Analytics Program": [
+        "https://cdc.gov",
+        "https://fda.gov",
+        "https://wwwnc.cdc.gov",
+        "https://search.cdc.gov",
+        "https://direct.fda.gov",
+        "https://atsdr.cdc.gov",
+        "https://icd10cmtool.cdc.gov",
+        "https://datadashboard.fda.gov",
+        "https://purplebooksearch.fda.gov",
+        "https://art.cdc.gov",
+        "https://poca-public.fda.gov",
+        "https://timp-ccid.fda.gov",
+        "https://cdrh-rst.fda.gov",
+        "https://ephtracking.cdc.gov",
+        "https://oasis.cdc.gov",
+        "https://fsdx.fda.gov",
+        "https://places.cdc.gov"
+      ],
+      "Google Tag Manager": [
+        "https://fda.gov"
+      ],
+      "Google Ads": [
+        "https://fda.gov",
+        "https://datadashboard.fda.gov"
+      ],
+      "Google Fonts": [
+        "https://poca-public.fda.gov",
+        "https://timp-ccid.fda.gov"
+      ],
+      "Adobe Analytics": [
+        "https://mvps.cdc.gov"
+      ]
+    },
+    "third_party_service_total_bytes": {
+      "Digital Analytics Program": 136761,
+      "Google Analytics": 3991721,
+      "Google Tag Manager": 133211,
+      "Google Ads": 1118,
+      "Google Fonts": 223010,
+      "Adobe Analytics": 2021
+    },
+    "third_party_service_page_load_totals": {
+      "Google Analytics": 1202588,
+      "Digital Analytics Program": 1202460,
+      "Google Tag Manager": 339875,
+      "Google Ads": 343927,
+      "Google Fonts": 256,
+      "Adobe Analytics": 75
+    },
+    "overlay_counts": {},
+    "overlay_urls": {},
+    "accessibility_statement_summary": {
+      "domains_checked": 27,
+      "domains_with_statement": 6,
+      "statement_rate_percent": 22,
+      "domains_without_statement": [
+        "access.fda.gov",
+        "accessdata.fda.gov",
+        "artreporting.cdc.gov",
+        "atsdr.cdc.gov",
+        "cdc.gov",
+        "cdrh-rst.fda.gov",
+        "datadashboard.fda.gov",
+        "direct.fda.gov",
+        "ephtracking.cdc.gov",
+        "fissweb.fda.gov",
+        "hfpappexternal.fda.gov",
+        "icd10cmtool.cdc.gov",
+        "mpris.fda.gov",
+        "nchsdata.cdc.gov",
+        "oasis.cdc.gov",
+        "places.cdc.gov",
+        "purplebooksearch.fda.gov",
+        "search.cdc.gov",
+        "www.accessdata.fda.gov",
+        "wwwn.cdc.gov",
+        "wwwnc.cdc.gov"
+      ],
+      "statement_urls": [
+        "https://art.cdc.gov/accessibility",
+        "https://fda.gov/accessibility",
+        "https://fsdx.fda.gov/accessibility",
+        "https://mvps.cdc.gov/accessibility",
+        "https://poca-public.fda.gov/accessibility",
+        "https://timp-ccid.fda.gov/accessibility"
+      ]
+    },
+    "required_links_summary": {
+      "domains_checked": 27,
+      "by_type": {
+        "privacy": {
+          "domains_with_link": 8,
+          "rate_percent": 30,
+          "missing_domains": [
+            "access.fda.gov",
+            "accessdata.fda.gov",
+            "artreporting.cdc.gov",
+            "cdrh-rst.fda.gov",
+            "datadashboard.fda.gov",
+            "direct.fda.gov",
+            "ephtracking.cdc.gov",
+            "fissweb.fda.gov",
+            "hfpappexternal.fda.gov",
+            "icd10cmtool.cdc.gov",
+            "mpris.fda.gov",
+            "nchsdata.cdc.gov",
+            "oasis.cdc.gov",
+            "places.cdc.gov",
+            "purplebooksearch.fda.gov",
+            "search.cdc.gov",
+            "www.accessdata.fda.gov",
+            "wwwn.cdc.gov",
+            "wwwnc.cdc.gov"
+          ],
+          "link_urls": [
+            "https://art.cdc.gov/privacy",
+            "https://atsdr.cdc.gov/privacy.html",
+            "https://cdc.gov/privacy",
+            "https://fda.gov/privacy",
+            "https://fsdx.fda.gov/privacy",
+            "https://mvps.cdc.gov/privacy",
+            "https://poca-public.fda.gov/privacy",
+            "https://timp-ccid.fda.gov/privacy"
+          ]
+        },
+        "contact": {
+          "domains_with_link": 9,
+          "rate_percent": 33,
+          "missing_domains": [
+            "access.fda.gov",
+            "accessdata.fda.gov",
+            "artreporting.cdc.gov",
+            "datadashboard.fda.gov",
+            "direct.fda.gov",
+            "ephtracking.cdc.gov",
+            "fissweb.fda.gov",
+            "hfpappexternal.fda.gov",
+            "icd10cmtool.cdc.gov",
+            "mpris.fda.gov",
+            "nchsdata.cdc.gov",
+            "oasis.cdc.gov",
+            "places.cdc.gov",
+            "purplebooksearch.fda.gov",
+            "search.cdc.gov",
+            "www.accessdata.fda.gov",
+            "wwwn.cdc.gov",
+            "wwwnc.cdc.gov"
+          ],
+          "link_urls": [
+            "https://art.cdc.gov/contact",
+            "https://atsdr.cdc.gov/contact",
+            "https://cdc.gov/contact",
+            "https://cdrh-rst.fda.gov/contact",
+            "https://fda.gov/contact",
+            "https://fsdx.fda.gov/contact",
+            "https://mvps.cdc.gov/contact",
+            "https://poca-public.fda.gov/contact",
+            "https://timp-ccid.fda.gov/contact"
+          ]
+        },
+        "foia": {
+          "domains_with_link": 7,
+          "rate_percent": 26,
+          "missing_domains": [
+            "access.fda.gov",
+            "accessdata.fda.gov",
+            "artreporting.cdc.gov",
+            "atsdr.cdc.gov",
+            "cdrh-rst.fda.gov",
+            "datadashboard.fda.gov",
+            "direct.fda.gov",
+            "ephtracking.cdc.gov",
+            "fissweb.fda.gov",
+            "hfpappexternal.fda.gov",
+            "icd10cmtool.cdc.gov",
+            "mpris.fda.gov",
+            "nchsdata.cdc.gov",
+            "oasis.cdc.gov",
+            "places.cdc.gov",
+            "purplebooksearch.fda.gov",
+            "search.cdc.gov",
+            "www.accessdata.fda.gov",
+            "wwwn.cdc.gov",
+            "wwwnc.cdc.gov"
+          ],
+          "link_urls": [
+            "https://art.cdc.gov/foia",
+            "https://cdc.gov/foia",
+            "https://fda.gov/foia",
+            "https://fsdx.fda.gov/foia",
+            "https://mvps.cdc.gov/foia",
+            "https://poca-public.fda.gov/foia",
+            "https://timp-ccid.fda.gov/foia"
+          ]
+        }
+      },
+      "fully_compliant_domains": 7,
+      "fully_compliant_rate_percent": 26
+    }
+  },
+  "code_quality_summary": {
+    "total_scanned": 27,
+    "urls_with_deprecated_apis": 0,
+    "urls_with_console_errors": 10,
+    "urls_with_document_write": 0,
+    "urls_with_vulnerable_libraries": 0,
+    "js_library_counts": {
+      "Bootstrap": 9,
+      "jQuery": 13,
+      "jQuery UI": 3,
+      "Underscore": 2,
+      "Drupal": 2,
+      "Hammer.js": 1,
+      "React": 3,
+      "Lo-Dash": 1,
+      "Create React App": 1,
+      "Angular": 3,
+      "boomerang.js": 1,
+      "Modernizr": 2,
+      "yepnope": 1,
+      "jQuery Mobile": 1,
+      "Moment.js": 1,
+      "core-js": 1,
+      "FlexSlider": 1
+    },
+    "vulnerable_library_counts": {},
+    "audit_urls": {
+      "deprecated_apis": [],
+      "console_errors": [
+        "https://search.cdc.gov",
+        "https://icd10cmtool.cdc.gov",
+        "https://purplebooksearch.fda.gov",
+        "https://art.cdc.gov",
+        "https://ephtracking.cdc.gov",
+        "https://oasis.cdc.gov",
+        "https://fsdx.fda.gov",
+        "https://mvps.cdc.gov",
+        "https://artreporting.cdc.gov",
+        "https://www.accessdata.fda.gov"
+      ],
+      "document_write": [],
+      "vulnerable_libraries": []
+    }
+  },
+  "readability_summary": {
+    "url_count_with_metrics": 12,
+    "url_count_low_density": 7,
+    "mean_word_count": 1780,
+    "mean_words_per_mb": 1526,
+    "low_density_urls": [
+      "https://cdc.gov",
+      "https://wwwnc.cdc.gov",
+      "https://atsdr.cdc.gov",
+      "https://ephtracking.cdc.gov",
+      "https://mvps.cdc.gov",
+      "https://artreporting.cdc.gov",
+      "https://www.accessdata.fda.gov"
+    ]
+  },
+  "trend_window_days": 31,
+  "history_series": [
+    {
+      "date": "2026-03-29",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-30",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-31",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-01",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-02",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-03",
+      "aggregate_scores": {
+        "performance": 62,
+        "accessibility": 87.31,
+        "best_practices": 89,
+        "seo": 88.45,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-04",
+      "aggregate_scores": {
+        "performance": 55.82,
+        "accessibility": 91.74,
+        "best_practices": 91.19,
+        "seo": 88.43,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-05",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-06",
+      "aggregate_scores": {
+        "performance": 52.8,
+        "accessibility": 92.56,
+        "best_practices": 90.72,
+        "seo": 89.27,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-07",
+      "aggregate_scores": {
+        "performance": 53.22,
+        "accessibility": 92.92,
+        "best_practices": 91.42,
+        "seo": 89.72,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-08",
+      "aggregate_scores": {
+        "performance": 53.55,
+        "accessibility": 91.94,
+        "best_practices": 90.09,
+        "seo": 87.91,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-10",
+      "aggregate_scores": {
+        "performance": 54.76,
+        "accessibility": 92.09,
+        "best_practices": 89.53,
+        "seo": 87.95,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "aggregate_scores": {
+        "performance": 53.53,
+        "accessibility": 92.23,
+        "best_practices": 91.12,
+        "seo": 87.3,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-13",
+      "aggregate_scores": {
+        "performance": 54.71,
+        "accessibility": 92.49,
+        "best_practices": 90.92,
+        "seo": 88.13,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-14",
+      "aggregate_scores": {
+        "performance": 53.41,
+        "accessibility": 92.68,
+        "best_practices": 91.63,
+        "seo": 88.48,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-15",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-16",
+      "aggregate_scores": {
+        "performance": 53.99,
+        "accessibility": 92.13,
+        "best_practices": 91.49,
+        "seo": 86.83,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-17",
+      "aggregate_scores": {
+        "performance": 53.25,
+        "accessibility": 91.51,
+        "best_practices": 90.4,
+        "seo": 87.61,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "aggregate_scores": {
+        "performance": 51.82,
+        "accessibility": 90.27,
+        "best_practices": 89.36,
+        "seo": 90.82,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-20",
+      "aggregate_scores": {
+        "performance": 58.5,
+        "accessibility": 92.17,
+        "best_practices": 93.83,
+        "seo": 91.5,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-21",
+      "aggregate_scores": {
+        "performance": 52.93,
+        "accessibility": 91.63,
+        "best_practices": 91.3,
+        "seo": 86.65,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-22",
+      "aggregate_scores": {
+        "performance": 60.92,
+        "accessibility": 86.38,
+        "best_practices": 90.08,
+        "seo": 88.46,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-23",
+      "aggregate_scores": {
+        "performance": 61.83,
+        "accessibility": 88.67,
+        "best_practices": 90.5,
+        "seo": 86.83,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-24",
+      "aggregate_scores": {
+        "performance": 52.14,
+        "accessibility": 94.14,
+        "best_practices": 92.14,
+        "seo": 84,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "aggregate_scores": {
+        "performance": 55.14,
+        "accessibility": 93.71,
+        "best_practices": 93.29,
+        "seo": 86.71,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "aggregate_scores": {
+        "performance": 54.83,
+        "accessibility": 91.8,
+        "best_practices": 89.69,
+        "seo": 87.86,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-27",
+      "aggregate_scores": {
+        "performance": 56.08,
+        "accessibility": 91.72,
+        "best_practices": 91.16,
+        "seo": 86.17,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-28",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    }
+  ],
+  "generated_at": "2026-04-28T10:01:16.560Z",
+  "report_status": "partial",
+  "slow_risk_summary": {
+    "successful_url_count": 27,
+    "slow_risk_url_count": 19,
+    "successful_page_load_count": 1372768,
+    "slow_risk_page_load_count": 1202588,
+    "slow_risk_traffic_share_percent": 87.6
+  },
+  "warning_events": [],
+  "scan_diagnostics": {
+    "total_urls": 64,
+    "success_count": 27,
+    "failed_count": 37,
+    "excluded_count": 0,
+    "timeout_count": 120,
+    "retry_count": 83,
+    "failure_reasons": {
+      "timeout": 37
+    }
+  },
+  "scan_mode": "live",
+  "scanner_notes": [
+    "Lighthouse scans are live per URL.",
+    "ScanGov integration currently uses placeholder findings and will be wired to a live backend next."
+  ]
+}
