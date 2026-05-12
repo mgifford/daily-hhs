@@ -1,0 +1,1493 @@
+{
+  "run_date": "2026-05-12",
+  "run_id": "run-2026-05-12-ee14045c22",
+  "url_limit": 250,
+  "url_counts": {
+    "processed": 46,
+    "succeeded": 1,
+    "failed": 45,
+    "excluded": 0
+  },
+  "aggregate_scores": {
+    "performance": 67,
+    "accessibility": 91,
+    "best_practices": 100,
+    "seo": 85,
+    "pwa": 0
+  },
+  "estimated_impact": {
+    "traffic_window_mode": "daily",
+    "affected_share_percent": 50,
+    "categories": [
+      {
+        "name": "WV",
+        "prevalence_rate": 0.01,
+        "estimated_impacted_users": 6803.3
+      },
+      {
+        "name": "LV",
+        "prevalence_rate": 0.023,
+        "estimated_impacted_users": 15647.58
+      },
+      {
+        "name": "WPC",
+        "prevalence_rate": 0.043,
+        "estimated_impacted_users": 29254.17
+      },
+      {
+        "name": "WH",
+        "prevalence_rate": 0.003,
+        "estimated_impacted_users": 2040.99
+      },
+      {
+        "name": "LH",
+        "prevalence_rate": 0.034,
+        "estimated_impacted_users": 23131.2
+      },
+      {
+        "name": "WS",
+        "prevalence_rate": 0.005,
+        "estimated_impacted_users": 3401.65
+      },
+      {
+        "name": "LM",
+        "prevalence_rate": 0.023,
+        "estimated_impacted_users": 15647.58
+      },
+      {
+        "name": "LRS",
+        "prevalence_rate": 0.058,
+        "estimated_impacted_users": 39459.11
+      },
+      {
+        "name": "LLCLA",
+        "prevalence_rate": 0.049,
+        "estimated_impacted_users": 33336.15
+      }
+    ]
+  },
+  "fpc_exclusion": {
+    "total_page_loads": 1360659,
+    "scanned_url_count": 1,
+    "categories": {
+      "WV": {
+        "label": "Without Vision",
+        "prevalence_rate": 0.01,
+        "estimated_population": 3400000,
+        "affected_page_loads": 1360659,
+        "affected_share_percent": 100,
+        "estimated_excluded_users": 13606.59,
+        "source_note": "AFB: ~3.4 million Americans with severe visual impairment or blindness"
+      },
+      "LV": {
+        "label": "Limited Vision",
+        "prevalence_rate": 0.024,
+        "estimated_population": 8100000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "ACS 2023 + supplemental estimates: vision difficulty (all severity levels); ~2.4% of U.S. population"
+      },
+      "WPC": {
+        "label": "Without Perception of Color",
+        "prevalence_rate": 0.043,
+        "estimated_population": 14500000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "NIH/NEI: ~8% of males and ~0.5% of females have color vision deficiency"
+      },
+      "WH": {
+        "label": "Without Hearing",
+        "prevalence_rate": 0.003,
+        "estimated_population": 1100000,
+        "affected_page_loads": 1360659,
+        "affected_share_percent": 100,
+        "estimated_excluded_users": 4081.98,
+        "source_note": "NIDCD: ~1.1 million Americans with functional deafness"
+      },
+      "LH": {
+        "label": "Limited Hearing",
+        "prevalence_rate": 0.035,
+        "estimated_population": 11900000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "NIDCD/ACS combined hearing difficulty estimates: ~3.5% of U.S. population"
+      },
+      "WS": {
+        "label": "Without Speech",
+        "prevalence_rate": 0.005,
+        "estimated_population": 1700000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "NIDCD estimate: severe non-verbal or speech-absent population"
+      },
+      "LM": {
+        "label": "Limited Manipulation",
+        "prevalence_rate": 0.022,
+        "estimated_population": 7600000,
+        "affected_page_loads": 1360659,
+        "affected_share_percent": 100,
+        "estimated_excluded_users": 29934.5,
+        "source_note": "ACS 2023 self-care difficulty + dexterity estimates: ~2.2% of U.S. population"
+      },
+      "LRS": {
+        "label": "Limited Reach and Strength",
+        "prevalence_rate": 0.058,
+        "estimated_population": 19600000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "ACS 2023: ambulatory difficulty; ~5.8% of U.S. population"
+      },
+      "LLCLA": {
+        "label": "Limited Language, Cognitive, and Learning Abilities",
+        "prevalence_rate": 0.047,
+        "estimated_population": 15900000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "ACS 2023/CDC combined cognitive and learning disability estimates: ~4.7% of U.S. population"
+      }
+    },
+    "census_vintage_year": 2023,
+    "census_source": "U.S. Census Bureau, American Community Survey (ACS) 2023 1-Year Estimates, Table B18101",
+    "census_source_url": "https://www.census.gov/topics/health/disability.html"
+  },
+  "performance_impact": {
+    "benchmark_lcp_ms": 2500,
+    "benchmark_page_weight_bytes": 1600000,
+    "url_count_with_timing": 1,
+    "url_count_with_weight": 1,
+    "total_extra_load_time_seconds": 15001502,
+    "total_extra_load_time_hours": 4167.08,
+    "total_extra_bytes": 2108054021451,
+    "total_extra_gigabytes": 2108.05
+  },
+  "source_data_date": "2026-05-11",
+  "top_urls": [
+    {
+      "url": "https://cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1360659,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 3,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 13525.173999999999,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 4619,
+          "Google Analytics": 151976
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 67,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "snippet": "<a id=\"cdc-mobile-search-toggle\" class=\"nav-link\" href=\"#\" aria-controls=\"cdc-mobile-search-form\">",
+              "node_label": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "skip-link",
+          "title": "Skip links are not focusable.",
+          "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.11/skip-link).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  No skip link target"
+            }
+          ]
+        },
+        {
+          "id": "tabindex",
+          "title": "Some elements have a `[tabindex]` value greater than 0",
+          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#content\" tabindex=\"1\">",
+              "node_label": "Skip to site content",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle",
+              "snippet": "<button id=\"animation-toggle\" aria-pressed=\"true\" tabindex=\"3\">",
+              "node_label": "Pause carousel",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 249,
+        "char_count": 2308,
+        "words_per_mb": 79
+      }
+    },
+    {
+      "url": "https://gis.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 40209,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://wwwnc.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 39390,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://search.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 18192,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://wwwn.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 13939,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://atsdr.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 4802,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://icd10cmtool.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 4657,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://wonder.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 4468,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://archive.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 4091,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://npin.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 4089,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://www.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 2145,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://ndc.services.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1986,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://reach.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1848,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://gettested.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1763,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://blogs.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1657,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://tools.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1463,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://www2a.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1295,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://jobs.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1090,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://selectagents.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 946,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://vaccines.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 840,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://thecommunityguide.org",
+      "organization_name": null,
+      "domain_type": null,
+      "page_load_count": 679,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://wisqars.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 673,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://vetoviolence.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 501,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://millionhearts.hhs.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 452,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://nationaldppcsc.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 401,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://phgkb.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 300,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://yrbs-explorer.services.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 300,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://nccd.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 298,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://www2.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 267,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://arpsp.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 253,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://nfr.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 249,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://pids.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 233,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://youthonline.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 187,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://nchsdata.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 185,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://hivrisk.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 183,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://artreportingdev.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 176,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://finddoxypep.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 174,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://art.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 148,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://shi.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 143,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://oasis.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 119,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://ephtracking.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 118,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://mvps.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 95,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://dprpdataportal.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 85,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://phgkb.glb.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 79,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://places.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 62,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://artreporting.cdc.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 57,
+      "scan_status": "failed",
+      "failure_reason": "timeout",
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": null,
+      "code_quality_summary": null,
+      "lighthouse_scores": null,
+      "axe_findings": [],
+      "readability_metrics": null
+    }
+  ],
+  "tech_summary": {
+    "cms_counts": {},
+    "cms_urls": {},
+    "uswds_count": 1,
+    "uswds_versions": [],
+    "uswds_version_urls": {
+      "": [
+        "https://cdc.gov"
+      ]
+    },
+    "total_scanned": 1,
+    "third_party_service_counts": {
+      "Google Analytics": 1,
+      "Digital Analytics Program": 1
+    },
+    "third_party_service_urls": {
+      "Google Analytics": [
+        "https://cdc.gov"
+      ],
+      "Digital Analytics Program": [
+        "https://cdc.gov"
+      ]
+    },
+    "third_party_service_total_bytes": {
+      "Digital Analytics Program": 4619,
+      "Google Analytics": 151976
+    },
+    "third_party_service_page_load_totals": {
+      "Google Analytics": 1360659,
+      "Digital Analytics Program": 1360659
+    },
+    "overlay_counts": {},
+    "overlay_urls": {},
+    "accessibility_statement_summary": {
+      "domains_checked": 1,
+      "domains_with_statement": 0,
+      "statement_rate_percent": 0,
+      "domains_without_statement": [
+        "cdc.gov"
+      ],
+      "statement_urls": []
+    },
+    "required_links_summary": {
+      "domains_checked": 1,
+      "by_type": {
+        "privacy": {
+          "domains_with_link": 1,
+          "rate_percent": 100,
+          "missing_domains": [],
+          "link_urls": [
+            "https://cdc.gov/privacy"
+          ]
+        },
+        "contact": {
+          "domains_with_link": 1,
+          "rate_percent": 100,
+          "missing_domains": [],
+          "link_urls": [
+            "https://cdc.gov/contact"
+          ]
+        },
+        "foia": {
+          "domains_with_link": 1,
+          "rate_percent": 100,
+          "missing_domains": [],
+          "link_urls": [
+            "https://cdc.gov/foia"
+          ]
+        }
+      },
+      "fully_compliant_domains": 1,
+      "fully_compliant_rate_percent": 100
+    }
+  },
+  "code_quality_summary": {
+    "total_scanned": 1,
+    "urls_with_deprecated_apis": 0,
+    "urls_with_console_errors": 0,
+    "urls_with_document_write": 0,
+    "urls_with_vulnerable_libraries": 0,
+    "js_library_counts": {
+      "Bootstrap": 1,
+      "jQuery": 1
+    },
+    "vulnerable_library_counts": {},
+    "audit_urls": {
+      "deprecated_apis": [],
+      "console_errors": [],
+      "document_write": [],
+      "vulnerable_libraries": []
+    }
+  },
+  "readability_summary": {
+    "url_count_with_metrics": 1,
+    "url_count_low_density": 1,
+    "mean_word_count": 249,
+    "mean_words_per_mb": 79,
+    "low_density_urls": [
+      "https://cdc.gov"
+    ]
+  },
+  "trend_window_days": 31,
+  "history_series": [
+    {
+      "date": "2026-04-12",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-13",
+      "aggregate_scores": {
+        "performance": 54.71,
+        "accessibility": 92.49,
+        "best_practices": 90.92,
+        "seo": 88.13,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-14",
+      "aggregate_scores": {
+        "performance": 53.41,
+        "accessibility": 92.68,
+        "best_practices": 91.63,
+        "seo": 88.48,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-15",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-16",
+      "aggregate_scores": {
+        "performance": 53.99,
+        "accessibility": 92.13,
+        "best_practices": 91.49,
+        "seo": 86.83,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-17",
+      "aggregate_scores": {
+        "performance": 53.25,
+        "accessibility": 91.51,
+        "best_practices": 90.4,
+        "seo": 87.61,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "aggregate_scores": {
+        "performance": 51.82,
+        "accessibility": 90.27,
+        "best_practices": 89.36,
+        "seo": 90.82,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-20",
+      "aggregate_scores": {
+        "performance": 58.5,
+        "accessibility": 92.17,
+        "best_practices": 93.83,
+        "seo": 91.5,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-21",
+      "aggregate_scores": {
+        "performance": 52.93,
+        "accessibility": 91.63,
+        "best_practices": 91.3,
+        "seo": 86.65,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-22",
+      "aggregate_scores": {
+        "performance": 60.92,
+        "accessibility": 86.38,
+        "best_practices": 90.08,
+        "seo": 88.46,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-23",
+      "aggregate_scores": {
+        "performance": 61.83,
+        "accessibility": 88.67,
+        "best_practices": 90.5,
+        "seo": 86.83,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-24",
+      "aggregate_scores": {
+        "performance": 52.14,
+        "accessibility": 94.14,
+        "best_practices": 92.14,
+        "seo": 84,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "aggregate_scores": {
+        "performance": 55.14,
+        "accessibility": 93.71,
+        "best_practices": 93.29,
+        "seo": 86.71,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "aggregate_scores": {
+        "performance": 54.83,
+        "accessibility": 91.8,
+        "best_practices": 89.69,
+        "seo": 87.86,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-27",
+      "aggregate_scores": {
+        "performance": 56.08,
+        "accessibility": 91.72,
+        "best_practices": 91.16,
+        "seo": 86.17,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-28",
+      "aggregate_scores": {
+        "performance": 60.8,
+        "accessibility": 89.55,
+        "best_practices": 92.2,
+        "seo": 88.25,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-29",
+      "aggregate_scores": {
+        "performance": 58.96,
+        "accessibility": 88.33,
+        "best_practices": 89.13,
+        "seo": 88.63,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "aggregate_scores": {
+        "performance": 58.37,
+        "accessibility": 89.3,
+        "best_practices": 89.89,
+        "seo": 88.19,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-01",
+      "aggregate_scores": {
+        "performance": 56.24,
+        "accessibility": 91.97,
+        "best_practices": 89.77,
+        "seo": 87.13,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "aggregate_scores": {
+        "performance": 52.76,
+        "accessibility": 91.97,
+        "best_practices": 91,
+        "seo": 85.69,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "aggregate_scores": {
+        "performance": 55.27,
+        "accessibility": 90.73,
+        "best_practices": 89.36,
+        "seo": 90.82,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-04",
+      "aggregate_scores": {
+        "performance": 57.58,
+        "accessibility": 90.83,
+        "best_practices": 89.92,
+        "seo": 90.92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-05",
+      "aggregate_scores": {
+        "performance": 58.67,
+        "accessibility": 91.83,
+        "best_practices": 91.78,
+        "seo": 89.72,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-06",
+      "aggregate_scores": {
+        "performance": 54,
+        "accessibility": 93,
+        "best_practices": 97.33,
+        "seo": 84.33,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-07",
+      "aggregate_scores": {
+        "performance": 58.62,
+        "accessibility": 89.88,
+        "best_practices": 89.32,
+        "seo": 87.94,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-08",
+      "aggregate_scores": {
+        "performance": 55.98,
+        "accessibility": 92.46,
+        "best_practices": 90.52,
+        "seo": 87.42,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-09",
+      "aggregate_scores": {
+        "performance": 53.5,
+        "accessibility": 94.17,
+        "best_practices": 92.83,
+        "seo": 87,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "aggregate_scores": {
+        "performance": 53.56,
+        "accessibility": 92.36,
+        "best_practices": 90.11,
+        "seo": 87.83,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "aggregate_scores": {
+        "performance": 57.45,
+        "accessibility": 93.05,
+        "best_practices": 92.35,
+        "seo": 90.2,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-12",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    }
+  ],
+  "generated_at": "2026-05-12T10:08:35.403Z",
+  "report_status": "partial",
+  "slow_risk_summary": {
+    "successful_url_count": 1,
+    "slow_risk_url_count": 1,
+    "successful_page_load_count": 1360659,
+    "slow_risk_page_load_count": 1360659,
+    "slow_risk_traffic_share_percent": 100
+  },
+  "warning_events": [],
+  "scan_diagnostics": {
+    "total_urls": 46,
+    "success_count": 1,
+    "failed_count": 45,
+    "excluded_count": 0,
+    "timeout_count": 135,
+    "retry_count": 90,
+    "failure_reasons": {
+      "timeout": 45
+    }
+  },
+  "scan_mode": "live",
+  "scanner_notes": [
+    "Lighthouse scans are live per URL.",
+    "ScanGov integration currently uses placeholder findings and will be wired to a live backend next."
+  ]
+}
