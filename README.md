@@ -107,6 +107,7 @@ node src/cli/run-daily-scan.js --dry-run --limit 10
 
 - [ACCESSIBILITY.md](./ACCESSIBILITY.md) - Accessibility commitment, best practices, and guidelines
 - [AGENTS.md](./AGENTS.md) - AI agent instructions and project-specific rules
+- [DEFINITION_OF_DONE.md](./DEFINITION_OF_DONE.md) - Definition of done for each published daily report
 - [FEATURES.md](./FEATURES.md) - Comprehensive technical feature catalog and international adaptation guide
 - [STYLES.md](./STYLES.md) - Design and content standards aligned with the CivicActions Style Guide
 
@@ -135,6 +136,7 @@ This project is transparent about how AI tools have been used throughout its dev
 | Claude (Anthropic) | claude-sonnet-4-5 | Updated all documentation to replace "Daily DAP" references with "Daily HHS A11y Scan" in AGENTS.md, .github/copilot-instructions.md, ACCESSIBILITY.md, FEATURES.md, STYLES.md, and README.md |
 | Claude (Anthropic) | claude-sonnet-4.6 | Updated footer description from "U.S. government website quality benchmarks" to "HHS website quality benchmarks" in render-pages.js and committed HTML files (docs/reports/index.html, docs/reports/archive/index.html, docs/404.html) |
 | Claude (Anthropic) | claude-sonnet-4.6 | Fixed HHS sub-agency data collection: replaced single parent `health-and-human-services` DAP endpoint (which returned 0 records) with 4 sub-agency endpoints (ACF, NLM, CDC, FDA); added multi-endpoint fetch, merge, and URL deduplication logic |
+| Claude (Anthropic) | claude-sonnet-4.6 | Created DEFINITION_OF_DONE.md: formal nine-criterion definition of done for each published daily report, linked to relevant source files and tests; added DEFINITION_OF_DONE.md link to README documentation section |
 
 ### Runtime operation
 
