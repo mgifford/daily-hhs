@@ -1,0 +1,55 @@
+url,scan_status,finding_id,finding_title,finding_description,finding_score,tags,item_selector,item_snippet,item_node_label,item_explanation
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2070364526,"<button type=""button"" id=""trigger-tabs-2070364526"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-2070364526"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2070364526,"Fix any of the following:
+  Required ARIA parent role not present: tablist"
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-708864766,"<button type=""button"" id=""trigger-tabs-708864766"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-708864766"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-708864766,"Fix any of the following:
+  Required ARIA parent role not present: tablist"
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1948713232,"<button type=""button"" id=""trigger-tabs-1948713232"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1948713232"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1948713232,"Fix any of the following:
+  Required ARIA parent role not present: tablist"
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-510610565,"<button type=""button"" id=""trigger-tabs-510610565"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-510610565"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-510610565,"Fix any of the following:
+  Required ARIA parent role not present: tablist"
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-858266018,"<button type=""button"" id=""trigger-tabs-858266018"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-858266018"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-858266018,"Fix any of the following:
+  Required ARIA parent role not present: tablist"
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2070364526,"<button type=""button"" id=""trigger-tabs-2070364526"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-2070364526"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2070364526,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-708864766,"<button type=""button"" id=""trigger-tabs-708864766"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-708864766"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-708864766,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1948713232,"<button type=""button"" id=""trigger-tabs-1948713232"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1948713232"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1948713232,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-510610565,"<button type=""button"" id=""trigger-tabs-510610565"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-510610565"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-510610565,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-858266018,"<button type=""button"" id=""trigger-tabs-858266018"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-858266018"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-858266018,"Fix any of the following:
+  Element does not have inner text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute
+  Element does not have an implicit (wrapped) <label>
+  Element does not have an explicit <label>
+  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
+https://hhs.gov,success,,,,,,,,,
+https://nih.gov,success,link-in-text-block,Links rely on color to be distinguishable.,Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).,0,,div.usa-identifier__container > div.usa-identifier__identity > p.usa-identifier__identity-disclaimer > a.ext,"<a href=""https://www.hhs.gov/"" class=""ext"" data-extlink="""" target=""_blank"" rel=""noopener nofollow noreferrer"">",Department of Health and Human Services,"Fix any of the following:
+  The link has insufficient color contrast of 1.31:1 with the surrounding text. (Minimum contrast is 3:1, link text: #dfe1e2, surrounding text: #ffffff)
+  The link has no styling (such as underline) to distinguish it from the surrounding text"
