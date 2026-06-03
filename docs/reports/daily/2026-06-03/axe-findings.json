@@ -1,0 +1,125 @@
+{
+  "run_date": "2026-06-03",
+  "run_id": "run-2026-06-03-e24fab2ff7",
+  "generated_at": "2026-06-03T10:56:25.212Z",
+  "total_urls": 3,
+  "total_findings": 3,
+  "urls": [
+    {
+      "url": "https://cms.gov",
+      "scan_status": "success",
+      "axe_findings_count": 2,
+      "axe_findings": [
+        {
+          "id": "aria-required-parent",
+          "title": "`[role]`s are not contained by their required parent element",
+          "description": "Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2097653373",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-2097653373\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-2097653373\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2097653373",
+              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-740655560",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-740655560\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-740655560\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-740655560",
+              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-634341614",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-634341614\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-634341614\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-634341614",
+              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-273908668",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-273908668\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-273908668\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-273908668",
+              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1924313478",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1924313478\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1924313478\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1924313478",
+              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            }
+          ]
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2097653373",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-2097653373\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-2097653373\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2097653373",
+              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-740655560",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-740655560\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-740655560\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-740655560",
+              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-634341614",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-634341614\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-634341614\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-634341614",
+              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-273908668",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-273908668\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-273908668\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-273908668",
+              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1924313478",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1924313478\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1924313478\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1924313478",
+              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://hhs.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://nih.gov",
+      "scan_status": "success",
+      "axe_findings_count": 1,
+      "axe_findings": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.usa-identifier__container > div.usa-identifier__identity > p.usa-identifier__identity-disclaimer > a.ext",
+              "snippet": "<a href=\"https://www.hhs.gov/\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener nofollow noreferrer\">",
+              "node_label": "Department of Health and Human Services",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.31:1 with the surrounding text. (Minimum contrast is 3:1, link text: #dfe1e2, surrounding text: #ffffff)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
