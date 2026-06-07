@@ -1,0 +1,924 @@
+{
+  "run_date": "2026-06-07",
+  "run_id": "run-2026-06-07-97d2272705",
+  "url_limit": 250,
+  "url_counts": {
+    "processed": 3,
+    "succeeded": 3,
+    "failed": 0,
+    "excluded": 0
+  },
+  "aggregate_scores": {
+    "performance": 59.33,
+    "accessibility": 95.33,
+    "best_practices": 80.67,
+    "seo": 89.67,
+    "pwa": 0
+  },
+  "estimated_impact": {
+    "traffic_window_mode": "daily",
+    "affected_share_percent": 77.4,
+    "categories": [
+      {
+        "name": "WV",
+        "prevalence_rate": 0.01,
+        "estimated_impacted_users": 985.07
+      },
+      {
+        "name": "LV",
+        "prevalence_rate": 0.023,
+        "estimated_impacted_users": 2265.66
+      },
+      {
+        "name": "WPC",
+        "prevalence_rate": 0.043,
+        "estimated_impacted_users": 4235.8
+      },
+      {
+        "name": "WH",
+        "prevalence_rate": 0.003,
+        "estimated_impacted_users": 295.52
+      },
+      {
+        "name": "LH",
+        "prevalence_rate": 0.034,
+        "estimated_impacted_users": 3349.24
+      },
+      {
+        "name": "WS",
+        "prevalence_rate": 0.005,
+        "estimated_impacted_users": 492.54
+      },
+      {
+        "name": "LM",
+        "prevalence_rate": 0.023,
+        "estimated_impacted_users": 2265.66
+      },
+      {
+        "name": "LRS",
+        "prevalence_rate": 0.058,
+        "estimated_impacted_users": 5713.41
+      },
+      {
+        "name": "LLCLA",
+        "prevalence_rate": 0.049,
+        "estimated_impacted_users": 4826.84
+      }
+    ]
+  },
+  "fpc_exclusion": {
+    "total_page_loads": 127265,
+    "scanned_url_count": 3,
+    "categories": {
+      "WV": {
+        "label": "Without Vision",
+        "prevalence_rate": 0.01,
+        "estimated_population": 3400000,
+        "affected_page_loads": 86363,
+        "affected_share_percent": 67.86,
+        "estimated_excluded_users": 863.63,
+        "source_note": "AFB: ~3.4 million Americans with severe visual impairment or blindness"
+      },
+      "LV": {
+        "label": "Limited Vision",
+        "prevalence_rate": 0.024,
+        "estimated_population": 8100000,
+        "affected_page_loads": 20240,
+        "affected_share_percent": 15.9,
+        "estimated_excluded_users": 485.76,
+        "source_note": "ACS 2023 + supplemental estimates: vision difficulty (all severity levels); ~2.4% of U.S. population"
+      },
+      "WPC": {
+        "label": "Without Perception of Color",
+        "prevalence_rate": 0.043,
+        "estimated_population": 14500000,
+        "affected_page_loads": 20240,
+        "affected_share_percent": 15.9,
+        "estimated_excluded_users": 870.32,
+        "source_note": "NIH/NEI: ~8% of males and ~0.5% of females have color vision deficiency"
+      },
+      "WH": {
+        "label": "Without Hearing",
+        "prevalence_rate": 0.003,
+        "estimated_population": 1100000,
+        "affected_page_loads": 86363,
+        "affected_share_percent": 67.86,
+        "estimated_excluded_users": 259.09,
+        "source_note": "NIDCD: ~1.1 million Americans with functional deafness"
+      },
+      "LH": {
+        "label": "Limited Hearing",
+        "prevalence_rate": 0.035,
+        "estimated_population": 11900000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "NIDCD/ACS combined hearing difficulty estimates: ~3.5% of U.S. population"
+      },
+      "WS": {
+        "label": "Without Speech",
+        "prevalence_rate": 0.005,
+        "estimated_population": 1700000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "NIDCD estimate: severe non-verbal or speech-absent population"
+      },
+      "LM": {
+        "label": "Limited Manipulation",
+        "prevalence_rate": 0.022,
+        "estimated_population": 7600000,
+        "affected_page_loads": 86363,
+        "affected_share_percent": 67.86,
+        "estimated_excluded_users": 1899.99,
+        "source_note": "ACS 2023 self-care difficulty + dexterity estimates: ~2.2% of U.S. population"
+      },
+      "LRS": {
+        "label": "Limited Reach and Strength",
+        "prevalence_rate": 0.058,
+        "estimated_population": 19600000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "ACS 2023: ambulatory difficulty; ~5.8% of U.S. population"
+      },
+      "LLCLA": {
+        "label": "Limited Language, Cognitive, and Learning Abilities",
+        "prevalence_rate": 0.047,
+        "estimated_population": 15900000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "ACS 2023/CDC combined cognitive and learning disability estimates: ~4.7% of U.S. population"
+      }
+    },
+    "census_vintage_year": 2023,
+    "census_source": "U.S. Census Bureau, American Community Survey (ACS) 2023 1-Year Estimates, Table B18101",
+    "census_source_url": "https://www.census.gov/topics/health/disability.html"
+  },
+  "performance_impact": {
+    "benchmark_lcp_ms": 2500,
+    "benchmark_page_weight_bytes": 1600000,
+    "url_count_with_timing": 3,
+    "url_count_with_weight": 3,
+    "total_extra_load_time_seconds": 567958,
+    "total_extra_load_time_hours": 157.77,
+    "total_extra_bytes": 19751409490,
+    "total_extra_gigabytes": 19.75
+  },
+  "source_data_date": "2026-06-06",
+  "top_urls": [
+    {
+      "url": "https://cms.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 86363,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 2,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 6852.102159999999,
+      "detected_technologies": {
+        "cms": "Drupal",
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program",
+          "YouTube"
+        ],
+        "third_party_service_sizes": {
+          "YouTube": 3504,
+          "Digital Analytics Program": 14813,
+          "Google Analytics": 152977
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "jQuery UI",
+          "Preact",
+          "Drupal"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 70,
+        "accessibility": 90,
+        "best_practices": 73,
+        "seo": 85,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "aria-required-parent",
+          "title": "`[role]`s are not contained by their required parent element",
+          "description": "Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1833879141",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1833879141\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1833879141\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1833879141",
+              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1498488894",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1498488894\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1498488894\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1498488894",
+              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2093774555",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-2093774555\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-2093774555\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2093774555",
+              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-560691618",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-560691618\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-560691618\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-560691618",
+              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-525519998",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-525519998\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-525519998\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-525519998",
+              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            }
+          ]
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1833879141",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1833879141\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1833879141\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1833879141",
+              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1498488894",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1498488894\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1498488894\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1498488894",
+              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2093774555",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-2093774555\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-2093774555\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2093774555",
+              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-560691618",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-560691618\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-560691618\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-560691618",
+              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-525519998",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-525519998\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-525519998\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-525519998",
+              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 206,
+        "char_count": 2512,
+        "words_per_mb": 163
+      }
+    },
+    {
+      "url": "https://hhs.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 20662,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 6985.608,
+      "detected_technologies": {
+        "cms": "Drupal",
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Google Tag Manager",
+          "Digital Analytics Program",
+          "Google Ads",
+          "YouTube"
+        ],
+        "third_party_service_sizes": {
+          "Google Tag Manager": 156261,
+          "Google Analytics": 466004,
+          "Google Ads": 613,
+          "Digital Analytics Program": 14814,
+          "YouTube": 3507
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "boomerang.js",
+          "Drupal"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 42,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://nih.gov",
+      "organization_name": "Department of Health and Human Services",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 20240,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 1,
+      "severe_findings_count": 1,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 7411.843499999999,
+      "detected_technologies": {
+        "cms": "Drupal",
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Google Tag Manager",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Google Tag Manager": 134865,
+          "Google Analytics": 488125,
+          "Digital Analytics Program": 14288
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 2,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "Drupal"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 66,
+        "accessibility": 96,
+        "best_practices": 73,
+        "seo": 92,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.usa-identifier__container > div.usa-identifier__identity > p.usa-identifier__identity-disclaimer > a.ext",
+              "snippet": "<a href=\"https://www.hhs.gov/\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener nofollow noreferrer\">",
+              "node_label": "Department of Health and Human Services",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.31:1 with the surrounding text. (Minimum contrast is 3:1, link text: #dfe1e2, surrounding text: #ffffff)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": null
+    }
+  ],
+  "tech_summary": {
+    "cms_counts": {
+      "Drupal": 3
+    },
+    "cms_urls": {
+      "Drupal": [
+        "https://cms.gov",
+        "https://hhs.gov",
+        "https://nih.gov"
+      ]
+    },
+    "uswds_count": 2,
+    "uswds_versions": [],
+    "uswds_version_urls": {
+      "": [
+        "https://hhs.gov",
+        "https://nih.gov"
+      ]
+    },
+    "total_scanned": 3,
+    "third_party_service_counts": {
+      "Google Analytics": 3,
+      "Digital Analytics Program": 3,
+      "YouTube": 2,
+      "Google Tag Manager": 2,
+      "Google Ads": 1
+    },
+    "third_party_service_urls": {
+      "Google Analytics": [
+        "https://cms.gov",
+        "https://hhs.gov",
+        "https://nih.gov"
+      ],
+      "Digital Analytics Program": [
+        "https://cms.gov",
+        "https://hhs.gov",
+        "https://nih.gov"
+      ],
+      "YouTube": [
+        "https://cms.gov",
+        "https://hhs.gov"
+      ],
+      "Google Tag Manager": [
+        "https://hhs.gov",
+        "https://nih.gov"
+      ],
+      "Google Ads": [
+        "https://hhs.gov"
+      ]
+    },
+    "third_party_service_total_bytes": {
+      "YouTube": 7011,
+      "Digital Analytics Program": 43915,
+      "Google Analytics": 1107106,
+      "Google Tag Manager": 291126,
+      "Google Ads": 613
+    },
+    "third_party_service_page_load_totals": {
+      "Google Analytics": 127265,
+      "Digital Analytics Program": 127265,
+      "YouTube": 107025,
+      "Google Tag Manager": 40902,
+      "Google Ads": 20662
+    },
+    "overlay_counts": {},
+    "overlay_urls": {},
+    "accessibility_statement_summary": {
+      "domains_checked": 3,
+      "domains_with_statement": 3,
+      "statement_rate_percent": 100,
+      "domains_without_statement": [],
+      "statement_urls": [
+        "https://cms.gov/accessibility",
+        "https://hhs.gov/accessibility",
+        "https://nih.gov/accessibility"
+      ]
+    },
+    "required_links_summary": {
+      "domains_checked": 3,
+      "by_type": {
+        "privacy": {
+          "domains_with_link": 3,
+          "rate_percent": 100,
+          "missing_domains": [],
+          "link_urls": [
+            "https://cms.gov/privacy",
+            "https://hhs.gov/privacy",
+            "https://nih.gov/privacy"
+          ]
+        },
+        "contact": {
+          "domains_with_link": 3,
+          "rate_percent": 100,
+          "missing_domains": [],
+          "link_urls": [
+            "https://cms.gov/contact",
+            "https://hhs.gov/contact",
+            "https://nih.gov/contact"
+          ]
+        },
+        "foia": {
+          "domains_with_link": 3,
+          "rate_percent": 100,
+          "missing_domains": [],
+          "link_urls": [
+            "https://cms.gov/foia",
+            "https://hhs.gov/foia",
+            "https://nih.gov/foia"
+          ]
+        }
+      },
+      "fully_compliant_domains": 3,
+      "fully_compliant_rate_percent": 100
+    }
+  },
+  "code_quality_summary": {
+    "total_scanned": 3,
+    "urls_with_deprecated_apis": 0,
+    "urls_with_console_errors": 1,
+    "urls_with_document_write": 0,
+    "urls_with_vulnerable_libraries": 0,
+    "js_library_counts": {
+      "jQuery": 3,
+      "jQuery UI": 1,
+      "Preact": 1,
+      "Drupal": 3,
+      "boomerang.js": 1
+    },
+    "vulnerable_library_counts": {},
+    "audit_urls": {
+      "deprecated_apis": [],
+      "console_errors": [
+        "https://nih.gov"
+      ],
+      "document_write": [],
+      "vulnerable_libraries": []
+    }
+  },
+  "readability_summary": {
+    "url_count_with_metrics": 1,
+    "url_count_low_density": 1,
+    "mean_word_count": 206,
+    "mean_words_per_mb": 163,
+    "low_density_urls": [
+      "https://cms.gov"
+    ]
+  },
+  "trend_window_days": 31,
+  "history_series": [
+    {
+      "date": "2026-05-08",
+      "aggregate_scores": {
+        "performance": 55.98,
+        "accessibility": 92.46,
+        "best_practices": 90.52,
+        "seo": 87.42,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-09",
+      "aggregate_scores": {
+        "performance": 53.5,
+        "accessibility": 94.17,
+        "best_practices": 92.83,
+        "seo": 87,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "aggregate_scores": {
+        "performance": 53.56,
+        "accessibility": 92.36,
+        "best_practices": 90.11,
+        "seo": 87.83,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "aggregate_scores": {
+        "performance": 57.45,
+        "accessibility": 93.05,
+        "best_practices": 92.35,
+        "seo": 90.2,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-12",
+      "aggregate_scores": {
+        "performance": 67,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-13",
+      "aggregate_scores": {
+        "performance": 40.5,
+        "accessibility": 95.5,
+        "best_practices": 91.5,
+        "seo": 89.33,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-14",
+      "aggregate_scores": {
+        "performance": 49.2,
+        "accessibility": 95.4,
+        "best_practices": 90.6,
+        "seo": 88.8,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-15",
+      "aggregate_scores": {
+        "performance": 53.32,
+        "accessibility": 92.47,
+        "best_practices": 90.03,
+        "seo": 87.69,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-16",
+      "aggregate_scores": {
+        "performance": 58.55,
+        "accessibility": 89.74,
+        "best_practices": 88,
+        "seo": 88.76,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "aggregate_scores": {
+        "performance": 59.88,
+        "accessibility": 94.5,
+        "best_practices": 91.25,
+        "seo": 87.38,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-18",
+      "aggregate_scores": {
+        "performance": 54.63,
+        "accessibility": 93.36,
+        "best_practices": 89.9,
+        "seo": 88.47,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-19",
+      "aggregate_scores": {
+        "performance": 60.56,
+        "accessibility": 91,
+        "best_practices": 91.44,
+        "seo": 90.38,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-20",
+      "aggregate_scores": {
+        "performance": 58.88,
+        "accessibility": 91.29,
+        "best_practices": 89.26,
+        "seo": 89.76,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "aggregate_scores": {
+        "performance": 62.06,
+        "accessibility": 90.44,
+        "best_practices": 90.25,
+        "seo": 89.94,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-22",
+      "aggregate_scores": {
+        "performance": 59,
+        "accessibility": 94.5,
+        "best_practices": 91.25,
+        "seo": 87.38,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-23",
+      "aggregate_scores": {
+        "performance": 50.33,
+        "accessibility": 95.33,
+        "best_practices": 88.33,
+        "seo": 89.67,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "aggregate_scores": {
+        "performance": 54.84,
+        "accessibility": 92.6,
+        "best_practices": 90.45,
+        "seo": 86.99,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-25",
+      "aggregate_scores": {
+        "performance": 56.7,
+        "accessibility": 92.27,
+        "best_practices": 90.98,
+        "seo": 86.68,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-26",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-27",
+      "aggregate_scores": {
+        "performance": 67,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "aggregate_scores": {
+        "performance": 58.84,
+        "accessibility": 90.88,
+        "best_practices": 89.72,
+        "seo": 89.6,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-29",
+      "aggregate_scores": {
+        "performance": 67,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-30",
+      "aggregate_scores": {
+        "performance": 55.36,
+        "accessibility": 92.08,
+        "best_practices": 90.67,
+        "seo": 88.13,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-31",
+      "aggregate_scores": {
+        "performance": 55.05,
+        "accessibility": 91.87,
+        "best_practices": 90.75,
+        "seo": 86.45,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-01",
+      "aggregate_scores": {
+        "performance": 52.33,
+        "accessibility": 95.33,
+        "best_practices": 80.67,
+        "seo": 89.67,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-02",
+      "aggregate_scores": {
+        "performance": 59.46,
+        "accessibility": 91.64,
+        "best_practices": 90.54,
+        "seo": 88.57,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "aggregate_scores": {
+        "performance": 54,
+        "accessibility": 95.33,
+        "best_practices": 80.67,
+        "seo": 89.67,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-04",
+      "aggregate_scores": {
+        "performance": 53.1,
+        "accessibility": 92.44,
+        "best_practices": 90.75,
+        "seo": 85.75,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-05",
+      "aggregate_scores": {
+        "performance": 68,
+        "accessibility": 91,
+        "best_practices": 100,
+        "seo": 85,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-06",
+      "aggregate_scores": {
+        "performance": 43,
+        "accessibility": 95.5,
+        "best_practices": 87.67,
+        "seo": 89.33,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-07",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    }
+  ],
+  "generated_at": "2026-06-07T10:12:03.426Z",
+  "report_status": "success",
+  "slow_risk_summary": {
+    "successful_url_count": 3,
+    "slow_risk_url_count": 3,
+    "successful_page_load_count": 127265,
+    "slow_risk_page_load_count": 127265,
+    "slow_risk_traffic_share_percent": 100
+  },
+  "warning_events": [],
+  "scan_diagnostics": {
+    "total_urls": 3,
+    "success_count": 3,
+    "failed_count": 0,
+    "excluded_count": 0,
+    "timeout_count": 0,
+    "retry_count": 0,
+    "failure_reasons": {}
+  },
+  "scan_mode": "live",
+  "scanner_notes": [
+    "Lighthouse scans are live per URL.",
+    "ScanGov integration currently uses placeholder findings and will be wired to a live backend next."
+  ]
+}
