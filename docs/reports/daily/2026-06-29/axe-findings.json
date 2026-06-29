@@ -1,9 +1,9 @@
 {
-  "run_date": "2026-06-15",
-  "run_id": "run-2026-06-15-38c1d93a64",
-  "generated_at": "2026-06-15T11:21:15.505Z",
-  "total_urls": 46,
-  "total_findings": 14,
+  "run_date": "2026-06-29",
+  "run_id": "run-2026-06-29-2d8bd79bcc",
+  "generated_at": "2026-06-29T10:55:50.601Z",
+  "total_urls": 47,
+  "total_findings": 16,
   "urls": [
     {
       "url": "https://cdc.gov",
@@ -86,33 +86,33 @@
           "tags": [],
           "items": [
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1714902645",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1714902645\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1714902645\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1714902645",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1562390284",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1562390284\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1562390284\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1562390284",
               "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-678103395",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-678103395\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-678103395\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-678103395",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1487168828",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1487168828\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1487168828\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1487168828",
               "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-324211709",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-324211709\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-324211709\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-324211709",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1105979058",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1105979058\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1105979058\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1105979058",
               "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1886255177",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1886255177\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1886255177\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1886255177",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-31570889",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-31570889\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-31570889\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-31570889",
               "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1391367301",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1391367301\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1391367301\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1391367301",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-739805542",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-739805542\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-739805542\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-739805542",
               "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
             }
           ]
@@ -126,34 +126,73 @@
           "tags": [],
           "items": [
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1714902645",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1714902645\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1714902645\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1714902645",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1562390284",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1562390284\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1562390284\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1562390284",
               "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-678103395",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-678103395\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-678103395\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-678103395",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1487168828",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1487168828\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1487168828\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1487168828",
               "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-324211709",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-324211709\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-324211709\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-324211709",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1105979058",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1105979058\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1105979058\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1105979058",
               "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1886255177",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1886255177\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1886255177\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1886255177",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-31570889",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-31570889\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-31570889\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-31570889",
               "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1391367301",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1391367301\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1391367301\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1391367301",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-739805542",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-739805542\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-739805542\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-739805542",
               "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://phinvads.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 2,
+      "axe_findings": [
+        {
+          "id": "label",
+          "title": "Form elements do not have associated labels",
+          "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.11/label).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "form#SearchAllVocab_search > fieldset > div.bar > input#input-1",
+              "snippet": "<input type=\"text\" name=\"searchOptions.searchText\" value=\"\" id=\"input-1\" class=\"text\">",
+              "node_label": "form#SearchAllVocab_search > fieldset > div.bar > input#input-1",
+              "explanation": "Fix all of the following:\n  Form element has explicit <label> that is hidden"
+            }
+          ]
+        },
+        {
+          "id": "skip-link",
+          "title": "Skip links are not focusable.",
+          "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.11/skip-link).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-page > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy sr-only-focusable\" href=\"#headerSearch\">",
+              "node_label": "Skip directly to search",
+              "explanation": "Fix any of the following:\n  No skip link target"
             }
           ]
         }
@@ -256,10 +295,63 @@
       ]
     },
     {
-      "url": "https://wwwn.cdc.gov",
+      "url": "https://acf.gov",
       "scan_status": "success",
-      "axe_findings_count": 0,
-      "axe_findings": []
+      "axe_findings_count": 1,
+      "axe_findings": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "li > ul > li > a.external",
+              "snippet": "<a href=\"https://www.hhs.gov\" class=\"external\" target=\"_blank\">",
+              "node_label": "HHS.gov ",
+              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 59.4px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 15.8px instead of at least 24px."
+            },
+            {
+              "selector": "li > ul > li > a.external",
+              "snippet": "<a href=\"https://www.grants.gov\" class=\"external\" target=\"_blank\">",
+              "node_label": "Grants.gov ",
+              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 70.2px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 15.8px instead of at least 24px."
+            },
+            {
+              "selector": "li > ul > li > a.external",
+              "snippet": "<a href=\"https://www.usajobs.gov/\" class=\"external\" target=\"_blank\">",
+              "node_label": "USAJobs.gov ",
+              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 81.8px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            },
+            {
+              "selector": "li > ul > li > a.external",
+              "snippet": "<a href=\"https://oig.hhs.gov/fraud/report-fraud/\" class=\"external\" target=\"_blank\">",
+              "node_label": "Report Fraud ",
+              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 81.7px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19.2px instead of at least 24px."
+            },
+            {
+              "selector": "li > ul > li > a",
+              "snippet": "<a href=\"/accessibility\">",
+              "node_label": "Accessibility",
+              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 61.2px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 13.4px instead of at least 24px."
+            },
+            {
+              "selector": "li > ul > li > a",
+              "snippet": "<a href=\"/about/acf-policies/no-fear-act\">",
+              "node_label": "No FEAR Act",
+              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 60.6px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8.6px instead of at least 24px."
+            },
+            {
+              "selector": "li > ul > li > a",
+              "snippet": "<a href=\"/foia\">",
+              "node_label": "FOIA",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (23.5px by 25px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19.2px instead of at least 24px."
+            }
+          ]
+        }
+      ]
     },
     {
       "url": "https://archive.cdc.gov",
@@ -321,63 +413,10 @@
       ]
     },
     {
-      "url": "https://acf.gov",
+      "url": "https://wwwn.cdc.gov",
       "scan_status": "success",
-      "axe_findings_count": 1,
-      "axe_findings": [
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "li > ul > li > a.external",
-              "snippet": "<a href=\"https://www.hhs.gov\" class=\"external\" target=\"_blank\">",
-              "node_label": "HHS.gov ",
-              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 59.4px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 15.8px instead of at least 24px."
-            },
-            {
-              "selector": "li > ul > li > a.external",
-              "snippet": "<a href=\"https://www.grants.gov\" class=\"external\" target=\"_blank\">",
-              "node_label": "Grants.gov ",
-              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 70.2px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 15.8px instead of at least 24px."
-            },
-            {
-              "selector": "li > ul > li > a.external",
-              "snippet": "<a href=\"https://www.usajobs.gov/\" class=\"external\" target=\"_blank\">",
-              "node_label": "USAJobs.gov ",
-              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 81.8px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
-            {
-              "selector": "li > ul > li > a.external",
-              "snippet": "<a href=\"https://oig.hhs.gov/fraud/report-fraud/\" class=\"external\" target=\"_blank\">",
-              "node_label": "Report Fraud ",
-              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 81.7px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19.2px instead of at least 24px."
-            },
-            {
-              "selector": "li > ul > li > a",
-              "snippet": "<a href=\"/accessibility\">",
-              "node_label": "Accessibility",
-              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 61.2px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 13.4px instead of at least 24px."
-            },
-            {
-              "selector": "li > ul > li > a",
-              "snippet": "<a href=\"/about/acf-policies/no-fear-act\">",
-              "node_label": "No FEAR Act",
-              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 60.6px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8.6px instead of at least 24px."
-            },
-            {
-              "selector": "li > ul > li > a",
-              "snippet": "<a href=\"/foia\">",
-              "node_label": "FOIA",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (23.5px by 25px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19.2px instead of at least 24px."
-            }
-          ]
-        }
-      ]
+      "axe_findings_count": 0,
+      "axe_findings": []
     },
     {
       "url": "https://search.cdc.gov",
@@ -465,6 +504,12 @@
       "axe_findings": []
     },
     {
+      "url": "https://icd10cmtool.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
       "url": "https://wonder.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
@@ -472,18 +517,6 @@
     },
     {
       "url": "https://gis.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://icd10cmtool.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://reach.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -501,6 +534,24 @@
       "axe_findings": []
     },
     {
+      "url": "https://reach.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://thecommunityguide.org",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://jobs.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
       "url": "https://vaccines.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
@@ -513,19 +564,7 @@
       "axe_findings": []
     },
     {
-      "url": "https://jobs.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
       "url": "https://ndc.services.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://thecommunityguide.org",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -543,7 +582,7 @@
       "axe_findings": []
     },
     {
-      "url": "https://www2a.cdc.gov",
+      "url": "https://millionhearts.hhs.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -555,7 +594,7 @@
       "axe_findings": []
     },
     {
-      "url": "https://millionhearts.hhs.gov",
+      "url": "https://www2a.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -567,7 +606,7 @@
       "axe_findings": []
     },
     {
-      "url": "https://arpsp.cdc.gov",
+      "url": "https://ephtracking.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -579,37 +618,7 @@
       "axe_findings": []
     },
     {
-      "url": "https://ephtracking.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
       "url": "https://hivrisk.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://phinvads.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://ncsacw.acf.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://cdi.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://art.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -621,13 +630,37 @@
       "axe_findings": []
     },
     {
+      "url": "https://nccd.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
       "url": "https://nationaldppcsc.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
     },
     {
-      "url": "https://nccd.cdc.gov",
+      "url": "https://art.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://ncsacw.acf.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://arpsp.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://cdi.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -639,13 +672,19 @@
       "axe_findings": []
     },
     {
-      "url": "https://nchsdata.cdc.gov",
+      "url": "https://youthonline.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
     },
     {
-      "url": "https://youthonline.cdc.gov",
+      "url": "https://snapshot2024atsdr.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://nchsdata.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -657,13 +696,13 @@
       "axe_findings": []
     },
     {
-      "url": "https://places.cdc.gov",
+      "url": "https://origin.thecommunityguide.org",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
     },
     {
-      "url": "https://heart-stroke-atlas.cdc.gov",
+      "url": "https://places.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
