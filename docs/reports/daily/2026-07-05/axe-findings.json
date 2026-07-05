@@ -1,9 +1,9 @@
 {
-  "run_date": "2026-06-21",
-  "run_id": "run-2026-06-21-b223357859",
-  "generated_at": "2026-06-21T10:26:43.122Z",
-  "total_urls": 15,
-  "total_findings": 27,
+  "run_date": "2026-07-05",
+  "run_id": "run-2026-07-05-b89e90ce6c",
+  "generated_at": "2026-07-05T09:59:46.259Z",
+  "total_urls": 12,
+  "total_findings": 24,
   "urls": [
     {
       "url": "https://fda.gov",
@@ -61,145 +61,6 @@
       "scan_status": "success",
       "axe_findings_count": 0,
       "axe_findings": []
-    },
-    {
-      "url": "https://cms.gov",
-      "scan_status": "success",
-      "axe_findings_count": 2,
-      "axe_findings": [
-        {
-          "id": "aria-required-parent",
-          "title": "`[role]`s are not contained by their required parent element",
-          "description": "Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).",
-          "score": 0,
-          "impact": "critical",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1410934567",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1410934567\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1410934567\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1410934567",
-              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
-            },
-            {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1460460523",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1460460523\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1460460523\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1460460523",
-              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
-            },
-            {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1153823254",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1153823254\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1153823254\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1153823254",
-              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
-            },
-            {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2009860726",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-2009860726\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-2009860726\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2009860726",
-              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
-            },
-            {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1424876699",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1424876699\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1424876699\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1424876699",
-              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
-            }
-          ]
-        },
-        {
-          "id": "button-name",
-          "title": "Buttons do not have an accessible name",
-          "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",
-          "score": 0,
-          "impact": "critical",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1410934567",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1410934567\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1410934567\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1410934567",
-              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-            },
-            {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1460460523",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1460460523\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1460460523\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1460460523",
-              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-            },
-            {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1153823254",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1153823254\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1153823254\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1153823254",
-              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-            },
-            {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2009860726",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-2009860726\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-2009860726\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2009860726",
-              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-            },
-            {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1424876699",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1424876699\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1424876699\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1424876699",
-              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "url": "https://hhs.gov",
-      "scan_status": "success",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://nih.gov",
-      "scan_status": "success",
-      "axe_findings_count": 1,
-      "axe_findings": [
-        {
-          "id": "link-in-text-block",
-          "title": "Links rely on color to be distinguishable.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.usa-identifier__container > div.usa-identifier__identity > p.usa-identifier__identity-disclaimer > a.ext",
-              "snippet": "<a href=\"https://www.hhs.gov/\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener nofollow noreferrer\">",
-              "node_label": "Department of Health and Human Services",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.31:1 with the surrounding text. (Minimum contrast is 3:1, link text: #dfe1e2, surrounding text: #ffffff)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "url": "https://precision.fda.gov",
-      "scan_status": "success",
-      "axe_findings_count": 1,
-      "axe_findings": [
-        {
-          "id": "link-name",
-          "title": "Links do not have a discernible name",
-          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div > ul.mt-0 > li.mb-2 > a",
-              "snippet": "<a href=\"mailto:precisionfda@fda.hhs.gov\">",
-              "node_label": "div > ul.mt-0 > li.mb-2 > a",
-              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
-            }
-          ]
-        }
-      ]
     },
     {
       "url": "https://direct.fda.gov",
@@ -291,6 +152,29 @@
               "snippet": "<html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:htmldb=\"http://htmldb.oracle.com\" xmlns:apex=\"http://apex.oracle.com\" data-useragent=\"Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (K…\">",
               "node_label": "html",
               "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://precision.fda.gov",
+      "scan_status": "success",
+      "axe_findings_count": 1,
+      "axe_findings": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div > ul.mt-0 > li.mb-2 > a",
+              "snippet": "<a href=\"mailto:precisionfda@fda.hhs.gov\">",
+              "node_label": "div > ul.mt-0 > li.mb-2 > a",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             }
           ]
         }
@@ -411,6 +295,45 @@
       ]
     },
     {
+      "url": "https://animaldrugsatfda.fda.gov",
+      "scan_status": "success",
+      "axe_findings_count": 2,
+      "axe_findings": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.row > div.col-sm-5 > span.control-label > a",
+              "snippet": "<a href=\"\" ng-show=\"!showAdvanced\" ng-click=\"showAdvanced=!showAdvanced\">",
+              "node_label": ">> ",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (16.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.6px instead of at least 24px."
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html#ng-app",
+              "snippet": "<html lang=\"en\" ng-app=\"myApp\" class=\"ng-scope\" id=\"ng-app\" style=\"position: relative; background: transparent;\">",
+              "node_label": "html#ng-app",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "url": "https://contact.fda.gov",
       "scan_status": "success",
       "axe_findings_count": 2,
@@ -468,10 +391,48 @@
       ]
     },
     {
-      "url": "https://animaldrugsatfda.fda.gov",
+      "url": "https://cdrh-rst.fda.gov",
       "scan_status": "success",
-      "axe_findings_count": 2,
+      "axe_findings_count": 3,
       "axe_findings": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.views-view-responsive-grid__item-inner > div.views-field > span.field-content > h3",
+              "snippet": "<h3>",
+              "node_label": "A 3D Quantitative Optical Coherence Tomography Angiography Method for Measuring…",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.view > div.view-header > p > a",
+              "snippet": "<a href=\"https://www.fda.gov/medical-devices/medical-device-development-tools-mddt\">",
+              "node_label": "Medical Device Development Tools",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.77:1 with the surrounding text. (Minimum contrast is 3:1, link text: #337ab7, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.view > div.view-header > p > a",
+              "snippet": "<a href=\"https://www.fda.gov/regulatory-information/search-fda-guidance-documents/r…\">",
+              "node_label": "feedback or meetings for medical device submissions",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.77:1 with the surrounding text. (Minimum contrast is 3:1, link text: #337ab7, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        },
         {
           "id": "target-size",
           "title": "Touch targets do not have sufficient size or spacing.",
@@ -481,26 +442,16 @@
           "tags": [],
           "items": [
             {
-              "selector": "div.row > div.col-sm-5 > span.control-label > a",
-              "snippet": "<a href=\"\" ng-show=\"!showAdvanced\" ng-click=\"showAdvanced=!showAdvanced\">",
-              "node_label": ">> ",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (16.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.6px instead of at least 24px."
-            }
-          ]
-        },
-        {
-          "id": "landmark-one-main",
-          "title": "Document does not have a main landmark.",
-          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
-          "score": 0,
-          "impact": "moderate",
-          "tags": [],
-          "items": [
+              "selector": "span.field-content > ul > li > a",
+              "snippet": "<a href=\"/node?f%5B0%5D=categories%3A121\">",
+              "node_label": "Lab Method",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (59.8px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.6px instead of at least 24px."
+            },
             {
-              "selector": "html#ng-app",
-              "snippet": "<html lang=\"en\" ng-app=\"myApp\" class=\"ng-scope\" id=\"ng-app\" style=\"position: relative; background: transparent;\">",
-              "node_label": "html#ng-app",
-              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+              "selector": "span.field-content > ul > li > a",
+              "snippet": "<a href=\"/node?f%5B0%5D=categories%3A121\">",
+              "node_label": "Lab Method",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (59.8px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.6px instead of at least 24px."
             }
           ]
         }
@@ -706,73 +657,6 @@
               "snippet": "<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:addthis=\"http://www.addthis.com/help/api-spec\">",
               "node_label": "html",
               "explanation": "Fix all of the following:\n  Document does not have a main landmark"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "url": "https://cdrh-rst.fda.gov",
-      "scan_status": "success",
-      "axe_findings_count": 3,
-      "axe_findings": [
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
-          "score": 0,
-          "impact": "moderate",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.views-view-responsive-grid__item-inner > div.views-field > span.field-content > h3",
-              "snippet": "<h3>",
-              "node_label": "A 3D Quantitative Optical Coherence Tomography Angiography Method for Measuring…",
-              "explanation": "Fix any of the following:\n  Heading order invalid"
-            }
-          ]
-        },
-        {
-          "id": "link-in-text-block",
-          "title": "Links rely on color to be distinguishable.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.view > div.view-header > p > a",
-              "snippet": "<a href=\"https://www.fda.gov/medical-devices/medical-device-development-tools-mddt\">",
-              "node_label": "Medical Device Development Tools",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.77:1 with the surrounding text. (Minimum contrast is 3:1, link text: #337ab7, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            },
-            {
-              "selector": "div.view > div.view-header > p > a",
-              "snippet": "<a href=\"https://www.fda.gov/regulatory-information/search-fda-guidance-documents/r…\">",
-              "node_label": "feedback or meetings for medical device submissions",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.77:1 with the surrounding text. (Minimum contrast is 3:1, link text: #337ab7, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            }
-          ]
-        },
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "span.field-content > ul > li > a",
-              "snippet": "<a href=\"/node?f%5B0%5D=categories%3A121\">",
-              "node_label": "Lab Method",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (59.8px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.6px instead of at least 24px."
-            },
-            {
-              "selector": "span.field-content > ul > li > a",
-              "snippet": "<a href=\"/node?f%5B0%5D=categories%3A121\">",
-              "node_label": "Lab Method",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (59.8px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.6px instead of at least 24px."
             }
           ]
         }
