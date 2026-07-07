@@ -1,0 +1,1354 @@
+{
+  "run_date": "2026-07-07",
+  "run_id": "run-2026-07-07-be2407a3f0",
+  "generated_at": "2026-07-07T10:25:31.080Z",
+  "total_urls": 59,
+  "total_findings": 31,
+  "urls": [
+    {
+      "url": "https://cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 3,
+      "axe_findings": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "snippet": "<a id=\"cdc-mobile-search-toggle\" class=\"nav-link\" href=\"#\" aria-controls=\"cdc-mobile-search-form\">",
+              "node_label": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "skip-link",
+          "title": "Skip links are not focusable.",
+          "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.11/skip-link).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  No skip link target"
+            }
+          ]
+        },
+        {
+          "id": "tabindex",
+          "title": "Some elements have a `[tabindex]` value greater than 0",
+          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#content\" tabindex=\"1\">",
+              "node_label": "Skip to site content",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle",
+              "snippet": "<button id=\"animation-toggle\" aria-pressed=\"true\" tabindex=\"3\">",
+              "node_label": "Pause carousel",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://fda.gov",
+      "scan_status": "success",
+      "axe_findings_count": 2,
+      "axe_findings": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.fda-ft-container > div.fda-ft-heading > div.fda-ft-heading-text > h3.fda-ft-heading-title",
+              "snippet": "<h3 class=\"fda-ft-heading-title\">",
+              "node_label": "Featured Topics",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "tabindex",
+          "title": "Some elements have a `[tabindex]` value greater than 0",
+          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div#quicklinks > ul.list-inline > li > a.btn",
+              "snippet": "<a href=\"#main-content\" class=\"btn btn-default margin-top-3\" tabindex=\"1\" data-once=\"download-role-button lang-fix-multilingual\">",
+              "node_label": "Skip to main content",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#quicklinks > ul.list-inline > li > a.btn",
+              "snippet": "<a href=\"#search-form\" class=\"btn btn-default margin-top-3\" tabindex=\"1\" data-once=\"download-role-button lang-fix-multilingual\">",
+              "node_label": "Skip to FDA Search",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#quicklinks > ul.list-inline > li > a.btn",
+              "snippet": "<a href=\"#footer\" class=\"btn btn-default margin-top-3\" tabindex=\"1\" data-once=\"download-role-button lang-fix-multilingual\">",
+              "node_label": "Skip to footer links",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://cms.gov",
+      "scan_status": "success",
+      "axe_findings_count": 2,
+      "axe_findings": [
+        {
+          "id": "aria-required-parent",
+          "title": "`[role]`s are not contained by their required parent element",
+          "description": "Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1325034259",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1325034259\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1325034259\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1325034259",
+              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1612800766",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1612800766\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1612800766\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1612800766",
+              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1617619099",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1617619099\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1617619099\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1617619099",
+              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1529859257",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1529859257\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1529859257\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1529859257",
+              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-807209415",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-807209415\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-807209415\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-807209415",
+              "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
+            }
+          ]
+        },
+        {
+          "id": "button-name",
+          "title": "Buttons do not have an accessible name",
+          "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1325034259",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1325034259\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1325034259\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1325034259",
+              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1612800766",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1612800766\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1612800766\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1612800766",
+              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1617619099",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1617619099\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1617619099\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1617619099",
+              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1529859257",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1529859257\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1529859257\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1529859257",
+              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-807209415",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-807209415\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-807209415\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-807209415",
+              "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://accessdata.fda.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://nih.gov",
+      "scan_status": "success",
+      "axe_findings_count": 1,
+      "axe_findings": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.usa-identifier__container > div.usa-identifier__identity > p.usa-identifier__identity-disclaimer > a.ext",
+              "snippet": "<a href=\"https://www.hhs.gov/\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener nofollow noreferrer\">",
+              "node_label": "Department of Health and Human Services",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.31:1 with the surrounding text. (Minimum contrast is 3:1, link text: #dfe1e2, surrounding text: #ffffff)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://hhs.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://wwwnc.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 3,
+      "axe_findings": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "snippet": "<a id=\"cdc-mobile-search-toggle\" class=\"nav-link\" href=\"#\" aria-controls=\"cdc-mobile-search-form\">",
+              "node_label": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "skip-link",
+          "title": "Skip links are not focusable.",
+          "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.11/skip-link).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  No skip link target"
+            }
+          ]
+        },
+        {
+          "id": "tabindex",
+          "title": "Some elements have a `[tabindex]` value greater than 0",
+          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#content\" tabindex=\"1\">",
+              "node_label": "Skip to site content",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle",
+              "snippet": "<button id=\"animation-toggle\" aria-pressed=\"true\" tabindex=\"3\">",
+              "node_label": "Pause carousel",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://wwwn.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://acf.gov",
+      "scan_status": "success",
+      "axe_findings_count": 1,
+      "axe_findings": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "li > ul > li > a.external",
+              "snippet": "<a href=\"https://www.hhs.gov\" class=\"external\" target=\"_blank\">",
+              "node_label": "HHS.gov ",
+              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 59.4px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 15.8px instead of at least 24px."
+            },
+            {
+              "selector": "li > ul > li > a.external",
+              "snippet": "<a href=\"https://www.grants.gov\" class=\"external\" target=\"_blank\">",
+              "node_label": "Grants.gov ",
+              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 70.2px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 15.8px instead of at least 24px."
+            },
+            {
+              "selector": "li > ul > li > a.external",
+              "snippet": "<a href=\"https://www.usajobs.gov/\" class=\"external\" target=\"_blank\">",
+              "node_label": "USAJobs.gov ",
+              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 81.8px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            },
+            {
+              "selector": "li > ul > li > a.external",
+              "snippet": "<a href=\"https://oig.hhs.gov/fraud/report-fraud/\" class=\"external\" target=\"_blank\">",
+              "node_label": "Report Fraud ",
+              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 81.7px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19.2px instead of at least 24px."
+            },
+            {
+              "selector": "li > ul > li > a",
+              "snippet": "<a href=\"/accessibility\">",
+              "node_label": "Accessibility",
+              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 61.2px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 13.4px instead of at least 24px."
+            },
+            {
+              "selector": "li > ul > li > a",
+              "snippet": "<a href=\"/about/acf-policies/no-fear-act\">",
+              "node_label": "No FEAR Act",
+              "explanation": "Fix any of the following:\n  Target has insufficient size because it is partially obscured (smallest space is 60.6px by 19.2px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 8.6px instead of at least 24px."
+            },
+            {
+              "selector": "li > ul > li > a",
+              "snippet": "<a href=\"/foia\">",
+              "node_label": "FOIA",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (23.5px by 25px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19.2px instead of at least 24px."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://search.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 3,
+      "axe_findings": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "snippet": "<a id=\"cdc-mobile-search-toggle\" class=\"nav-link\" href=\"#\" aria-controls=\"cdc-mobile-search-form\">",
+              "node_label": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "skip-link",
+          "title": "Skip links are not focusable.",
+          "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.11/skip-link).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  No skip link target"
+            }
+          ]
+        },
+        {
+          "id": "tabindex",
+          "title": "Some elements have a `[tabindex]` value greater than 0",
+          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#content\" tabindex=\"1\">",
+              "node_label": "Skip to site content",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle",
+              "snippet": "<button id=\"animation-toggle\" aria-pressed=\"true\" tabindex=\"3\">",
+              "node_label": "Pause carousel",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://archive.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 1,
+      "axe_findings": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.sm:flex > div.grow > div.flex > button.w-[20px]",
+              "snippet": "<button class=\"w-[20px] h-[20px] \" tabindex=\"0\">",
+              "node_label": "Select to search",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (20px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
+            },
+            {
+              "selector": "nav > ul.text-sm > li.md:w-1/2 > a.text-white",
+              "snippet": "<a class=\"text-white no-underline hover:underline\" href=\"https://www.cdc.gov/about/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">",
+              "node_label": "About CDC",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (76.8px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
+            },
+            {
+              "selector": "nav > ul.text-sm > li.md:w-1/2 > a.text-white",
+              "snippet": "<a class=\"text-white no-underline hover:underline\" href=\"https://www.cdc.gov/other/accessibility.html\" target=\"_blank\" rel=\"noopener noreferrer\">",
+              "node_label": "Accessibility",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (82.7px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
+            },
+            {
+              "selector": "nav > ul.text-sm > li.md:w-1/2 > a.text-white",
+              "snippet": "<a class=\"text-white no-underline hover:underline\" href=\"https://www.cdc.gov/other/privacy.html\" target=\"_blank\" rel=\"noopener noreferrer\">",
+              "node_label": "Privacy",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (49.8px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 21px instead of at least 24px."
+            },
+            {
+              "selector": "nav > ul.text-sm > li.md:w-1/2 > a.text-white",
+              "snippet": "<a class=\"text-white no-underline hover:underline\" href=\"https://www.cdc.gov/od/foia/\" target=\"_blank\" rel=\"noopener noreferrer\">",
+              "node_label": "FOIA",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (35.5px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 21px instead of at least 24px."
+            },
+            {
+              "selector": "nav > ul.text-sm > li.md:w-1/2 > a.text-white",
+              "snippet": "<a class=\"text-white no-underline hover:underline\" href=\"https://www.cdc.gov/Other/policies.html\" target=\"_blank\" rel=\"noopener noreferrer\">",
+              "node_label": "Policies",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (52.3px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19.2px instead of at least 24px."
+            },
+            {
+              "selector": "nav > ul.text-sm > li.md:w-1/2 > a.text-white",
+              "snippet": "<a class=\"text-white no-underline hover:underline\" href=\"https://www.usa.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">",
+              "node_label": "USA.gov",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (59.9px by 17px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19.2px instead of at least 24px."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://direct.fda.gov",
+      "scan_status": "success",
+      "axe_findings_count": 4,
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "tbody > tr > td > input#P101_LOGIN",
+              "snippet": "<input type=\"button\" onclick=\"SubmitClick();\" value=\"Login\" class=\"btn-red disable-on-submit\" style=\"width: 215px; min-width: 85%; margin-top: 28px; border-radius: 10px;\" id=\"P101_LOGIN\" autocomplete=\"off\">",
+              "node_label": "tbody > tr > td > input#P101_LOGIN",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.04 (foreground color: #ffffff, background color: #da4f49, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "label",
+          "title": "Form elements do not have associated labels",
+          "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.11/label).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "td.disclaimer > div#P101_AGREE > div.apex-item-option > input#P101_AGREE_0",
+              "snippet": "<input type=\"checkbox\" id=\"P101_AGREE_0\" name=\"P101_AGREE\" data-display=\"\" value=\"Y\" autocomplete=\"off\">",
+              "node_label": "td.disclaimer > div#P101_AGREE > div.apex-item-option > input#P101_AGREE_0",
+              "explanation": "Fix all of the following:\n  Form element has explicit <label> that is hidden\n\nFix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "tbody > tr > td > input#P_HP_NAME",
+              "snippet": "<input type=\"text\" id=\"P_HP_NAME\" name=\"P_HP_NAME\" class=\"text_field apex-item-text apex-hp\" style=\"position: absolute !important; left: -99999px !important;\" value=\"\" size=\"30\" autocomplete=\"off\">",
+              "node_label": "tbody > tr > td > input#P_HP_NAME",
+              "explanation": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        },
+        {
+          "id": "tabindex",
+          "title": "Some elements have a `[tabindex]` value greater than 0",
+          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "tbody > tr > td > label#P101_USERNAME_LABEL",
+              "snippet": "<label style=\"font-weight:bold;\" class=\"even_width\" for=\"P101_USERNAME\" id=\"P101_USERNAME_LABEL\" tabindex=\"999\">",
+              "node_label": "Username:",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "tbody > tr > td > label#P101_PASSWORD_LABEL",
+              "snippet": "<label style=\"font-weight:bold;\" class=\"even_width\" for=\"P101_PASSWORD\" id=\"P101_PASSWORD_LABEL\" tabindex=\"999\">",
+              "node_label": "Password:",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "tbody > tr > td.disclaimer > label#P101_AGREE_LABEL",
+              "snippet": "<label style=\"font-weight:bold;\" class=\"even_width\" for=\"P101_AGREE\" id=\"P101_AGREE_LABEL\" tabindex=\"999\">",
+              "node_label": "tbody > tr > td.disclaimer > label#P101_AGREE_LABEL",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "tbody > tr > td > label#P101_SEPARATOR_LABEL",
+              "snippet": "<label style=\"font-weight:bold;\" class=\"even_width\" for=\"P101_SEPARATOR\" id=\"P101_SEPARATOR_LABEL\" tabindex=\"999\">",
+              "node_label": "OR",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html",
+              "snippet": "<html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:htmldb=\"http://htmldb.oracle.com\" xmlns:apex=\"http://apex.oracle.com\" data-useragent=\"Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (K…\">",
+              "node_label": "html",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://npin.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://access.fda.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://gettested.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://wonder.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://precision.fda.gov",
+      "scan_status": "success",
+      "axe_findings_count": 1,
+      "axe_findings": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div > ul.mt-0 > li.mb-2 > a",
+              "snippet": "<a href=\"mailto:precisionfda@fda.hhs.gov\">",
+              "node_label": "div > ul.mt-0 > li.mb-2 > a",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://atsdr.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 1,
+      "axe_findings": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.11/label-content-name-mismatch).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.row > div.col-lg-3 > h2 > a.cdc-footer__super-title",
+              "snippet": "<a href=\"/index.html\" class=\"cdc-footer__super-title\" aria-label=\"Agency for Toxic Substances and Disease Registry\">",
+              "node_label": "ATSDR ",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://hfpappexternal.fda.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://datadashboard.fda.gov",
+      "scan_status": "success",
+      "axe_findings_count": 3,
+      "axe_findings": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div#fdaFooter > div.row > div.col-xs-12 > h6.icon-email",
+              "snippet": "<h6 class=\"icon-email\">",
+              "node_label": "Contact",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "meta-viewport",
+          "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
+          "description": "Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more about the viewport meta tag](https://dequeuniversity.com/rules/axe/4.11/meta-viewport).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "head > meta",
+              "snippet": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-sc…\">",
+              "node_label": "head > meta",
+              "explanation": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+            }
+          ]
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.col-sm-12 > div.col-xs-5 > div.col-xs-12 > a#fb1",
+              "snippet": "<a id=\"fb1\" href=\"https://www.fda.gov/about-fda/about-website/internet-accessibility\" target=\"_blank\">",
+              "node_label": "Accessibility\n(Opens in new window)",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (83.6px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-12 > div.col-xs-5 > div.col-xs-12 > a#fb3",
+              "snippet": "<a id=\"fb3\" href=\"https://www.fda.gov/about-fda\" target=\"_blank\">",
+              "node_label": "About FDA\n(Opens in new window)",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (75px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-12 > div.col-xs-5 > div.col-xs-12 > a#fb4",
+              "snippet": "<a id=\"fb4\" href=\"https://www.fda.gov/regulatory-information/freedom-information\" target=\"_blank\">",
+              "node_label": "FOIA\n(Opens in new window)",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (33.8px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-12 > div.col-xs-7 > div.col-xs-12 > a#fb5",
+              "snippet": "<a id=\"fb5\" href=\"https://www.fda.gov/about-fda/jobs-and-training-fda/no-fear-act\" target=\"_blank\">",
+              "node_label": "No FEAR Act\n(Opens in new window)",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (87.4px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-12 > div.col-xs-7 > div.col-xs-12 > a#fb7",
+              "snippet": "<a id=\"fb7\" href=\"https://www.fda.gov/about-fda/about-website/website-policies\" target=\"_blank\">",
+              "node_label": "Website Policies\n(Opens in new window)",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (110.4px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://icd10cmtool.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 1,
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.row > div.text-right > div.build-info > span",
+              "snippet": "<span>",
+              "node_label": "API Version: 1.1.0",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #777777, background color: #f5f5f5, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.row > div.text-right > div.build-info > span",
+              "snippet": "<span>",
+              "node_label": "Client Version: 2.1.0",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #777777, background color: #f5f5f5, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://reach.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://gis.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://www.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://blogs.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://phinvads.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://vaccines.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://phgkb.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://jobs.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://tools.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://ndc.services.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://purplebooksearch.fda.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://wisqars.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://thecommunityguide.org",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://usdss.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://millionhearts.hhs.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://www2a.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://contact.fda.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://vetoviolence.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://animaldrugsatfda.fda.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://hivrisk.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://labels.fda.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://selectagents.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://cdi.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://arpsp.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://ncsacw.acf.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://nccd.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://art.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://snapshot2024atsdr.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://cdrh-rst.fda.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://nationaldppcsc.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://nfr.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://open.fda.gov",
+      "scan_status": "success",
+      "axe_findings_count": 3,
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "section.body-bg-offwhite > div.blog-header-container > h2.clr-primary > span",
+              "snippet": "<span>",
+              "node_label": "LATEST NEWS & UPDATES",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.8 (foreground color: #5589a6, background color: #ffffff, font size: 12.8pt (17px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "li.blog-item > a.full-height > div > div.clr-gray-light",
+              "snippet": "<div class=\"clr-gray-light marg-b-1 t-marg-t-05 time-stamp\">",
+              "node_label": "JUNE 30, 2026",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #9499a5, background color: #ffffff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "li.blog-item > a.full-height > div > div.clr-gray-light",
+              "snippet": "<div class=\"clr-gray-light marg-b-1 t-marg-t-05 time-stamp\">",
+              "node_label": "MARCH 11, 2026",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #9499a5, background color: #ffffff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "li.blog-item > a.full-height > div > div.clr-gray-light",
+              "snippet": "<div class=\"clr-gray-light marg-b-1 t-marg-t-05 time-stamp\">",
+              "node_label": "FEBRUARY 17, 2026",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #9499a5, background color: #ffffff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.ReactModalPortal > div.ReactModal__Overlay > div.ReactModal__Content > h4.modal-header",
+              "snippet": "<h4 class=\"modal-header\">",
+              "node_label": "Disclaimer",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "image-alt",
+          "title": "Image elements do not have `[alt]` attributes",
+          "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.11/image-alt).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "section.container-homepage > section.flex-box > a.link-card > img",
+              "snippet": "<img class=\"\" src=\"/img/line-graph.svg\">",
+              "node_label": "section.container-homepage > section.flex-box > a.link-card > img",
+              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "section.container-homepage > section.flex-box > a.link-card > img",
+              "snippet": "<img class=\"\" src=\"/img/download.svg\">",
+              "node_label": "section.container-homepage > section.flex-box > a.link-card > img",
+              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "selector": "section.container-homepage > section.flex-box > a.link-card > img",
+              "snippet": "<img class=\"\" src=\"/img/lightbulb.svg\">",
+              "node_label": "section.container-homepage > section.flex-box > a.link-card > img",
+              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://finddoxypep.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://yrbs-explorer.services.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://places.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://ephtracking.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://cwpm.acf.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://youthonline.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 2,
+      "axe_findings": [
+        {
+          "id": "aria-required-children",
+          "title": "Elements with an ARIA `[role]` that require children to contain a specific `[role]` are missing some or all of those required children.",
+          "description": "Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more about roles and required children elements](https://dequeuniversity.com/rules/axe/4.11/aria-required-children).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.col-12 > div.dashboard-map > div.text-center > div",
+              "snippet": "<div tabindex=\"0\" role=\"listbox\" aria-label=\"View all responses for one location\" aria-describedby=\"keyItems_map\" aria-activedescendant=\"\">",
+              "node_label": "AL\nAK\nAZ\nCO\nFL\nGA\nIN\nKS\nME\nMA\nMN\nNJ\nNC\nND\nOK\nPA\nSD\nTX\nWY\nCT\nMO\nWV\nIL\nNM\nAR\nCA\nH…",
+              "explanation": "Fix any of the following:\n  Element has children which are not allowed: path[tabindex]"
+            }
+          ]
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.11/label-content-name-mismatch).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.row > div.col-sm-12 > div.dropdown > button#location-1-menu",
+              "snippet": "<button tabindex=\"0\" aria-keyshortcuts=\"enter\" aria-haspopup=\"true\" aria-label=\"Select a location\" class=\"btn custom-dropdown-menu-toggle text-left\" type=\"button\" id=\"location-1-menu\" data-toggle=\"dropdown\" aria-expanded=\"false\">",
+              "node_label": "United States",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#AK",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"AK\" role=\"option\" aria-label=\"Latest year data (2021) is not available for Alaska. Select to view all qu…\" data-type=\"02\" x=\"102.46086873323198\" y=\"523.1944003303727\" style=\"font-size: 18px; font-weight: 50; fill: rgb(0, 0, 0);\">",
+              "node_label": "Latest year data (2021) is not available for Alaska. Select to view all questio…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#AZB",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"AZB\" role=\"option\" aria-label=\"Latest year data (2021) available for Arizona. Select to view all question…\" data-type=\"04\" x=\"208.02265065805994\" y=\"382.384447402173\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for Arizona. Select to view all questions dat…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#GA",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"GA\" role=\"option\" aria-label=\"Latest year data (2021) available for Georgia. Select to view all question…\" data-type=\"13\" x=\"736.0133761273919\" y=\"427.9773561996132\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for Georgia. Select to view all questions dat…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#KS",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"KS\" role=\"option\" aria-label=\"Latest year data (2021) available for Kansas. Select to view all questions…\" data-type=\"20\" x=\"456.1885365744374\" y=\"309.26099538740016\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for Kansas. Select to view all questions data…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#ME",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"ME\" role=\"option\" aria-label=\"Latest year data (2021) available for Maine. Select to view all questions …\" data-type=\"23\" x=\"919.0358108845031\" y=\"93.61428430040085\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for Maine. Select to view all questions data …",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#MN",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"MN\" role=\"option\" aria-label=\"Data not available for Minnesota\" data-type=\"27\" x=\"524.6597587486259\" y=\"131.96894251679316\" style=\"font-size: 18px; font-weight: 50; fill: rgb(0, 0, 0);\">",
+              "node_label": "Data not available for Minnesota",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#NJ",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"NJ\" role=\"option\" aria-label=\"Latest year data (2021) available for New Jersey. Select to view all quest…\" data-type=\"34\" x=\"861.5136665311829\" y=\"230.21169230984677\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for New Jersey. Select to view all questions …",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#NC",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"NC\" role=\"option\" aria-label=\"Latest year data (2021) available for North Carolina. Select to view all q…\" data-type=\"37\" x=\"800.9676921915706\" y=\"350.55076327540195\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for North Carolina. Select to view all questi…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#ND",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"ND\" role=\"option\" aria-label=\"Latest year data (2021) available for North Dakota. Select to view all que…\" data-type=\"38\" x=\"429.0902291584076\" y=\"104.13645847195946\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for North Dakota. Select to view all question…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#PA",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"PA\" role=\"option\" aria-label=\"Latest year data (2021) available for Pennsylvania. Select to view all que…\" data-type=\"42\" x=\"805.7601240411519\" y=\"225.62684501074526\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for Pennsylvania. Select to view all question…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#SD",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"SD\" role=\"option\" aria-label=\"Latest year data (2021) available for South Dakota. Select to view all que…\" data-type=\"46\" x=\"429.74169928962834\" y=\"172.32023040436383\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for South Dakota. Select to view all question…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#TX",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"TX\" role=\"option\" aria-label=\"Latest year data (2021) available for Texas. Select to view all questions …\" data-type=\"48\" x=\"434.06854580651395\" y=\"469.2518455385675\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for Texas. Select to view all questions data …",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#MO",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"MO\" role=\"option\" aria-label=\"Latest year data (2021) available for Missouri. Select to view all questio…\" data-type=\"29\" x=\"560.4062545889896\" y=\"311.7395540314687\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for Missouri. Select to view all questions da…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#WV",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"WV\" role=\"option\" aria-label=\"Latest year data (2021) available for West Virginia. Select to view all qu…\" data-type=\"54\" x=\"766.6912655262705\" y=\"284.6390594297105\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for West Virginia. Select to view all questio…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#NM",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"NM\" role=\"option\" aria-label=\"Latest year data (2021) available for New Mexico. Select to view all quest…\" data-type=\"35\" x=\"310.57759635964425\" y=\"393.3171506427589\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for New Mexico. Select to view all questions …",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#IA",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"IA\" role=\"option\" aria-label=\"Latest year data (2021) available for Iowa. Select to view all questions d…\" data-type=\"19\" x=\"539.8932520634157\" y=\"227.27108073918137\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for Iowa. Select to view all questions data f…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#MD",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"MD\" role=\"option\" aria-label=\"Latest year data (2021) available for Maryland. Select to view all questio…\" data-type=\"24\" x=\"831.605972151623\" y=\"263.523577830733\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for Maryland. Select to view all questions da…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#MS",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"MS\" role=\"option\" aria-label=\"Latest year data (2021) available for Mississippi. Select to view all ques…\" data-type=\"28\" x=\"618.0748626338498\" y=\"437.53005453169044\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for Mississippi. Select to view all questions…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#MT",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"MT\" role=\"option\" aria-label=\"Latest year data (2021) available for Montana. Select to view all question…\" data-type=\"30\" x=\"286.9275404383873\" y=\"99.69133115323086\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for Montana. Select to view all questions dat…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#NH",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"NH\" role=\"option\" aria-label=\"Latest year data (2021) available for New Hampshire. Select to view all qu…\" data-type=\"33\" x=\"892.6196417884789\" y=\"140.23347799105568\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for New Hampshire. Select to view all questio…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#NYA",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"NYA\" role=\"option\" aria-label=\"Latest year data (2021) available for New York (Excluding New York City). …\" data-type=\"36\" x=\"833.8824327735051\" y=\"171.80608561985517\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for New York (Excluding New York City). Selec…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#TN",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"TN\" role=\"option\" aria-label=\"Latest year data (2021) available for Tennessee. Select to view all questi…\" data-type=\"47\" x=\"673.537321435513\" y=\"366.2114305693145\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for Tennessee. Select to view all questions d…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#SC",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"SC\" role=\"option\" aria-label=\"Latest year data (2021) available for South Carolina. Select to view all q…\" data-type=\"45\" x=\"779.2807587740574\" y=\"392.3938717027428\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for South Carolina. Select to view all questi…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#NV",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"NV\" role=\"option\" aria-label=\"Latest year data (2021) available for Nevada. Select to view all questions…\" data-type=\"32\" x=\"142.1443329792789\" y=\"251.87694507642107\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for Nevada. Select to view all questions data…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#VT",
+              "snippet": "<text text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" id=\"VT\" role=\"option\" aria-label=\"Latest year data (2021) available for Vermont. Select to view all question…\" data-type=\"50\" x=\"873.2831040811908\" y=\"136.01196256880104\" style=\"font-size: 18px; font-weight: 50; fill: rgb(255, 255, 255);\">",
+              "node_label": "Latest year data (2021) available for Vermont. Select to view all questions dat…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "svg > g#map > g.states > text#NJ",
+              "snippet": "<text x=\"1030\" y=\"315\" class=\"state-text\" aria-selected=\"false\" role=\"option\" aria-label=\"Latest year data (2021) available for New Jersey. Select to view all quest…\" id=\"NJ\" text-anchor=\"middle\" font-family=\" &quot;Nunito\" stroke=\"#ffffff\" style=\"font-size: 18px; font-weight: 50;\">",
+              "node_label": "Latest year data (2021) available for New Jersey. Select to view all questions …",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "svg > g#map > g.states > text#DCB",
+              "snippet": "<text x=\"1030\" y=\"495\" class=\"state-text\" aria-selected=\"false\" role=\"option\" aria-label=\"Latest year data (2021) available for District of Columbia. Select to view…\" id=\"DCB\" text-anchor=\"middle\" font-family=\" &quot;Nunito\" stroke=\"#ffffff\" style=\"font-size: 18px; font-weight: 50;\">",
+              "node_label": "Latest year data (2021) available for District of Columbia. Select to view all …",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "svg > g#map > g.states > text#MD",
+              "snippet": "<text x=\"1030\" y=\"435\" class=\"state-text\" aria-selected=\"false\" role=\"option\" aria-label=\"Latest year data (2021) available for Maryland. Select to view all questio…\" id=\"MD\" text-anchor=\"middle\" font-family=\" &quot;Nunito\" stroke=\"#ffffff\" style=\"font-size: 18px; font-weight: 50;\">",
+              "node_label": "Latest year data (2021) available for Maryland. Select to view all questions da…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "svg > g#map > g.states > text#RI",
+              "snippet": "<text x=\"1030\" y=\"195\" class=\"state-text\" aria-selected=\"false\" role=\"option\" aria-label=\"Latest year data (2021) available for Rhode Island. Select to view all que…\" id=\"RI\" text-anchor=\"middle\" font-family=\" &quot;Nunito\" stroke=\"#ffffff\" style=\"font-size: 18px; font-weight: 50;\">",
+              "node_label": "Latest year data (2021) available for Rhode Island. Select to view all question…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text.state-text",
+              "snippet": "<text x=\"1033\" y=\"45\" text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" role=\"option\" aria-label=\"Data not available for undefined\" stroke=\"#ffffff\" style=\"font-size: 18px; font-weight: 50;\">",
+              "node_label": "Data not available for undefined",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#AS",
+              "snippet": "<text x=\"118\" y=\"675\" text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" role=\"option\" aria-label=\"Latest year data (2021) is not available for American Samoa. Select to vie…\" id=\"AS\" stroke=\"#000000\" style=\"font-size: 18px; font-weight: 50;\">",
+              "node_label": "Latest year data (2021) is not available for American Samoa. Select to view all…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#MH",
+              "snippet": "<text x=\"288\" y=\"675\" text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" role=\"option\" aria-label=\"Latest year data (2021) is not available for Marshall Islands. Select to v…\" id=\"MH\" stroke=\"#000000\" style=\"font-size: 18px; font-weight: 50;\">",
+              "node_label": "Latest year data (2021) is not available for Marshall Islands. Select to view a…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#MP",
+              "snippet": "<text x=\"373\" y=\"675\" text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" role=\"option\" aria-label=\"Latest year data (2021) available for Northern Mariana Islands. Select to …\" id=\"MP\" stroke=\"#ffffff\" style=\"font-size: 18px; font-weight: 50;\">",
+              "node_label": "Latest year data (2021) available for Northern Mariana Islands. Select to view …",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#PW",
+              "snippet": "<text x=\"458\" y=\"675\" text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" role=\"option\" aria-label=\"Latest year data (2021) available for Palau. Select to view all questions …\" id=\"PW\" stroke=\"#ffffff\" style=\"font-size: 18px; font-weight: 50;\">",
+              "node_label": "Latest year data (2021) available for Palau. Select to view all questions data …",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div#map > svg > g#map > text#PR",
+              "snippet": "<text x=\"543\" y=\"675\" text-anchor=\"middle\" font-family=\" &quot;Nunito\" class=\"state-text\" aria-selected=\"false\" role=\"option\" aria-label=\"Latest year data (2021) available for Puerto Rico. Select to view all ques…\" id=\"PR\" stroke=\"#ffffff\" style=\"font-size: 18px; font-weight: 50;\">",
+              "node_label": "Latest year data (2021) available for Puerto Rico. Select to view all questions…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div.row > div.col-sm-12 > div.dropdown > button#location-1-menu",
+              "snippet": "<button tabindex=\"0\" aria-keyshortcuts=\"enter\" aria-haspopup=\"true\" aria-label=\"Select a location\" class=\"btn custom-dropdown-menu-toggle text-left\" type=\"button\" id=\"location-1-menu\" data-toggle=\"dropdown\" aria-expanded=\"false\">",
+              "node_label": "United States",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div.col-sm-12 > div.card > div.card-body > div.row",
+              "snippet": "<div class=\"row mt-2 cursor-pointer\" role=\"link\" tabindex=\"0\" aria-label=\"Use the YRBS Data Explorer to visualize the data in a whole new way.\">",
+              "node_label": "YRBS Explorer\n\nUse the YRBS Data Explorer to visualize the data in a whole new …",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div.col-sm-12 > div.card > div.card-body > div.row",
+              "snippet": "<div class=\"row mt-2 cursor-pointer\" role=\"link\" tabindex=\"0\" aria-label=\"Use the YRBS Analysis Tool to run a cross tabulation data analysis.\">",
+              "node_label": "YRBS Analysis Tool\n\nUse the YRBS Analysis Tool to run a cross tabulation data a…",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
