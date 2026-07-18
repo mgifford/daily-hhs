@@ -1,9 +1,9 @@
 {
-  "run_date": "2026-07-04",
-  "run_id": "run-2026-07-04-4ea4b02ffa",
-  "generated_at": "2026-07-04T09:57:41.285Z",
-  "total_urls": 46,
-  "total_findings": 13,
+  "run_date": "2026-07-18",
+  "run_id": "run-2026-07-18-e74e65c4c1",
+  "generated_at": "2026-07-18T09:46:43.704Z",
+  "total_urls": 52,
+  "total_findings": 14,
   "urls": [
     {
       "url": "https://cdc.gov",
@@ -86,33 +86,33 @@
           "tags": [],
           "items": [
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1108423468",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1108423468\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1108423468\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1108423468",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2069916753",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-2069916753\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-2069916753\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2069916753",
               "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1551836157",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1551836157\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1551836157\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1551836157",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1313472837",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1313472837\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1313472837\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1313472837",
               "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-147412638",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-147412638\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-147412638\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-147412638",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1767968901",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1767968901\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1767968901\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1767968901",
               "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1607241924",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1607241924\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1607241924\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1607241924",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1602980796",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1602980796\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1602980796\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1602980796",
               "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-601948201",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-601948201\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-601948201\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-601948201",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-288319211",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-288319211\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-288319211\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-288319211",
               "explanation": "Fix any of the following:\n  Required ARIA parent role not present: tablist"
             }
           ]
@@ -126,33 +126,33 @@
           "tags": [],
           "items": [
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1108423468",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1108423468\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1108423468\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1108423468",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2069916753",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-2069916753\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-2069916753\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2069916753",
               "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1551836157",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1551836157\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1551836157\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1551836157",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1313472837",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1313472837\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1313472837\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1313472837",
               "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-147412638",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-147412638\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-147412638\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-147412638",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1767968901",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1767968901\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1767968901\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1767968901",
               "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1607241924",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-1607241924\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1607241924\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1607241924",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1602980796",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-1602980796\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-1602980796\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1602980796",
               "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             },
             {
-              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-601948201",
-              "snippet": "<button type=\"button\" id=\"trigger-tabs-601948201\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-601948201\">",
-              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-601948201",
+              "selector": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-288319211",
+              "snippet": "<button type=\"button\" id=\"trigger-tabs-288319211\" aria-expanded=\"false\" class=\"responsive-tabs__tab-button--mobile ds-u-display--flex\" role=\"tab\" aria-controls=\"tabs-288319211\">",
+              "node_label": "div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-288319211",
               "explanation": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             }
           ]
@@ -315,12 +315,6 @@
       ]
     },
     {
-      "url": "https://wwwn.cdc.gov",
-      "scan_status": "success",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
       "url": "https://search.cdc.gov",
       "scan_status": "success",
       "axe_findings_count": 3,
@@ -388,6 +382,41 @@
       ]
     },
     {
+      "url": "https://wwwn.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://icd10cmtool.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 1,
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.row > div.text-right > div.build-info > span",
+              "snippet": "<span>",
+              "node_label": "API Version: 1.1.0",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #777777, background color: #f5f5f5, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.row > div.text-right > div.build-info > span",
+              "snippet": "<span>",
+              "node_label": "Client Version: 2.1.0",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #777777, background color: #f5f5f5, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "url": "https://archive.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
@@ -400,31 +429,7 @@
       "axe_findings": []
     },
     {
-      "url": "https://phinvads.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://atsdr.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://icd10cmtool.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
       "url": "https://wonder.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://gettested.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -436,7 +441,37 @@
       "axe_findings": []
     },
     {
+      "url": "https://atsdr.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://gettested.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://ndc.services.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
       "url": "https://gis.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://www2a.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://tools.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -454,7 +489,7 @@
       "axe_findings": []
     },
     {
-      "url": "https://ndc.services.cdc.gov",
+      "url": "https://jobs.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -466,25 +501,13 @@
       "axe_findings": []
     },
     {
-      "url": "https://jobs.cdc.gov",
+      "url": "https://selectagents.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
     },
     {
-      "url": "https://tools.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://www2a.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://wisqars.cdc.gov",
+      "url": "https://phinvads.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -496,25 +519,7 @@
       "axe_findings": []
     },
     {
-      "url": "https://phgkb.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://usdss.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://selectagents.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://millionhearts.hhs.gov",
+      "url": "https://wisqars.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -526,31 +531,7 @@
       "axe_findings": []
     },
     {
-      "url": "https://arpsp.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://hivrisk.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://art.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://nccd.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://nfr.cdc.gov",
+      "url": "https://usdss.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -562,7 +543,19 @@
       "axe_findings": []
     },
     {
-      "url": "https://nchsdata.cdc.gov",
+      "url": "https://millionhearts.hhs.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://arpsp.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://nccd.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -574,7 +567,43 @@
       "axe_findings": []
     },
     {
-      "url": "https://cdi.cdc.gov",
+      "url": "https://cwpm.acf.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://mvps.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://pids.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://nfr.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://youthonline.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://www2.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://art.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -592,25 +621,55 @@
       "axe_findings": []
     },
     {
+      "url": "https://hivrisk.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://dprpdataportal.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://oasis.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://nchsdata.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://dnpao-dtm.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://cdi.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://artreporting.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://dprp.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
       "url": "https://places.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://cwpm.acf.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://finddoxypep.cdc.gov",
-      "scan_status": "failed",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://youthonline.cdc.gov",
       "scan_status": "failed",
       "axe_findings_count": 0,
       "axe_findings": []

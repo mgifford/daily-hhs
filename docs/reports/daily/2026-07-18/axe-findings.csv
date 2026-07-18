@@ -15,17 +15,17 @@ https://cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater
   Element has a tabindex greater than 0"
 https://cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle,"<button id=""animation-toggle"" aria-pressed=""true"" tabindex=""3"">",Pause carousel,"Fix any of the following:
   Element has a tabindex greater than 0"
-https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1108423468,"<button type=""button"" id=""trigger-tabs-1108423468"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1108423468"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1108423468,"Fix any of the following:
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2069916753,"<button type=""button"" id=""trigger-tabs-2069916753"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-2069916753"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2069916753,"Fix any of the following:
   Required ARIA parent role not present: tablist"
-https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1551836157,"<button type=""button"" id=""trigger-tabs-1551836157"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1551836157"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1551836157,"Fix any of the following:
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1313472837,"<button type=""button"" id=""trigger-tabs-1313472837"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1313472837"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1313472837,"Fix any of the following:
   Required ARIA parent role not present: tablist"
-https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-147412638,"<button type=""button"" id=""trigger-tabs-147412638"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-147412638"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-147412638,"Fix any of the following:
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1767968901,"<button type=""button"" id=""trigger-tabs-1767968901"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1767968901"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1767968901,"Fix any of the following:
   Required ARIA parent role not present: tablist"
-https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1607241924,"<button type=""button"" id=""trigger-tabs-1607241924"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1607241924"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1607241924,"Fix any of the following:
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1602980796,"<button type=""button"" id=""trigger-tabs-1602980796"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1602980796"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1602980796,"Fix any of the following:
   Required ARIA parent role not present: tablist"
-https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-601948201,"<button type=""button"" id=""trigger-tabs-601948201"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-601948201"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-601948201,"Fix any of the following:
+https://cms.gov,success,aria-required-parent,`[role]`s are not contained by their required parent element,Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more about ARIA roles and required parent element](https://dequeuniversity.com/rules/axe/4.11/aria-required-parent).,0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-288319211,"<button type=""button"" id=""trigger-tabs-288319211"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-288319211"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-288319211,"Fix any of the following:
   Required ARIA parent role not present: tablist"
-https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1108423468,"<button type=""button"" id=""trigger-tabs-1108423468"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1108423468"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1108423468,"Fix any of the following:
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2069916753,"<button type=""button"" id=""trigger-tabs-2069916753"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-2069916753"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-2069916753,"Fix any of the following:
   Element does not have inner text that is visible to screen readers
   aria-label attribute does not exist or is empty
   aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
@@ -33,7 +33,7 @@ https://cms.gov,success,button-name,Buttons do not have an accessible name,"When
   Element does not have an implicit (wrapped) <label>
   Element does not have an explicit <label>
   Element's default semantics were not overridden with role=""none"" or role=""presentation"""
-https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1551836157,"<button type=""button"" id=""trigger-tabs-1551836157"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1551836157"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1551836157,"Fix any of the following:
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1313472837,"<button type=""button"" id=""trigger-tabs-1313472837"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1313472837"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1313472837,"Fix any of the following:
   Element does not have inner text that is visible to screen readers
   aria-label attribute does not exist or is empty
   aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
@@ -41,7 +41,7 @@ https://cms.gov,success,button-name,Buttons do not have an accessible name,"When
   Element does not have an implicit (wrapped) <label>
   Element does not have an explicit <label>
   Element's default semantics were not overridden with role=""none"" or role=""presentation"""
-https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-147412638,"<button type=""button"" id=""trigger-tabs-147412638"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-147412638"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-147412638,"Fix any of the following:
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1767968901,"<button type=""button"" id=""trigger-tabs-1767968901"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1767968901"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1767968901,"Fix any of the following:
   Element does not have inner text that is visible to screen readers
   aria-label attribute does not exist or is empty
   aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
@@ -49,7 +49,7 @@ https://cms.gov,success,button-name,Buttons do not have an accessible name,"When
   Element does not have an implicit (wrapped) <label>
   Element does not have an explicit <label>
   Element's default semantics were not overridden with role=""none"" or role=""presentation"""
-https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1607241924,"<button type=""button"" id=""trigger-tabs-1607241924"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1607241924"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1607241924,"Fix any of the following:
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1602980796,"<button type=""button"" id=""trigger-tabs-1602980796"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-1602980796"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-1602980796,"Fix any of the following:
   Element does not have inner text that is visible to screen readers
   aria-label attribute does not exist or is empty
   aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
@@ -57,7 +57,7 @@ https://cms.gov,success,button-name,Buttons do not have an accessible name,"When
   Element does not have an implicit (wrapped) <label>
   Element does not have an explicit <label>
   Element's default semantics were not overridden with role=""none"" or role=""presentation"""
-https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-601948201,"<button type=""button"" id=""trigger-tabs-601948201"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-601948201"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-601948201,"Fix any of the following:
+https://cms.gov,success,button-name,Buttons do not have an accessible name,"When a button doesn't have an accessible name, screen readers announce it as ""button"", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.11/button-name).",0,,div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-288319211,"<button type=""button"" id=""trigger-tabs-288319211"" aria-expanded=""false"" class=""responsive-tabs__tab-button--mobile ds-u-display--flex"" role=""tab"" aria-controls=""tabs-288319211"">",div.field__item > div.paragraph > div.ds-u-lg-display--none > button#trigger-tabs-288319211,"Fix any of the following:
   Element does not have inner text that is visible to screen readers
   aria-label attribute does not exist or is empty
   aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
@@ -106,7 +106,6 @@ https://acf.gov,success,target-size,Touch targets do not have sufficient size or
 https://acf.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,li > ul > li > a,"<a href=""/foia"">",FOIA,"Fix any of the following:
   Target has insufficient size (23.5px by 25px, should be at least 24px by 24px)
   Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19.2px instead of at least 24px."
-https://wwwn.cdc.gov,success,,,,,,,,,
 https://search.cdc.gov,success,link-name,Links do not have a discernible name,"Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.11/link-name).",0,,nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle,"<a id=""cdc-mobile-search-toggle"" class=""nav-link"" href=""#"" aria-controls=""cdc-mobile-search-form"">",nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle,"Fix all of the following:
   Element is in tab order and does not have accessible text
 
@@ -123,41 +122,51 @@ https://search.cdc.gov,success,tabindex,Some elements have a `[tabindex]` value 
   Element has a tabindex greater than 0"
 https://search.cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",0,,div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle,"<button id=""animation-toggle"" aria-pressed=""true"" tabindex=""3"">",Pause carousel,"Fix any of the following:
   Element has a tabindex greater than 0"
+https://wwwn.cdc.gov,success,,,,,,,,,
+https://icd10cmtool.cdc.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).,0,,div.row > div.text-right > div.build-info > span,<span>,API Version: 1.1.0,"Fix any of the following:
+  Element has insufficient color contrast of 4.1 (foreground color: #777777, background color: #f5f5f5, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+https://icd10cmtool.cdc.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).,0,,div.row > div.text-right > div.build-info > span,<span>,Client Version: 2.1.0,"Fix any of the following:
+  Element has insufficient color contrast of 4.1 (foreground color: #777777, background color: #f5f5f5, font size: 7.2pt (9.6px), font weight: normal). Expected contrast ratio of 4.5:1"
 https://archive.cdc.gov,failed,,,,,,,,,
 https://npin.cdc.gov,failed,,,,,,,,,
-https://phinvads.cdc.gov,failed,,,,,,,,,
-https://atsdr.cdc.gov,failed,,,,,,,,,
-https://icd10cmtool.cdc.gov,failed,,,,,,,,,
 https://wonder.cdc.gov,failed,,,,,,,,,
-https://gettested.cdc.gov,failed,,,,,,,,,
 https://reach.cdc.gov,failed,,,,,,,,,
+https://atsdr.cdc.gov,failed,,,,,,,,,
+https://gettested.cdc.gov,failed,,,,,,,,,
+https://ndc.services.cdc.gov,failed,,,,,,,,,
 https://gis.cdc.gov,failed,,,,,,,,,
+https://www2a.cdc.gov,failed,,,,,,,,,
+https://tools.cdc.gov,failed,,,,,,,,,
 https://blogs.cdc.gov,failed,,,,,,,,,
 https://www.cdc.gov,failed,,,,,,,,,
-https://ndc.services.cdc.gov,failed,,,,,,,,,
-https://vaccines.gov,failed,,,,,,,,,
 https://jobs.cdc.gov,failed,,,,,,,,,
-https://tools.cdc.gov,failed,,,,,,,,,
-https://www2a.cdc.gov,failed,,,,,,,,,
-https://wisqars.cdc.gov,failed,,,,,,,,,
-https://thecommunityguide.org,failed,,,,,,,,,
-https://phgkb.cdc.gov,failed,,,,,,,,,
-https://usdss.cdc.gov,failed,,,,,,,,,
+https://vaccines.gov,failed,,,,,,,,,
 https://selectagents.gov,failed,,,,,,,,,
-https://millionhearts.hhs.gov,failed,,,,,,,,,
+https://phinvads.cdc.gov,failed,,,,,,,,,
+https://thecommunityguide.org,failed,,,,,,,,,
+https://wisqars.cdc.gov,failed,,,,,,,,,
 https://vetoviolence.cdc.gov,failed,,,,,,,,,
-https://arpsp.cdc.gov,failed,,,,,,,,,
-https://hivrisk.cdc.gov,failed,,,,,,,,,
-https://art.cdc.gov,failed,,,,,,,,,
-https://nccd.cdc.gov,failed,,,,,,,,,
-https://nfr.cdc.gov,failed,,,,,,,,,
+https://usdss.cdc.gov,failed,,,,,,,,,
 https://nationaldppcsc.cdc.gov,failed,,,,,,,,,
-https://nchsdata.cdc.gov,failed,,,,,,,,,
+https://millionhearts.hhs.gov,failed,,,,,,,,,
+https://arpsp.cdc.gov,failed,,,,,,,,,
+https://nccd.cdc.gov,failed,,,,,,,,,
 https://ncsacw.acf.gov,failed,,,,,,,,,
-https://cdi.cdc.gov,failed,,,,,,,,,
+https://cwpm.acf.gov,failed,,,,,,,,,
+https://mvps.cdc.gov,failed,,,,,,,,,
+https://pids.cdc.gov,failed,,,,,,,,,
+https://nfr.cdc.gov,failed,,,,,,,,,
+https://youthonline.cdc.gov,failed,,,,,,,,,
+https://www2.cdc.gov,failed,,,,,,,,,
+https://art.cdc.gov,failed,,,,,,,,,
 https://ephtracking.cdc.gov,failed,,,,,,,,,
 https://yrbs-explorer.services.cdc.gov,failed,,,,,,,,,
+https://hivrisk.cdc.gov,failed,,,,,,,,,
+https://dprpdataportal.cdc.gov,failed,,,,,,,,,
+https://oasis.cdc.gov,failed,,,,,,,,,
+https://nchsdata.cdc.gov,failed,,,,,,,,,
+https://dnpao-dtm.cdc.gov,failed,,,,,,,,,
+https://cdi.cdc.gov,failed,,,,,,,,,
+https://artreporting.cdc.gov,failed,,,,,,,,,
+https://dprp.cdc.gov,failed,,,,,,,,,
 https://places.cdc.gov,failed,,,,,,,,,
-https://cwpm.acf.gov,failed,,,,,,,,,
-https://finddoxypep.cdc.gov,failed,,,,,,,,,
-https://youthonline.cdc.gov,failed,,,,,,,,,
