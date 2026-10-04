@@ -1,5 +1,20 @@
 url,scan_status,finding_id,finding_title,finding_description,finding_score,tags,item_selector,item_snippet,item_node_label,item_explanation
-https://accessdata.fda.gov,success,,,,,,,,,
+https://cdc.gov,success,link-name,Links do not have a discernible name,"Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.12/link-name).",0,,nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle,"<a id=""cdc-mobile-search-toggle"" class=""nav-link"" href=""#"" aria-controls=""cdc-mobile-search-form"">",nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle,"Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute"
+https://cdc.gov,success,skip-link,Skip links are not focusable.,Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.12/skip-link).,0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#headerSearch"" tabindex=""2"">",Skip to search,"Fix any of the following:
+  No skip link target"
+https://cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.12/tabindex).",0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#content"" tabindex=""1"">",Skip to site content,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.12/tabindex).",0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#headerSearch"" tabindex=""2"">",Skip to search,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.12/tabindex).",0,,div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle,"<button id=""animation-toggle"" aria-pressed=""true"" tabindex=""3"">",Pause carousel,"Fix any of the following:
+  Element has a tabindex greater than 0"
 https://fda.gov,success,heading-order,Heading elements are not in a sequentially-descending order,"Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.12/heading-order).",0,,div.fda-ft-container > div.fda-ft-heading > div.fda-ft-heading-text > h3.fda-ft-heading-title,"<h3 class=""fda-ft-heading-title"">",Featured Topics,"Fix any of the following:
   Heading order invalid"
 https://fda.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.12/tabindex).",0,,div#quicklinks > ul.list-inline > li > a.btn,"<a href=""#main-content"" class=""btn btn-default margin-top-3"" tabindex=""1"" data-once=""download-role-button lang-fix-multilingual"">",Skip to main content,"Fix any of the following:
@@ -8,7 +23,25 @@ https://fda.gov,success,tabindex,Some elements have a `[tabindex]` value greater
   Element has a tabindex greater than 0"
 https://fda.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.12/tabindex).",0,,div#quicklinks > ul.list-inline > li > a.btn,"<a href=""#footer"" class=""btn btn-default margin-top-3"" tabindex=""1"" data-once=""download-role-button lang-fix-multilingual"">",Skip to footer links,"Fix any of the following:
   Element has a tabindex greater than 0"
-https://hfpappexternal.fda.gov,success,,,,,,,,,
+https://accessdata.fda.gov,success,,,,,,,,,
+https://cms.gov,success,,,,,,,,,
+https://hhs.gov,success,,,,,,,,,
+https://portugues.cdc.gov,success,link-name,Links do not have a discernible name,"Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.12/link-name).",0,,nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle,"<a id=""cdc-mobile-search-toggle"" class=""nav-link"" href=""#"" aria-controls=""cdc-mobile-search-form"">",nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle,"Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute"
+https://portugues.cdc.gov,success,skip-link,Skip links are not focusable.,Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.12/skip-link).,0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#headerSearch"" tabindex=""2"">",Skip to search,"Fix any of the following:
+  No skip link target"
+https://portugues.cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.12/tabindex).",0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#content"" tabindex=""1"">",Skip to site content,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://portugues.cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.12/tabindex).",0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#headerSearch"" tabindex=""2"">",Skip to search,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://portugues.cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.12/tabindex).",0,,div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle,"<button id=""animation-toggle"" aria-pressed=""true"" tabindex=""3"">",Pause carousel,"Fix any of the following:
+  Element has a tabindex greater than 0"
 https://direct.fda.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.12/color-contrast).,0,,tbody > tr > td > input#P101_LOGIN,"<input type=""button"" onclick=""SubmitClick();"" value=""Login"" class=""btn-red disable-on-submit"" style=""width: 215px; min-width: 85%; margin-top: 28px; border-radius: 10px;"" id=""P101_LOGIN"" autocomplete=""off"">",tbody > tr > td > input#P101_LOGIN,"Fix any of the following:
   Element has insufficient color contrast of 4.04 (foreground color: #ffffff, background color: #da4f49, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
 https://direct.fda.gov,success,label,Form elements do not have associated labels,"Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.12/label).",0,,td.disclaimer > div#P101_AGREE > div.apex-item-option > input#P101_AGREE_0,"<input type=""checkbox"" id=""P101_AGREE_0"" name=""P101_AGREE"" data-display="""" value=""Y"" autocomplete=""off"">",td.disclaimer > div#P101_AGREE > div.apex-item-option > input#P101_AGREE_0,"Fix all of the following:
@@ -40,31 +73,52 @@ https://direct.fda.gov,success,tabindex,Some elements have a `[tabindex]` value 
   Element has a tabindex greater than 0"
 https://direct.fda.gov,success,landmark-one-main,Document does not have a main landmark.,One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.12/landmark-one-main).,0,,html,"<html lang=""en"" xmlns=""http://www.w3.org/1999/xhtml"" xmlns:htmldb=""http://htmldb.oracle.com"" xmlns:apex=""http://apex.oracle.com"" data-useragent=""Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (K…"">",html,"Fix all of the following:
   Document does not have a main landmark"
-https://access.fda.gov,success,,,,,,,,,
-https://datadashboard.fda.gov,success,heading-order,Heading elements are not in a sequentially-descending order,"Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.12/heading-order).",0,,div#fdaFooter > div.row > div.col-xs-12 > h6.icon-email,"<h6 class=""icon-email"">",Contact,"Fix any of the following:
-  Heading order invalid"
-https://datadashboard.fda.gov,success,meta-viewport,"`[user-scalable=""no""]` is used in the `<meta name=""viewport"">` element or the `[maximum-scale]` attribute is less than 5.",Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more about the viewport meta tag](https://dequeuniversity.com/rules/axe/4.12/meta-viewport).,0,,head > meta,"<meta name=""viewport"" content=""width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-sc…"">",head > meta,"Fix any of the following:
-  user-scalable=no on <meta> tag disables zooming on mobile devices"
-https://datadashboard.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.12/target-size).,0,,div.col-sm-12 > div.col-xs-5 > div.col-xs-12 > a#fb1,"<a id=""fb1"" href=""https://www.fda.gov/about-fda/about-website/internet-accessibility"" target=""_blank"">","Accessibility
-(Opens in new window)","Fix any of the following:
-  Target has insufficient size (83.6px by 20px, should be at least 24px by 24px)
-  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
-https://datadashboard.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.12/target-size).,0,,div.col-sm-12 > div.col-xs-5 > div.col-xs-12 > a#fb3,"<a id=""fb3"" href=""https://www.fda.gov/about-fda"" target=""_blank"">","About FDA
-(Opens in new window)","Fix any of the following:
-  Target has insufficient size (75px by 20px, should be at least 24px by 24px)
-  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
-https://datadashboard.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.12/target-size).,0,,div.col-sm-12 > div.col-xs-5 > div.col-xs-12 > a#fb4,"<a id=""fb4"" href=""https://www.fda.gov/regulatory-information/freedom-information"" target=""_blank"">","FOIA
-(Opens in new window)","Fix any of the following:
-  Target has insufficient size (33.8px by 20px, should be at least 24px by 24px)
-  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
-https://datadashboard.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.12/target-size).,0,,div.col-sm-12 > div.col-xs-7 > div.col-xs-12 > a#fb5,"<a id=""fb5"" href=""https://www.fda.gov/about-fda/jobs-and-training-fda/no-fear-act"" target=""_blank"">","No FEAR Act
-(Opens in new window)","Fix any of the following:
-  Target has insufficient size (87.4px by 20px, should be at least 24px by 24px)
-  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
-https://datadashboard.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.12/target-size).,0,,div.col-sm-12 > div.col-xs-7 > div.col-xs-12 > a#fb7,"<a id=""fb7"" href=""https://www.fda.gov/about-fda/about-website/website-policies"" target=""_blank"">","Website Policies
-(Opens in new window)","Fix any of the following:
-  Target has insufficient size (110.4px by 20px, should be at least 24px by 24px)
-  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+https://nih.gov,success,link-in-text-block,Links rely on color to be distinguishable.,Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.12/link-in-text-block).,0,,div.usa-identifier__container > div.usa-identifier__identity > p.usa-identifier__identity-disclaimer > a.ext,"<a href=""https://www.hhs.gov/"" class=""ext"" data-extlink="""" target=""_blank"" rel=""noopener nofollow noreferrer"">",Department of Health and Human Services,"Fix any of the following:
+  The link has insufficient color contrast of 1.31:1 with the surrounding text. (Minimum contrast is 3:1, link text: #dfe1e2, surrounding text: #ffffff)
+  The link has no styling (such as underline) to distinguish it from the surrounding text"
+https://wwwnc.cdc.gov,success,link-name,Links do not have a discernible name,"Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.12/link-name).",0,,nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle,"<a id=""cdc-mobile-search-toggle"" class=""nav-link"" href=""#"" aria-controls=""cdc-mobile-search-form"">",nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle,"Fix all of the following:
+  Element is in tab order and does not have accessible text
+
+Fix any of the following:
+  Element does not have text that is visible to screen readers
+  aria-label attribute does not exist or is empty
+  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+  Element has no title attribute"
+https://wwwnc.cdc.gov,success,skip-link,Skip links are not focusable.,Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.12/skip-link).,0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#headerSearch"" tabindex=""2"">",Skip to search,"Fix any of the following:
+  No skip link target"
+https://wwwnc.cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.12/tabindex).",0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#content"" tabindex=""1"">",Skip to site content,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://wwwnc.cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.12/tabindex).",0,,body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy,"<a class=""skippy visually-hidden-focusable"" href=""#headerSearch"" tabindex=""2"">",Skip to search,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://wwwnc.cdc.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.12/tabindex).",0,,div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle,"<button id=""animation-toggle"" aria-pressed=""true"" tabindex=""3"">",Pause carousel,"Fix any of the following:
+  Element has a tabindex greater than 0"
+https://phgkb.cdc.gov,failed,,,,,,,,,
+https://wwwn.cdc.gov,success,,,,,,,,,
+https://search.cdc.gov,failed,,,,,,,,,
+https://atsdr.cdc.gov,failed,,,,,,,,,
+https://hfpappexternal.fda.gov,failed,,,,,,,,,
+https://archive.cdc.gov,failed,,,,,,,,,
+https://data.cdc.gov,failed,,,,,,,,,
+https://npin.cdc.gov,failed,,,,,,,,,
+https://tools.cdc.gov,failed,,,,,,,,,
+https://phinvads.cdc.gov,failed,,,,,,,,,
+https://access.fda.gov,failed,,,,,,,,,
+https://wonder.cdc.gov,failed,,,,,,,,,
+https://nationaldppcsc.cdc.gov,failed,,,,,,,,,
+https://gis.cdc.gov,failed,,,,,,,,,
+https://datadashboard.fda.gov,failed,,,,,,,,,
+https://reach.cdc.gov,failed,,,,,,,,,
+https://vaccines.gov,failed,,,,,,,,,
+https://gettested.cdc.gov,failed,,,,,,,,,
+https://jobs.cdc.gov,failed,,,,,,,,,
+https://www.cdc.gov,failed,,,,,,,,,
+https://open.fda.gov,failed,,,,,,,,,
+https://www2a.cdc.gov,failed,,,,,,,,,
+https://vetoviolence.cdc.gov,failed,,,,,,,,,
+https://thecommunityguide.org,failed,,,,,,,,,
+https://precision.fda.gov,failed,,,,,,,,,
+https://ndc.services.cdc.gov,failed,,,,,,,,,
+https://icd10cmtool.cdc.gov,success,,,,,,,,,
 https://purplebooksearch.fda.gov,success,link-name,Links do not have a discernible name,"Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.12/link-name).",0,,header > div.header > div.container > a.header-link,"<a href=""https://www.fda.gov/"" class=""header-link"">",FDA Logo,"Fix all of the following:
   Element is in tab order and does not have accessible text
 
@@ -73,35 +127,13 @@ Fix any of the following:
   aria-label attribute does not exist or is empty
   aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
   Element has no title attribute"
-https://open.fda.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.12/color-contrast).,0,,section.body-bg-offwhite > div.blog-header-container > h2.clr-primary > span,<span>,LATEST NEWS & UPDATES,"Fix any of the following:
-  Element has insufficient color contrast of 3.8 (foreground color: #5589a6, background color: #ffffff, font size: 12.8pt (17px), font weight: bold). Expected contrast ratio of 4.5:1"
-https://open.fda.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.12/color-contrast).,0,,li.blog-item > a.full-height > div > div.clr-gray-light,"<div class=""clr-gray-light marg-b-1 t-marg-t-05 time-stamp"">","AUGUST 22, 2026","Fix any of the following:
-  Element has insufficient color contrast of 2.85 (foreground color: #9499a5, background color: #ffffff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
-https://open.fda.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.12/color-contrast).,0,,li.blog-item > a.full-height > div > div.clr-gray-light,"<div class=""clr-gray-light marg-b-1 t-marg-t-05 time-stamp"">","JUNE 30, 2026","Fix any of the following:
-  Element has insufficient color contrast of 2.85 (foreground color: #9499a5, background color: #ffffff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
-https://open.fda.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.12/color-contrast).,0,,li.blog-item > a.full-height > div > div.clr-gray-light,"<div class=""clr-gray-light marg-b-1 t-marg-t-05 time-stamp"">","MARCH 11, 2026","Fix any of the following:
-  Element has insufficient color contrast of 2.85 (foreground color: #9499a5, background color: #ffffff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
-https://open.fda.gov,success,heading-order,Heading elements are not in a sequentially-descending order,"Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.12/heading-order).",0,,div.ReactModalPortal > div.ReactModal__Overlay > div.ReactModal__Content > h4.modal-header,"<h4 class=""modal-header"">",Disclaimer,"Fix any of the following:
+https://usdss.cdc.gov,success,aria-prohibited-attr,Elements use prohibited ARIA attributes,Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.12/aria-prohibited-attr).,0,,div.da-cdc-header-desktop > div.da-cdc-header-title > svg.da-banner-title > g#text1007,"<g aria-label=""United States Diabetes Surveillance System"" id=""text1007"" style=""fill: rgb(255, 255, 255); font-size: 4.9389px; line-height: 1.25; font-family: sans-serif;"">",United States Diabetes Surveillance System,"Fix all of the following:
+  aria-label attribute cannot be used on a g with no valid role attribute."
+https://usdss.cdc.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.12/color-contrast).,0,,div#mainContainer > footer.cdc-footer > div.row > div.col,"<div class=""col"">",U.S. Centers for Disease Control and Prevention,"Fix any of the following:
+  Element has insufficient color contrast of 4.27 (foreground color: #8099b3, background color: #003366, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+https://usdss.cdc.gov,success,heading-order,Heading elements are not in a sequentially-descending order,"Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.12/heading-order).",0,,footer.cdc-footer > div.row > div.col-md-5 > h5.mb-3,"<h5 class=""mb-3 border-bottom border-light pb-2 d-inline-block"">",Additional Links & Resources,"Fix any of the following:
   Heading order invalid"
-https://open.fda.gov,success,image-alt,Image elements do not have `[alt]` attributes,"Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.12/image-alt).",0,,section.container-homepage > section.flex-box > a.link-card > img,"<img class="""" src=""/img/line-graph.svg"">",section.container-homepage > section.flex-box > a.link-card > img,"Fix any of the following:
-  Element does not have an alt attribute
-  aria-label attribute does not exist or is empty
-  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-  Element has no title attribute
-  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
-https://open.fda.gov,success,image-alt,Image elements do not have `[alt]` attributes,"Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.12/image-alt).",0,,section.container-homepage > section.flex-box > a.link-card > img,"<img class="""" src=""/img/download.svg"">",section.container-homepage > section.flex-box > a.link-card > img,"Fix any of the following:
-  Element does not have an alt attribute
-  aria-label attribute does not exist or is empty
-  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-  Element has no title attribute
-  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
-https://open.fda.gov,success,image-alt,Image elements do not have `[alt]` attributes,"Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.12/image-alt).",0,,section.container-homepage > section.flex-box > a.link-card > img,"<img class="""" src=""/img/lightbulb.svg"">",section.container-homepage > section.flex-box > a.link-card > img,"Fix any of the following:
-  Element does not have an alt attribute
-  aria-label attribute does not exist or is empty
-  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-  Element has no title attribute
-  Element's default semantics were not overridden with role=""none"" or role=""presentation"""
-https://precision.fda.gov,success,link-name,Links do not have a discernible name,"Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.12/link-name).",0,,div > ul.mt-0 > li.mb-2 > a,"<a href=""mailto:precisionfda@fda.hhs.gov"">",div > ul.mt-0 > li.mb-2 > a,"Fix all of the following:
+https://usdss.cdc.gov,success,link-name,Links do not have a discernible name,"Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.12/link-name).",0,,header.da-cdc-header > div.da-cdc-header-desktop > div.col-2 > a,"<a href=""https://www.cdc.gov"" target=""_blank"" rel=""noopener noreferrer"">",Centers for Disease Control and Prevention. CDC twenty four seven. Saving Lives…,"Fix all of the following:
   Element is in tab order and does not have accessible text
 
 Fix any of the following:
@@ -109,6 +141,17 @@ Fix any of the following:
   aria-label attribute does not exist or is empty
   aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
   Element has no title attribute"
+https://usdss.cdc.gov,success,label-content-name-mismatch,Elements with visible text labels do not have matching accessible names.,Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.12/label-content-name-mismatch).,0,,main#moduleCards > div#cardAnalysis > div.card-body > a#mod_Analysis,"<a id=""mod_Analysis"" href=""analysis.html"" rel=""js-home-module"" target=""_self"" class=""btn btn-primary stretched-link w-100 mt-auto"" aria-label=""analysis module"">",Open,"Fix any of the following:
+  Text inside the element is not included in the accessible name"
+https://usdss.cdc.gov,success,label-content-name-mismatch,Elements with visible text labels do not have matching accessible names.,Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.12/label-content-name-mismatch).,0,,main#moduleCards > div#cardStatsReport > div.card-body > a#mod_StatsReport,"<a id=""mod_StatsReport"" href=""report.html"" rel=""js-home-module"" target=""_self"" class=""btn btn-primary stretched-link w-100 mt-auto"" aria-label=""national diabetes statistics report module"">",Open,"Fix any of the following:
+  Text inside the element is not included in the accessible name"
+https://usdss.cdc.gov,success,label-content-name-mismatch,Elements with visible text labels do not have matching accessible names.,Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.12/label-content-name-mismatch).,0,,main#moduleCards > div#cardSpotlight > div.card-body > a#mod_Spotlight,"<a id=""mod_Spotlight"" href=""spotlight.html"" rel=""js-home-module"" target=""_self"" class=""btn btn-primary stretched-link w-100 mt-auto"" aria-label=""analysis module"">",Open,"Fix any of the following:
+  Text inside the element is not included in the accessible name"
+https://millionhearts.hhs.gov,success,link-in-text-block,Links rely on color to be distinguishable.,Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.12/link-in-text-block).,0,,div.col-md-12 > div.cdc-textblock > p > a,"<a href=""/about-million-hearts/index.html"">",Learn more about the initiative,"Fix any of the following:
+  The link has insufficient color contrast of 1.07:1 with the surrounding text. (Minimum contrast is 3:1, link text: #860037, surrounding text: #464646)
+  The link has no styling (such as underline) to distinguish it from the surrounding text"
+https://millionhearts.hhs.gov,success,list,Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).,Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.12/list).,0,,div.footer-wrapper > div.container > div.row > ul.footer-links,"<ul class=""footer-links text-center"">",Accessibility Viewers & Players Privacy Policy Disclaimers Vulnerability Disclo…,"Fix all of the following:
+  List element has direct children that are not allowed: ul"
 https://contact.fda.gov,success,aria-command-name,"`button`, `link`, and `menuitem` elements do not have accessible names.","When an element doesn't have an accessible name, screen readers announce it with a generic name, making it unusable for users who rely on screen readers. [Learn how to make command elements more accessible](https://dequeuniversity.com/rules/axe/4.12/aria-command-name).",0,,div.region > aside.lcds-card > ul.lcds-description-list > li.lcds-description-list__item,"<li role=""menuitem"" class=""lcds-description-list__item"">",div.region > aside.lcds-card > ul.lcds-description-list > li.lcds-description-list__item,"Fix any of the following:
   Element does not have text that is visible to screen readers
   aria-label attribute does not exist or is empty
@@ -122,22 +165,9 @@ https://contact.fda.gov,success,tabindex,Some elements have a `[tabindex]` value
   Element has a tabindex greater than 0"
 https://contact.fda.gov,success,tabindex,Some elements have a `[tabindex]` value greater than 0,"A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.12/tabindex).",0,,div#quicklinks > ul.list-inline > li > a.btn,"<a href=""#footer"" class=""btn btn-default margin-top-3"" tabindex=""1"" data-once=""download-role-button lang-fix-multilingual"">",Skip to footer links,"Fix any of the following:
   Element has a tabindex greater than 0"
-https://cdrh-rst.fda.gov,success,heading-order,Heading elements are not in a sequentially-descending order,"Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.12/heading-order).",0,,div.views-view-responsive-grid__item-inner > div.views-field > span.field-content > h3,<h3>,WearGait-PD Longitudinal: Multi-Session Wearables Dataset for Gait in Parkinson…,"Fix any of the following:
-  Heading order invalid"
-https://cdrh-rst.fda.gov,success,link-in-text-block,Links rely on color to be distinguishable.,Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.12/link-in-text-block).,0,,div.view > div.view-header > p > a,"<a href=""https://www.fda.gov/medical-devices/medical-device-development-tools-mddt"">",Medical Device Development Tools,"Fix any of the following:
-  The link has insufficient color contrast of 2.77:1 with the surrounding text. (Minimum contrast is 3:1, link text: #337ab7, surrounding text: #333333)
-  The link has no styling (such as underline) to distinguish it from the surrounding text"
-https://cdrh-rst.fda.gov,success,link-in-text-block,Links rely on color to be distinguishable.,Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.12/link-in-text-block).,0,,div.view > div.view-header > p > a,"<a href=""https://www.fda.gov/regulatory-information/search-fda-guidance-documents/r…"">",feedback or meetings for medical device submissions,"Fix any of the following:
-  The link has insufficient color contrast of 2.77:1 with the surrounding text. (Minimum contrast is 3:1, link text: #337ab7, surrounding text: #333333)
-  The link has no styling (such as underline) to distinguish it from the surrounding text"
-https://cdrh-rst.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.12/target-size).,0,,span.field-content > ul > li > a,"<a href=""/node?f%5B0%5D=categories%3A121"">",Lab Method,"Fix any of the following:
-  Target has insufficient size (59.8px by 15px, should be at least 24px by 24px)
-  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.6px instead of at least 24px."
-https://animaldrugsatfda.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.12/target-size).,0,,div.row > div.col-sm-5 > span.control-label > a,"<a href="""" ng-show=""!showAdvanced"" ng-click=""showAdvanced=!showAdvanced"">",>> ,"Fix any of the following:
-  Target has insufficient size (16.7px by 14px, should be at least 24px by 24px)
-  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.6px instead of at least 24px."
-https://animaldrugsatfda.fda.gov,success,landmark-one-main,Document does not have a main landmark.,One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.12/landmark-one-main).,0,,html#ng-app,"<html lang=""en"" ng-app=""myApp"" class=""ng-scope"" id=""ng-app"" style=""position: relative; background: transparent;"">",html#ng-app,"Fix all of the following:
-  Document does not have a main landmark"
+https://art.cdc.gov,failed,,,,,,,,,
+https://origin.cdc.gov,failed,,,,,,,,,
+https://nccd.cdc.gov,failed,,,,,,,,,
 https://labels.fda.gov,success,html-has-lang,`<html>` element does not have a `[lang]` attribute,"If a page doesn't specify a `lang` attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more about the `lang` attribute](https://dequeuniversity.com/rules/axe/4.12/html-has-lang).",0,,html,"<html xmlns=""http://www.w3.org/1999/xhtml"" xmlns:addthis=""http://www.addthis.com/help/api-spec"">",html,"Fix any of the following:
   The <html> element does not have a lang attribute"
 https://labels.fda.gov,success,label,Form elements do not have associated labels,"Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.12/label).",0,,div#fda-rightmast > div#search-form > form#search_form > input#query,"<input accesskey=""4"" type=""text"" name=""s"" id=""query"" autocomplete=""off"" class=""usagov-search-autocomplete"">",div#fda-rightmast > div#search-form > form#search_form > input#query,"Fix all of the following:
@@ -205,14 +235,35 @@ https://labels.fda.gov,success,target-size,Touch targets do not have sufficient 
   Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.8px instead of at least 24px."
 https://labels.fda.gov,success,landmark-one-main,Document does not have a main landmark.,One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.12/landmark-one-main).,0,,html,"<html xmlns=""http://www.w3.org/1999/xhtml"" xmlns:addthis=""http://www.addthis.com/help/api-spec"">",html,"Fix all of the following:
   Document does not have a main landmark"
-https://origin-cdrh-rst.fda.gov,success,heading-order,Heading elements are not in a sequentially-descending order,"Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.12/heading-order).",0,,div.views-view-responsive-grid__item-inner > div.views-field > span.field-content > h3,<h3>,WearGait-PD Longitudinal: Multi-Session Wearables Dataset for Gait in Parkinson…,"Fix any of the following:
+https://selectagents.gov,failed,,,,,,,,,
+https://wisqars.cdc.gov,failed,,,,,,,,,
+https://animaldrugsatfda.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.12/target-size).,0,,div.row > div.col-sm-5 > span.control-label > a,"<a href="""" ng-show=""!showAdvanced"" ng-click=""showAdvanced=!showAdvanced"">",>> ,"Fix any of the following:
+  Target has insufficient size (16.7px by 14px, should be at least 24px by 24px)
+  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.6px instead of at least 24px."
+https://animaldrugsatfda.fda.gov,success,landmark-one-main,Document does not have a main landmark.,One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.12/landmark-one-main).,0,,html#ng-app,"<html lang=""en"" ng-app=""myApp"" class=""ng-scope"" id=""ng-app"" style=""position: relative; background: transparent;"">",html#ng-app,"Fix all of the following:
+  Document does not have a main landmark"
+https://cdrh-rst.fda.gov,success,heading-order,Heading elements are not in a sequentially-descending order,"Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.12/heading-order).",0,,div.views-view-responsive-grid__item-inner > div.views-field > span.field-content > h3,<h3>,WearGait-PD Longitudinal: Multi-Session Wearables Dataset for Gait in Parkinson…,"Fix any of the following:
   Heading order invalid"
-https://origin-cdrh-rst.fda.gov,success,link-in-text-block,Links rely on color to be distinguishable.,Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.12/link-in-text-block).,0,,div.view > div.view-header > p > a,"<a href=""https://www.fda.gov/medical-devices/medical-device-development-tools-mddt"">",Medical Device Development Tools,"Fix any of the following:
+https://cdrh-rst.fda.gov,success,link-in-text-block,Links rely on color to be distinguishable.,Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.12/link-in-text-block).,0,,div.view > div.view-header > p > a,"<a href=""https://www.fda.gov/medical-devices/medical-device-development-tools-mddt"">",Medical Device Development Tools,"Fix any of the following:
   The link has insufficient color contrast of 2.77:1 with the surrounding text. (Minimum contrast is 3:1, link text: #337ab7, surrounding text: #333333)
   The link has no styling (such as underline) to distinguish it from the surrounding text"
-https://origin-cdrh-rst.fda.gov,success,link-in-text-block,Links rely on color to be distinguishable.,Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.12/link-in-text-block).,0,,div.view > div.view-header > p > a,"<a href=""https://www.fda.gov/regulatory-information/search-fda-guidance-documents/r…"">",feedback or meetings for medical device submissions,"Fix any of the following:
+https://cdrh-rst.fda.gov,success,link-in-text-block,Links rely on color to be distinguishable.,Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.12/link-in-text-block).,0,,div.view > div.view-header > p > a,"<a href=""https://www.fda.gov/regulatory-information/search-fda-guidance-documents/r…"">",feedback or meetings for medical device submissions,"Fix any of the following:
   The link has insufficient color contrast of 2.77:1 with the surrounding text. (Minimum contrast is 3:1, link text: #337ab7, surrounding text: #333333)
   The link has no styling (such as underline) to distinguish it from the surrounding text"
-https://origin-cdrh-rst.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.12/target-size).,0,,span.field-content > ul > li > a,"<a href=""/node?f%5B0%5D=categories%3A121"">",Lab Method,"Fix any of the following:
+https://cdrh-rst.fda.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.12/target-size).,0,,span.field-content > ul > li > a,"<a href=""/node?f%5B0%5D=categories%3A121"">",Lab Method,"Fix any of the following:
   Target has insufficient size (59.8px by 15px, should be at least 24px by 24px)
   Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.6px instead of at least 24px."
+https://yrbs-explorer.services.cdc.gov,success,html-has-lang,`<html>` element does not have a `[lang]` attribute,"If a page doesn't specify a `lang` attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more about the `lang` attribute](https://dequeuniversity.com/rules/axe/4.12/html-has-lang).",0,,html,"<html lang="""">",html,"Fix any of the following:
+  The <html> element does not have a lang attribute"
+https://www2c.cdc.gov,failed,,,,,,,,,
+https://cdi.cdc.gov,failed,,,,,,,,,
+https://chronicdata.cdc.gov,failed,,,,,,,,,
+https://places.cdc.gov,failed,,,,,,,,,
+https://nfr.cdc.gov,failed,,,,,,,,,
+https://youthonline.cdc.gov,failed,,,,,,,,,
+https://www2.cdc.gov,failed,,,,,,,,,
+https://blogs.cdc.gov,failed,,,,,,,,,
+https://nchsdata.cdc.gov,failed,,,,,,,,,
+https://finddoxypep.cdc.gov,failed,,,,,,,,,
+https://t.cdc.gov,failed,,,,,,,,,
+https://atsdr-origin.cdc.gov,failed,,,,,,,,,

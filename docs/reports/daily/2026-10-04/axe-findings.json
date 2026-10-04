@@ -1,15 +1,76 @@
 {
-  "run_date": "2026-09-20",
-  "run_id": "run-2026-09-20-d1be3bf4ba",
-  "generated_at": "2026-09-20T13:34:44.992Z",
-  "total_urls": 14,
-  "total_findings": 30,
+  "run_date": "2026-10-04",
+  "run_id": "run-2026-10-04-0963065e83",
+  "generated_at": "2026-10-04T14:47:09.975Z",
+  "total_urls": 61,
+  "total_findings": 38,
   "urls": [
     {
-      "url": "https://accessdata.fda.gov",
+      "url": "https://cdc.gov",
       "scan_status": "success",
-      "axe_findings_count": 0,
-      "axe_findings": []
+      "axe_findings_count": 3,
+      "axe_findings": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.12/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "snippet": "<a id=\"cdc-mobile-search-toggle\" class=\"nav-link\" href=\"#\" aria-controls=\"cdc-mobile-search-form\">",
+              "node_label": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "skip-link",
+          "title": "Skip links are not focusable.",
+          "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.12/skip-link).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  No skip link target"
+            }
+          ]
+        },
+        {
+          "id": "tabindex",
+          "title": "Some elements have a `[tabindex]` value greater than 0",
+          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.12/tabindex).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#content\" tabindex=\"1\">",
+              "node_label": "Skip to site content",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle",
+              "snippet": "<button id=\"animation-toggle\" aria-pressed=\"true\" tabindex=\"3\">",
+              "node_label": "Pause carousel",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            }
+          ]
+        }
+      ]
     },
     {
       "url": "https://fda.gov",
@@ -63,10 +124,89 @@
       ]
     },
     {
-      "url": "https://hfpappexternal.fda.gov",
+      "url": "https://accessdata.fda.gov",
       "scan_status": "success",
       "axe_findings_count": 0,
       "axe_findings": []
+    },
+    {
+      "url": "https://cms.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://hhs.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://portugues.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 3,
+      "axe_findings": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.12/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "snippet": "<a id=\"cdc-mobile-search-toggle\" class=\"nav-link\" href=\"#\" aria-controls=\"cdc-mobile-search-form\">",
+              "node_label": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "skip-link",
+          "title": "Skip links are not focusable.",
+          "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.12/skip-link).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  No skip link target"
+            }
+          ]
+        },
+        {
+          "id": "tabindex",
+          "title": "Some elements have a `[tabindex]` value greater than 0",
+          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.12/tabindex).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#content\" tabindex=\"1\">",
+              "node_label": "Skip to site content",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle",
+              "snippet": "<button id=\"animation-toggle\" aria-pressed=\"true\" tabindex=\"3\">",
+              "node_label": "Pause carousel",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            }
+          ]
+        }
+      ]
     },
     {
       "url": "https://direct.fda.gov",
@@ -164,89 +304,256 @@
       ]
     },
     {
-      "url": "https://access.fda.gov",
+      "url": "https://nih.gov",
       "scan_status": "success",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
-      "url": "https://datadashboard.fda.gov",
-      "scan_status": "success",
-      "axe_findings_count": 3,
+      "axe_findings_count": 1,
       "axe_findings": [
         {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.12/heading-order).",
-          "score": 0,
-          "impact": "moderate",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div#fdaFooter > div.row > div.col-xs-12 > h6.icon-email",
-              "snippet": "<h6 class=\"icon-email\">",
-              "node_label": "Contact",
-              "explanation": "Fix any of the following:\n  Heading order invalid"
-            }
-          ]
-        },
-        {
-          "id": "meta-viewport",
-          "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
-          "description": "Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more about the viewport meta tag](https://dequeuniversity.com/rules/axe/4.12/meta-viewport).",
-          "score": 0,
-          "impact": "moderate",
-          "tags": [],
-          "items": [
-            {
-              "selector": "head > meta",
-              "snippet": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-sc…\">",
-              "node_label": "head > meta",
-              "explanation": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
-            }
-          ]
-        },
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.12/target-size).",
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.12/link-in-text-block).",
           "score": 0,
           "impact": "serious",
           "tags": [],
           "items": [
             {
-              "selector": "div.col-sm-12 > div.col-xs-5 > div.col-xs-12 > a#fb1",
-              "snippet": "<a id=\"fb1\" href=\"https://www.fda.gov/about-fda/about-website/internet-accessibility\" target=\"_blank\">",
-              "node_label": "Accessibility\n(Opens in new window)",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (83.6px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
-            },
-            {
-              "selector": "div.col-sm-12 > div.col-xs-5 > div.col-xs-12 > a#fb3",
-              "snippet": "<a id=\"fb3\" href=\"https://www.fda.gov/about-fda\" target=\"_blank\">",
-              "node_label": "About FDA\n(Opens in new window)",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (75px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
-            },
-            {
-              "selector": "div.col-sm-12 > div.col-xs-5 > div.col-xs-12 > a#fb4",
-              "snippet": "<a id=\"fb4\" href=\"https://www.fda.gov/regulatory-information/freedom-information\" target=\"_blank\">",
-              "node_label": "FOIA\n(Opens in new window)",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (33.8px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
-            },
-            {
-              "selector": "div.col-sm-12 > div.col-xs-7 > div.col-xs-12 > a#fb5",
-              "snippet": "<a id=\"fb5\" href=\"https://www.fda.gov/about-fda/jobs-and-training-fda/no-fear-act\" target=\"_blank\">",
-              "node_label": "No FEAR Act\n(Opens in new window)",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (87.4px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
-            },
-            {
-              "selector": "div.col-sm-12 > div.col-xs-7 > div.col-xs-12 > a#fb7",
-              "snippet": "<a id=\"fb7\" href=\"https://www.fda.gov/about-fda/about-website/website-policies\" target=\"_blank\">",
-              "node_label": "Website Policies\n(Opens in new window)",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (110.4px by 20px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+              "selector": "div.usa-identifier__container > div.usa-identifier__identity > p.usa-identifier__identity-disclaimer > a.ext",
+              "snippet": "<a href=\"https://www.hhs.gov/\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener nofollow noreferrer\">",
+              "node_label": "Department of Health and Human Services",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.31:1 with the surrounding text. (Minimum contrast is 3:1, link text: #dfe1e2, surrounding text: #ffffff)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
             }
           ]
         }
       ]
+    },
+    {
+      "url": "https://wwwnc.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 3,
+      "axe_findings": [
+        {
+          "id": "link-name",
+          "title": "Links do not have a discernible name",
+          "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.12/link-name).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "snippet": "<a id=\"cdc-mobile-search-toggle\" class=\"nav-link\" href=\"#\" aria-controls=\"cdc-mobile-search-form\">",
+              "node_label": "nav.mobile-navbar > div.mobile-navbar_top > div.d-flex > a#cdc-mobile-search-toggle",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "skip-link",
+          "title": "Skip links are not focusable.",
+          "description": "Including a skip link can help users skip to the main content to save time. [Learn more about skip links](https://dequeuniversity.com/rules/axe/4.12/skip-link).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  No skip link target"
+            }
+          ]
+        },
+        {
+          "id": "tabindex",
+          "title": "Some elements have a `[tabindex]` value greater than 0",
+          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.12/tabindex).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#content\" tabindex=\"1\">",
+              "node_label": "Skip to site content",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "body.cdc-post-type--cdc-homepage > div#skipmenu > a.skippy",
+              "snippet": "<a class=\"skippy visually-hidden-focusable\" href=\"#headerSearch\" tabindex=\"2\">",
+              "node_label": "Skip to search",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            },
+            {
+              "selector": "div#hero-carousel > div.carousel-indicators > div.carousel-indicators-wrapper > button#animation-toggle",
+              "snippet": "<button id=\"animation-toggle\" aria-pressed=\"true\" tabindex=\"3\">",
+              "node_label": "Pause carousel",
+              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://phgkb.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://wwwn.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://search.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://atsdr.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://hfpappexternal.fda.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://archive.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://data.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://npin.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://tools.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://phinvads.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://access.fda.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://wonder.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://nationaldppcsc.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://gis.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://datadashboard.fda.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://reach.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://vaccines.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://gettested.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://jobs.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://www.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://open.fda.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://www2a.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://vetoviolence.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://thecommunityguide.org",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://precision.fda.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://ndc.services.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://icd10cmtool.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
     },
     {
       "url": "https://purplebooksearch.fda.gov",
@@ -272,10 +579,26 @@
       ]
     },
     {
-      "url": "https://open.fda.gov",
+      "url": "https://usdss.cdc.gov",
       "scan_status": "success",
-      "axe_findings_count": 3,
+      "axe_findings_count": 5,
       "axe_findings": [
+        {
+          "id": "aria-prohibited-attr",
+          "title": "Elements use prohibited ARIA attributes",
+          "description": "Using ARIA attributes in roles where they are prohibited can mean that important information is not communicated to users of assistive technologies. [Learn more about prohibited ARIA roles](https://dequeuniversity.com/rules/axe/4.12/aria-prohibited-attr).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.da-cdc-header-desktop > div.da-cdc-header-title > svg.da-banner-title > g#text1007",
+              "snippet": "<g aria-label=\"United States Diabetes Surveillance System\" id=\"text1007\" style=\"fill: rgb(255, 255, 255); font-size: 4.9389px; line-height: 1.25; font-family: sans-serif;\">",
+              "node_label": "United States Diabetes Surveillance System",
+              "explanation": "Fix all of the following:\n  aria-label attribute cannot be used on a g with no valid role attribute."
+            }
+          ]
+        },
         {
           "id": "color-contrast",
           "title": "Background and foreground colors do not have a sufficient contrast ratio.",
@@ -285,28 +608,10 @@
           "tags": [],
           "items": [
             {
-              "selector": "section.body-bg-offwhite > div.blog-header-container > h2.clr-primary > span",
-              "snippet": "<span>",
-              "node_label": "LATEST NEWS & UPDATES",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.8 (foreground color: #5589a6, background color: #ffffff, font size: 12.8pt (17px), font weight: bold). Expected contrast ratio of 4.5:1"
-            },
-            {
-              "selector": "li.blog-item > a.full-height > div > div.clr-gray-light",
-              "snippet": "<div class=\"clr-gray-light marg-b-1 t-marg-t-05 time-stamp\">",
-              "node_label": "AUGUST 22, 2026",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #9499a5, background color: #ffffff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
-            },
-            {
-              "selector": "li.blog-item > a.full-height > div > div.clr-gray-light",
-              "snippet": "<div class=\"clr-gray-light marg-b-1 t-marg-t-05 time-stamp\">",
-              "node_label": "JUNE 30, 2026",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #9499a5, background color: #ffffff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
-            },
-            {
-              "selector": "li.blog-item > a.full-height > div > div.clr-gray-light",
-              "snippet": "<div class=\"clr-gray-light marg-b-1 t-marg-t-05 time-stamp\">",
-              "node_label": "MARCH 11, 2026",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.85 (foreground color: #9499a5, background color: #ffffff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+              "selector": "div#mainContainer > footer.cdc-footer > div.row > div.col",
+              "snippet": "<div class=\"col\">",
+              "node_label": "U.S. Centers for Disease Control and Prevention",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.27 (foreground color: #8099b3, background color: #003366, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
             }
           ]
         },
@@ -319,48 +624,13 @@
           "tags": [],
           "items": [
             {
-              "selector": "div.ReactModalPortal > div.ReactModal__Overlay > div.ReactModal__Content > h4.modal-header",
-              "snippet": "<h4 class=\"modal-header\">",
-              "node_label": "Disclaimer",
+              "selector": "footer.cdc-footer > div.row > div.col-md-5 > h5.mb-3",
+              "snippet": "<h5 class=\"mb-3 border-bottom border-light pb-2 d-inline-block\">",
+              "node_label": "Additional Links & Resources",
               "explanation": "Fix any of the following:\n  Heading order invalid"
             }
           ]
         },
-        {
-          "id": "image-alt",
-          "title": "Image elements do not have `[alt]` attributes",
-          "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.12/image-alt).",
-          "score": 0,
-          "impact": "critical",
-          "tags": [],
-          "items": [
-            {
-              "selector": "section.container-homepage > section.flex-box > a.link-card > img",
-              "snippet": "<img class=\"\" src=\"/img/line-graph.svg\">",
-              "node_label": "section.container-homepage > section.flex-box > a.link-card > img",
-              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-            },
-            {
-              "selector": "section.container-homepage > section.flex-box > a.link-card > img",
-              "snippet": "<img class=\"\" src=\"/img/download.svg\">",
-              "node_label": "section.container-homepage > section.flex-box > a.link-card > img",
-              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-            },
-            {
-              "selector": "section.container-homepage > section.flex-box > a.link-card > img",
-              "snippet": "<img class=\"\" src=\"/img/lightbulb.svg\">",
-              "node_label": "section.container-homepage > section.flex-box > a.link-card > img",
-              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "url": "https://precision.fda.gov",
-      "scan_status": "success",
-      "axe_findings_count": 1,
-      "axe_findings": [
         {
           "id": "link-name",
           "title": "Links do not have a discernible name",
@@ -370,10 +640,77 @@
           "tags": [],
           "items": [
             {
-              "selector": "div > ul.mt-0 > li.mb-2 > a",
-              "snippet": "<a href=\"mailto:precisionfda@fda.hhs.gov\">",
-              "node_label": "div > ul.mt-0 > li.mb-2 > a",
+              "selector": "header.da-cdc-header > div.da-cdc-header-desktop > div.col-2 > a",
+              "snippet": "<a href=\"https://www.cdc.gov\" target=\"_blank\" rel=\"noopener noreferrer\">",
+              "node_label": "Centers for Disease Control and Prevention. CDC twenty four seven. Saving Lives…",
               "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.12/label-content-name-mismatch).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "main#moduleCards > div#cardAnalysis > div.card-body > a#mod_Analysis",
+              "snippet": "<a id=\"mod_Analysis\" href=\"analysis.html\" rel=\"js-home-module\" target=\"_self\" class=\"btn btn-primary stretched-link w-100 mt-auto\" aria-label=\"analysis module\">",
+              "node_label": "Open",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "main#moduleCards > div#cardStatsReport > div.card-body > a#mod_StatsReport",
+              "snippet": "<a id=\"mod_StatsReport\" href=\"report.html\" rel=\"js-home-module\" target=\"_self\" class=\"btn btn-primary stretched-link w-100 mt-auto\" aria-label=\"national diabetes statistics report module\">",
+              "node_label": "Open",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "main#moduleCards > div#cardSpotlight > div.card-body > a#mod_Spotlight",
+              "snippet": "<a id=\"mod_Spotlight\" href=\"spotlight.html\" rel=\"js-home-module\" target=\"_self\" class=\"btn btn-primary stretched-link w-100 mt-auto\" aria-label=\"analysis module\">",
+              "node_label": "Open",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://millionhearts.hhs.gov",
+      "scan_status": "success",
+      "axe_findings_count": 2,
+      "axe_findings": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.12/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.col-md-12 > div.cdc-textblock > p > a",
+              "snippet": "<a href=\"/about-million-hearts/index.html\">",
+              "node_label": "Learn more about the initiative",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.07:1 with the surrounding text. (Minimum contrast is 3:1, link text: #860037, surrounding text: #464646)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.12/list).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.footer-wrapper > div.container > div.row > ul.footer-links",
+              "snippet": "<ul class=\"footer-links text-center\">",
+              "node_label": "Accessibility Viewers & Players Privacy Policy Disclaimers Vulnerability Disclo…",
+              "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: ul"
             }
           ]
         }
@@ -437,104 +774,22 @@
       ]
     },
     {
-      "url": "https://cdrh-rst.fda.gov",
-      "scan_status": "success",
-      "axe_findings_count": 3,
-      "axe_findings": [
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.12/heading-order).",
-          "score": 0,
-          "impact": "moderate",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.views-view-responsive-grid__item-inner > div.views-field > span.field-content > h3",
-              "snippet": "<h3>",
-              "node_label": "WearGait-PD Longitudinal: Multi-Session Wearables Dataset for Gait in Parkinson…",
-              "explanation": "Fix any of the following:\n  Heading order invalid"
-            }
-          ]
-        },
-        {
-          "id": "link-in-text-block",
-          "title": "Links rely on color to be distinguishable.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.12/link-in-text-block).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.view > div.view-header > p > a",
-              "snippet": "<a href=\"https://www.fda.gov/medical-devices/medical-device-development-tools-mddt\">",
-              "node_label": "Medical Device Development Tools",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.77:1 with the surrounding text. (Minimum contrast is 3:1, link text: #337ab7, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            },
-            {
-              "selector": "div.view > div.view-header > p > a",
-              "snippet": "<a href=\"https://www.fda.gov/regulatory-information/search-fda-guidance-documents/r…\">",
-              "node_label": "feedback or meetings for medical device submissions",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.77:1 with the surrounding text. (Minimum contrast is 3:1, link text: #337ab7, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            }
-          ]
-        },
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.12/target-size).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "span.field-content > ul > li > a",
-              "snippet": "<a href=\"/node?f%5B0%5D=categories%3A121\">",
-              "node_label": "Lab Method",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (59.8px by 15px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.6px instead of at least 24px."
-            }
-          ]
-        }
-      ]
+      "url": "https://art.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
     },
     {
-      "url": "https://animaldrugsatfda.fda.gov",
-      "scan_status": "success",
-      "axe_findings_count": 2,
-      "axe_findings": [
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.12/target-size).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.row > div.col-sm-5 > span.control-label > a",
-              "snippet": "<a href=\"\" ng-show=\"!showAdvanced\" ng-click=\"showAdvanced=!showAdvanced\">",
-              "node_label": ">> ",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (16.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.6px instead of at least 24px."
-            }
-          ]
-        },
-        {
-          "id": "landmark-one-main",
-          "title": "Document does not have a main landmark.",
-          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.12/landmark-one-main).",
-          "score": 0,
-          "impact": "moderate",
-          "tags": [],
-          "items": [
-            {
-              "selector": "html#ng-app",
-              "snippet": "<html lang=\"en\" ng-app=\"myApp\" class=\"ng-scope\" id=\"ng-app\" style=\"position: relative; background: transparent;\">",
-              "node_label": "html#ng-app",
-              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
-            }
-          ]
-        }
-      ]
+      "url": "https://origin.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://nccd.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
     },
     {
       "url": "https://labels.fda.gov",
@@ -742,7 +997,58 @@
       ]
     },
     {
-      "url": "https://origin-cdrh-rst.fda.gov",
+      "url": "https://selectagents.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://wisqars.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://animaldrugsatfda.fda.gov",
+      "scan_status": "success",
+      "axe_findings_count": 2,
+      "axe_findings": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.12/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.row > div.col-sm-5 > span.control-label > a",
+              "snippet": "<a href=\"\" ng-show=\"!showAdvanced\" ng-click=\"showAdvanced=!showAdvanced\">",
+              "node_label": ">> ",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (16.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.6px instead of at least 24px."
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.12/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html#ng-app",
+              "snippet": "<html lang=\"en\" ng-app=\"myApp\" class=\"ng-scope\" id=\"ng-app\" style=\"position: relative; background: transparent;\">",
+              "node_label": "html#ng-app",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://cdrh-rst.fda.gov",
       "scan_status": "success",
       "axe_findings_count": 3,
       "axe_findings": [
@@ -801,6 +1107,101 @@
           ]
         }
       ]
+    },
+    {
+      "url": "https://yrbs-explorer.services.cdc.gov",
+      "scan_status": "success",
+      "axe_findings_count": 1,
+      "axe_findings": [
+        {
+          "id": "html-has-lang",
+          "title": "`<html>` element does not have a `[lang]` attribute",
+          "description": "If a page doesn't specify a `lang` attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more about the `lang` attribute](https://dequeuniversity.com/rules/axe/4.12/html-has-lang).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html",
+              "snippet": "<html lang=\"\">",
+              "node_label": "html",
+              "explanation": "Fix any of the following:\n  The <html> element does not have a lang attribute"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://www2c.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://cdi.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://chronicdata.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://places.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://nfr.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://youthonline.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://www2.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://blogs.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://nchsdata.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://finddoxypep.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://t.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://atsdr-origin.cdc.gov",
+      "scan_status": "failed",
+      "axe_findings_count": 0,
+      "axe_findings": []
     }
   ]
 }
