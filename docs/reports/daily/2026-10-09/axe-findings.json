@@ -1,0 +1,159 @@
+{
+  "run_date": "2026-10-09",
+  "run_id": "run-2026-10-09-36ec040ad5",
+  "generated_at": "2026-10-09T16:11:39.026Z",
+  "total_urls": 8,
+  "total_findings": 4,
+  "urls": [
+    {
+      "url": "https://cms.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://hhs.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://nih.gov",
+      "scan_status": "success",
+      "axe_findings_count": 1,
+      "axe_findings": [
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.12/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.usa-identifier__container > div.usa-identifier__identity > p.usa-identifier__identity-disclaimer > a.ext",
+              "snippet": "<a href=\"https://www.hhs.gov/\" class=\"ext\" data-extlink=\"\" target=\"_blank\" rel=\"noopener nofollow noreferrer\">",
+              "node_label": "Department of Health and Human Services",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.31:1 with the surrounding text. (Minimum contrast is 3:1, link text: #dfe1e2, surrounding text: #ffffff)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://acf-main-pre-prod.acf.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://acf.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://ncw-pre-prod.acf.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://cwpm.acf.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://ncsacw.acf.gov",
+      "scan_status": "success",
+      "axe_findings_count": 3,
+      "axe_findings": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.12/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "ul.grid-row > li.grid-col-auto > span.usa-footer__primary-link > a",
+              "snippet": "<a href=\"https://www.acf.hhs.gov/disclaimers\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"View disclaimers page in a new window\">",
+              "node_label": "View disclaimers page in a new window",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (17px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17px instead of at least 24px."
+            },
+            {
+              "selector": "section.usa-footer__primary-content > ul.usa-list > li.usa-footer__secondary-link > a",
+              "snippet": "<a href=\"https://www.acf.hhs.gov/disclaimers\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"View disclaimers page in a new window\">",
+              "node_label": "View disclaimers page in a new window",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (17px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17px instead of at least 24px."
+            },
+            {
+              "selector": "section.usa-footer__primary-content > ul.usa-list > li.usa-footer__secondary-link > a",
+              "snippet": "<a href=\"https://www.acf.hhs.gov/disclaimers\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"View disclaimers page in a new window\">",
+              "node_label": "View disclaimers page in a new window",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (17px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17px instead of at least 24px."
+            },
+            {
+              "selector": "section.usa-footer__primary-content > ul.usa-list > li.usa-footer__secondary-link > a",
+              "snippet": "<a href=\"https://www.acf.hhs.gov/disclaimers\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"View disclaimers page in a new window\">",
+              "node_label": "View disclaimers page in a new window",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (17px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17px instead of at least 24px."
+            },
+            {
+              "selector": "section.usa-footer__primary-content > ul.usa-list > li.usa-footer__secondary-link > a",
+              "snippet": "<a href=\"https://www.acf.hhs.gov/disclaimers\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"View disclaimers page in a new window\">",
+              "node_label": "View disclaimers page in a new window",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (17px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17px instead of at least 24px."
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.12/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html",
+              "snippet": "<html lang=\"en\" data-react-helmet=\"lang\">",
+              "node_label": "html",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.12/label-content-name-mismatch).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.grid-container > div.grid-row > div.Hero__HeroContent-sc-1df35lu-1 > a.usa-button",
+              "snippet": "<a class=\"usa-button usa-button--secondary  \" aria-label=\"Open Stronger Than You Know page\" href=\"/topics/childhood-and-adolescence/youth-resource-guide/\">",
+              "node_label": "View Resource",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div.grid-container > div.grid-row > div.tablet-lg:grid-col-9 > a",
+              "snippet": "<a href=\"https://ncsacw.acf.gov\" aria-label=\"National Center on Substance Abuse and Child Welfare\">",
+              "node_label": "https://ncsacw.acf.gov",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            },
+            {
+              "selector": "div.grid-row > div.tablet-lg:grid-col-9 > p > a",
+              "snippet": "<a href=\"https://www.acf.hhs.gov\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"Administration for Children &amp; Families, open in a new window\">",
+              "node_label": "Administration for Children and Families ",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
